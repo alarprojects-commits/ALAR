@@ -1,0 +1,1 @@
+<a href="tel:{{ config('contact.phone_tel') }}">{{ config('contact.phone_display') }}</a>@if(config('contact.phone_2_display'))<br><a href="tel:{{ config('contact.phone_2_tel') }}">{{ config('contact.phone_2_display') }}</a>@endif

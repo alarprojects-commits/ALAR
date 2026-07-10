@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/agsdfmte/public_html/alarchauffeurservice.com
+    - /bin/cp -R %PROJECT_ROOT%/. $DEPLOYPATH
+    - /bin/chmod -R 775 $DEPLOYPATH/storage $DEPLOYPATH/bootstrap/cache
