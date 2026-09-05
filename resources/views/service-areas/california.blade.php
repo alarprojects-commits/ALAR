@@ -1,6 +1,8 @@
 @extends('main')
-@section('meta_title', 'California Chauffeur & Limo Service | Airport Transfers, Private City Rides & NJ Sports Travel')
-@section('meta_description', 'Experience premium chauffeur service in California with airport transfers, executive travel, and long-distance rides. Book luxury limo service for business, events, and trips to MetLife Stadium.')
+@section('meta_title', 'California Chauffeur & Limo Service | Alar')
+@section('meta_description', 'Premium chauffeur service in California for airport transfers, executive travel & long-distance rides. Book luxury limo service today.')
+@section('og_image', asset('assets/img/airports/lax.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -18,8 +20,49 @@
       },
       "primaryImageOfPage": {
         "@@type": "ImageObject",
-        "url": "https://alarchauffeurservice.com/wp-content/uploads/california-chauffeur-service.jpg"
+        "url": "https://alarchauffeurservice.com/assets/img/airports/lax.webp"
       }
+    },
+    {
+      "@@type": "LocalBusiness",
+      "@@id": "https://alarchauffeurservice.com/service-areas/california/#localbusiness",
+      "name": "ALAR Chauffeur Service - California",
+      "url": "https://alarchauffeurservice.com/service-areas/california",
+      "image": "https://alarchauffeurservice.com/assets/img/airports/lax.webp",
+      "telephone": {!! config('contact.phones_schema_json') !!},
+      "email": "limo@alarchauffeurservice.com",
+      "priceRange": "$250-$3000",
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "10 Fairmount Ave",
+        "addressLocality": "Edison",
+        "addressRegion": "NJ",
+        "postalCode": "08820",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@@type": "State",
+        "name": "California"
+      }
+    },
+    {
+      "@@type": "Event",
+      "@@id": "https://alarchauffeurservice.com/service-areas/california/#event-fifa2026",
+      "name": "FIFA World Cup 2026 California Matches & Transit",
+      "startDate": "2026-06-11",
+      "endDate": "2026-07-19",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@@type": "Place",
+        "name": "SoFi Stadium & Levi's Stadium",
+        "address": {
+          "@@type": "PostalAddress",
+          "addressRegion": "CA",
+          "addressCountry": "US"
+        }
+      },
+      "description": "Luxury chauffeur and private VIP transportation for matches and events during FIFA World Cup 2026 in California."
     },
     {
       "@@type": "Service",
@@ -135,6 +178,9 @@
                 <!-- Main Content -->
                 <div class="col-12 col-lg-8">
                     <div class="ve-service-area-detail">
+                        <div class="mb-30">
+                            <img src="{{ asset('assets/img/airports/lax.webp') }}" alt="Luxury chauffeur service in California by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
+                        </div>
                         <div class="ve-area-intro mb-50">
                             <h2 class="mb-20">California Chauffeur & Limo Service | Luxury <span>Rides In California</span></h2>
                             <p class="ve-lead">In a state as large and fast-moving as California, transportation is more than just getting from one place to another—it’s about timing, comfort, and reliability. Whether you're traveling for business, leisure, or a major event, having a trusted chauffeur service in California can completely transform your experience.</p>

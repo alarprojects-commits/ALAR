@@ -1,7 +1,8 @@
 @extends('main')
-@section('meta_title', 'Limo Service In New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Premium limo service in New Jersey by ALAR Chauffeur Service. Luxury SUVs, sedans, and
-party buses for airport transfers, events, and group travel. ')
+@section('meta_title', 'Luxury Limo & Chauffeur Service in New Jersey | Alar')
+@section('meta_description', 'Book premium chauffeur & limo service in New Jersey. Luxury sedans, SUVs & party buses for airport transfers, weddings & events. Reserve today!')
+@section('og_image', asset('assets/img/slider/slider-1.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -92,6 +93,15 @@ party buses for airport transfers, events, and group travel. ')
       "telephone": {!! config('contact.phones_schema_json') !!},
       "email": "limo@alarchauffeurservice.com",
       "priceRange": "$250-$3000",
+@if(!empty($reviews['rating']) && !empty($reviews['total']))
+      "aggregateRating": {
+        "@@type": "AggregateRating",
+        "ratingValue": "{{ $reviews['rating'] }}",
+        "reviewCount": "{{ $reviews['total'] }}",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+@endif
 
       "address": {
         "@@type": "PostalAddress",
@@ -258,9 +268,9 @@ party buses for airport transfers, events, and group travel. ')
     </div>
     <!-- Right Panel: overlapping image cards -->
     <div class="ve-hero-right">
-        <div class="ve-hero-img-main bg-img" style="background-image:url(../assets/img/slider/slider-1.webp);">
+        <div class="ve-hero-img-main bg-img" role="img" aria-label="Alar Chauffeur Service luxury sedan for airport transfers in New Jersey" style="background-image:url(../assets/img/slider/slider-1.webp);">
         </div>
-        <div class="ve-hero-img-accent bg-img" style="background-image:url(../assets/img/slider/slider-2.webp);">
+        <div class="ve-hero-img-accent bg-img" role="img" aria-label="Alar Chauffeur Service executive transport vehicle in New Jersey" style="background-image:url(../assets/img/slider/slider-2.webp);">
         </div>
         <!-- Floating card -->
 

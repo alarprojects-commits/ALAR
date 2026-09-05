@@ -1,12 +1,13 @@
 @extends('main')
-@section('meta_title', 'Our Fleet | Alar Chauffeur Service')
-@section('meta_description', 'View the Alar Chauffeur Service fleet of luxury sedans, SUVs, limousines, sprinter vans, and group transportation vehicles for executive and special event travel.')
+@section('meta_title', 'Our Luxury Fleet | Sedans, SUVs & Limos | Alar')
+@section('meta_description', "Browse Alar Chauffeur Service's luxury fleet — sedans, SUVs, limousines & sprinter vans for executive travel & special events in New Jersey.")
+@section('og_image', asset('assets/img/fleet/mercedes-s550.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
 {
   "@@context": "https://schema.org",
-
   "@@graph": [
 
     {
@@ -14,7 +15,7 @@
       "@@id": "https://alarchauffeurservice.com/#localbusiness",
       "name": "ALAR Chauffeur Service",
       "url": "https://alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
+      "image": "https://alarchauffeurservice.com/assets/img/fleet/mercedes-s550.webp",
       "logo": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
       "telephone": {!! config('contact.phones_schema_json') !!},
       "email": "limo@alarchauffeurservice.com",
@@ -42,17 +43,54 @@
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/our-fleet#webpage",
       "url": "https://alarchauffeurservice.com/our-fleet",
-      "name": "Our Luxury Fleet | ALAR Chauffeur Service",
-      "description": "Luxury fleet including sedans, SUVs, stretch limousines, Sprinter vans, minibuses, and coach buses for all transportation needs.",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
+      "name": "Our Luxury Fleet | Sedans, SUVs & Limos | Alar",
+      "description": "Browse Alar Chauffeur Service's luxury fleet — sedans, SUVs, limousines & sprinter vans for executive travel & special events in New Jersey.",
+      "image": "https://alarchauffeurservice.com/assets/img/fleet/mercedes-s550.webp",
+
+      "isPartOf": {
+        "@@id": "https://alarchauffeurservice.com/#website"
+      },
 
       "about": {
         "@@id": "https://alarchauffeurservice.com/#localbusiness"
       },
 
       "mainEntity": {
-        "@@id": "https://alarchauffeurservice.com/#localbusiness"
+        "@@id": "https://alarchauffeurservice.com/our-fleet#fleet-catalog"
       }
+    },
+
+    {
+      "@@type": "ItemList",
+      "@@id": "https://alarchauffeurservice.com/our-fleet#fleet-catalog",
+      "name": "Luxury Vehicle Fleet Categories",
+      "description": "Alar Chauffeur Service fleet categories including luxury sedans, executive SUVs, stretch limousines, sprinter vans, and coach buses.",
+      "itemListElement": [
+        {
+          "@@type": "ListItem",
+          "position": 1,
+          "name": "Luxury Sedans",
+          "description": "Mercedes Benz S550, Cadillac XTS, Hyundai Genesis luxury sedans for executive travel and airport transfers."
+        },
+        {
+          "@@type": "ListItem",
+          "position": 2,
+          "name": "Executive SUVs",
+          "description": "Cadillac Escalade and Chevrolet Suburban luxury SUVs for corporate travel, small groups, and airport service."
+        },
+        {
+          "@@type": "ListItem",
+          "position": 3,
+          "name": "Stretch Limousines",
+          "description": "Cadillac Escalade Limo, Lincoln MKT Stretch, and Lincoln Town Car Stretch for weddings, proms, and galas."
+        },
+        {
+          "@@type": "ListItem",
+          "position": 4,
+          "name": "Sprinter Vans & Party Buses",
+          "description": "Mercedes-Benz Sprinter and luxury party buses accommodating 14 to 55 passengers with premium amenities."
+        }
+      ]
     },
 
     {
@@ -126,7 +164,7 @@
                 <!-- 1. Hyundai Genesis -->
                 <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="100ms">
                     <div class="ve-insight-card">
-                        <div class="ve-insight-img bg-img"
+                        <div class="ve-insight-img bg-img" role="img" aria-label="Alar Chauffeur Service fleet of luxury sedans, SUVs and limousines"
                             style="background-image:url({{ asset('assets/img/fleet/hyundai-genesis.webp') }});"></div>
                         <div class="ve-insight-body">
                             <h5>Hyundai Genesis</h5>

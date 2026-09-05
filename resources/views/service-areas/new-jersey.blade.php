@@ -1,6 +1,8 @@
 @extends('main')
-@section('meta_title', 'New Jersey City Chauffeur & Limo Service | Airport Transfers, County Coverage & Luxury Rides')
-@section('meta_description', 'Book Alar Chauffeur Service in New Jersey City for airport transfers, county-wide limo service, and luxury rides to MetLife Stadium. Reliable, private, and professional transportation.')
+@section('meta_title', 'New Jersey Chauffeur & Limo Service | Alar')
+@section('meta_description', 'Book chauffeur & limo service across New Jersey for airport transfers, county-wide rides & MetLife Stadium trips. Reliable, private, professional.')
+@section('og_image', asset('assets/img/airports/ewr.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -126,6 +128,9 @@
                 <!-- Main Content -->
                 <div class="col-12 col-lg-8">
                     <div class="ve-service-area-detail">
+                        <div class="mb-30">
+                            <img src="{{ asset('assets/img/airports/ewr.webp') }}" alt="Luxury chauffeur service in New Jersey by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
+                        </div>
                         <div class="ve-area-intro mb-50">
                             <h2 class="mb-20">Professional <span>Chauffeur & Limo Service</span> in New Jersey City</h2>
                             <p class="ve-lead">If you're looking to <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>book chauffeur service in New Jersey City</b></a> that is reliable, professional, and designed for comfort, Alar Chauffeur Service offers the perfect solution. Whether you need a <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>private car service in New Jersey</b></a>, a luxury limo service near you, or airport transportation with a chauffeur, we provide premium travel experiences across the state.</p>

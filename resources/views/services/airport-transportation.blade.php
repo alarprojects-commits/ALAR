@@ -157,7 +157,7 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
                 <div class="ve-service-detail-content">
                     <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
                         <img src="{{ asset('assets/img/our-services/airport-transportation/1.webp') }}"
-                            alt="Airport Transportation" class="img-fluid rounded-12 shadow-sm">
+                            alt="Alar Chauffeur Service luxury airport transfer in New Jersey" class="img-fluid rounded-12 shadow-sm">
                     </div>
 
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
@@ -245,7 +245,7 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
                         <div class="ve-detail-extra-content mt-50">
                             <div class="row align-items-center">
                                 <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/airport-transportation/2.webp') }}" alt="Luxury Sedan"
+                                    <img src="{{ asset('assets/img/our-services/airport-transportation/2.webp') }}" alt="Mercedes-Benz S-Class luxury sedan for airport chauffeur service"
                                         class="img-fluid rounded-12 shadow-sm">
                                 </div>
                                 <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
@@ -293,7 +293,7 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
                                 </div>
                                 <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
                                     <img src="{{ asset('assets/img/our-services/airport-transportation/3.webp') }}"
-                                        alt="Meet and Greet" class="img-fluid rounded-12 shadow-sm">
+                                        alt="Professional airport chauffeur meet and greet terminal assistance" class="img-fluid rounded-12 shadow-sm">
                                 </div>
                             </div>
 

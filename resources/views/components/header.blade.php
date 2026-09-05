@@ -14,7 +14,7 @@
             <!-- Logo -->
             <div class="ve-logo">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Logo">
+                    <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Alar Chauffeur Service Logo">
                 </a>
             </div>
             <!-- Nav Links -->

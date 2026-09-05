@@ -1,6 +1,8 @@
 @extends('main')
-@section('meta_title', 'Our Services | Alar Chauffeur Service')
-@section('meta_description', 'Explore luxury transportation services from Alar Chauffeur Service, including airport transfers, corporate transportation, weddings, prom, group travel, cruise transfers, and special events.')
+@section('meta_title', 'Our Chauffeur Services | Alar Chauffeur Service NJ')
+@section('meta_description', "Explore Alar's luxury transport services: airport transfers, corporate travel, weddings, proms, cruise transfers & group travel across New Jersey.")
+@section('og_image', asset('assets/img/banner/our-services.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -51,101 +53,126 @@
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/our-services#webpage",
       "url": "https://alarchauffeurservice.com/our-services",
-      "name": "Our Chauffeur & Limo Services | ALAR Chauffeur Service",
-      "description": "Explore all luxury chauffeur services including airport transportation, corporate travel, hourly limo, prom limo, sporting events, group transportation, and FIFA World Cup 2026 transportation.",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
+      "name": "Our Chauffeur Services | Alar Chauffeur Service NJ",
+      "description": "Explore Alar's luxury transport services: airport transfers, corporate travel, weddings, proms, cruise transfers & group travel across New Jersey.",
+      "image": "https://alarchauffeurservice.com/assets/img/banner/our-services.webp",
 
       "isPartOf": {
         "@@id": "https://alarchauffeurservice.com/#website"
       },
 
       "about": {
-        "@@id": "https://alarchauffeurservice.com/#localbusiness"
-      },
-
-      "mainEntity": {
-        "@@id": "https://alarchauffeurservice.com/#service-directory"
+        "@@id": "https://alarchauffeurservice.com/#organization"
       }
     },
 
     {
-      "@@type": "ItemList",
-      "@@id": "https://alarchauffeurservice.com/#service-directory",
-      "name": "Chauffeur Service Directory",
-
-      "itemListElement": [
-
-        {
-          "@@type": "ListItem",
-          "position": 1,
-          "item": {
-            "@@type": "Service",
-            "name": "Airport Transportation",
-            "url": "https://alarchauffeurservice.com/services/airport-transportation"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@@type": "Service",
-            "name": "Corporate Transportation",
-            "url": "https://alarchauffeurservice.com/services/corporate-transportation"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@@type": "Service",
-            "name": "Hourly Limo Service",
-            "url": "https://alarchauffeurservice.com/services/hourly-limo"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@@type": "Service",
-            "name": "Prom Limo Service",
-            "url": "https://alarchauffeurservice.com/services/prom-limo"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@@type": "Service",
-            "name": "Sporting Events Transportation",
-            "url": "https://alarchauffeurservice.com/services/sporting-events"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@@type": "Service",
-            "name": "Group Transportation",
-            "url": "https://alarchauffeurservice.com/services/group-transportation"
-          }
-        },
-
-        {
-          "@@type": "ListItem",
-          "position": 7,
-          "item": {
-            "@@type": "Service",
-            "name": "FIFA World Cup 2026 Transportation",
-            "url": "https://alarchauffeurservice.com/services/fifa-world-cup-2026-transportation"
-          }
-        }
-
-      ]
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/airport-transportation#service",
+      "name": "Airport Transportation",
+      "serviceType": "Airport Chauffeur & Limo Service",
+      "url": "https://alarchauffeurservice.com/services/airport-transportation",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/corporate-transportation#service",
+      "name": "Corporate Transportation",
+      "serviceType": "Executive & Corporate Travel",
+      "url": "https://alarchauffeurservice.com/services/corporate-transportation",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/wedding-limo#service",
+      "name": "Wedding Limo Service",
+      "serviceType": "Wedding Transportation",
+      "url": "https://alarchauffeurservice.com/services/wedding-limo",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/prom-limo#service",
+      "name": "Prom Limo Service",
+      "serviceType": "Prom & Formal Event Transportation",
+      "url": "https://alarchauffeurservice.com/services/prom-limo",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/sporting-events#service",
+      "name": "Sporting Events Transportation",
+      "serviceType": "Sports & Stadium Chauffeur Service",
+      "url": "https://alarchauffeurservice.com/services/sporting-events",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/fifa-world-cup-2026-transportation#service",
+      "name": "FIFA World Cup 2026 Transportation",
+      "serviceType": "Tournament & Stadium Chauffeur Service",
+      "url": "https://alarchauffeurservice.com/services/fifa-world-cup-2026-transportation",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/group-transportation#service",
+      "name": "Group Transportation",
+      "serviceType": "Group & Van Transportation",
+      "url": "https://alarchauffeurservice.com/services/group-transportation",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/concert-festival#service",
+      "name": "Concerts and Festival Transportation",
+      "serviceType": "Concert & Festival Chauffeur Service",
+      "url": "https://alarchauffeurservice.com/services/concert-festival",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/party-bus#service",
+      "name": "Party Bus Service",
+      "serviceType": "Party Bus Rentals",
+      "url": "https://alarchauffeurservice.com/services/party-bus",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/cruise-port-transfers#service",
+      "name": "Cruise Port Transfers",
+      "serviceType": "Cruise Terminal Transfers",
+      "url": "https://alarchauffeurservice.com/services/cruise-port-transfers",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/chauffeured-service#service",
+      "name": "Chauffeured Service",
+      "serviceType": "Private Black Car & Chauffeur Service",
+      "url": "https://alarchauffeurservice.com/services/chauffeured-service",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
+    },
+    {
+      "@@type": "Service",
+      "@@id": "https://alarchauffeurservice.com/services/hourly-limo#service",
+      "name": "Hourly Limo Service",
+      "serviceType": "By-The-Hour Chauffeur Service",
+      "url": "https://alarchauffeurservice.com/services/hourly-limo",
+      "provider": { "@@id": "https://alarchauffeurservice.com/#organization" },
+      "areaServed": { "@@type": "State", "name": "New Jersey" }
     }
 
   ]
@@ -183,7 +210,7 @@
                 <!-- Airport Transportation -->
                 <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="100ms">
                     <div class="ve-insight-card">
-                        <div class="ve-insight-img bg-img"
+                        <div class="ve-insight-img bg-img" role="img" aria-label="Chauffeur opening the door of a luxury Alar Chauffeur Service vehicle"
                             style="background-image:url({{ asset('assets/img/our-services/aiport-transfer.webp') }});">
                         </div>
                         <div class="ve-insight-body">

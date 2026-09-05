@@ -34,6 +34,10 @@
             name="google-site-verification"
             content="0ofhTEJk68G98MZAdCK4Uamv7r8U-hbBpsqbpYZ8-bc"
         />
+        <meta
+            name="google-site-verification"
+            content="rBD862xF-dflR6spqXLbrmc85oGgyhohOZB4l6oBgY8"
+        />
 
         <!-- Open Graph Meta Tags -->
         <meta
@@ -46,10 +50,17 @@
         />
         <meta
             property="og:image"
-            content="{{ asset('assets/img/logo/logo.png') }}"
+            content="@yield('og_image', asset('assets/img/logo/logo.png'))"
         />
         <meta property="og:url" content="{{ url()->current() }}" />
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="@yield('og_type', 'website')" />
+        <meta property="og:site_name" content="Alar Chauffeur Service" />
+
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="@yield('meta_title', 'Alar Chauffeur Service | Luxury Transportation')" />
+        <meta name="twitter:description" content="@yield('meta_description', 'Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe transportation.')" />
+        <meta name="twitter:image" content="@yield('og_image', asset('assets/img/logo/logo.png'))" />
 
         <title>@yield('meta_title', 'Alar Chauffeur Service | Luxury Transportation')</title>
         <!-- Favicon -->

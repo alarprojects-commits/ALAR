@@ -6,7 +6,7 @@
             <div class="col-12 col-sm-6 col-lg-4 mb-50">
                 <div class="ve-footer-brand">
                     <a href="{{ route('home') }}" class="ve-footer-logo">
-                        <img src="{{ asset('assets/img/logo/logo.png') }}" alt="logo">
+                        <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Alar Chauffeur Service Logo">
                     </a>
                     <p>Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe
                         transportation since 2012.</p>

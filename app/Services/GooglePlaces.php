@@ -17,10 +17,14 @@ class GooglePlaces
         $placeId = config('services.google_places.place_id');
         $apiKey = config('services.google_places.api_key');
 
-        $resp = Http::withHeaders([
-            'X-Goog-Api-Key' => $apiKey,
-            'X-Goog-FieldMask' => 'id,displayName,rating,userRatingCount,reviews',
-        ])->get("https://places.googleapis.com/v1/places/{$placeId}")->json();
+        try {
+            $resp = Http::withHeaders([
+                'X-Goog-Api-Key' => $apiKey,
+                'X-Goog-FieldMask' => 'id,displayName,rating,userRatingCount,reviews',
+            ])->timeout(5)->get("https://places.googleapis.com/v1/places/{$placeId}")->json();
+        } catch (\Throwable $e) {
+            return ['name' => null, 'rating' => null, 'total' => 0, 'reviews' => []];
+        }
 
         if (empty($resp['id'])) {
             return ['name' => null, 'rating' => null, 'total' => 0, 'reviews' => []];

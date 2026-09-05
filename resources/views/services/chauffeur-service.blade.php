@@ -35,7 +35,7 @@
                 <div class="ve-service-detail-content">
                     <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
                         <img src="{{ asset('assets/img/our-services/chauffeured-service/luxury-chauffeur-service-in-new-jersey-and-nyc.webp') }}"
-                            alt="Chauffeured Service" class="img-fluid rounded-12 shadow-sm">
+                            alt="Luxury chauffeur service in New Jersey and New York City by Alar" class="img-fluid rounded-12 shadow-sm">
                     </div>
 
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
@@ -119,7 +119,7 @@
                         <div class="ve-detail-extra-content mt-50">
                             <div class="row align-items-center">
                                 <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/chauffeured-service/chauffeur-service-from-new-jersey-to-new-york.webp') }}" alt="Luxury Sedan"
+                                    <img src="{{ asset('assets/img/our-services/chauffeured-service/chauffeur-service-from-new-jersey-to-new-york.webp') }}" alt="Executive chauffeur service from New Jersey to New York"
                                         class="img-fluid rounded-12 shadow-sm">
                                 </div>
                                 <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
@@ -192,7 +192,7 @@
                                 </div>
                                 <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
                                     <img src="{{ asset('assets/img/our-services/chauffeured-service/why-choose-chauffeur-service-for-long-distance-travel.webp') }}"
-                                        alt="Meet and Greet" class="img-fluid rounded-12 shadow-sm">
+                                        alt="Private chauffeur long distance interstate travel" class="img-fluid rounded-12 shadow-sm">
                                 </div>
                             </div>
 

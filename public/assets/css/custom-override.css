@@ -1628,6 +1628,7 @@ body {
     font-size: 26px;
     color: var(--ve-gold);
 }
+.ve-mvv-card h3,
 .ve-mvv-card h4 {
     font-size: 20px;
     font-weight: 800;
@@ -3082,6 +3083,7 @@ body {
     color: var(--ve-dark);
     margin: 0 auto 20px;
 }
+.ve-mvv-card h3,
 .ve-mvv-card h4 {
     font-size: 20px;
     font-weight: 800;

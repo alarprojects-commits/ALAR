@@ -1,7 +1,8 @@
 @extends('main')
-@section('meta_title', 'Alar Chauffeur Service | About Us')
-@section('meta_description', 'Luxury transportation by ALAR Chauffeur Service in NJ. SUVs, sedans, and party buses for
-airport transfers, events, and group travel with professional chauffeurs.')
+@section('meta_title', 'About Alar Chauffeur Service | NJ Luxury Transport')
+@section('meta_description', "Meet Alar Chauffeur Service, New Jersey's trusted luxury transportation company. Professional chauffeurs, safety-first standards & premium vehicles.")
+@section('og_image', asset('assets/img/about-us/excellence-in-luxury-1.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -27,6 +28,9 @@ airport transfers, events, and group travel with professional chauffeurs.')
         "postalCode": "08820",
         "addressCountry": "US"
       },
+      "foundingDate": "2012",
+      "slogan": "A Smarter Way to Travel in Luxury",
+      "description": "ALAR Chauffeur Service is New Jersey's trusted luxury ground transportation company, providing executive airport transfers, black car service, wedding limousines, and corporate travel.",
 
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61581788001748",
@@ -105,7 +109,7 @@ airport transfers, events, and group travel with professional chauffeurs.')
             <!-- Image Side -->
             <div class="col-12 col-lg-5 order-md-2 order-2 order-lg-0">
                 <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
-                    <div class="ve-whyus-img-main bg-img"
+                    <div class="ve-whyus-img-main bg-img" role="img" aria-label="Professional Alar Chauffeur Service driver beside a luxury vehicle"
                         style="background-image:url(../assets/img/about-us/excellence-in-luxury-1.webp);"></div>
                     <div class="ve-whyus-badge">
                         <strong>3+</strong>
@@ -190,19 +194,19 @@ airport transfers, events, and group travel with professional chauffeurs.')
         <div class="ve-mvv-grid">
             <div class="ve-mvv-card wow fadeInUp" data-wow-delay="100ms">
                 <div class="ve-mvv-icon"><i class="fa fa-bullseye"></i></div>
-                <h4>Our Mission</h4>
+                <h3>Our Mission</h3>
                 <p>To provide reliable, safe, and sophisticated transportation solutions that exceed the expectations of
                     our most discerning clients.</p>
             </div>
             <div class="ve-mvv-card wow fadeInUp" data-wow-delay="250ms">
                 <div class="ve-mvv-icon"><i class="fa fa-eye"></i></div>
-                <h4>Our Vision</h4>
+                <h3>Our Vision</h3>
                 <p>To become the world's most trusted name in luxury transportation, known for our innovation and
                     unwavering attention to detail.</p>
             </div>
             <div class="ve-mvv-card wow fadeInUp" data-wow-delay="400ms">
                 <div class="ve-mvv-icon"><i class="fa fa-heart"></i></div>
-                <h4>Our Values</h4>
+                <h3>Our Values</h3>
                 <p>Punctuality, absolute discretion, safety first, and a commitment to maintaining the finest fleet in
                     the industry.</p>
             </div>

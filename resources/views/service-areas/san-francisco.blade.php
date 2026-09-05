@@ -1,6 +1,8 @@
 @extends('main')
-@section('meta_title', 'Luxury Limo Service San Francisco | Private Chauffeur Rides')
-@section('meta_description', 'Book luxury limo service in San Francisco for airport transfers, corporate travel, weddings & city rides. Premium chauffeur service.')
+@section('meta_title', 'San Francisco Limo & Chauffeur Service | Alar')
+@section('meta_description', 'Book luxury limo service in San Francisco for airport transfers, corporate travel, weddings & city rides with a premium chauffeur experience.')
+@section('og_image', asset('assets/img/airports/sfo.webp'))
+@section('og_type', 'website')
 
 @push('schema')
 <script type="application/ld+json">
@@ -18,7 +20,29 @@
       },
       "primaryImageOfPage": {
         "@@type": "ImageObject",
-        "url": "https://alarchauffeurservice.com/wp-content/uploads/san-francisco-chauffeur-service.jpg"
+        "url": "https://alarchauffeurservice.com/assets/img/airports/sfo.webp"
+      }
+    },
+    {
+      "@@type": "LocalBusiness",
+      "@@id": "https://alarchauffeurservice.com/service-areas/san-francisco/#localbusiness",
+      "name": "ALAR Chauffeur Service - San Francisco",
+      "url": "https://alarchauffeurservice.com/service-areas/san-francisco",
+      "image": "https://alarchauffeurservice.com/assets/img/airports/sfo.webp",
+      "telephone": {!! config('contact.phones_schema_json') !!},
+      "email": "limo@alarchauffeurservice.com",
+      "priceRange": "$250-$3000",
+      "address": {
+        "@@type": "PostalAddress",
+        "streetAddress": "10 Fairmount Ave",
+        "addressLocality": "Edison",
+        "addressRegion": "NJ",
+        "postalCode": "08820",
+        "addressCountry": "US"
+      },
+      "areaServed": {
+        "@@type": "City",
+        "name": "San Francisco"
       }
     },
     {
@@ -135,6 +159,9 @@
                 <!-- Main Content -->
                 <div class="col-12 col-lg-8">
                     <div class="ve-service-area-detail">
+                        <div class="mb-30">
+                            <img src="{{ asset('assets/img/airports/sfo.webp') }}" alt="Luxury chauffeur service in San Francisco by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
+                        </div>
                         <div class="ve-area-intro mb-50">
                             <h2 class="mb-20">Luxury Limo Service in San Francisco | <span>Premium Chauffeur Experience</span></h2>
                             <p class="ve-lead">San Francisco is a city where timing, presentation, and comfort matter especially when navigating busy streets, steep hills, and high-demand travel schedules. Choosing a <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>luxury limo service in San Francisco</b></a> is not just about transportation; it’s about elevating how you move through the city.</p>
