@@ -137,19 +137,95 @@
             </div>
 
             <div class="row">
-                <!-- Airport Transportation -->
-                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="100ms">
+                <!-- Car Service to JFK from Manhattan -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="50ms">
                     <div class="ve-insight-card">
                         <div class="ve-insight-img bg-img"
-                            style="background-image:url({{ asset('assets/img/blogs/luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey.webp') }});">
+                            style="background-image:url({{ asset('assets/img/blogs/car-service-to-jfk-from-manhattan.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>Luxury Chauffeur Service for FIFA 2026 in NYC & New Jersey</h5>
-                            <p>Experience premium limo and chauffeur service for FIFA World Cup 2026 with seamless travel to MetLife Stadium.</p>
+                            <h5>Car Service to JFK from Manhattan</h5>
+                            <p>Fixed-rate JFK airport car service from Midtown and Downtown—what travelers search before every flight.</p>
                             <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey') }}" class="ve-btn-ghost-dark"
+                                <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newark Airport Car Service -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/newark-airport-car-service-ewr.webp') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Newark Airport Car Service (EWR)</h5>
+                            <p>Car service to Newark Airport from NJ and NYC with flight tracking and meet-and-greet.</p>
+                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
+                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
+                                <a href="{{ route('blog.newark-airport-car-service-ewr') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Black Car vs Uber -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="150ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi.webp') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Black Car Service NYC vs Uber & Taxi</h5>
+                            <p>When a reserved chauffeur beats surge pricing—airport and business travel comparison.</p>
+                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
+                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
+                                <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- New York Car Service Tri-State -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="200ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>New York Car Service for JFK, LGA, EWR & the Tri-State</h5>
+                            <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester (HPN).</p>
+                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
+                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
+                                <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interstate PA VA DC -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="250ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc.webp') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Chauffeur Service to PA, Virginia & Washington DC</h5>
+                            <p>Long-distance private chauffeur travel from New York and New Jersey to Pennsylvania, Virginia, and Washington, D.C.</p>
+                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
+                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
+                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
+                                <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}" class="ve-btn-ghost-dark"
                                     style="padding: 10px 18px; font-size: 13px;">Read More</a>
                             </div>
                         </div>

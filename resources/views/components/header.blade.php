@@ -42,8 +42,10 @@
             </nav>
             <!-- CTA -->
             <div class="ve-nav-cta">
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-nav-phone">
+                    <i class="fa fa-phone"></i> {{ config('contact.phone_display') }}
+                </a>
                 <a href="{{ route('book-online') }}" class="ve-cta-btn"><i class="fa fa-quote-right"></i> Get A Quote</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-cta-btn"><i class="fa fa-phone"></i> Call Now</a>
             </div>
             <!-- Mobile Toggle -->
             <button class="ve-toggler" id="ve-toggle">

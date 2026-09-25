@@ -356,7 +356,7 @@
                                 </div>
                                 <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
                                     <h2>Reserve Your Sporting Event <span>Transportation Today</span></h2>
-                                    <p>Whether you're attending a football game at <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>MetLife Stadium</b></a>, a basketball game at Madison Square Garden, a baseball matchup in New York, or a championship sporting event anywhere in the region, <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> is ready to provide reliable luxury transportation.</p>
+                                    <p>Whether you're attending a football game at <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium</b></a>, a basketball game at Madison Square Garden, a baseball matchup in New York, or a championship sporting event anywhere in the region, <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> is ready to provide reliable luxury transportation.</p>
                                     <p><a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book your sporting event chauffeur service</b></a> today and enjoy comfortable, professional, and stress-free transportation throughout New Jersey and New York.</p>
                                 </div>
                             </div>

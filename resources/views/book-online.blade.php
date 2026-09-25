@@ -33,7 +33,7 @@
       "@@id": "https://alarchauffeurservice.com/book-online#webpage",
       "url": "https://alarchauffeurservice.com/book-online",
       "name": "Book Online Chauffeur & Limo Service",
-      "description": "Book luxury chauffeur service, airport transfer, corporate travel, wedding transportation, party bus and FIFA World Cup 2026 limo service online.",
+      "description": "Book luxury chauffeur service, airport transfer, corporate travel, wedding transportation, and party bus limo service online.",
       "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
 
       "isPartOf": {
@@ -114,15 +114,6 @@
             "itemOffered": {
               "@@type": "Service",
               "name": "Party Bus Booking"
-            }
-          },
-
-          {
-            "@@type": "Offer",
-            "itemOffered": {
-              "@@type": "Service",
-              "name": "FIFA World Cup 2026 Transportation Booking",
-              "url": "https://alarchauffeurservice.com/services/fifa-world-cup-2026-transportation"
             }
           }
 
@@ -227,8 +218,6 @@
                                         Call Us Directly</h5>
                                     <a href="tel:{{ config('contact.phone_tel') }}"
                                         style="color: #fff; font-size: 24px; font-weight: 700; display: block;">{{ config('contact.phone_display') }}</a>
-                                    <a href="tel:{{ config('contact.phone_2_tel') }}"
-                                        style="color: #fff; font-size: 24px; font-weight: 700; display: block;">{{ config('contact.phone_2_display') }}</a>
                                 </div>
                             </div>
                         </div>

@@ -45,7 +45,6 @@
                     <li><a href="{{ route('services.wedding-limo') }}">Wedding Limo</a></li>
                     <li><a href="{{ route('services.prom-limo') }}">Prom Limo</a></li>
                     <li><a href="{{ route('services.sporting-events') }}">Sporting Events</a></li>
-                    <li><a href="{{ route('services.fifa-world-cup-2026-transportation') }}">FIFA World Cup 2026</a></li>
                     <li><a href="{{ route('services.group-transportation') }}">Group Transportation</a></li>
                     <li><a href="{{ route('services.concert-festival') }}">Concerts & Festivals</a></li>
                     <li><a href="{{ route('services.party-bus') }}">Party Buses</a></li>
@@ -61,8 +60,6 @@
                             target="_blank"><i class="fa fa-map-marker"></i> {{ config('contact.location') }}</a></li>
                     <li><a href="tel:{{ config('contact.phone_tel') }}"><i class="fa fa-phone"></i>
                             {{ config('contact.phone_display') }}</a></li>
-                    <li><a href="tel:{{ config('contact.phone_2_tel') }}"><i class="fa fa-phone"></i>
-                            {{ config('contact.phone_2_display') }}</a></li>
                     <li><a href="mailto:{{ config('contact.email') }}"><i class="fa fa-envelope"></i>
                             {{ config('contact.email') }}</a></li>
                     <li><i class="fa fa-clock-o"></i> 24/7</li>
@@ -75,7 +72,7 @@
     <div class="ve-footer-bottom">
         <div class="container">
             <div class="ve-footer-bottom-inner text-white text-center justify-content-center">
-                <p>&copy; {{ date('Y') }} <a href="{{ route('home') }}" style="color: #fff; text-decoration: none;">Alar Chauffeur Service</a>. All Rights Reserved. Designed By <a href="https://shaheer-siddiqi.vercel.app/" target="_blank" style="color: rgba(255, 255, 255, 0.35); text-decoration: none; font-weight: 600;">Shaheer Siddiqi</a></p>
+                <p>&copy; {{ date('Y') }} <a href="{{ route('home') }}" style="color: #fff; text-decoration: none;">Alar Chauffeur Service</a>. All Rights Reserved.</p>
             </div>
         </div>
     </div>

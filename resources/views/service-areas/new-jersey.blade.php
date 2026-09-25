@@ -1,7 +1,7 @@
 @extends('main')
-@section('meta_title', 'New Jersey Chauffeur & Limo Service | Alar')
-@section('meta_description', 'Book chauffeur & limo service across New Jersey for airport transfers, county-wide rides & MetLife Stadium trips. Reliable, private, professional.')
-@section('og_image', asset('assets/img/airports/ewr.webp'))
+@section('meta_title', 'New Jersey Car Service & Airport Limo | EWR, JFK, LGA | Alar')
+@section('meta_description', 'Book New Jersey car service and airport limo to Newark Liberty (EWR), John F. Kennedy (JFK), LaGuardia (LGA) and Westchester (HPN). Tri-State chauffeur across NJ, NY, CT and PA.')
+@section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 
 @push('schema')
@@ -13,13 +13,13 @@
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/service-areas/new-jersey/#webpage",
       "url": "https://alarchauffeurservice.com/service-areas/new-jersey",
-      "name": "Chauffeur Service in New Jersey",
-      "description": "Luxury chauffeur service in New Jersey offering airport transfers, black car service, corporate transportation, wedding transportation, hourly chauffeur service, and event transportation."
+      "name": "New Jersey Car Service & Airport Limo | EWR, JFK, LGA | Alar",
+      "description": "Book New Jersey car service and airport limo to Newark Liberty (EWR), John F. Kennedy (JFK), LaGuardia (LGA) and Westchester (HPN). Tri-State chauffeur across NJ, NY, CT and PA."
     },
     {
       "@@type": "Service",
       "@@id": "https://alarchauffeurservice.com/service-areas/new-jersey/#service",
-      "name": "Chauffeur Service in New Jersey",
+      "name": "New Jersey Car Service & Airport Limo",
       "serviceType": "Luxury Chauffeur Transportation",
       "url": "https://alarchauffeurservice.com/service-areas/new-jersey",
       "areaServed": {
@@ -31,7 +31,7 @@
         "name": "ALAR Chauffeur Service",
         "url": "https://alarchauffeurservice.com"
       },
-      "description": "Professional chauffeur service throughout New Jersey including airport transfers, corporate travel, black car service, wedding transportation, sporting event transportation, group transportation, and VIP transportation."
+      "description": "New Jersey car service and airport limo including Newark Airport Limo Service EWR, JFK Airport Limo Service NYC connections, LGA Limo Service LaGuardia, Tri-State limo, corporate travel, and wedding transportation."
     },
     {
       "@@type": "FAQPage",
@@ -50,7 +50,7 @@
           "name": "Which airports in New Jersey do you serve?",
           "acceptedAnswer": {
             "@@type": "Answer",
-            "text": "We provide transportation to and from Newark Liberty International Airport as well as connections to JFK Airport and LaGuardia Airport for travelers throughout New Jersey."
+            "text": "We provide Newark Airport Limo Service EWR to and from Newark Liberty International Airport, plus connections to John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Westchester County Airport (HPN) for travelers throughout New Jersey and the Tri-State area."
           }
         },
         {
@@ -115,8 +115,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Premium Chauffeur & Limo Service in <span>New Jersey City</span></h1>
-                <p>Experience reliable airport transfers, county-wide coverage, and luxury chauffeur service in New Jersey City with Alar Chauffeur Service.</p>
+                <h1>New Jersey Car Service & <span>Airport Limo</span></h1>
+                <p>Tri-State chauffeur service, Newark Airport Limo Service EWR, and reliable transfers to John F. Kennedy (JFK), LaGuardia (LGA), and Westchester County (HPN).</p>
             </div>
         </div>
     </section>
@@ -129,12 +129,12 @@
                 <div class="col-12 col-lg-8">
                     <div class="ve-service-area-detail">
                         <div class="mb-30">
-                            <img src="{{ asset('assets/img/airports/ewr.webp') }}" alt="Luxury chauffeur service in New Jersey by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
+                            <img src="{{ asset('assets/img/service-areas/new-jersey.webp') }}" alt="New Jersey car service and Newark Airport limo EWR by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
                         </div>
                         <div class="ve-area-intro mb-50">
-                            <h2 class="mb-20">Professional <span>Chauffeur & Limo Service</span> in New Jersey City</h2>
-                            <p class="ve-lead">If you're looking to <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>book chauffeur service in New Jersey City</b></a> that is reliable, professional, and designed for comfort, Alar Chauffeur Service offers the perfect solution. Whether you need a <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>private car service in New Jersey</b></a>, a luxury limo service near you, or airport transportation with a chauffeur, we provide premium travel experiences across the state.</p>
-                            <p>From busy airports to major counties and event destinations like MetLife Stadium, our goal is to deliver smooth, on-time, and stress-free transportation</p>
+                            <h2 class="mb-20">Professional <span>New Jersey Car Service</span> & Limo</h2>
+                            <p class="ve-lead">Book <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>chauffeur service in New Jersey</b></a> that is reliable, professional, and designed for comfort. Alar Chauffeur Service offers <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>private car service in New Jersey</b></a>, Tri-State limo, and airport transportation with chauffeurs across NJ counties and into New York, Connecticut, and Pennsylvania.</p>
+                            <p>From Newark Liberty (EWR) and JFK Airport Limo Service NYC connections to MetLife Stadium, Virginia, and Washington, D.C. routes, we deliver smooth, on-time, stress-free transportation.</p>
                         </div>
 
                         <div class="ve-area-features mb-50">
@@ -143,8 +143,8 @@
                                 <div class="col-md-6 mb-30">
                                     <div class="ve-feature-text-item">
                                         <i class="fa fa-plane"></i>
-                                        <h5>EWR Airport Specialists</h5>
-                                        <p>Expert navigation to Newark Liberty International Airport with personalized pickup and drop-off services.</p>
+                                        <h5>EWR, JFK & LGA Specialists</h5>
+                                        <p>Newark Airport Limo Service EWR plus John F. Kennedy (JFK) and LaGuardia (LGA) transfers with flight tracking and meet-and-greet.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
@@ -164,23 +164,36 @@
                                 <div class="col-md-6 mb-30">
                                     <div class="ve-feature-text-item">
                                         <i class="fa fa-road"></i>
-                                        <h5>State to State Travel</h5>
-                                        <p>Comfortable long-distance journeys between New Jersey and neighboring states like New York and Pennsylvania.</p>
+                                        <h5>Tri-State & Interstate Travel</h5>
+                                        <p>Comfortable long-distance journeys between New Jersey, New York, Connecticut, Pennsylvania, Virginia, and Washington, D.C.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="ve-area-description">
-                            <h2>Airport Chauffeur & Limo Service in <span>New Jersey</span></h2>
-                            <p>Traveling to or from the airport? Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport limo service in New Jersey</b></a> ensures timely pickups, comfortable rides, and professional service every time.</p>
+                            <h2>Airport Chauffeur & Limo Service in <span>New Jersey (EWR, JFK, LGA, HPN)</span></h2>
+                            <p>Traveling to or from the airport? Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport limo service in New Jersey</b></a> ensures timely pickups, comfortable rides, and professional Tri-State service every time.</p>
+
+                            <h3>Newark Airport Limo Service EWR</h3>
+                            <p>Whether you are a corporate executive or traveling with family, we provide limo service to Newark Liberty International Airport (EWR) from Jersey City, Bergen County, Edison, Princeton, and into Westchester, Nassau, and Suffolk. Experienced chauffeurs know the roads and routes for on-time arrivals.</p>
+
+                            <h3>JFK Airport Limo Service from New Jersey</h3>
+                            <p>Need JFK Airport Limo Service NYC from New Jersey? We offer door-to-door transfers from NJ counties to John F. Kennedy International Airport (JFK) with meet-and-greet and luggage assistance.</p>
+
+                            <h3>LGA Limo Service LaGuardia Airport</h3>
+                            <p>Our LGA Limo Service and limousine service LaGuardia Airport connect New Jersey travelers to LaGuardia Airport (LGA) for business and leisure flights without taxi-line stress.</p>
+
+                            <h3>Westchester County Airport (HPN)</h3>
+                            <p>Private car service between New Jersey and Westchester County Airport (HPN) for convenient regional and private aviation connections.</p>
 
                             <h3>Airports We <span>Serve</span></h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> Newark Liberty International Airport (EWR)</li>
-                                    <li><i class="fa fa-check"></i> LaGuardia Airport (LGA)</li>
-                                    <li><i class="fa fa-check"></i> John F. Kennedy International Airport (JFK)</li>
+                                    <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Newark Airport Limo Service EWR</li>
+                                    <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>
+                                    <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — LGA Limo Service LaGuardia</li>
+                                    <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — White Plains and Westchester transfers</li>
                                 </ul>
                             </div>
 
@@ -196,10 +209,10 @@
                                 </ul>
                             </div>
 
-                            <p>Whether you need a car service from Newark Airport to New Jersey City or a luxury ride from JFK to New Jersey, we ensure a seamless experience.</p>
+                            <p>Whether you need a car service from Newark Airport to Jersey City or a luxury ride from JFK to New Jersey, we ensure a seamless experience.</p>
 
                             <h2>Serving All <span>Counties in New Jersey</span></h2>
-                            <p>Alar Chauffeur Service proudly offers chauffeur service across all New Jersey counties, making it easy to book reliable transportation anywhere in the state.</p>
+                            <p>Alar Chauffeur Service proudly offers chauffeur service across New Jersey counties, making it easy to book reliable Tri-State transportation anywhere in the state.</p>
 
                             <h3>Major Counties We Cover</h3>
 
@@ -226,6 +239,9 @@
                                 Whether you want to hire a chauffeur in Bergen County, book limo service in Hudson County, or arrange a private car service in Essex County, we are available 24/7.
                             </p>
 
+                            <h2>Interstate Chauffeur Travel from <span>New Jersey</span></h2>
+                            <p>Popular long-distance routes from New Jersey include Philadelphia and other Pennsylvania destinations, Northern Virginia, Washington, D.C., Manhattan, Long Island, and Connecticut. Book private door-to-door travel without train schedules or crowded terminals.</p>
+
                             <h2>Our Chauffeur & Limo <span>Services in New Jersey</span></h2>
                             <p>
                                 We offer a wide range of services designed to meet different travel needs with luxury and professionalism.
@@ -238,7 +254,7 @@
                             <p>Professional <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>executive car service in New Jersey City</b></a> for business meetings and corporate travel.</p>
 
                             <h3>Event & Sports Transportation</h3>
-                            <p>Book a chauffeur service to <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>MetLife Stadium</b></a> or any major event with ease and comfort.</p>
+                            <p>Book a chauffeur service to <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium</b></a> or any major event with ease and comfort.</p>
 
                             <h3>Wedding & Special Events</h3>
                             <p>Luxury <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b></b>wedding limo service in New Jersey</b></a> for a memorable and elegant experience.</p>
@@ -300,7 +316,7 @@
                                         </div>
                                         <div id="njFaqTwo" class="collapse" aria-labelledby="njFaqHeadingTwo" data-parent="#njFaqAccordion">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>We provide premium chauffeur services to all major airports, including Newark Liberty International Airport (EWR), John F. Kennedy International Airport (JFK), and LaGuardia Airport (LGA).</p>
+                                                <p>We provide premium chauffeur services to all major Tri-State airports, including Newark Liberty International Airport (EWR), John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Westchester County Airport (HPN).</p>
                                             </div>
                                         </div>
                                     </div>

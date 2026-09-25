@@ -3,12 +3,9 @@
 return [
     'phone_tel' => env('CONTACT_NUMBER_TEL'),
     'phone_display' => env('CONTACT_NUMBER'),
-    'phone_2_tel' => env('CONTACT_NUMBER_2_TEL'),
-    'phone_2_display' => env('CONTACT_NUMBER_2'),
     'phones_schema_json' => json_encode(array_values(array_filter([
         env('CONTACT_NUMBER_TEL'),
-        env('CONTACT_NUMBER_2_TEL'),
-    ]))),
+    ], fn ($phone) => filled($phone)))),
     'email' => env('EMAIL_ADDRESS'),
     'location' => env('LOCATION'),
     'mail_to' => env('CONTACT_MAIL_TO'),

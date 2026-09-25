@@ -1,7 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Shuttle Service In NJ, NY | Airport Transportation')
-@section('meta_description', 'Reliable airport shuttle service in NJ & NY by ALAR Chauffeur Service. Safe, punctual
-airport transportation with SUVs, sedans, and Sprinter vans.')
+@section('meta_title', 'Airport Car Service NYC & NJ | JFK, LGA, EWR Limo | Alar')
+@section('meta_description', 'Airport car service NYC and NJ to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State limo with flight tracking and meet-and-greet.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -13,8 +12,8 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#webpage",
       "url": "https://alarchauffeurservice.com/services/airport-transportation",
-      "name": "Airport Transportation Service | ALAR Chauffeur Service",
-      "description": "Professional airport transportation service for JFK, LaGuardia, Newark, SFO, LAX, and more with luxury chauffeur service.",
+      "name": "Airport Car Service NYC & NJ | JFK, LGA, EWR Limo",
+      "description": "Airport car service NYC and Tri-State limo for John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), Westchester (HPN), SFO, LAX, and more with luxury chauffeurs.",
       "isPartOf": {
         "@@id": "https://alarchauffeurservice.com/#website"
       },
@@ -93,9 +92,9 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
     {
       "@@type": "Service",
       "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#service",
-      "name": "Airport Transportation Service",
+      "name": "Airport Car Service NYC & NJ",
       "serviceType": "Airport Transfer",
-      "description": "Luxury airport transportation service covering JFK, LaGuardia, Newark, SFO, LAX, and other major airports with professional chauffeurs.",
+      "description": "Luxury airport car service covering JFK Airport Limo Service NYC, LGA Limo Service LaGuardia, Newark Airport Limo Service EWR, Westchester HPN, SFO, LAX, and other major airports.",
       "provider": {
         "@@id": "https://alarchauffeurservice.com/#localbusiness"
       },
@@ -129,10 +128,8 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
     <div class="ve-page-hero-overlay"></div>
     <div class="container ve-page-hero-content">
         <span class="ve-section-tag">Premium Service</span>
-        <h1>Airport Transportation Services | Airport Shuttle <span>Near Me In NJ</span></h1>
-        <p class="text-white">ALAR Chauffeur Service is a trusted limo company in New Jersey, offering luxury SUVs,
-            sedans, and Sprinter
-            vans for premium transportation across NJ, NY, and nearby states.</p>
+        <h1>Airport Car Service NYC & NJ | <span>JFK, LGA, EWR Limo</span></h1>
+        <p class="text-white">ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
         <nav aria-label="breadcrumb">
             <ol class="ve-breadcrumb">
                 <li><a href="{{ route('home') }}">Home</a></li>
@@ -162,18 +159,25 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
 
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
                         <span class="ve-section-tag">Stress-Free Travel</span>
-                        <h2>Experience Luxury and Elegance with <span>ALAR Chauffeur Service</span></h2>
+                        <h2>Airport Car Service NYC & <span>Tri-State Airport Limo</span></h2>
                         <p class="ve-lead">Welcome to <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur
-                                    Service</b></a>, your premier choice for exceptional airport transportation. We are
-                            dedicated to providing smooth, reliable, and memorable travel experiences. Our airport
-                            transfer services are designed for your convenience, offeringseamless point-to-point
-                            transportation with professionalism and care.</p>
+                                    Service</b></a>, your premier choice for airport car service NYC and New Jersey. We provide smooth, reliable transfers with professionalism and care—including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia Airport, and Newark Airport Limo Service EWR.</p>
 
                         <p>Travel in comfort and style with our diverse fleet, including elegant sedans, spacious SUVs,
                             versatile mid-size crossover SUVs, and roomy Sprinter vans. Whatever your preference, we
                             have the perfect vehicle to suit your needs and make every journey enjoyable and
                             stress-free.
                         </p>
+
+                        <h3 class="mt-30">Airports We Serve Across the <span>Tri-State Area</span></h3>
+                        <div class="ve-amenities-list mt-20 mb-30">
+                            <ul>
+                                <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>
+                                <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — LGA Limo Service LaGuardia Airport</li>
+                                <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Newark Airport Limo Service EWR</li>
+                                <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — Westchester and White Plains car service</li>
+                            </ul>
+                        </div>
 
                         <div class="row mt-40 mb-40">
                             <div class="col-md-6 mb-30">
@@ -217,8 +221,8 @@ airport transportation with SUVs, sedans, and Sprinter vans.')
                             luxurious ride, our airport transport service is designed to meet every need.</p>
 
                         <p>We also specialize in a range of premium services, including <a
-                                href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Airport
-                                    Limo Service JFK</b></a>, Limo Birthday Party New Jersey, <a
+                                href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>JFK Airport
+                                    Limo Service NYC</b></a>, <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Newark Airport Limo Service EWR</b></a>, <a
                                 href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>Escalade Limo
                                     Rental</b></a>, and Corporate Limo New Jersey. Experience comfort, style, and
                             professionalism with every ride.</p>

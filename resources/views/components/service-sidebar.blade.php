@@ -33,11 +33,6 @@
                     <i class="fa fa-ticket"></i> Sporting Events
                 </a>
             </li>
-            <li class="{{ Request::is('services/fifa-world-cup-2026-transportation') ? 'active' : '' }}">
-                <a href="{{ route('services.fifa-world-cup-2026-transportation') }}">
-                    <i class="fa fa-futbol-o"></i> FIFA World Cup 2026
-                </a>
-            </li>
             <li class="{{ Request::is('services/group-transportation') ? 'active' : '' }}">
                 <a href="{{ route('services.group-transportation') }}">
                     <i class="fa fa-users"></i> Group Transportation

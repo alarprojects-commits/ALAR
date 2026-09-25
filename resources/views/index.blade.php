@@ -53,8 +53,7 @@
         "black car service",
         "corporate travel",
         "wedding transportation",
-        "party bus service",
-        "FIFA World Cup 2026 transportation"
+        "party bus service"
       ],
 
       "knowsAbout": [
@@ -79,8 +78,7 @@
         "Los Angeles Airport Transportation",
         "San Francisco Airport Transportation",
         "Las Vegas Airport Transportation",
-        "Seattle Airport Transportation",
-        "FIFA World Cup 2026 Transportation"
+        "Seattle Airport Transportation"
       ]
     },
 
@@ -156,8 +154,7 @@
         "Prom Night Service",
         "Group Transportation",
         "VIP Transportation",
-        "Stadium Transportation",
-        "FIFA World Cup 2026 Transportation"
+        "Stadium Transportation"
       ]
     },
 
@@ -186,18 +183,7 @@
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Sporting Events Transportation" } },
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Prom Night Service" } },
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Group Transportation" } },
-          { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "VIP Transportation" } },
-
-          {
-            "@@type": "Offer",
-            "itemOffered": {
-              "@@type": "Service",
-              "name": "FIFA World Cup 2026 Transportation",
-              "url": "https://alarchauffeurservice.com/services/fifa-world-cup-2026-transportation",
-              "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-              "description": "Premium chauffeur and VIP transportation service for FIFA World Cup 2026 including airport transfers, stadium transportation, corporate group travel, and event mobility."
-            }
-          }
+          { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "VIP Transportation" } }
 
         ]
       }
@@ -323,9 +309,9 @@
 <section class="ve-airport-grid-section">
     <div class="container">
         <div class="ve-section-header text-center">
-            <span class="ve-section-tag">National Coverage</span>
+            <span class="ve-section-tag">Tri-State Coverage</span>
             <h2>Major Airports <span>We Serve</span></h2>
-            <p>We provide premium chauffeur services to and from the most significant travel hubs across the country.
+            <p>Premium airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and destinations nationwide.
             </p>
         </div>
 
@@ -334,8 +320,7 @@
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <div class="ve-airport-card-text">
                     <h4>JFK Airport Limo Service NYC</h4>
-                    <p>John F. Kennedy International Airport is our specialty. We provide professional car and limo
-                        services to JFK from all five boroughs and beyond.</p>
+                    <p>John F. Kennedy International Airport (JFK) is our specialty. Professional car and limo service to JFK from all five boroughs, Long Island, Westchester, and New Jersey.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
@@ -344,9 +329,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
-                    <h4>LGA Limo Service LaGuardia</h4>
-                    <p>Experience seamless transfers to and from LaGuardia Airport. Our chauffeurs ensure you never miss
-                        a flight or a critical business meeting.</p>
+                    <h4>LGA Limo Service LaGuardia Airport</h4>
+                    <p>Seamless transfers to and from LaGuardia Airport (LGA). Our chauffeurs ensure you never miss a flight or a critical business meeting across the Tri-State area.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
@@ -362,8 +346,7 @@
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
                     <h4>Newark Airport Limo Service EWR</h4>
-                    <p>Whether you are a corporate executive or a family traveler, we have the perfect vehicle for your
-                        Newark Liberty International trip.</p>
+                    <p>Corporate or family travel—book limo service to Newark Liberty International Airport (EWR) with flight tracking and pristine vehicles for every Newark Liberty trip.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">

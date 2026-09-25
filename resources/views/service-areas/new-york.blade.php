@@ -1,7 +1,7 @@
 @extends('main')
-@section('meta_title', 'New York Chauffeur & Limo Service | Alar')
-@section('meta_description', 'Book Alar Chauffeur Service in New York for airport transfers, city-to-city rides & luxury travel to MetLife Stadium. Comfortable & professional.')
-@section('og_image', asset('assets/img/airports/jfk.webp'))
+@section('meta_title', 'New York Car Service & Airport Limo | JFK, LGA, EWR | Alar')
+@section('meta_description', 'Book NY car service and airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State chauffeur service across NY, NJ, CT and PA.')
+@section('og_image', asset('assets/img/service-areas/new-york.webp'))
 @section('og_type', 'website')
 
 @push('schema')
@@ -13,9 +13,9 @@
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/service-areas/new-york/#webpage",
       "url": "https://alarchauffeurservice.com/service-areas/new-york",
-      "name": "New York Chauffeur & Limo Service | Alar",
-      "description": "Book Alar Chauffeur Service in New York for airport transfers, city-to-city rides & luxury travel to MetLife Stadium. Comfortable & professional.",
-      "image": "https://alarchauffeurservice.com/assets/img/airports/jfk.webp",
+      "name": "New York Car Service & Airport Limo | JFK, LGA, EWR | Alar",
+      "description": "Book NY car service and airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State chauffeur service across NY, NJ, CT and PA.",
+      "image": "https://alarchauffeurservice.com/assets/img/service-areas/new-york.webp",
       "isPartOf": {
         "@@id": "https://alarchauffeurservice.com/#website"
       },
@@ -28,7 +28,7 @@
       "@@id": "https://alarchauffeurservice.com/service-areas/new-york/#localbusiness",
       "name": "ALAR Chauffeur Service - New York",
       "url": "https://alarchauffeurservice.com/service-areas/new-york",
-      "image": "https://alarchauffeurservice.com/assets/img/airports/jfk.webp",
+      "image": "https://alarchauffeurservice.com/assets/img/service-areas/new-york.webp",
       "telephone": {!! config('contact.phones_schema_json') !!},
       "email": "limo@alarchauffeurservice.com",
       "priceRange": "$250-$3000",
@@ -48,7 +48,7 @@
     {
       "@@type": "Service",
       "@@id": "https://alarchauffeurservice.com/service-areas/new-york/#service",
-      "name": "New York Chauffeur & Limo Service",
+      "name": "New York Car Service & Airport Limo",
       "serviceType": "Luxury Chauffeur Transportation",
       "url": "https://alarchauffeurservice.com/service-areas/new-york",
       "areaServed": {
@@ -58,7 +58,7 @@
       "provider": {
         "@@id": "https://alarchauffeurservice.com/#organization"
       },
-      "description": "Professional luxury chauffeur and limousine service in New York including JFK, LGA, and EWR airport transfers, corporate transportation, wedding limousines, hourly chauffeur service, and event travel."
+      "description": "New York car service and airport limo including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia, Newark Airport Limo Service EWR, Westchester County HPN transfers, Tri-State limo, corporate travel, and wedding limousines."
     },
     {
       "@@type": "FAQPage",
@@ -77,7 +77,7 @@
           "name": "Which New York airports do you provide chauffeur service for?",
           "acceptedAnswer": {
             "@@type": "Answer",
-            "text": "We offer round-the-clock airport transfers to and from John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Newark Liberty International Airport (EWR), complete with flight tracking and terminal meet-and-greet service."
+            "text": "We offer round-the-clock airport car service to and from John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), Newark Liberty International Airport (EWR), and Westchester County Airport (HPN), complete with flight tracking and terminal meet-and-greet service."
           }
         },
         {
@@ -93,7 +93,7 @@
           "name": "Do you offer transportation from New York to MetLife Stadium for games and concerts?",
           "acceptedAnswer": {
             "@@type": "Answer",
-            "text": "Yes, we provide direct, private transportation from New York City to MetLife Stadium in East Rutherford, NJ for NFL games, concerts, and the FIFA World Cup 2026 with seamless post-event pickup."
+            "text": "Yes, we provide direct, private transportation from New York City to MetLife Stadium in East Rutherford, NJ for NFL games, concerts, and special events with seamless post-event pickup."
           }
         },
         {
@@ -142,8 +142,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Premium Chauffeur & Limo Service in <span>New York</span></h1>
-                <p>Experience reliable airport transfers, city-wide luxury travel, and executive chauffeur service across New York with Alar Chauffeur Service.</p>
+                <h1>New York Car Service & <span>Airport Limo</span></h1>
+                <p>Reliable NY car service, Tri-State limo, and airport transfers to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
             </div>
         </div>
     </section>
@@ -156,13 +156,13 @@
                 <div class="col-12 col-lg-8">
                     <div class="ve-service-area-detail">
                         <div class="mb-30">
-                            <img src="{{ asset('assets/img/airports/jfk.webp') }}" alt="Luxury chauffeur service in New York by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
+                            <img src="{{ asset('assets/img/service-areas/new-york.webp') }}" alt="New York car service and airport limo to JFK LGA EWR by Alar Chauffeur Service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 380px; object-fit: cover;">
                         </div>
 
                         <div class="ve-area-intro mb-50">
-                            <h2 class="mb-20">Professional <span>Chauffeur & Limo Service</span> in New York</h2>
-                            <p class="ve-lead">If you are looking to <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>book a chauffeur service in New York</b></a> that combines punctuality, elegance, and peace of mind, <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> delivers premier ground transportation. Whether you require executive travel through Manhattan, a luxury airport transfer, or a private limousine for a special event, our team ensures every mile is effortless.</p>
-                            <p>From Wall Street meetings to Broadway evenings, airport connections at JFK and LaGuardia, and stadium transfers to MetLife Stadium, we provide unmatched comfort and professionalism throughout New York.</p>
+                            <h2 class="mb-20">Professional <span>New York Car Service</span> & NY Limo</h2>
+                            <p class="ve-lead">Book <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> with punctual chauffeurs, pristine vehicles, and transparent rates. <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides NY limo service, airport car service NYC, and private transportation across New York City, Long Island, Westchester, and the Tri-State region of New York, New Jersey, and Connecticut—with connections into Pennsylvania and beyond.</p>
+                            <p>From Wall Street meetings to Broadway evenings, JFK Airport Limo Service NYC, LGA Limo Service LaGuardia, Newark Airport Limo Service EWR, and stadium transfers to MetLife Stadium, we deliver comfort and professionalism throughout New York.</p>
                         </div>
 
                         <div class="ve-area-features mb-50">
@@ -171,8 +171,8 @@
                                 <div class="col-md-6 mb-30">
                                     <div class="ve-feature-text-item">
                                         <i class="fa fa-plane"></i>
-                                        <h5>JFK & LGA Airport Specialists</h5>
-                                        <p>Seamless navigation to John F. Kennedy (JFK) and LaGuardia (LGA) with precision flight tracking, curbside pickup, and inside meet-and-greet.</p>
+                                        <h5>JFK, LGA & EWR Specialists</h5>
+                                        <p>Seamless airport limo to John F. Kennedy (JFK), LaGuardia (LGA), and Newark Liberty (EWR) with flight tracking, curbside pickup, and meet-and-greet.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
@@ -192,16 +192,28 @@
                                 <div class="col-md-6 mb-30">
                                     <div class="ve-feature-text-item">
                                         <i class="fa fa-road"></i>
-                                        <h5>Tri-State & Interstate Travel</h5>
-                                        <p>Comfortable direct journeys between New York, New Jersey, Connecticut, and the greater Northeast corridor.</p>
+                                        <h5>Tri-State Limo Service</h5>
+                                        <p>Comfortable Tri-State limo and car service between NY, NJ, CT, and Pennsylvania, plus Virginia and Washington, D.C. routes.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="ve-area-description">
-                            <h2>Airport Chauffeur & Limo Service in <span>New York (JFK, LGA, EWR)</span></h2>
-                            <p>Navigating New York’s busy airports should never be stressful. Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service in New York</b></a> delivers seamless, punctual transfers with real-time flight monitoring and personalized care.</p>
+                            <h2>Airport Car Service NYC — <span>JFK, LGA, EWR & HPN</span></h2>
+                            <p>Navigating New York’s busy airports should never be stressful. Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport car service NYC</b></a> and airport limo service deliver punctual transfers with real-time flight monitoring and personalized care throughout the Tri-State area.</p>
+
+                            <h3>JFK Airport Limo Service NYC</h3>
+                            <p>We specialize in JFK limousine service and airport transportation to and from John F. Kennedy International Airport (JFK). Best limo service to JFK from Manhattan, Brooklyn, Queens, Long Island, Westchester, New Jersey, and Connecticut—with terminal meet-and-greet and luggage assistance.</p>
+
+                            <h3>LGA Limo Service LaGuardia Airport</h3>
+                            <p>Travel to and from LaGuardia Airport (LGA) in Queens without hassle. Our LGA Limo Service and limousine service LaGuardia Airport cover Manhattan, Brooklyn, Bronx, Staten Island, and Long Island with on-time pickups at Terminals A, B, and C.</p>
+
+                            <h3>Newark Airport Limo Service EWR</h3>
+                            <p>Whether you need corporate travel or family transfers, we provide limo service to Newark Liberty International Airport (EWR) from New York City, Westchester, Nassau, and Suffolk counties. Newark Airport Limo Service EWR includes flight tracking and direct hotel or office drop-offs.</p>
+
+                            <h3>Westchester County Airport (HPN) Car Service</h3>
+                            <p>Private transportation to Westchester County Airport (HPN) and connections between HPN, JFK, LGA, EWR, Manhattan, Brooklyn, and Staten Island for business and leisure travelers.</p>
 
                             <h3>Major Airports We Serve</h3>
                             <div class="ve-amenities-list">
@@ -209,7 +221,8 @@
                                     <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — Terminals 1 through 8 with private meet & greet</li>
                                     <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — Swift pickups across Terminal A, B, and C</li>
                                     <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Seamless Tri-State airport connections</li>
-                                    <li><i class="fa fa-check"></i> <strong>Teterboro Airport (TEB) & Westchester County (HPN)</strong> — Private aviation and FBO transfers</li>
+                                    <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — White Plains and Westchester FBO transfers</li>
+                                    <li><i class="fa fa-check"></i> <strong>Teterboro Airport (TEB)</strong> — Private aviation and FBO transfers</li>
                                 </ul>
                             </div>
 
@@ -223,8 +236,12 @@
                                 </ul>
                             </div>
 
-                            <h2>Serving NYC Boroughs and <span>Surrounding Counties</span></h2>
-                            <p>Alar Chauffeur Service provides complete coverage across New York City and neighboring counties, ensuring dependable luxury travel wherever your plans take you:</p>
+                            <div class="mb-40 mt-30">
+                                <img src="{{ asset('assets/img/service-areas/new-york-aerial.webp') }}" alt="Aerial view of Tri-State airport terminal for New York car service" class="img-fluid rounded-12 shadow-sm w-100" style="max-height: 340px; object-fit: cover;">
+                            </div>
+
+                            <h2>Serving NYC Boroughs and <span>New York Counties</span></h2>
+                            <p>Alar Chauffeur Service provides NY car service across New York City and surrounding counties—Nassau, Suffolk, Westchester, Rockland, Orange, Putnam, Dutchess, and more—ensuring dependable luxury travel wherever your plans take you:</p>
 
                             <div class="ve-amenities-list">
                                 <div class="row">
@@ -233,20 +250,22 @@
                                             <li><i class="fa fa-check"></i> <strong>Manhattan:</strong> Midtown, Downtown, Upper East & West Sides, SoHo</li>
                                             <li><i class="fa fa-check"></i> <strong>Brooklyn:</strong> DUMBO, Brooklyn Heights, Williamsburg, Park Slope</li>
                                             <li><i class="fa fa-check"></i> <strong>Queens:</strong> Long Island City, Astoria, Flushing, Jamaica</li>
+                                            <li><i class="fa fa-check"></i> <strong>The Bronx & Staten Island</strong></li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul>
-                                            <li><i class="fa fa-check"></i> <strong>The Bronx & Staten Island</strong></li>
                                             <li><i class="fa fa-check"></i> <strong>Westchester County:</strong> White Plains, Scarsdale, Yonkers</li>
                                             <li><i class="fa fa-check"></i> <strong>Long Island:</strong> Nassau & Suffolk Counties, The Hamptons</li>
+                                            <li><i class="fa fa-check"></i> <strong>Hudson Valley:</strong> Rockland, Orange, Putnam, Dutchess</li>
+                                            <li><i class="fa fa-check"></i> <strong>Upstate corridors:</strong> Ulster, Sullivan, Albany area on request</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
                             <h2>City-to-City and Interstate Chauffeur Travel from <span>New York</span></h2>
-                            <p>Need to travel outside New York City without dealing with train schedules or crowded flights? Our long-distance chauffeur service offers private, door-to-door comfort for interstate itineraries.</p>
+                            <p>Need to travel outside New York City without dealing with train schedules or crowded flights? Our long-distance chauffeur service offers private, door-to-door comfort for Tri-State and interstate itineraries across New York, New Jersey, Connecticut, Pennsylvania, Virginia, and Washington, D.C.</p>
                             <p>Popular city-to-city routes include:</p>
                             <div class="ve-amenities-list">
                                 <div class="row">
@@ -255,27 +274,29 @@
                                             <li><i class="fa fa-check"></i> New York City to Jersey City & Hoboken</li>
                                             <li><i class="fa fa-check"></i> New York City to Newark & Princeton, NJ</li>
                                             <li><i class="fa fa-check"></i> New York City to Greenwich & Stamford, CT</li>
+                                            <li><i class="fa fa-check"></i> New York City to Philadelphia, PA</li>
                                         </ul>
                                     </div>
                                     <div class="col-md-6">
                                         <ul>
-                                            <li><i class="fa fa-check"></i> New York City to Philadelphia, PA</li>
-                                            <li><i class="fa fa-check"></i> New York City to Boston, MA</li>
                                             <li><i class="fa fa-check"></i> New York City to Washington, D.C.</li>
+                                            <li><i class="fa fa-check"></i> New York City to Northern Virginia</li>
+                                            <li><i class="fa fa-check"></i> New York City to Boston, MA</li>
+                                            <li><i class="fa fa-check"></i> Long Island & Westchester to Tri-State airports</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
-                            <h2>New York to MetLife Stadium & <span>FIFA 2026 Transportation</span></h2>
-                            <p>During the FIFA World Cup 2026, MetLife Stadium in East Rutherford, NJ will host historic matches including the final. Getting across the Hudson River requires experienced transportation planning.</p>
-                            <p>Our dedicated <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>New York to MetLife Stadium chauffeur service</b></a> guarantees on-time arrival and hassle-free departure:</p>
+                            <h2>New York to MetLife Stadium & <span>Event Transportation</span></h2>
+                            <p>MetLife Stadium in East Rutherford, NJ hosts NFL games, concerts, and major events year-round. Getting across the Hudson River requires experienced transportation planning.</p>
+                            <p>Our dedicated <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>New York to MetLife Stadium chauffeur service</b></a> guarantees on-time arrival and hassle-free departure:</p>
                             <div class="ve-amenities-list">
                                 <ul>
                                     <li><i class="fa fa-check"></i> Dedicated round-trip transfers from Manhattan hotels to MetLife Stadium</li>
-                                    <li><i class="fa fa-check"></i> Pre-arranged staging and designated pickup points to bypass post-game gridlock</li>
-                                    <li><i class="fa fa-check"></i> Executive sedans, luxury SUVs, and Sprinter vans for small and large supporter groups</li>
-                                    <li><i class="fa fa-check"></i> Flexible hourly bookings for all-day match events and corporate VIP entertainment</li>
+                                    <li><i class="fa fa-check"></i> Pre-arranged staging and designated pickup points to bypass post-event gridlock</li>
+                                    <li><i class="fa fa-check"></i> Executive sedans, luxury SUVs, and Sprinter vans for small and large groups</li>
+                                    <li><i class="fa fa-check"></i> Flexible hourly bookings for all-day events and corporate VIP entertainment</li>
                                 </ul>
                             </div>
 
@@ -328,7 +349,7 @@
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#nyFaqAccordion">
                                         <div class="card-body">
-                                            We offer round-the-clock airport transfers to and from John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), and Newark Liberty International Airport (EWR), complete with flight tracking and terminal meet-and-greet service.
+                                            We offer round-the-clock airport car service to and from John F. Kennedy International Airport (JFK), LaGuardia Airport (LGA), Newark Liberty International Airport (EWR), and Westchester County Airport (HPN), complete with flight tracking and terminal meet-and-greet service.
                                         </div>
                                     </div>
                                 </div>
@@ -356,7 +377,7 @@
                                     </div>
                                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#nyFaqAccordion">
                                         <div class="card-body">
-                                            Yes, we provide direct, private transportation from New York City to MetLife Stadium in East Rutherford, NJ for NFL games, concerts, and the FIFA World Cup 2026 with seamless post-event pickup.
+                                            Yes, we provide direct, private transportation from New York City to MetLife Stadium in East Rutherford, NJ for NFL games, concerts, and special events with seamless post-event pickup.
                                         </div>
                                     </div>
                                 </div>

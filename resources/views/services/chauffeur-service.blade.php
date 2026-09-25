@@ -102,7 +102,7 @@
                             <div class="col-md-6 mb-30">
                                 <div class="ve-feature-box">
                                     <i class="fa fa-futbol-o"></i>
-                                    <p>Travelers attending major events like <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>FIFA 2026</b></a>.</p>
+                                    <p>Travelers attending major <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>sporting events</b></a> and concerts.</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-30">
@@ -259,7 +259,7 @@
                                             <li><i class="fa fa-check"></i> Corporate meetings</li>
                                             <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Weddings and parties</b></a></li>
                                             <li><i class="fa fa-check"></i> Airport transfers</li>
-                                            <li><i class="fa fa-check"></i> Sports events like FIFA 2026</li>
+                                            <li><i class="fa fa-check"></i> Sports events and stadium transfers</li>
                                             <li><i class="fa fa-check"></i> Same-day travel plans</li>
                                         </ul>
                                     </div>

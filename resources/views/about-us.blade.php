@@ -46,7 +46,7 @@
       "@@id": "https://alarchauffeurservice.com/about-us#aboutpage",
       "url": "https://alarchauffeurservice.com/about-us",
       "name": "About ALAR Chauffeur Service",
-      "description": "Learn about ALAR Chauffeur Service, a premium luxury transportation provider offering airport transfers, corporate travel, weddings, events, and FIFA World Cup 2026 transportation.",
+      "description": "Learn about ALAR Chauffeur Service, a premium luxury transportation provider offering airport transfers, corporate travel, weddings, and special event transportation.",
       "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
 
       "isPartOf": {

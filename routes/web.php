@@ -57,10 +57,6 @@ Route::get('/services/sporting-events', function () {
     return view('services.sporting-events');
 })->name('services.sporting-events');
 
-Route::get('/services/fifa-world-cup-2026-transportation', function () {
-    return view('services.fifa-world-cup-2026-transportation');
-})->name('services.fifa-world-cup-2026-transportation');
-
 Route::get('/services/group-transportation', function () {
     return view('services.group-transportation');
 })->name('services.group-transportation');
@@ -111,9 +107,25 @@ Route::get('/service-areas/seattle', function () {
 })->name('service-area.seattle');
 
 //blogs
-Route::get('/blog/luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey', function () {
-    return view('blogs.luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey');
-})->name('blog.luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey');
+Route::get('/blog/new-york-car-service-jfk-lga-ewr-tri-state', function () {
+    return view('blogs.new-york-car-service-jfk-lga-ewr-tri-state');
+})->name('blog.new-york-car-service-jfk-lga-ewr-tri-state');
+
+Route::get('/blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc', function () {
+    return view('blogs.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc');
+})->name('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc');
+
+Route::get('/blog/car-service-to-jfk-from-manhattan', function () {
+    return view('blogs.car-service-to-jfk-from-manhattan');
+})->name('blog.car-service-to-jfk-from-manhattan');
+
+Route::get('/blog/newark-airport-car-service-ewr', function () {
+    return view('blogs.newark-airport-car-service-ewr');
+})->name('blog.newark-airport-car-service-ewr');
+
+Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
+    return view('blogs.black-car-service-nyc-vs-uber-taxi');
+})->name('blog.black-car-service-nyc-vs-uber-taxi');
 
 Route::fallback(function () {
     abort(404);

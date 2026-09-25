@@ -4,9 +4,29 @@
     <div class="ve-sidebar-widget">
         <h4 class="ve-widget-title">Recent Blogs</h4>
         <ul class="ve-service-list">
-            <li class="{{ Request::is('blog/luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey') ? 'active' : '' }}">
-                <a href="{{ route('blog.luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey') }}">
-                    Luxury Chauffeur for FIFA 2026
+            <li class="{{ Request::is('blog/car-service-to-jfk-from-manhattan') ? 'active' : '' }}">
+                <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">
+                    Car Service to JFK Manhattan
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/newark-airport-car-service-ewr') ? 'active' : '' }}">
+                <a href="{{ route('blog.newark-airport-car-service-ewr') }}">
+                    Newark Airport Car Service
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/black-car-service-nyc-vs-uber-taxi') ? 'active' : '' }}">
+                <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">
+                    Black Car vs Uber Taxi
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/new-york-car-service-jfk-lga-ewr-tri-state') ? 'active' : '' }}">
+                <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">
+                    NY Car Service JFK LGA EWR
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') ? 'active' : '' }}">
+                <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">
+                    NYC NJ to PA Virginia DC
                 </a>
             </li>
         </ul>

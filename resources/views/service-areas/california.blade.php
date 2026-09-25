@@ -46,25 +46,6 @@
       }
     },
     {
-      "@@type": "Event",
-      "@@id": "https://alarchauffeurservice.com/service-areas/california/#event-fifa2026",
-      "name": "FIFA World Cup 2026 California Matches & Transit",
-      "startDate": "2026-06-11",
-      "endDate": "2026-07-19",
-      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-      "eventStatus": "https://schema.org/EventScheduled",
-      "location": {
-        "@@type": "Place",
-        "name": "SoFi Stadium & Levi's Stadium",
-        "address": {
-          "@@type": "PostalAddress",
-          "addressRegion": "CA",
-          "addressCountry": "US"
-        }
-      },
-      "description": "Luxury chauffeur and private VIP transportation for matches and events during FIFA World Cup 2026 in California."
-    },
-    {
       "@@type": "Service",
       "@@id": "https://alarchauffeurservice.com/service-areas/california/#service",
       "name": "Chauffeur Service in California",
@@ -272,20 +253,18 @@
                         </div>  
                         
                         <p>This is ideal for those looking to <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>book a private car service in California</b></a> with full control over their travel experience.</p>
-                        <h2>Traveling from California to New Jersey for FIFA 2026</h2>
+                        <h2>Traveling from California to New Jersey &amp; New York</h2>
 
-                        <p>The <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>FIFA World Cup 2026</b></a> is set to attract fans from across the globe, with major matches hosted at MetLife Stadium.</p>
+                        <p>Cross-country travelers often need reliable ground transportation after landing on the East Coast. Our coordinated chauffeur service connects California arrivals with New York and New Jersey hotels, airports, and event venues—including MetLife Stadium.</p>
 
-                        <p>If you’re flying in from California, your journey doesn’t end at the airport. That’s where a coordinated chauffeur service becomes essential.</p>
-
-                        <h2>Seamless East Coast Transfers for Match Days</h2>
+                        <h2>Seamless East Coast Transfers</h2>
 
                         <div class="ve-amenities-list">
                             <ul>
                                 <li><i class="fa fa-check"></i> Pickup from arrival airports in New York or New Jersey</li>
                                 <li><i class="fa fa-check"></i> Direct ride to your hotel or stadium</li>
-                                <li><i class="fa fa-check"></i> Timely drop-off aligned with match schedules</li>
-                                <li><i class="fa fa-check"></i> Comfortable return service after the game</li>
+                                <li><i class="fa fa-check"></i> Timely drop-off aligned with your schedule</li>
+                                <li><i class="fa fa-check"></i> Comfortable return service after events</li>
                             </ul>
                         </div>
 
@@ -324,11 +303,11 @@
 
                         <h2>Easy Booking, Clear Planning, Better Travel</h2>
                         <p>Booking your chauffeur service in California should feel simple, not complicated. Our process is designed to save you time and give you confidence in your travel plans.</p>
-                        <p>We recommend booking early especially during peak travel periods and major events like the FIFA World Cup 2026, to secure your preferred vehicle and timing.</p>
+                        <p>We recommend booking early especially during peak travel periods and major events, to secure your preferred vehicle and timing.</p>
 
                         <h2>A Better Way to Travel in California</h2>
                         <p>California offers endless destinations, but how you travel between them matters just as much. With Alar Chauffeur Service, every ride is designed to be smooth, comfortable, and dependable.</p>
-                        <p>From airport pickups to <a href="{{ route('services.fifa-world-cup-2026-transportation') }}" style="color: var(--ve-gold);"><b>California to New Jersey travel for FIFA matches</b></a>, we handle the details so you can focus on the experience.</p>
+                        <p>From airport pickups to <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>California to New Jersey event travel</b></a>, we handle the details so you can focus on the experience.</p>
 
                         <div class="ve-area-faq mt-50">
                             <span class="ve-section-tag">FAQs</span>
