@@ -3,7 +3,7 @@
 @section('meta_description', 'Teterboro TEB car service for private aviation in New Jersey. FBO-named pickups at Signature, Atlantic, and other handlers—not a commercial terminal curb.')
 @section('og_image', asset('assets/img/airports/teb/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/teb/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'TEB', 'title' => 'Teterboro private aviation car service', 'crumb' => 'Teterboro'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/teb/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'TEB', 'title' => 'Teterboro private aviation car service', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'Teterboro']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -37,7 +37,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="teb-fbo" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/fbo.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>FBO staging at Signature, Atlantic, and beyond</h3>
                         <p>At Teterboro the chauffeur meets you where your operator parks the aircraft, not at a single arrivals hall. Signature Flight Support and Atlantic Aviation are the names we see most often on reservations, and each has its own access pattern, lobby, and ramp etiquette. Sending only “TEB” is like sending “JFK” without a terminal: the drive across the field wastes minutes you intended to save by flying private. Put the FBO on the booking, add the tail number or handler confirmation when you have it, and list a mobile number for whoever will walk out to the car first.</p>
@@ -49,7 +49,7 @@
                     </div>
                 </article>
                 <article id="teb-nj" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/nj.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Edison, Short Hills, Jersey City, and Bergen County to TEB</h3>
                         <p>North Jersey executives often choose Teterboro because the drive to an FBO can be shorter than the trek through a commercial terminal, even when the fare on the airline ticket looked attractive from Newark. Edison sits on the other side of the meadowlands from TEB, but it is still a planned drive with a leave time, not a guess. Short Hills, Summit, and the Essex County towns feed Teterboro when the meeting day starts at home and ends at a ramp. Jersey City and Hoboken pickups cross the river with bridge and tunnel traffic that changes by hour; name the neighborhood so the quote matches the real crossing.</p>
@@ -61,11 +61,11 @@
                     </div>
                 </article>
                 <article id="teb-manhattan" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/manhattan.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Manhattan hotel and office pickups to Teterboro</h3>
                         <p>Midtown, Downtown, and the West Side each change the buffer for the same outbound FBO departure. A hotel on the East Side near Grand Central does not share a leave time with a Tribeca address, even when both passengers use Signature on the same morning. Doormen at Manhattan towers sometimes allow only a brief stop in the driveway; the chauffeur may stage on the avenue while the passenger comes down on a text. Put the building name and a working mobile number on the booking, not only the assistant who arranged the jet.</p>
-                        <p>When the itinerary includes a breakfast meeting in Midtown and a mid-morning departure from Atlantic Aviation, <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> keeps one chauffeur between addresses instead of three separate curbside negotiations. Returning from TEB to Manhattan after an inbound private flight is the same discipline in reverse: FBO name first, then the city door. For borough context beyond this airport page, see <a href="{{ route('service-area.new-york') }}">New York car service</a> and the Tri-State airport comparison in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">JFK, LGA, and EWR guide</a>.</p>
+                        <p>When the itinerary includes a breakfast meeting in Midtown and a mid-morning departure from Atlantic Aviation, <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> keeps one chauffeur between addresses instead of three separate curbside negotiations. Returning from TEB to Manhattan after an inbound private flight is the same discipline in reverse: FBO name first, then the city door. For borough context beyond this airport page, see <a href="{{ route('service-area.new-york') }}">New York car service</a> and <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a> when the other leg is a commercial New York airport.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('services.chauffeured-service') }}">Chauffeur service</a>
@@ -73,11 +73,11 @@
                     </div>
                 </article>
                 <article id="teb-ewr" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/ewr.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>When you mean Newark Liberty instead of Teterboro</h3>
                         <p>Newark Liberty International is the commercial airport across the meadowlands from Teterboro. If you hold an airline ticket, a terminal, and a flight number, you mean EWR—not TEB. Newark uses Terminals A, B, and C with the security lines, gate boards, and curbside patterns private passengers are trying to avoid. Teterboro has no equivalent of “Terminal C United arrivals.” Mixing the two codes on a reservation sends a chauffeur to the wrong world entirely.</p>
-                        <p>Many New Jersey addresses are closer to Newark for a commercial departure and closer to an FBO for a private one. The choice is itinerary-driven, not prestige-driven. Our <a href="{{ route('airports.ewr') }}">Newark airport guide</a> covers terminal naming and flight tracking for airline travel; the longer narrative lives in <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service EWR</a>. If you are unsure which field your guest uses, ask for the FBO or the airline before you book ground transport.</p>
+                        <p>Many New Jersey addresses are closer to Newark for a commercial departure and closer to an FBO for a private one. The choice is itinerary-driven, not prestige-driven. Our <a href="{{ route('airports.ewr') }}">Newark airport guide</a> covers terminal naming and flight tracking for airline travel; the longer narrative lives in <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a>. If you are unsure which field your guest uses, ask for the FBO or the airline before you book ground transport.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('airports.ewr') }}">Newark EWR guide</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.jfk') }}">JFK guide</a>
@@ -85,11 +85,11 @@
                     </div>
                 </article>
                 <article id="teb-book" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/teb/book.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What makes a Teterboro quote accurate</h3>
                         <p>Send the date and time, the FBO name, both addresses if the trip continues after the ramp, passenger count, and bags. Add a tail number or handler reference when you have it, and a mobile number for the lead passenger. Teterboro pickups are not priced like a short hop to Newark without those details, because the drive and the staging rules change with each handler and each side of the Hudson.</p>
-                        <p>We reply with the vehicle class and the confirmed rate before dispatch. Sedans suit small parties with moderate luggage; SUVs fit families and golf bags; larger groups may need a Sprinter from <a href="{{ route('our-fleet') }}">our fleet</a>. For a plain comparison between reserved black car service and street-hail apps in the New York market, read <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
+                        <p>We reply with the vehicle class and the confirmed rate before dispatch. Sedans suit small parties with moderate luggage; SUVs fit families and golf bags; larger groups may need a Sprinter from <a href="{{ route('our-fleet') }}">our fleet</a>. If the day includes waiting between a Manhattan meeting and the FBO, read <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service in New York</a>.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('contact-us') }}">Request a Quote</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.index') }}">All airports</a>
@@ -136,7 +136,7 @@
         </div>
         <div class="alar-prose" style="margin-top:1.6rem;">
             <p>Westchester County flyers sometimes connect through <a href="{{ route('airports.hpn') }}">HPN in White Plains</a> for smaller commercial jets, while Teterboro serves the pure private market minutes away in Bergen County. LaGuardia and JFK remain the long-haul commercial options when the trip is not on a private charter. None of those fields share TEB’s FBO logic, which is why this page exists as its own guide rather than a footnote on Newark.</p>
-            <p>When your guest compares a car service with hailing a ride from the FBO curb, remember that apps do not know Atlantic Aviation from Signature, and surge pricing does not respect a tight wheels-up window. A reserved chauffeur is assigned to your reservation, briefed on the handler, and paid at the agreed rate from known addresses—similar in spirit to the fixed planning we describe for Tri-State commercial airports in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">New York airport guide</a>, but with ramp vocabulary instead of terminal gates.</p>
+            <p>When your guest compares a car service with hailing a ride from the FBO curb, remember that apps do not know Atlantic Aviation from Signature, and surge pricing does not respect a tight wheels-up window. A reserved chauffeur is assigned to your reservation, briefed on the handler, and paid at the agreed rate from known addresses—similar in spirit to the planning in <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>, but with ramp vocabulary instead of terminal gates.</p>
         </div>
     </div>
 </section>

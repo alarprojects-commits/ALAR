@@ -3,7 +3,7 @@
 @section('meta_description', 'Party bus rental New Jersey for birthdays, nights out, and bachelor parties. Choose the stops; the chauffeur handles the route. Book with Alar in Edison.')
 @section('og_image', asset('assets/img/services/party-bus/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/services/party-bus/banner.png'), 'kicker' => 'Celebrations', 'title' => 'Party bus rental New Jersey for the whole group', 'crumb' => 'Services'])
+@include('components.page-banner', ['image' => asset('assets/img/services/party-bus/banner.png'), 'kicker' => 'Celebrations', 'title' => 'Party bus rental New Jersey for the whole group', 'crumbs' => [['label' => 'Services', 'url' => route('our-services')], ['label' => 'Party Bus']]])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-split">

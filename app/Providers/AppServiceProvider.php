@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Services\GooglePlaces;
+use App\Support\PageSeo;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,5 +40,17 @@ class AppServiceProvider extends ServiceProvider
         if ($queryString && str_contains($queryString, 'item')) {
             abort(404);
         }
+
+        View::composer('layouts.app', function ($view) {
+            $reviews = ['rating' => null, 'total' => 0, 'reviews' => []];
+            try {
+                $reviews = app(GooglePlaces::class)->details();
+            } catch (\Throwable $e) {
+                // Keep schema rendering even if Places is unavailable.
+            }
+
+            $view->with('schemaReviews', $reviews);
+            $view->with('pageSeo', PageSeo::current());
+        });
     }
 }

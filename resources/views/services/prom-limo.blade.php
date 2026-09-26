@@ -3,7 +3,7 @@
 @section('meta_description', 'Book a prom limo in New Jersey with a written pickup, venue stop, and parent return time. Stretch limos and SUVs from Alar Chauffeur Service in Edison.')
 @section('og_image', asset('assets/img/services/prom-limo/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/services/prom-limo/banner.png'), 'kicker' => 'Prom', 'title' => 'Prom limo New Jersey with a set return time', 'crumb' => 'Services'])
+@include('components.page-banner', ['image' => asset('assets/img/services/prom-limo/banner.png'), 'kicker' => 'Prom', 'title' => 'Prom limo New Jersey with a set return time', 'crumbs' => [['label' => 'Services', 'url' => route('our-services')], ['label' => 'Prom Limo']]])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-split">

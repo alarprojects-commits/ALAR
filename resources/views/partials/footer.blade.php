@@ -17,6 +17,7 @@
                 <li><a href="{{ route('about-us') }}">About</a></li>
                 <li><a href="{{ route('our-services') }}">Services</a></li>
                 <li><a href="{{ route('our-fleet') }}">Fleet</a></li>
+                <li><a href="{{ route('service-areas.index') }}">Service Areas</a></li>
                 <li><a href="{{ route('blog') }}">Blog</a></li>
                 <li><a href="{{ route('book-online') }}">Book Online</a></li>
                 <li><a href="{{ route('contact-us') }}">Contact</a></li>

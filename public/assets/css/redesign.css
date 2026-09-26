@@ -182,6 +182,23 @@ button.alar-btn-line:hover,
 .alar-btn-line::after { border-color: rgba(255, 255, 255, 0.12); }
 .alar-btn-line:hover::after { border-color: rgba(232, 204, 140, 0.35); }
 
+.alar-split .alar-btn-line {
+    background: transparent;
+    color: var(--alar-ink);
+    border-color: rgba(20, 20, 20, 0.7);
+    box-shadow: inset 0 0 0 1px rgba(184, 140, 17, 0.12);
+}
+.alar-split .alar-btn-line:hover {
+    background: linear-gradient(180deg, #222 0%, var(--alar-ink) 100%);
+    border-color: var(--alar-gold);
+    color: #f3ead7;
+    box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.16),
+        inset 0 0 0 1px rgba(184, 140, 17, 0.28);
+}
+.alar-split .alar-btn-line::after { border-color: rgba(184, 140, 17, 0.18); }
+.alar-split .alar-btn-line:hover::after { border-color: rgba(232, 204, 140, 0.28); }
+
 a.alar-btn-line-dark,
 button.alar-btn-line-dark,
 .alar-btn-line-dark {
@@ -321,7 +338,7 @@ button.alar-btn-line-dark:hover,
 .alar-hero {
     display: grid;
     grid-template-columns: 1.05fr 0.95fr;
-    min-height: 100vh;
+    min-height: 87vh;
     background: var(--alar-ink);
     color: var(--alar-mist);
 }
@@ -435,6 +452,8 @@ button.alar-btn-line-dark:hover,
 
 .alar-card img { width: 100%; height: 210px; object-fit: cover; }
 .alar-card-body { padding: 1.15rem 1.15rem 1.3rem; display: flex; flex-direction: column; gap: 0.45rem; flex: 1; }
+.alar-card-actions { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; padding-top: 0.35rem; }
+.alar-card-actions .alar-btn { min-height: 40px; padding: 0.45rem 0.85rem; font-size: 0.68rem; }
 .alar-card h3 { font-size: 1.7rem; }
 .alar-tag {
     color: var(--alar-gold);
@@ -651,8 +670,11 @@ button.alar-btn-line-dark:hover,
     gap: 0.7rem;
     margin-top: 1.4rem;
 }
-.alar-crumbs { display: flex; gap: 0.5rem; list-style: none; margin: 0.4rem 0 0; padding: 0; color: #ddd; font-size: 0.9rem; }
+.alar-crumbs { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 0.55rem; list-style: none; margin: 0.4rem 0 0; padding: 0; color: #ddd; font-size: 0.9rem; }
+.alar-crumbs li { display: inline-flex; align-items: center; gap: 0.55rem; }
+.alar-crumbs li + li::before { content: "/"; color: rgba(255,255,255,0.45); font-weight: 400; }
 .alar-crumbs a { color: var(--alar-gold-2); }
+.alar-crumbs [aria-current="page"] span { color: #f2f2f2; }
 
 .alar-prose { max-width: 760px; }
 .alar-prose h2 { font-size: 2.2rem; margin-top: 1.6rem; }
@@ -834,7 +856,7 @@ button.alar-btn-line-dark:hover,
     .alar-hero, .alar-split, .alar-grid-3, .alar-grid-4, .alar-stats, .alar-steps, .alar-footer-grid, .alar-form-row {
         grid-template-columns: 1fr;
     }
-    .alar-hero { min-height: 100vh; }
+    .alar-hero { min-height: 87vh; }
     .alar-hero-copy { border-right: 0; border-bottom: 3px solid var(--alar-gold); padding: 3rem 1.25rem; }
     .alar-hero-photo { min-height: 42vh; }
     .alar-head { flex-direction: column; align-items: flex-start; }

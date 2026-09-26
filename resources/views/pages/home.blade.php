@@ -4,70 +4,6 @@
 @section('og_image', asset('assets/img/home/hero.png'))
 @section('og_type', 'website')
 
-@push('schema')
-<script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@@graph": [
-    {
-      "@@type": "Organization",
-      "@@id": "https://alarchauffeurservice.com/#organization",
-      "name": "ALAR Chauffeur Service",
-      "url": "https://alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "logo": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "email": "limo@alarchauffeurservice.com",
-      "telephone": {!! config('contact.phones_schema_json') !!},
-      "address": {
-        "@@type": "PostalAddress",
-        "streetAddress": "10 Fairmount Ave",
-        "addressLocality": "Edison",
-        "addressRegion": "NJ",
-        "postalCode": "08820",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9"
-      ]
-    },
-    {
-      "@@type": "LimousineService",
-      "@@id": "https://alarchauffeurservice.com/#localbusiness",
-      "name": "ALAR Chauffeur Service",
-      "url": "https://alarchauffeurservice.com",
-      "telephone": {!! config('contact.phones_schema_json') !!},
-      "email": "limo@alarchauffeurservice.com",
-      "priceRange": "$250-$3000",
-@if(!empty($reviews['rating']) && !empty($reviews['total']))
-      "aggregateRating": {
-        "@@type": "AggregateRating",
-        "ratingValue": "{{ $reviews['rating'] }}",
-        "reviewCount": "{{ $reviews['total'] }}",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-@endif
-      "address": {
-        "@@type": "PostalAddress",
-        "streetAddress": "10 Fairmount Ave",
-        "addressLocality": "Edison",
-        "addressRegion": "NJ",
-        "postalCode": "08820",
-        "addressCountry": "US"
-      },
-      "areaServed": ["New Jersey", "New York", "California", "Nevada"]
-    }
-  ]
-}
-</script>
-@endpush
-
 @section('content')
 <section class="alar-hero">
     <div class="alar-hero-copy">
@@ -262,9 +198,9 @@
         <p>Most people looking for a luxury chauffeur service in New Jersey are trying to solve a specific trip, not collect a slogan. The trip is usually an airport, a meeting, or an event. Alar is based in Edison and plans those three all week. If you are flying, start with <a href="{{ route('services.airport-transportation') }}">airport car service for JFK, LaGuardia, and Newark</a>. If the day has several offices, use <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a>. If the date is a wedding, use <a href="{{ route('services.wedding-limo') }}">wedding limo service</a>. The vehicle list, with passenger counts, is on <a href="{{ route('our-fleet') }}">our fleet</a>. Addresses in the boroughs are covered under <a href="{{ route('service-area.new-york') }}">New York car service</a>, and North Jersey towns under <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
         <h2>Airport, black car, or hourly</h2>
         <p>An airport reservation is a transfer with a flight number. The chauffeur follows the arrival, and you choose meet and greet or curbside. A black car for a single meeting is often a sedan from the hotel to one office and on. Hourly service is the right booking when you need the same car to wait. Mixing those up is how travelers get a quote that does not match the day. A sedan that is perfect for two carry-ons is the wrong car for six people and a week of luggage. Send the headcount and the bags with the addresses.</p>
-        <p>JFK is a campus of terminals. LaGuardia is closer to Manhattan and still slow at the curb. Newark is the practical airport for many New Jersey addresses and a full trip from the city. Name the terminal. A driver with only the airport code will be at the wrong door. For a Manhattan departure, the longer note is <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">car service to JFK from Manhattan</a>. For EWR, read the <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service</a> guide.</p>
+        <p>JFK is a campus of terminals. LaGuardia is closer to Manhattan and still slow at the curb. Newark is the practical airport for many New Jersey addresses and a full trip from the city. Name the terminal. A driver with only the airport code will be at the wrong door. For a New York departure, the longer note is <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>. For EWR, read the <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a> guide.</p>
         <h2>What a quote should include</h2>
-        <p>Ask for the vehicle name, the passenger count it actually seats, whether meet and greet is included, and how a delay is handled. A rate that ignores tolls and airport fees will look cheaper until the receipt. Alar confirms the vehicle and the rate before dispatch. It is not a taxi meter and it is not a rideshare price that moves while you stand at baggage claim. If you are deciding between those options, the comparison is in <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and a taxi</a>.</p>
+        <p>Ask for the vehicle name, the passenger count it actually seats, whether meet and greet is included, and how a delay is handled. A rate that ignores tolls and airport fees will look cheaper until the receipt. Alar confirms the vehicle and the rate before dispatch. It is not a taxi meter and it is not a rideshare price that moves while you stand at baggage claim. If the car has to wait between stops, read <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service in New York</a>.</p>
         <p>Book when you know the date, both addresses, and the time you need to be there, not only the time you hope to leave. You can reserve online or send the itinerary through the contact form. Dispatch is available overnight for early flights. If the plan changes, update the reservation rather than renegotiating at the curb.</p>
     </div>
 </section>

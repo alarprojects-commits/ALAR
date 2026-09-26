@@ -1,9 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('meta_title', 'Washington Chauffeur Service | Sea-Tac & Seattle | Alar')
 @section('meta_description', 'Washington chauffeur service for Sea-Tac SEA airport transfers, Seattle downtown hotels, and Bellevue. Reserved sedans and SUVs with flight tracking.')
 @section('og_image', asset('assets/img/service-areas/washington.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/service-areas/washington.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Washington', 'title' => 'Washington chauffeur service and Sea-Tac transfers', 'crumb' => 'Washington'])
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/washington.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Washington', 'title' => 'Washington chauffeur service and Sea-Tac transfers', 'crumbs' => [['label' => 'Service Areas', 'url' => route('service-areas.index')], ['label' => 'Washington']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -12,7 +12,7 @@
         <div class="alar-prose">
             <p class="alar-kicker">Washington</p>
             <h2>Washington chauffeur service, Seattle to Bellevue</h2>
-            <p>People searching for Washington chauffeur service usually want a private car for a Sea-Tac SEA arrival, a Seattle downtown hotel-to-office morning, or an eastside meeting in Bellevue where bridge traffic and rain make last-minute plans fragile. This page maps Seattle, Bellevue, and Sea-Tac—not every town in the state overnight.</p>
+            <p>People searching for Washington chauffeur service usually want a private car for a Sea-Tac SEA arrival, a Seattle downtown hotel-to-office morning, or an eastside meeting in Bellevue where bridge traffic and rain make last-minute plans fragile. This page maps Seattle, Bellevue, and Sea-Tacâ€”not every town in the state overnight.</p>
             <p>Airport transfers begin with <a href="{{ route('services.airport-transportation') }}">airport transportation</a>. Multi-stop business days fit <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a>. Reserve on the <a href="{{ route('book-online') }}">booking page</a>.</p>
         </div>
     </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="wa-airport" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/airport-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/wa-airport.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Sea-Tac SEA pickups and why reservation timing matters</h3>
                         <p>Seattle-Tacoma International Airport is the commercial gateway for most of the Washington chauffeur trips we schedule here. Sea-Tac SEA service only works when the airline and the terminal are on the reservation. Flight tracking follows the live arrival so an early inbound is met and a delayed inbound does not leave you refreshing an app while prices climb.</p>
@@ -43,7 +43,7 @@
                     </div>
                 </article>
                 <article id="wa-downtown" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/washington-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/wa-city.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Downtown Seattle hotels and offices</h3>
                         <p>Downtown Seattle chauffeur days often move between waterfront hotels, downtown towers, and evening venues. Loading rules vary by building. Put the hotel name or the cross streets on the reservation, and give a mobile number for the passenger who will meet the car.</p>
@@ -55,11 +55,11 @@
                     </div>
                 </article>
                 <article id="wa-eastside" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/corporate-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/wa-corporate.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Bellevue and the eastside</h3>
-                        <p>Bellevue is not “close enough to price as downtown.” It is a different drive across bridges that clog during peak hours. If Bellevue or another eastside address is the pickup or the drop, say so up front so the Washington chauffeur fare includes that corridor.</p>
-                        <p>In the Seattle–Bellevue corridor the reserved option tends to win when there is luggage, a flight delay, a fixed meeting start, or an eastside-to-airport timing problem. See our guide to <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
+                        <p>Bellevue is not â€œclose enough to price as downtown.â€ It is a different drive across bridges that clog during peak hours. If Bellevue or another eastside address is the pickup or the drop, say so up front so the Washington chauffeur fare includes that corridor.</p>
+                        <p>In the Seattleâ€“Bellevue corridor the reserved option tends to win when there is luggage, a flight delay, a fixed meeting start, or an eastside-to-airport timing problem. See our guide to <a href="{{ route('blog.seattle-airport-car-service') }}">Seattle airport car service</a>.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
@@ -67,7 +67,7 @@
                     </div>
                 </article>
                 <article id="wa-weather" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/fleet/cadillac-escalade.webp') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/wa-fleet.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Rain, bridges, and why the buffer is part of the product</h3>
                         <p>Washington chauffeur work is shaped by water and weather as much as by addresses. Bridges clog. Rain slows merges. Sea-Tac SEA circulating roads back up when several arrivals land close together. A reserved car with flight tracking and a realistic buffer is how you keep a downtown meeting or a Bellevue campus visit from starting late.</p>

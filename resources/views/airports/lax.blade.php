@@ -3,7 +3,7 @@
 @section('meta_description', 'LAX car service with terminal-named pickups for downtown Los Angeles, the Westside, and Beverly Hills. Flight-tracked arrivals and reserved sedans or SUVs.')
 @section('og_image', asset('assets/img/airports/lax/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/lax/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LAX', 'title' => 'LAX car service and airport limo', 'crumb' => 'LAX'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/lax/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LAX', 'title' => 'LAX car service and airport limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'LAX']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -37,10 +37,10 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="lax-terminals" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/terminals.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Tom Bradley, Terminals 1 through 7, and the horseshoe</h3>
-                        <p>Each LAX terminal has its own arrivals level and curbside rhythm along the inner and outer roadways. Tom Bradley International Terminal handles many wide-body arrivals; domestic carriers spread across Terminals 1, 2, 3, 4, 5, 6, and 7. A chauffeur sent to Terminal 4 while you land at Terminal 7 walks a long loop with luggage you did not want to drag. Put the airline and terminal on every pickup and departure, the same discipline we use for Tri-State airports in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">JFK, LGA, and EWR guide</a>.</p>
+                        <p>Each LAX terminal has its own arrivals level and curbside rhythm along the inner and outer roadways. Tom Bradley International Terminal handles many wide-body arrivals; domestic carriers spread across Terminals 1, 2, 3, 4, 5, 6, and 7. A chauffeur sent to Terminal 4 while you land at Terminal 7 walks a long loop with luggage you did not want to drag. Put the airline and terminal on every pickup and departure. The Los Angeles planning guide is <a href="{{ route('blog.los-angeles-airport-car-service') }}">Los Angeles airport car service</a>.</p>
                         <p>Meet and greet places the chauffeur inside with a name board when you request it. Curbside pickup works when you know the terminal and prefer a faster step to the car. Flight tracking follows the live arrival when the flight number is on the reservation, so a delay on the board moves the staging instead of starting a phone argument at the wrong door.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.airport-transportation') }}">Airport service</a>
@@ -49,7 +49,7 @@
                     </div>
                 </article>
                 <article id="lax-downtown" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/downtown.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>LAX to downtown Los Angeles and the Financial District</h3>
                         <p>Downtown hotels near the Convention Center, the Financial District towers, and the Arts District each sit on a different approach from the airport. The 110 and the 10 interchange traffic behaves differently at midday than at dusk, so the leave time for the same outbound flight changes with your hotel door. Put the building name or cross streets on the reservation, and add a mobile number for the passenger, not only the coordinator who booked the trip.</p>
@@ -61,7 +61,7 @@
                     </div>
                 </article>
                 <article id="lax-westside" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/westside.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Westside, Santa Monica, and Century City from LAX</h3>
                         <p>Santa Monica, Venice, Playa Vista, and Westwood are everyday LAX destinations, but they are not the same drive from the horseshoe. Century City office towers and Culver City studios each change the buffer for an afternoon departure. Say the neighborhood honestly on the booking; a beach hotel pickup is not priced like a downtown hop without the address.</p>
@@ -73,11 +73,11 @@
                     </div>
                 </article>
                 <article id="lax-beverly" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/beverly.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Beverly Hills, West Hollywood, and hotel corridors</h3>
                         <p>Beverly Hills hotels along Wilshire and the side streets above Rodeo expect discreet staging. Some properties allow only a short pause at the porte-cochère; the chauffeur may wait on a cross street while the passenger comes out on a text. West Hollywood and the Sunset Strip add evening traffic that belongs in the plan before an international departure from Tom Bradley, not in a surprise argument at the curb.</p>
-                        <p>Guests comparing a reserved black car with an app should remember that surge pricing and driver cancellation do not respect a tight check-in at Terminal 4. Our page on <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a> speaks to the New York market, but the underlying idea is the same: a confirmed vehicle and rate before wheels roll. For long California days, <a href="{{ route('services.chauffeured-service') }}">chauffeur service</a> keeps the same driver between Beverly Hills, LAX, and downtown when you book it that way.</p>
+                        <p>A confirmed vehicle and rate are set before the wheels roll. The longer note is <a href="{{ route('blog.los-angeles-airport-car-service') }}">Los Angeles airport car service</a>. For long California days, <a href="{{ route('services.chauffeured-service') }}">chauffeur service</a> keeps the same driver between Beverly Hills, LAX, and downtown when you book it that way.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.chauffeured-service') }}">Chauffeur service</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
@@ -85,7 +85,7 @@
                     </div>
                 </article>
                 <article id="lax-book" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lax/book.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What makes an LAX quote accurate</h3>
                         <p>Send the date, terminal, flight number for arrivals, pickup or drop-off address, passenger count, and bags. “LAX to downtown” is not enough without Tom Bradley versus Terminal 5 and without the hotel name. We reply with the vehicle and the rate before dispatch; tolls and airport fees are explained with the quote, not added like a meter after the fact.</p>

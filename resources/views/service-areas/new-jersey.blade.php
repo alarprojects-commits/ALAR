@@ -1,9 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('meta_title', 'New Jersey Car Service & Airport Limo | EWR, JFK, LGA | Alar')
 @section('meta_description', 'New Jersey car service from Edison NJ covering Newark, Jersey City, Hoboken, and Princeton. Newark airport car service EWR plus JFK, LGA, and TEB chauffeur transfers.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/service-areas/new-jersey.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'New Jersey', 'title' => 'New Jersey car service and airport chauffeur', 'crumb' => 'New Jersey'])
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/new-jersey.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'New Jersey', 'title' => 'New Jersey car service and airport chauffeur', 'crumbs' => [['label' => 'Service Areas', 'url' => route('service-areas.index')], ['label' => 'New Jersey']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -47,7 +47,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="nj-towns" class="alar-guide-panel is-on" role="tabpanel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/new-jersey-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nj-towns.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Edison, Newark, Jersey City, Hoboken, and Princeton</h3>
                         <p>Edison is the base, which means Central Jersey turnpike towns, Route 1 corridors, and the approaches toward the shore are familiar drives. Newark hotel and office pickups are short hops with a terminal or a Manhattan address attached. Jersey City and Hoboken sit on the Hudson waterfront; both are common morning departures toward EWR and common evening returns from Midtown meetings. Princeton and the surrounding university and corporate campuses book private cars for visitors who need a calm cabin rather than a train connection plus a last-mile scramble.</p>
@@ -60,11 +60,11 @@
                     </div>
                 </article>
                 <article id="nj-ewr" class="alar-guide-panel" role="tabpanel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/airport-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nj-ewr.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Newark airport car service EWR</h3>
-                        <p>Newark Liberty International Airport is the home airport for our Edison desk. Newark airport car service EWR means the airline and the terminal belong on the reservation. Terminal A, B, and C are not interchangeable meeting points, and a chauffeur who is guessing which curb wastes the buffer you paid for. Departures are timed so you arrive with time for security for your airline, not for a generic “airport” label. Arrivals use flight tracking so an early inbound does not leave you standing, and a delayed inbound does not leave the car circling forever without a plan.</p>
-                        <p>Meet and greet places the chauffeur inside with a name board when you want that. Curbside staging is the default when you prefer to walk out to the car. Either way, the New Jersey or New York address on the other end of the trip should be specific. Jersey City, Hoboken, Newark, Edison, and Manhattan Midtown or Downtown are all common EWR pairings, and each gets its own timing. A deeper walkthrough of terminals and pickup patterns is in our guide to <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service EWR</a>.</p>
+                        <p>Newark Liberty International Airport is the home airport for our Edison desk. Newark airport car service EWR means the airline and the terminal belong on the reservation. Terminal A, B, and C are not interchangeable meeting points, and a chauffeur who is guessing which curb wastes the buffer you paid for. Departures are timed so you arrive with time for security for your airline, not for a generic â€œairportâ€ label. Arrivals use flight tracking so an early inbound does not leave you standing, and a delayed inbound does not leave the car circling forever without a plan.</p>
+                        <p>Meet and greet places the chauffeur inside with a name board when you want that. Curbside staging is the default when you prefer to walk out to the car. Either way, the New Jersey or New York address on the other end of the trip should be specific. Jersey City, Hoboken, Newark, Edison, and Manhattan Midtown or Downtown are all common EWR pairings, and each gets its own timing. A deeper walkthrough of terminals and pickup patterns is in our guide to <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a>.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('airports.ewr') }}">EWR guide</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
@@ -72,11 +72,11 @@
                     </div>
                 </article>
                 <article id="nj-airports" class="alar-guide-panel" role="tabpanel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/new-york-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nj-airports.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>JFK, LaGuardia, and Teterboro from New Jersey</h3>
                         <p>Chauffeur service New Jersey clients often fly into or out of the New York airports. John F. Kennedy is a longer planned crossing; name the terminal because JFK is not one door. LaGuardia is closer to the river and still slow where the roads narrow; Terminal A, B, or C should be on the booking. Teterboro is private aviation: send the FBO name, not only the airport code TEB. These are not priced like a Newark local hop. The quote includes the real river crossing, the hour of day, and the vehicle size.</p>
-                        <p>Comparing the three commercial airports side by side helps when your meeting is in Manhattan but your hotel is in New Jersey, or the reverse. Read the differences in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State JFK, LGA, and EWR guide</a>. New York borough pickups that connect to these airports are also described on the <a href="{{ route('service-area.new-york') }}">New York car service</a> page.</p>
+                        <p>A New Jersey house and a Kennedy flight is its own trip. Read <a href="{{ route('blog.car-service-new-jersey-to-jfk') }}">car service from New Jersey to JFK</a>. New York borough pickups are on the <a href="{{ route('service-area.new-york') }}">New York car service</a> page.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('airports.jfk') }}">JFK guide</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.teb') }}">TEB guide</a>
@@ -84,7 +84,7 @@
                     </div>
                 </article>
                 <article id="nj-vehicles" class="alar-guide-panel" role="tabpanel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/fleet/cadillac-escalade.webp') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nj-vehicles.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Vehicles, luggage, and group size</h3>
                         <p>A sedan suits one to three passengers with carry-ons. An SUV is the usual answer when there are more people, more checked bags, or golf clubs and event gear. Larger vehicles are available when the group will not fit an SUV; capacities are listed on our fleet overview. We assign from what you tell us, not from a hope that everything will squeeze. If you are traveling with children, car seats, or oversized luggage, say so when you request the car so the right vehicle is staged.</p>
@@ -109,7 +109,7 @@
             <article><h3>Headcount and bags</h3><p>We answer with the vehicle and the rate. Tolls and airport fees are explained with the quote.</p></article>
         </div>
         <div class="alar-prose" style="margin-top:1.6rem;">
-            <p>Send the date and time, the New Jersey town and street, the second address, the airport and terminal if there is one, the flight number for a pickup, the passenger count, and the bags. If you are weighing a reserved black car against an app for a flight morning, the fair comparison is on our page about <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
+            <p>Send the date and time, the New Jersey town and street, the second address, the airport and terminal if there is one, the flight number for a pickup, the passenger count, and the bags. If the flight is at Newark, the planning guide is <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a>.</p>
         </div>
     </div>
 </section>

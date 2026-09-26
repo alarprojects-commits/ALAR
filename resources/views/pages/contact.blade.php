@@ -55,6 +55,12 @@
             </form>
         </div>
         <aside>
+            <div class="alar-head" style="margin-bottom:1rem;">
+                <div>
+                    <p class="alar-kicker">Desk</p>
+                    <h2>How to reach us</h2>
+                </div>
+            </div>
             <article class="alar-note">
                 <h3>Dispatch</h3>
                 <p><a href="tel:{{ config('contact.phone_tel') }}">{{ config('contact.phone_display') }}</a></p>

@@ -3,7 +3,7 @@
 @section('meta_description', 'LaGuardia car service with Terminal A, B, or C on every booking. Flight-tracked LGA pickups for Manhattan, Queens, and New Jersey.')
 @section('og_image', asset('assets/img/airports/lga/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/lga/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LGA', 'title' => 'LaGuardia car service and LGA limo', 'crumb' => 'LaGuardia'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/lga/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LGA', 'title' => 'LaGuardia car service and LGA limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'LaGuardia']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -18,10 +18,10 @@
             </div>
             <h2>LaGuardia car service, closer—but not simpler</h2>
             <p>LaGuardia sits closer to Manhattan than JFK, which tempts people to treat it like a quick hop. In practice, the rebuilt terminals, the Grand Central Parkway approach, and the throat of the airport still punish late departures and confuse first-time arrivals. Alar Chauffeur Service books LaGuardia with Terminal A, B, or C named on every trip, tracks arrivals when the flight number is on the reservation, and plans leave times backward from your address—not from a generic “LGA” pin on a map.</p>
-            <p>Start with <a href="{{ route('services.airport-transportation') }}">airport transportation</a> or reserve on the <a href="{{ route('book-online') }}">booking page</a>. Compare LGA with JFK and Newark in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a>, and see borough context on <a href="{{ route('service-area.new-york') }}">New York car service</a>.</p>
+            <p>Start with <a href="{{ route('services.airport-transportation') }}">airport transportation</a> or reserve on the <a href="{{ route('book-online') }}">booking page</a>. New York airport planning, including LaGuardia, is in <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>. Borough context is on <a href="{{ route('service-area.new-york') }}">New York car service</a>.</p>
             <div class="alar-actions">
                 <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
-                <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
+                <a class="alar-btn alar-btn-line-dark" href="{{ route('contact-us') }}">Request a Quote</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="lga-arrivals" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/arrivals.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>LaGuardia arrivals after the terminal rebuild</h3>
                         <p>LaGuardia now runs through Terminals A, B, and C rather than the old letter soup people remember from years ago. Each terminal has its own arrivals hall and curbside rhythm, and they are not interchangeable on a chauffeur trip sheet. Send the airline and terminal—or the flight number so dispatch can confirm—which terminal your flight uses. Flight tracking adjusts the pickup when the plane is early or late, but the driver still needs the correct door.</p>
@@ -50,7 +50,7 @@
                     </div>
                 </article>
                 <article id="lga-departures" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/departures.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Departures: congestion at the airport throat</h3>
                         <p>LaGuardia rewards early leave times more than the map distance suggests. The Grand Central Parkway, the approach loops, and terminal frontage can clog when multiple banks depart at once. Midtown and Upper East Side hotels need pickup times that account for East River crossings and local street volume, not only the miles to Queens. An 8 a.m. Tuesday departure and a 4 p.m. Friday departure from the same hotel are different planning jobs.</p>
@@ -59,7 +59,7 @@
                     </div>
                 </article>
                 <article id="lga-meet" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/meet.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Meet and greet versus curbside at LGA</h3>
                         <p>Meet and greet at LaGuardia means the chauffeur waits inside the arrivals area with a name board, typically near baggage claim or the exit from the secure zone. It helps when you are new to the airport, traveling with family, or carrying more than you want to haul to the curb. Request it when you book so the driver is assigned to the correct terminal hall.</p>
@@ -68,7 +68,7 @@
                     </div>
                 </article>
                 <article id="lga-vehicles" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/vehicles.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Vehicles for LaGuardia trips</h3>
                         <p>A luxury sedan serves up to four passengers with a typical business luggage load. An SUV is the practical choice for families, winter coats and bags, or three large suitcases that will not fit a sedan trunk cleanly. Sprinter vans cover groups that must stay together for a road show or a wedding party flight.</p>
@@ -81,12 +81,12 @@
                     </div>
                 </article>
                 <article id="lga-quote" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/lga/quote.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What to send for an LGA quote</h3>
                         <p>Send date and time, full pickup or drop-off address with borough or town, Terminal A, B, or C (or airline and flight number), passenger count, and bags. For arrivals, include the flight for tracking; for departures, note if you need a conservative buffer for security.</p>
                         <p>Ask for meet and greet if you want inside pickup. Tolls and airport fees are part of the quoted rate—we explain them with the price, not as surprises on the parkway. New Jersey pickups for LGA flights are quoted from your town, whether that is Jersey City, Hoboken, or Middlesex County near our Edison desk.</p>
-                        <p>When you are choosing between LGA and JFK for the same airline schedule, read the <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a> and send both addresses if you want our opinion on which airport fits the trip.</p>
+                        <p>When you are choosing between LGA and JFK for the same airline schedule, read <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a> and send both addresses if you want our opinion on which airport fits the trip.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
@@ -159,7 +159,7 @@
         <div class="alar-faq">
             <details open><summary>Do you track LGA arrivals?</summary><p>Yes, when the flight number is on the reservation. The chauffeur follows live arrival times, including delays. Tracking pairs with the correct terminal—Terminal A, B, or C—so the car stages at the hall you will actually exit, not at a default curb from an old map.</p></details>
             <details><summary>Which terminal should I book for LaGuardia?</summary><p>Terminal A, B, or C for the airline operating your flight. If you are unsure, send the airline and flight number and dispatch will confirm. The rebuilt airport consolidated operations, but the terminal letter still drives the meet point.</p></details>
-            <details><summary>Is LaGuardia always faster than JFK?</summary><p>Often closer to Manhattan, but not always faster door to door when traffic and terminal congestion align badly. Our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State guide</a> compares when each airport fits the same itinerary.</p></details>
+            <details><summary>Is LaGuardia always faster than JFK?</summary><p>Often closer to Manhattan, but not always faster door to door when traffic and terminal congestion align badly. <a href="{{ route('blog.airport-car-service-new-york') }}">Airport car service in New York</a> covers when JFK and LaGuardia fit the same itinerary.</p></details>
             <details><summary>Can you pick up in New Jersey for an LGA flight?</summary><p>Yes. Name the town. Hudson County and Middlesex County pickups are common; the quote reflects the crossing and parkway time, not a Queens flat guess.</p></details>
             <details><summary>How do we book?</summary><p>Use the <a href="{{ route('book-online') }}">booking page</a> or <a href="{{ route('contact-us') }}">contact form</a> with both addresses, terminal or flight details, and passenger count.</p></details>
         </div>

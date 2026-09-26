@@ -10,7 +10,7 @@
         <p style="max-width:40rem;margin:-0.4rem 0 1.5rem;color:#5f5850;">Each airport has its own interactive guide—arrivals, departures, meet points, and what to send—so you only read the part that matches your flight.</p>
         <div class="alar-grid-3">
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/jfk/photo.png') }}" alt="JFK guide">
+                <img src="{{ asset('assets/img/airports/jfk/card.png') }}" alt="JFK guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">JFK</div>
                     <h3>John F. Kennedy</h3>
@@ -19,7 +19,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/lga/photo.png') }}" alt="LGA guide">
+                <img src="{{ asset('assets/img/airports/lga/card.png') }}" alt="LGA guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">LGA</div>
                     <h3>LaGuardia</h3>
@@ -28,7 +28,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/ewr/photo.png') }}" alt="EWR guide">
+                <img src="{{ asset('assets/img/airports/ewr/card.png') }}" alt="EWR guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">EWR</div>
                     <h3>Newark Liberty</h3>
@@ -37,7 +37,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/hpn/photo.png') }}" alt="HPN guide">
+                <img src="{{ asset('assets/img/airports/hpn/card.png') }}" alt="HPN guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">HPN</div>
                     <h3>Westchester County</h3>
@@ -46,7 +46,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/teb/photo.png') }}" alt="TEB guide">
+                <img src="{{ asset('assets/img/airports/teb/card.png') }}" alt="TEB guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">TEB</div>
                     <h3>Teterboro</h3>
@@ -55,7 +55,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/lax/photo.png') }}" alt="LAX guide">
+                <img src="{{ asset('assets/img/airports/lax/card.png') }}" alt="LAX guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">LAX</div>
                     <h3>Los Angeles International</h3>
@@ -64,7 +64,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/las/photo.png') }}" alt="LAS guide">
+                <img src="{{ asset('assets/img/airports/las/card.png') }}" alt="LAS guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">LAS</div>
                     <h3>Harry Reid International</h3>
@@ -73,7 +73,7 @@
                 </div>
             </article>
             <article class="alar-airport-card">
-                <img src="{{ asset('assets/img/airports/sea/photo.png') }}" alt="SEA guide">
+                <img src="{{ asset('assets/img/airports/sea/card.png') }}" alt="SEA guide">
                 <div class="alar-airport-card-body">
                     <div class="alar-airport-card-code">SEA</div>
                     <h3>Seattle-Tacoma</h3>

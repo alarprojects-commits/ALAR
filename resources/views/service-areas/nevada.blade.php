@@ -1,9 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('meta_title', 'Luxury Transportation in Nevada | Private Chauffeur')
 @section('meta_description', 'Nevada chauffeur service built around Las Vegas limo transfers: Harry Reid airport LAS arrivals, Strip hotels, and reserved event cars.')
 @section('og_image', asset('assets/img/service-areas/nevada.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/service-areas/nevada.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Nevada', 'title' => 'Las Vegas limo and Nevada chauffeur service', 'crumb' => 'Nevada'])
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/nevada.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Nevada', 'title' => 'Las Vegas limo and Nevada chauffeur service', 'crumbs' => [['label' => 'Service Areas', 'url' => route('service-areas.index')], ['label' => 'Nevada']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -31,7 +31,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="nv-las" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/airport-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nv-airport.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Harry Reid airport LAS pickups and departures</h3>
                         <p>Harry Reid International Airport is the commercial gateway for Las Vegas limo arrivals. Harry Reid airport LAS service only works when the airline and the terminal are on the reservation. Flight tracking follows the live arrival so an early inbound is met and a delayed inbound does not strand you while an app price climbs.</p>
@@ -43,7 +43,7 @@
                     </div>
                 </article>
                 <article id="nv-strip" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nevada-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nv-strip.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Strip hotels, downtown resorts, and conventions</h3>
                         <p>Strip hotels are the most common Las Vegas limo destinations. The resort name is not optional detail. Properties on the Strip can span long frontages, multiple towers, and different loading rules. Send the hotel, the tower if you know it, and a mobile number for the guest who will meet the chauffeur.</p>
@@ -55,7 +55,7 @@
                     </div>
                 </article>
                 <article id="nv-peaks" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/concert-festival/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nv-events.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Conventions, residencies, and weekend peaks</h3>
                         <p>Las Vegas limo demand spikes when a major convention, a residency calendar, and weekend leisure arrivals overlap. A reserved chauffeur does not invent extra lanes on Las Vegas Boulevard, but it does remove the search for a vehicle while you stand with bags under the hotel canopy.</p>
@@ -67,11 +67,11 @@
                     </div>
                 </article>
                 <article id="nv-why" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/fleet/cadillac-escalade.webp') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nv-fleet.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Why a reserved Las Vegas limo helps</h3>
                         <p>On a quiet Tuesday with one carry-on, an on-demand car can be enough. On a Friday night when conferences, residencies, and weekend arrivals overlap, a reserved Las Vegas limo is the steadier choice. The price was agreed before the flight landed. The chauffeur already has the resort. The vehicle size already matches the bags.</p>
-                        <p>A fair comparison is in our guide to <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>. Travelers who also need Tri-State coverage can review <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
+                        <p>Las Vegas hotel and airport planning is in our guide to <a href="{{ route('blog.las-vegas-chauffeur-airport-car-service') }}">Las Vegas chauffeur and airport car service</a>. Travelers who also need Tri-State coverage can review <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('our-fleet') }}">View fleet</a>

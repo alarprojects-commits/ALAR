@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('meta_title', 'Airport Car Service Guides | JFK LGA EWR LAX LAS SEA | Alar')
 @section('meta_description', 'Static airport car service guides for JFK, LaGuardia, Newark, Westchester, Teterboro, LAX, Harry Reid, and Sea-Tac—organized by the states Alar serves.')
-@section('og_image', asset('assets/img/airports/jfk/banner.png'))
+@section('og_image', asset('assets/img/airports/hub-banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/jfk/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Airports', 'title' => 'Airport guides for every state we serve', 'crumb' => 'Airports'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/hub-banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Airports', 'title' => 'Airport guides for every state we serve', 'crumb' => 'Airports'])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -24,10 +24,10 @@
 
         <div class="alar-airport-board" id="alar-airport-board">
             <div class="alar-airport-state-block" data-state="new-york">
-                <h3>New York</h3>
+                <h2>New York</h2>
                 <div class="alar-grid-3">
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/jfk/photo.png') }}" alt="JFK car service">
+                        <img src="{{ asset('assets/img/airports/jfk/card.png') }}" alt="JFK car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">JFK</div>
                             <h3>John F. Kennedy International</h3>
@@ -36,7 +36,7 @@
                         </div>
                     </article>
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/lga/photo.png') }}" alt="LaGuardia car service">
+                        <img src="{{ asset('assets/img/airports/lga/card.png') }}" alt="LaGuardia car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">LGA</div>
                             <h3>LaGuardia Airport</h3>
@@ -45,7 +45,7 @@
                         </div>
                     </article>
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/hpn/photo.png') }}" alt="Westchester County Airport car service">
+                        <img src="{{ asset('assets/img/airports/hpn/card.png') }}" alt="Westchester County Airport car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">HPN</div>
                             <h3>Westchester County Airport</h3>
@@ -57,10 +57,10 @@
             </div>
 
             <div class="alar-airport-state-block" data-state="new-jersey">
-                <h3>New Jersey</h3>
+                <h2>New Jersey</h2>
                 <div class="alar-grid-3">
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/ewr/photo.png') }}" alt="Newark Liberty car service">
+                        <img src="{{ asset('assets/img/airports/ewr/card.png') }}" alt="Newark Liberty car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">EWR</div>
                             <h3>Newark Liberty International</h3>
@@ -69,7 +69,7 @@
                         </div>
                     </article>
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/teb/photo.png') }}" alt="Teterboro private aviation car service">
+                        <img src="{{ asset('assets/img/airports/teb/card.png') }}" alt="Teterboro private aviation car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">TEB</div>
                             <h3>Teterboro Airport</h3>
@@ -81,10 +81,10 @@
             </div>
 
             <div class="alar-airport-state-block" data-state="california">
-                <h3>California</h3>
+                <h2>California</h2>
                 <div class="alar-grid-3">
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/lax/photo.png') }}" alt="LAX car service">
+                        <img src="{{ asset('assets/img/airports/lax/card.png') }}" alt="LAX car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">LAX</div>
                             <h3>Los Angeles International</h3>
@@ -96,10 +96,10 @@
             </div>
 
             <div class="alar-airport-state-block" data-state="nevada">
-                <h3>Nevada</h3>
+                <h2>Nevada</h2>
                 <div class="alar-grid-3">
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/las/photo.png') }}" alt="Harry Reid airport car service">
+                        <img src="{{ asset('assets/img/airports/las/card.png') }}" alt="Harry Reid airport car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">LAS</div>
                             <h3>Harry Reid International</h3>
@@ -111,10 +111,10 @@
             </div>
 
             <div class="alar-airport-state-block" data-state="washington">
-                <h3>Washington</h3>
+                <h2>Washington</h2>
                 <div class="alar-grid-3">
                     <article class="alar-airport-card">
-                        <img src="{{ asset('assets/img/airports/sea/photo.png') }}" alt="Sea-Tac car service">
+                        <img src="{{ asset('assets/img/airports/sea/card.png') }}" alt="Sea-Tac car service">
                         <div class="alar-airport-card-body">
                             <div class="alar-airport-card-code">SEA</div>
                             <h3>Seattle-Tacoma International</h3>
@@ -148,6 +148,15 @@
                 <li>Washington: Seattle-Tacoma (SEA).</li>
             </ul>
         </div>
+    </div>
+</section>
+<section class="alar-section">
+    <div class="alar-wrap alar-faq">
+        <h2>Airport guide questions</h2>
+        <details open><summary>Which airports have their own guides?</summary><p>JFK, LaGuardia, Newark Liberty, Westchester County, Teterboro, LAX, Harry Reid, and Sea-Tac each have a dedicated guide with terminals, meet points, and booking tips.</p></details>
+        <details><summary>Do I still need the terminal on the reservation?</summary><p>Yes. The airport code alone is not a meeting point. Put the terminal or FBO on every booking so the chauffeur stages at the right door.</p></details>
+        <details><summary>Is flight tracking included?</summary><p>Airport pickups follow the live arrival when the flight number is on the reservation, including delays.</p></details>
+        <details><summary>How do I get a quote for an airport transfer?</summary><p>Use Book Online or the contact form with both addresses, the flight, passenger count, and bags. Dispatch replies with the vehicle and the rate.</p></details>
     </div>
 </section>
 @include('components.cta-band')

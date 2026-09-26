@@ -13,7 +13,14 @@
     </div>
 </section>
 <section class="alar-section">
-    <div class="alar-wrap alar-grid-3">
+    <div class="alar-wrap">
+        <div class="alar-head">
+            <div>
+                <p class="alar-kicker">Vehicles</p>
+                <h2>Sedans, SUVs, Sprinters, and buses</h2>
+            </div>
+        </div>
+        <div class="alar-grid-3">
         @foreach([
             ['Cadillac CT5', 'Up to 4 passengers · 3 to 4 bags', 'cadillac-ct5'],
             ['Rolls Royce Ghost', 'Up to 4 passengers · 3 to 4 bags', 'rolls-ghost'],
@@ -37,6 +44,7 @@
                 </div>
             </article>
         @endforeach
+        </div>
     </div>
 </section>
 <section class="alar-section">
@@ -66,6 +74,13 @@
             <article class="alar-note"><h3>Inspected</h3><p>Each vehicle is checked before it is assigned to a trip.</p></article>
             <article class="alar-note"><h3>Detailed</h3><p>Interiors are cleaned the day of service.</p></article>
             <article class="alar-note"><h3>Matched</h3><p>We suggest a car from the passenger count and the luggage, not from a default sedan.</p></article>
+        </div>
+        <div class="alar-faq" style="margin-top:2rem;">
+            <h2>Fleet questions</h2>
+            <details open><summary>How do I know which vehicle to book?</summary><p>Start with passenger count and bags. A sedan fits up to four passengers with three to four bags. An Escalade fits up to seven. A Sprinter fits up to fourteen. Stretch limos, party buses, and coaches cover larger celebrations and groups.</p></details>
+            <details><summary>Can I request a specific model?</summary><p>Yes. Tell dispatch the model you want. If that vehicle is unavailable, we confirm a substitute in the same class before the trip is locked.</p></details>
+            <details><summary>Do you publish a price next to each car?</summary><p>No. The rate depends on addresses, time of day, and the job type. Choose the cabin here, then get a confirmed quote on the booking page or contact form.</p></details>
+            <details><summary>Are child seats available?</summary><p>Ask when you book and tell us the age or seat type. Adding a seat at the curb is how it gets missed.</p></details>
         </div>
     </div>
 </section>

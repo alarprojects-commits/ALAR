@@ -3,7 +3,7 @@
 @section('meta_description', 'Seattle-Tacoma SEA car service with flight tracking, bridge-aware timing for Seattle and Bellevue, and terminal pickups in Pacific Northwest rain.')
 @section('og_image', asset('assets/img/airports/sea/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/sea/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'SEA', 'title' => 'Sea-Tac airport car service and Seattle limo', 'crumb' => 'Seattle'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/sea/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'SEA', 'title' => 'Sea-Tac airport car service and Seattle limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'Sea-Tac SEA']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -37,7 +37,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="sea-terminal" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/terminal.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Sea-Tac terminals, airlines, and curbside staging</h3>
                         <p>Sea-Tac consolidated much of its passenger experience into a central terminal complex with gates and airlines assigned to specific concourses. Sending only “SEA” still fails the way “LAX” fails without a terminal letter: your chauffeur needs the airline and the concourse or terminal area your ticket uses so the meet happens at the correct arrivals door. Put the flight number on inbound reservations so dispatch follows delays; Pacific Northwest weather diverts and holds flights often enough that a printed ticket time is a starting guess, not a schedule.</p>
@@ -49,7 +49,7 @@
                     </div>
                 </article>
                 <article id="sea-seattle" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/seattle.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Sea-Tac to downtown Seattle and core neighborhoods</h3>
                         <p>Downtown Seattle hotels near Pike Place, the Convention Center, and the waterfront share a label on marketing maps but not the same pickup quirks. Capitol Hill, South Lake Union, and Queen Anne each change the Sea-Tac run by time of day and by whether the chauffeur is threading I-5 north or using surface streets after an event lets out at Climate Pledge Arena. Name the neighborhood and the building on the reservation, and give a mobile number for the passenger when doormen will not hold a car in the rain.</p>
@@ -61,7 +61,7 @@
                     </div>
                 </article>
                 <article id="sea-bellevue" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/bellevue.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Bellevue, Kirkland, and Eastside bridge timing</h3>
                         <p>Bellevue and Kirkland sit across Lake Washington from Seattle proper. Sea-Tac to Bellevue is an Eastside job, not a downtown job with a longer meter. Bridge routes—SR 520 and I-90—shift with accidents, sports traffic, and weather; a chauffeur plans leave times with those choke points in mind. Microsoft campus corridors, downtown Bellevue towers, and Kirkland waterfront offices each deserve the exact address on the booking.</p>
@@ -73,11 +73,11 @@
                     </div>
                 </article>
                 <article id="sea-weather" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/weather.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Rain, low visibility, and honest departure buffers</h3>
                         <p>Pacific Northwest rain is not a mood; it is a traffic input. Spray on I-5, slower merges, and cautious drivers extend Sea-Tac departures from Seattle and Bellevue even when the mileage did not change. A reserved car agrees the rate from known addresses before the trip; the leave time still must respect weather you can see from the hotel window.</p>
-                        <p>Arrivals benefit from flight tracking for the same reason. Holding patterns and gate changes show up on the board while you are still over Oregon. Comparing a confirmed chauffeur with app-hailed rides? Our <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car versus Uber and taxi</a> page discusses reliability in dense cities; Sea-Tac adds rain and bridge variables apps rarely price honestly.</p>
+                        <p>Arrivals benefit from flight tracking for the same reason. Holding patterns and gate changes show up on the board while you are still over Oregon. The Sea-Tac planning guide is <a href="{{ route('blog.seattle-airport-car-service') }}">Seattle airport car service</a>. Rain and the bridge still belong on this page.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.chauffeured-service') }}">Chauffeur service</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('our-fleet') }}">View fleet</a>
@@ -85,11 +85,11 @@
                     </div>
                 </article>
                 <article id="sea-book" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/sea/book.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What makes a Sea-Tac quote accurate</h3>
                         <p>Send the date, airline and terminal or concourse area, flight number on arrivals, Seattle or Bellevue address with neighborhood detail, passenger count, and bags. “Sea-Tac to Seattle” is incomplete without the door; “Seattle to Sea-Tac” is incomplete without the terminal your airline uses tonight.</p>
-                        <p>We confirm vehicle class and rate before dispatch. National travelers comparing hubs can read our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a> for East Coast terminal habits while keeping Sea-Tac’s bridge and rain logic on this page. West Coast partners include <a href="{{ route('airports.lax') }}">LAX</a> and <a href="{{ route('airports.las') }}">Harry Reid LAS</a> when the same road show continues south.</p>
+                        <p>We confirm vehicle class and rate before dispatch. Keep Sea-Tac’s bridge and rain logic on this page. If the road show continues, book <a href="{{ route('airports.lax') }}">LAX</a> and <a href="{{ route('airports.las') }}">Harry Reid LAS</a> as their own legs.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.index') }}">All airports</a>

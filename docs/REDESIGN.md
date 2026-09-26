@@ -63,8 +63,7 @@ Assets: `public/assets/img/airports/{code}/banner.png` + `photo.png`.
 - Tri-State JFK / LGA / EWR  
 - NYC & NJ to PA / Virginia / DC  
 
-Layout: intro split, takeaways, checklists, figure section (unique `figure.png` per post), compare blocks, soft CTAs, FAQ, insights.  
-FIFA blog left unused / not linked as a live SEO page.
+Layout: intro split, takeaways, checklists, figure section (unique `figure.png` per post), compare blocks, soft CTAs, FAQ, insights.
 
 ## Routing
 

@@ -1,92 +1,260 @@
 @extends('layouts.app')
-@section('meta_title', 'Blogs | Alar Chauffeur Service')
-@section('meta_description', 'Guides to JFK, Newark, Tri-State airports, and black car service from Alar Chauffeur Service.')
+@section('meta_title', 'Limo and Airport Guides | New York and New Jersey | Alar')
+@section('meta_description', 'Search guides for hotels and restaurants near JFK, Newark stays, JFK layovers, New York limo cost, and business districts.')
 @section('og_image', asset('assets/img/pages/blog.png'))
 
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/pages/blog.png'), 'kicker' => 'Journal', 'title' => 'Notes for the next trip', 'crumb' => 'Blog'])
+@include('components.page-banner', ['image' => asset('assets/img/pages/blog.png'), 'kicker' => 'Journal', 'title' => 'Guides for the trip you are actually booking', 'crumb' => 'Blog'])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-prose" style="margin-bottom:2rem;">
-        <p>These notes are for travelers comparing a reserved chauffeur with a taxi line or a rideshare at the curb. They explain how Alar plans JFK from Manhattan, Newark Liberty from New Jersey, and the difference between a black car and an app car when the flight moves. A later piece covers city-to-city runs from New York and New Jersey toward Pennsylvania, Virginia, and Washington, DC.</p>
-        <p>Nothing on this page is a live fare. Airport traffic, terminal, and vehicle size change the rate. Use the articles to decide what to ask for, then send the date and the addresses. Dispatch replies with the car and the price. If you already know the trip, skip ahead to booking.</p>
+        <p>These articles answer the searches travelers actually type: hotels and restaurants near the airport, what to do on a layover, whether you can leave JFK, what changes a New York limo quote, and which business district fits the meeting. Each one is a single question. None of them is a live fare. Vehicles and passenger counts are on <a href="{{ route('our-fleet') }}">the fleet</a>.</p>
+        <p>New York and New Jersey are the main set. Wedding, prom, party bus, and airport service guides follow the same rule: one job, one place. Los Angeles, Las Vegas, and Seattle each have their own airport article.</p>
     </div>
 </section>
 <section class="alar-section">
-    <div class="alar-wrap alar-grid-3">
+    <div class="alar-wrap">
+        <div class="alar-head">
+            <div>
+                <p class="alar-kicker">Articles</p>
+                <h2>All query-based guides</h2>
+            </div>
+        </div>
+        <div class="alar-grid-3">
         <article class="alar-card">
-            <img src="{{ asset('assets/img/blogs/car-service-to-jfk-from-manhattan/card.png') }}" alt="Car service to JFK">
+            <img src="{{ asset('assets/img/blogs/best-hotels-near-jfk-airport/card.png') }}" alt="Hotel pickup for a JFK stay">
             <div class="alar-card-body">
-                <h3>Car service to JFK from Manhattan</h3>
-                <p>Fixed-rate transfers from Midtown and Downtown.</p>
-                <a class="alar-btn alar-btn-outline" href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">Read the guide</a>
+                <h3>Best hotels near JFK airport</h3>
+                <p>On-airport rooms, Jamaica hotels, and when Manhattan is the better stay.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.best-hotels-near-jfk-airport') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
             </div>
         </article>
         <article class="alar-card">
-            <img src="{{ asset('assets/img/blogs/newark-airport-car-service-ewr/card.png') }}" alt="Newark Airport car service">
+            <img src="{{ asset('assets/img/blogs/best-hotels-near-newark-airport/card.png') }}" alt="Hotel pickup near Newark airport">
             <div class="alar-card-body">
-                <h3>Newark Airport car service</h3>
-                <p>EWR pickups from New Jersey and New York.</p>
-                <a class="alar-btn alar-btn-outline" href="{{ route('blog.newark-airport-car-service-ewr') }}">Read the guide</a>
+                <h3>Best hotels near Newark airport</h3>
+                <p>Airport hotels, Jersey City, and a Manhattan stay that still makes EWR.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.best-hotels-near-newark-airport') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
             </div>
         </article>
         <article class="alar-card">
-            <img src="{{ asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi/card.png') }}" alt="Black car compared with rideshare">
+            <img src="{{ asset('assets/img/blogs/things-to-do-during-a-jfk-layover/card.png') }}" alt="Car waiting during a JFK layover">
             <div class="alar-card-body">
-                <h3>Black car vs Uber and taxi</h3>
-                <p>When a reserved chauffeur is the steadier choice.</p>
-                <a class="alar-btn alar-btn-outline" href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">Read the guide</a>
+                <h3>Things to do during a JFK layover</h3>
+                <p>What fits in four hours, and what only fits when the connection is long.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.things-to-do-during-a-jfk-layover') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
             </div>
         </article>
         <article class="alar-card">
-            <img src="{{ asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state/card.png') }}" alt="Tri-State airport car service">
+            <img src="{{ asset('assets/img/blogs/can-i-leave-jfk-during-a-long-layover/card.png') }}" alt="Leaving JFK for a reserved car">
             <div class="alar-card-body">
-                <h3>New York car service for JFK, LGA, and EWR</h3>
-                <p>How Tri-State airport transfers are planned.</p>
-                <a class="alar-btn alar-btn-outline" href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Read the guide</a>
+                <h3>Can I leave JFK during a long layover?</h3>
+                <p>When you can exit, and how the ride back is the part that has to be booked.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.can-i-leave-jfk-during-a-long-layover') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
             </div>
         </article>
         <article class="alar-card">
-            <img src="{{ asset('assets/img/blogs/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc/card.png') }}" alt="Long-distance chauffeur sedan">
+            <img src="{{ asset('assets/img/blogs/best-restaurants-near-jfk-airport/card.png') }}" alt="Dinner near JFK with a car waiting">
             <div class="alar-card-body">
-                <h3>NYC and NJ to PA, Virginia, and DC</h3>
-                <p>Private city-to-city travel without a connection.</p>
-                <a class="alar-btn alar-btn-outline" href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">Read the guide</a>
+                <h3>Best restaurants near JFK airport</h3>
+                <p>Howard Beach and Jamaica first. Ozone Park and Jackson Heights when the hours are real.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.best-restaurants-near-jfk-airport') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
             </div>
         </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/nyc-business-districts-for-business-travelers/card.png') }}" alt="Executive sedan in a New York business district">
+            <div class="alar-card-body">
+                <h3>New York business districts for business travelers</h3>
+                <p>Midtown, Hudson Yards, downtown, and when the car should wait.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.nyc-business-districts-for-business-travelers') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/limo-service-cost-new-york/card.png') }}" alt="Sedan, SUV, and van used to explain a quote">
+            <div class="alar-card-body">
+                <h3>Limo service cost in New York</h3>
+                <p>What changes the quote: vehicle, hours, airports, and tolls. Not a rate card.</p>
+                <div class="alar-card-actions">
+                    <a class="alar-btn alar-btn-gold" href="{{ route('blog.limo-service-cost-new-york') }}">Read More</a>
+                    <a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a>
+                </div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/airport-car-service-new-york/card.png') }}" alt="Airport car service in New York">
+            <div class="alar-card-body">
+                <h3>Airport car service in New York</h3>
+                <p>JFK and LaGuardia from a real New York door.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.airport-car-service-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/newark-airport-car-service/card.png') }}" alt="Newark airport car service">
+            <div class="alar-card-body">
+                <h3>Newark airport car service</h3>
+                <p>EWR pickups and drop-offs from New Jersey.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.newark-airport-car-service') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/car-service-new-jersey-to-jfk/card.png') }}" alt="Car service from New Jersey to JFK">
+            <div class="alar-card-body">
+                <h3>New Jersey to JFK</h3>
+                <p>The crossing, the terminal, and the luggage.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.car-service-new-jersey-to-jfk') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/wedding-limo-new-york/card.png') }}" alt="Wedding limo in New York">
+            <div class="alar-card-body">
+                <h3>Wedding limo in New York</h3>
+                <p>Ceremony, photos, and who rides in which car.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.wedding-limo-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/wedding-limo-new-jersey/card.png') }}" alt="Wedding limo in New Jersey">
+            <div class="alar-card-body">
+                <h3>Wedding limo in New Jersey</h3>
+                <p>House, church, and reception on one route.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.wedding-limo-new-jersey') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/prom-limo-new-york/card.png') }}" alt="Prom limo in New York">
+            <div class="alar-card-body">
+                <h3>Prom limo in New York</h3>
+                <p>Pickups, a venue, and a parent’s return plan.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.prom-limo-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/prom-limo-new-jersey/card.png') }}" alt="Prom limo in New Jersey">
+            <div class="alar-card-body">
+                <h3>Prom limo in New Jersey</h3>
+                <p>House-to-hall nights with a real headcount.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.prom-limo-new-jersey') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/party-bus-rental-new-york/card.png') }}" alt="Party bus rental in New York">
+            <div class="alar-card-body">
+                <h3>Party bus rental in New York</h3>
+                <p>Hours and stops for a night that stays together.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.party-bus-rental-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/hourly-chauffeur-service-new-york/card.png') }}" alt="Hourly chauffeur service in New York">
+            <div class="alar-card-body">
+                <h3>Hourly chauffeur in New York</h3>
+                <p>One car that waits between meetings and venues.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.hourly-chauffeur-service-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/corporate-car-service-new-jersey/card.png') }}" alt="Corporate car service in New Jersey">
+            <div class="alar-card-body">
+                <h3>Corporate car service in New Jersey</h3>
+                <p>Offices, Newark, and a sedan or Sprinter that fits the team.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.corporate-car-service-new-jersey') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/sprinter-van-with-driver/card.png') }}" alt="Sprinter van with a driver">
+            <div class="alar-card-body">
+                <h3>Sprinter van with a driver</h3>
+                <p>Up to fourteen seats when two SUVs would split the group.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.sprinter-van-with-driver') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/cruise-port-transfer-new-york-new-jersey/card.png') }}" alt="Cruise port transfer">
+            <div class="alar-card-body">
+                <h3>Cruise port transfer</h3>
+                <p>New York and New Jersey terminals, timed around the bags.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.cruise-port-transfer-new-york-new-jersey') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/metlife-stadium-transportation/card.png') }}" alt="MetLife Stadium transportation">
+            <div class="alar-card-body">
+                <h3>MetLife Stadium transportation</h3>
+                <p>A gate drop and a ride home after the event.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.metlife-stadium-transportation') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/concert-transportation-new-york/card.png') }}" alt="Concert transportation in New York">
+            <div class="alar-card-body">
+                <h3>Concert transportation in New York</h3>
+                <p>The venue door, and a car that is still there after the show.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.concert-transportation-new-york') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/los-angeles-airport-car-service/card.png') }}" alt="Los Angeles airport car service">
+            <div class="alar-card-body">
+                <h3>Los Angeles airport car service</h3>
+                <p>LAX terminals and a Los Angeles address.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.los-angeles-airport-car-service') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/las-vegas-chauffeur-airport-car-service/card.png') }}" alt="Las Vegas chauffeur and airport car service">
+            <div class="alar-card-body">
+                <h3>Las Vegas chauffeur and airport</h3>
+                <p>Harry Reid, the hotel tower, and the right cabin.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.las-vegas-chauffeur-airport-car-service') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        <article class="alar-card">
+            <img src="{{ asset('assets/img/blogs/seattle-airport-car-service/card.png') }}" alt="Seattle airport car service">
+            <div class="alar-card-body">
+                <h3>Seattle airport car service</h3>
+                <p>Sea-Tac to the city or the Eastside.</p>
+                <div class="alar-card-actions"><a class="alar-btn alar-btn-gold" href="{{ route('blog.seattle-airport-car-service') }}">Read More</a><a class="alar-btn alar-btn-line-dark" href="{{ route('book-online') }}">Book Now</a></div>
+            </div>
+        </article>
+        </div>
     </div>
 </section>
 <section class="alar-section">
     <div class="alar-wrap alar-prose">
-        <h2>What these guides are for</h2>
-        <p>Each article answers a question travelers type before they book. None of them is a live fare. Use them to decide what to put on the reservation, then send the date and the addresses. The cars themselves are on <a href="{{ route('our-fleet') }}">the fleet page</a>, and the service menu is on <a href="{{ route('our-services') }}">our services</a>.</p>
-        <h2>JFK from Manhattan</h2>
-        <p>People leaving Midtown or Downtown want to know whether a reserved car is different from a taxi lane, and how the terminal changes the drive. That is <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">car service to JFK from Manhattan</a>. Read it if your pickup is in the city and the flight is out of Kennedy. It explains why “JFK” is not a meeting point and why bags change the vehicle.</p>
-        <h2>Newark Liberty</h2>
-        <p>EWR is the airport closest to our Edison desk, and it is also a real ride from Manhattan. <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service</a> covers terminals, meet and greet, and the difference between a Jersey City pickup and a Midtown one. If you live in New Jersey and you are choosing between EWR and JFK, start there, then look at <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
-        <h2>Black car, Uber, or taxi</h2>
-        <p>A rideshare is fine for a short hop with no luggage and no deadline. An airport morning with a meeting is a different problem. <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">Black car service versus Uber and taxi</a> compares a reserved chauffeur with a queue and a price that can move. It is a comparison, not a slogan. Use it when you are deciding whether the reservation is worth it for that specific trip.</p>
-        <h2>Three airports, one desk</h2>
-        <p>JFK, LaGuardia, and Newark do not behave like one destination. <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">The Tri-State airport guide</a> is the page to read before you assume the closest airport on a map is the easiest pickup. Pair it with <a href="{{ route('service-area.new-york') }}">New York car service</a> if the address is in the boroughs.</p>
-        <h2>Leaving the Tri-State</h2>
-        <p>Philadelphia, northern Virginia, and Washington, DC are too far for a casual rideshare and awkward for a short flight once you count the airport. <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">Chauffeur service from New York and New Jersey to Pennsylvania, Virginia, and DC</a> explains when a private car is the calmer plan. Book that kind of trip as <a href="{{ route('services.chauffeured-service') }}">chauffeur service</a> with both addresses and the time you need to arrive.</p>
-        <p>When the guide has done its job, reserve on the <a href="{{ route('book-online') }}">booking page</a> or send the itinerary through the contact form. Include the flight number if there is a flight. Include the bags if there are more than carry-ons. The article will not know those details. Dispatch will.</p>
-        <h2>Airport questions these pages answer</h2>
-        <p>Search traffic to a chauffeur site is rarely “luxury transportation near me” in the abstract. It is a terminal, a neighborhood, and a clock. “Car service to JFK from Manhattan” means someone in Midtown or Downtown has a departure and wants to know how early to leave, whether meet and greet is worth it, and whether a sedan trunk will take the bags. “Newark airport car service” means the pickup might be Edison, Jersey City, or the city, and the terminal letter changes the door. “LaGuardia car service” is the shorter airport ride that still fails if the chauffeur is sent to the wrong terminal. The Tri-State article exists because people book the wrong airport first and then ask for a car.</p>
-        <p>A useful airport page tells you what to put on the reservation: airline, flight number, terminal if you know it, passenger count, and bags. It tells you the difference between curbside and a chauffeur with a sign inside. It tells you that a delay is handled by flight tracking, not by a text you hope the driver sees while you are still on the plane. It does not pretend a flat fare from a blog applies to your Tuesday. If the article did its job, you can book without guessing which door.</p>
-        <h2>When the question is not an airport</h2>
-        <p>The black-car comparison is for people who already use Uber or a taxi and want to know what they would be paying a chauffeur for. The answer is a reserved vehicle, a confirmed rate, and someone who is already assigned when you land. That is worth it when you have a meeting, a lot of luggage, or a group that should not split into two cars. It is optional when you are going ten blocks with a backpack.</p>
-        <p>The city-to-city article is for the drive that feels too long for an app and too short for a flight once you count security. Philadelphia, northern Virginia, and Washington are the routes we actually describe. If your destination is not one of those, ask. Do not assume a guide about DC covers a weekend in Boston.</p>
-        <p>Weddings, proms, and stadium nights are services, not blog posts, because the question is the vehicle and the timeline. Start with <a href="{{ route('services.wedding-limo') }}">wedding limo service</a> or <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> when the car has to stay. Use <a href="{{ route('services.airport-transportation') }}">airport transportation</a> when the only job is the flight. The blog is the explanation. The service page is where the booking details belong.</p>
-        <h2>How to read a guide without wasting the morning</h2>
-        <p>Skim for your airport or your city first. If the page is about JFK and you are flying from Newark, switch articles. Note the facts you still need to send us: addresses, time you must arrive, headcount, bags, flight. Then stop reading and book. Five articles will not produce a better chauffeur than one complete reservation. If two pages disagree about which vehicle you need, trust the passenger count on the fleet page over a sentence written for a different group size.</p>
-        <p>We update these guides when the practical advice changes, not to chase a new keyword every week. Terminals move, and traffic patterns matter more than a slogan. If something on a page does not match what dispatch told you, the reservation is the one that counts. Write back and we will correct the article.</p>
+        <h2>Hotels, layovers, and the price question</h2>
+        <p>Start with the search, not with a vehicle. <a href="{{ route('blog.best-hotels-near-jfk-airport') }}">Hotels near JFK</a> and <a href="{{ route('blog.best-hotels-near-newark-airport') }}">hotels near Newark</a> are different stays. A connection is either <a href="{{ route('blog.things-to-do-during-a-jfk-layover') }}">things to do on a JFK layover</a> or the harder question, <a href="{{ route('blog.can-i-leave-jfk-during-a-long-layover') }}">can I leave JFK</a>. Dinner is <a href="{{ route('blog.best-restaurants-near-jfk-airport') }}">restaurants near JFK</a>. A meeting day is <a href="{{ route('blog.nyc-business-districts-for-business-travelers') }}">New York business districts</a>. What the quote is built from is <a href="{{ route('blog.limo-service-cost-new-york') }}">limo service cost in New York</a>.</p>
+        <h2>How to use the service guides</h2>
+        <p>Start with the place and the job. A New York flight is <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>. A Newark flight is <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a>. A house in New Jersey and a Kennedy departure is <a href="{{ route('blog.car-service-new-jersey-to-jfk') }}">car service from New Jersey to JFK</a>. Do not read the New York airport page and assume it prices a Newark pickup.</p>
+        <h2>Weddings, proms, and nights out</h2>
+        <p>Wedding days split by state: <a href="{{ route('blog.wedding-limo-new-york') }}">New York</a> and <a href="{{ route('blog.wedding-limo-new-jersey') }}">New Jersey</a>. Prom nights do the same, for <a href="{{ route('blog.prom-limo-new-york') }}">New York</a> and <a href="{{ route('blog.prom-limo-new-jersey') }}">New Jersey</a>. A celebration with several stops is <a href="{{ route('blog.party-bus-rental-new-york') }}">party bus rental in New York</a>. A show with one drop and a ride home is <a href="{{ route('blog.concert-transportation-new-york') }}">concert transportation in New York</a>. MetLife is <a href="{{ route('blog.metlife-stadium-transportation') }}">MetLife Stadium transportation</a>.</p>
+        <h2>Workdays and group vans</h2>
+        <p>A New York day with waiting is <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service</a>. A New Jersey office day is <a href="{{ route('blog.corporate-car-service-new-jersey') }}">corporate car service in New Jersey</a>. When the group will not fit an SUV, read <a href="{{ route('blog.sprinter-van-with-driver') }}">Sprinter van with a driver</a>. Cruise luggage is its own problem: <a href="{{ route('blog.cruise-port-transfer-new-york-new-jersey') }}">cruise port transfers</a> for New York and New Jersey terminals.</p>
+        <h2>Other service areas</h2>
+        <p>California airport rides are <a href="{{ route('blog.los-angeles-airport-car-service') }}">Los Angeles airport car service</a>. Nevada rides are <a href="{{ route('blog.las-vegas-chauffeur-airport-car-service') }}">Las Vegas chauffeur and airport car service</a>. Washington rides are <a href="{{ route('blog.seattle-airport-car-service') }}">Seattle airport car service</a>. Book the city that is on the ticket. Then send the date, both addresses, the passenger count, and the bags.</p>
     </div>
 </section>
 <section class="alar-section alar-paper">
     <div class="alar-wrap alar-faq">
         <h2>Using these guides</h2>
-        <details open><summary>Are the rates in the articles a quote?</summary><p>No. Articles explain how the service works. A quote comes from the booking page or the contact form.</p></details>
+        <details open><summary>Are the rates in the articles a quote?</summary><p>No. Articles explain how to plan the trip. A quote comes from the booking page or the contact form.</p></details>
     </div>
 </section>
 @endsection

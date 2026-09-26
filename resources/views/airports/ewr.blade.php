@@ -3,7 +3,7 @@
 @section('meta_description', 'Newark Liberty car service with Terminals A, B, and C on every booking. EWR pickups for Jersey City, Hoboken, Princeton, Manhattan, and Edison NJ.')
 @section('og_image', asset('assets/img/airports/ewr/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/ewr/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'EWR', 'title' => 'Newark airport car service and EWR limo', 'crumb' => 'Newark'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/ewr/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'EWR', 'title' => 'Newark airport car service and EWR limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'Newark EWR']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -18,10 +18,10 @@
             </div>
             <h2>Newark airport car service from our New Jersey desk</h2>
             <p>Newark Liberty is the Tri-State airport that belongs to New Jersey on the map and serves Manhattan every day. Terminals A, B, and C each have their own arrivals rhythm and departures curb. Alar Chauffeur Service runs EWR airport transfers from our Edison home desk with the terminal on the trip sheet, flight tracking on arrivals, and quotes that name Jersey City, Hoboken, Princeton, Middlesex County, or Manhattan—not a vague “Newark” pin.</p>
-            <p>Read the dedicated <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service guide</a>, compare EWR with JFK and LaGuardia in the <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State article</a>, and reserve on the <a href="{{ route('book-online') }}">booking page</a>. New Jersey context lives on <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
+            <p>Read the dedicated <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service guide</a>. A New Jersey pickup for Kennedy is a different article, <a href="{{ route('blog.car-service-new-jersey-to-jfk') }}">car service from New Jersey to JFK</a>. Reserve on the <a href="{{ route('book-online') }}">booking page</a>. New Jersey context lives on <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
             <div class="alar-actions">
                 <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
-                <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
+                <a class="alar-btn alar-btn-line-dark" href="{{ route('contact-us') }}">Request a Quote</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="ewr-arrivals" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/arrivals.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>EWR arrivals: three terminals, one airport code</h3>
                         <p>Newark Liberty splits across Terminals A, B, and C. A chauffeur waiting at Terminal B while you land at Terminal A is a fixable but wasteful mistake—fixable with a phone call, wasteful with baggage in hand. Send the airline, flight number, and terminal when you know it; otherwise send the flight and let dispatch confirm the hall. Flight tracking follows delays and early arrivals so the car is not idling on the Turnpike an hour too soon.</p>
@@ -50,7 +50,7 @@
                     </div>
                 </article>
                 <article id="ewr-departures" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/departures.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Departures from New Jersey and into Manhattan</h3>
                         <p>EWR departures plan backward from terminal curbs and security, then backward again through Turnpike volume and tunnel queues when Manhattan is the start. A Princeton morning departure and a Hoboken evening departure share an airport code but not a leave time. Terminal A, B, and C departures levels differ; name the terminal on the booking so the chauffeur uses the correct door.</p>
@@ -59,7 +59,7 @@
                     </div>
                 </article>
                 <article id="ewr-meet" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/meet.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Meet and greet versus curbside at Newark</h3>
                         <p>Meet and greet at EWR places the chauffeur inside the arrivals area with a name board, usually near baggage claim or the exit from customs for international flights. It suits visitors, families, and anyone who prefers not to navigate terminal signage alone. Request it when you reserve so the driver is cleared for the correct terminal hall.</p>
@@ -68,7 +68,7 @@
                     </div>
                 </article>
                 <article id="ewr-vehicles" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/vehicles.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Vehicles for Newark airport runs</h3>
                         <p>A luxury sedan carries up to four passengers with standard business luggage. SUVs fit larger families, extra bags, or winter gear without crushing the trunk. Sprinter vans handle groups that need one vehicle from EWR to a Manhattan hotel or a Princeton campus visit.</p>
@@ -80,12 +80,12 @@
                     </div>
                 </article>
                 <article id="ewr-quote" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/ewr/quote.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What to send for an EWR quote</h3>
                         <p>Send date and time, pickup and drop-off addresses with town or borough, Terminal A, B, or C (or flight number for confirmation), passenger count, and bags. For arrivals, include the flight for tracking; for departures, note checked luggage and whether you want a conservative security buffer.</p>
                         <p>Ask for meet and greet if you want inside pickup. Tolls, tunnel fees, and airport charges are explained with the quote—you are not riding a meter down the Turnpike. When the trip starts in Manhattan, say which neighborhood so the crossing matches the rate.</p>
-                        <p>For route context and when EWR beats JFK or LGA, read <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service</a> and the <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State comparison</a>.</p>
+                        <p>For route context, read <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a>. New York doors for JFK and LaGuardia are in <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>

@@ -3,7 +3,7 @@
 @section('meta_description', 'Harry Reid International LAS car service with Strip hotel tower pickups, terminal-named arrivals, and flight tracking. Nevada chauffeur service from Alar.')
 @section('og_image', asset('assets/img/airports/las/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/las/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LAS', 'title' => 'Harry Reid airport car service and Las Vegas limo', 'crumb' => 'Las Vegas'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/las/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'LAS', 'title' => 'Harry Reid airport car service and Las Vegas limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'Harry Reid LAS']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -37,10 +37,10 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="las-terminals" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/terminals.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Terminal 1, Terminal 3, and arrivals staging</h3>
-                        <p>Harry Reid splits commercial traffic across Terminal 1 and Terminal 3. Sending only “LAS” sends a chauffeur to the wrong curb while you wait with luggage at the other building. Put the airline and terminal on every pickup and departure, the same way we insist on terminal letters at Newark or LaGuardia in our <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport guide</a>. Meet and greet places the chauffeur inside with a name board when you request it; curbside works when you know the terminal and want a faster walk to the car.</p>
+                        <p>Harry Reid splits commercial traffic across Terminal 1 and Terminal 3. Sending only “LAS” sends a chauffeur to the wrong curb while you wait with luggage at the other building. Put the airline and terminal on every pickup and departure, the same way a Newark booking needs a terminal. Las Vegas planning is in <a href="{{ route('blog.las-vegas-chauffeur-airport-car-service') }}">Las Vegas chauffeur and airport car service</a>. Meet and greet places the chauffeur inside with a name board when you request it; curbside works when you know the terminal and want a faster walk to the car.</p>
                         <p>Flight tracking follows the live arrival when the flight number is included, which matters on busy weekends when boards shift and gates change. Departures from a Strip tower back to Terminal 3 for an international connection need a leave time that respects resort driveway queues, not only the distance on a map.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.airport-transportation') }}">Airport service</a>
@@ -49,7 +49,7 @@
                     </div>
                 </article>
                 <article id="las-strip" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/strip.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Strip hotel towers, valets, and pickup lanes</h3>
                         <p>The Las Vegas Strip is a row of cities stacked vertically. “Pick me up at the hotel” is not enough when the property has three towers, a convention annex, and a rideshare lot ten minutes away on foot. Name the resort and the tower on the reservation. Bellagio, MGM Grand, Cosmopolitan, Wynn, Encore, Venetian, Palazzo, and Caesars each route chauffeured cars differently; valets and security expect you to know which driveway you mean.</p>
@@ -61,7 +61,7 @@
                     </div>
                 </article>
                 <article id="las-offstrip" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/offstrip.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Off-Strip resorts, Downtown, and Henderson</h3>
                         <p>Not every Las Vegas trip stays on Las Vegas Boulevard. Red Rock resorts, Green Valley, Henderson, and Downtown’s Fremont corridor each change the drive from Harry Reid. A conference at an off-Strip property is a different quote from a Strip tower pickup, even when both say “Las Vegas” on the invitation. Name the address and property so dispatch plans the correct leave time for your terminal.</p>
@@ -73,11 +73,11 @@
                     </div>
                 </article>
                 <article id="las-corporate" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/corporate.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Conventions, delegations, and corporate arrivals</h3>
                         <p>Trade shows at the Convention Center, hospitality suites at Strip towers, and executive dinners off-Strip create parallel arrivals at LAS on the same afternoon. Corporate teams benefit from <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a> when travel desks need consistent vehicle standards and named chauffeurs for VIP rows. Send flight manifests with terminals, not only city codes, so greeters stand at the correct Harry Reid door.</p>
-                        <p>Multi-day visits sometimes pair Las Vegas with Los Angeles or Seattle on the same trip. We treat each airport leg as its own reservation detail—LAX terminals on one day, LAS towers on another—rather than one vague “West Coast” note. Compare national airport habits in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a> if your team usually flies through New York or Newark instead.</p>
+                        <p>Multi-day visits sometimes pair Las Vegas with Los Angeles or Seattle on the same trip. We treat each airport leg as its own reservation detail—LAX terminals on one day, LAS towers on another—rather than one vague “West Coast” note. If the team also flies through Los Angeles, book that leg on <a href="{{ route('blog.los-angeles-airport-car-service') }}">Los Angeles airport car service</a> instead of folding it into this note.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.corporate-transportation') }}">Corporate service</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.lax') }}">LAX guide</a>
@@ -85,11 +85,11 @@
                     </div>
                 </article>
                 <article id="las-book" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/las/book.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What makes a Las Vegas quote accurate</h3>
                         <p>Send the date, Terminal 1 or Terminal 3, flight number, Strip tower or full off-Strip address, passenger count, and bags. “Airport to Vegas” is not a quote input. We reply with vehicle class and confirmed rate before dispatch. Sedans fit small parties; SUVs fit groups with extra luggage from a long convention week.</p>
-                        <p>For a thoughtful comparison between reserved black car service and app-hailed rides in dense cities, read <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>. The Las Vegas Strip adds tower and valet variables apps handle poorly. A chauffeur assigned to your reservation knows the hotel name before you land at Harry Reid.</p>
+                        <p>Read <a href="{{ route('blog.las-vegas-chauffeur-airport-car-service') }}">Las Vegas chauffeur and airport car service</a> for the hotel tower and the terminal. A chauffeur assigned to your reservation knows the hotel name before you land at Harry Reid.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('our-fleet') }}">View fleet</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.index') }}">All airports</a>

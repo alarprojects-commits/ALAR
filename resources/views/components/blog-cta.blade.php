@@ -1,6 +1,6 @@
 <div class="alar-soft-cta">
     <div>
-        <h3>{{ $title ?? 'Ready to reserve the car?' }}</h3>
+        <h2>{{ $title ?? 'Ready to reserve the car?' }}</h2>
         <p>{{ $text ?? 'Send the addresses, the time, and the passenger count. Dispatch confirms the vehicle and the rate before the chauffeur moves.' }}</p>
     </div>
     <div class="alar-actions">

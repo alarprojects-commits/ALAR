@@ -3,7 +3,7 @@
 @section('meta_description', 'Wedding limo service in New Jersey and New York for the couple and the wedding party, with ceremony and reception transfers.')
 @section('og_image', asset('assets/img/services/wedding-limo/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/services/wedding-limo/banner.png'), 'kicker' => 'Weddings', 'title' => 'Wedding limo service from photos to reception', 'crumb' => 'Services'])
+@include('components.page-banner', ['image' => asset('assets/img/services/wedding-limo/banner.png'), 'kicker' => 'Weddings', 'title' => 'Wedding limo service from photos to reception', 'crumbs' => [['label' => 'Services', 'url' => route('our-services')], ['label' => 'Wedding Limo']]])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-prose">

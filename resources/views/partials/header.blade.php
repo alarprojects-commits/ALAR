@@ -10,8 +10,9 @@
             <li><a class="{{ request()->routeIs('our-services') || request()->routeIs('services.*') ? 'is-on' : '' }}" href="{{ route('our-services') }}">Services</a></li>
             <li><a class="{{ request()->routeIs('our-fleet') ? 'is-on' : '' }}" href="{{ route('our-fleet') }}">Fleet</a></li>
             <li class="alar-drop">
-                <button type="button">Service Areas</button>
+                <button type="button" class="{{ request()->routeIs('service-areas.*') || request()->routeIs('service-area.*') ? 'is-on' : '' }}">Service Areas</button>
                 <ul class="alar-drop-list">
+                    <li><a href="{{ route('service-areas.index') }}">All service areas</a></li>
                     <li><a href="{{ route('service-area.new-jersey') }}">New Jersey</a></li>
                     <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
                     <li><a href="{{ route('service-area.california') }}">California</a></li>
@@ -48,6 +49,7 @@
         <a href="{{ route('our-fleet') }}">Fleet</a>
         <button type="button" id="alar-areas-toggle">Service Areas</button>
         <div class="alar-sub" id="alar-areas">
+            <a href="{{ route('service-areas.index') }}">All service areas</a>
             <a href="{{ route('service-area.new-jersey') }}">New Jersey</a>
             <a href="{{ route('service-area.new-york') }}">New York</a>
             <a href="{{ route('service-area.california') }}">California</a>

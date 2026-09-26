@@ -3,7 +3,7 @@
 @section('meta_description', 'Cruise port transportation for New Jersey and New York terminals with room for luggage. Hotel or house pickup, ship check-in timing, and return when you dock.')
 @section('og_image', asset('assets/img/services/cruise-port-transfers/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/services/cruise-port-transfers/banner.png'), 'kicker' => 'Ports', 'title' => 'Cruise port transportation New Jersey and New York', 'crumb' => 'Services'])
+@include('components.page-banner', ['image' => asset('assets/img/services/cruise-port-transfers/banner.png'), 'kicker' => 'Ports', 'title' => 'Cruise port transportation New Jersey and New York', 'crumbs' => [['label' => 'Services', 'url' => route('our-services')], ['label' => 'Cruise Port Transfers']]])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-split">
@@ -28,7 +28,7 @@
 
         <h2>Debarkation day: ship to hotel, house, or airport</h2>
         <p>The same reservation can include the ride home when the ship returns, which is useful when docking time is only an estimate. We plan from the posted arrival window and adjust when you are actually cleared to leave the terminal. Put a working phone number on the booking so dispatch can coordinate when the line moves slower than the brochure promised.</p>
-        <p>Many passengers connect the cruise return to an airport the same day. That is a different clock. If you need the port-to-airport leg, say the airline and terminal. We cover JFK, LGA, EWR, HPN, and TEB. For airport-specific planning, see our <a href="{{ route('services.airport-transportation') }}">airport transportation</a> page, and for the Manhattan-to-JFK pattern many flyers use after a cruise hotel night, read <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">car service to JFK from Manhattan</a>.</p>
+        <p>Many passengers connect the cruise return to an airport the same day. That is a different clock. If you need the port-to-airport leg, say the airline and terminal. We cover JFK, LGA, EWR, HPN, and TEB. For airport-specific planning, see our <a href="{{ route('services.airport-transportation') }}">airport transportation</a> page, and the planning guide is <a href="{{ route('blog.cruise-port-transfer-new-york-new-jersey') }}">cruise port transfer in New York and New Jersey</a>.</p>
         <p>If you are overnighting in the city after debarkation, a hotel drop is often cleaner than racing a flight the same afternoon. We can book either. Be honest about bags and energy levels when you choose.</p>
 
         <h2>New Jersey and New York starting points</h2>

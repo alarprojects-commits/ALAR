@@ -1,9 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('meta_title', 'California Chauffeur & Limo Service | Alar')
-@section('meta_description', 'California chauffeur service centered on Los Angeles and LAX car service. Reserved sedans and SUVs for airport transfers, meetings, and events—without claiming every CA city.')
+@section('meta_description', 'California chauffeur service centered on Los Angeles and LAX car service. Reserved sedans and SUVs for airport transfers, meetings, and eventsâ€”without claiming every CA city.')
 @section('og_image', asset('assets/img/service-areas/california.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/service-areas/california.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'California', 'title' => 'California chauffeur service in Los Angeles', 'crumb' => 'California'])
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/california.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'California', 'title' => 'California chauffeur service in Los Angeles', 'crumbs' => [['label' => 'Service Areas', 'url' => route('service-areas.index')], ['label' => 'California']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -31,11 +31,11 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="ca-lax" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/california-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ca-lax.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>LAX car service and how arrivals work</h3>
-                        <p>Los Angeles International Airport is the main commercial gateway for the trips we schedule. LAX car service only works when the airline and the terminal are on the reservation. The airport is large, circulating roads are busy, and “meet me at LAX” is not a meeting point. Flight tracking follows the live arrival so an early inbound is met and a delayed inbound does not leave a chauffeur guessing from a ticket time. Meet and greet places the chauffeur inside with a name board when you want that. Curbside staging is available when you prefer to walk out to the car.</p>
-                        <p>Departures are timed for your terminal and your airline’s security pattern, not for a generic curb labeled LAX. If you are connecting from a hotel in downtown Los Angeles, Century City, Santa Monica, Beverly Hills, or another Westside address, put the hotel name and the preferred door on the booking. Luggage changes the vehicle choice as much as passenger count does.</p>
+                        <p>Los Angeles International Airport is the main commercial gateway for the trips we schedule. LAX car service only works when the airline and the terminal are on the reservation. The airport is large, circulating roads are busy, and â€œmeet me at LAXâ€ is not a meeting point. Flight tracking follows the live arrival so an early inbound is met and a delayed inbound does not leave a chauffeur guessing from a ticket time. Meet and greet places the chauffeur inside with a name board when you want that. Curbside staging is available when you prefer to walk out to the car.</p>
+                        <p>Departures are timed for your terminal and your airlineâ€™s security pattern, not for a generic curb labeled LAX. If you are connecting from a hotel in downtown Los Angeles, Century City, Santa Monica, Beverly Hills, or another Westside address, put the hotel name and the preferred door on the booking. Luggage changes the vehicle choice as much as passenger count does.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('airports.lax') }}">LAX guide</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
@@ -43,7 +43,7 @@
                     </div>
                 </article>
                 <article id="ca-city" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/corporate-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ca-corporate.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Downtown, Westside, and corporate campuses</h3>
                         <p>Los Angeles chauffeur days often move between downtown hotels, Financial District meetings, and Westside offices. The same reserved car can cover a morning airport arrival and an afternoon campus visit when you book hourly coverage instead of releasing the chauffeur after the first drop. For that pattern, <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> keeps one vehicle and one itinerary.</p>
@@ -55,11 +55,11 @@
                     </div>
                 </article>
                 <article id="ca-events" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/wedding-limo/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ca-wedding.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Events, evenings, and group travel</h3>
                         <p>Evening events in Los Angeles fail when the ride home is left to a street hail after the show. Book the return with the arrival when you already know the venue end time. Weddings that move between a ceremony site and a reception need the doors and timing written down the same way an airport transfer does. Larger parties that will not fit an SUV can request a bigger vehicle; capacities appear on the fleet pages.</p>
-                        <p>If you are comparing a reserved black car with an on-demand app for a flight morning or a client pickup, the tradeoffs are discussed in our <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car versus Uber and taxi</a> guide.</p>
+                        <p>If you are comparing a reserved black car with an on-demand app for a flight morning or a client pickup, the Los Angeles version of that plan is our <a href="{{ route('blog.los-angeles-airport-car-service') }}">Los Angeles airport car service</a> guide.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('our-fleet') }}">View fleet</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
@@ -67,10 +67,10 @@
                     </div>
                 </article>
                 <article id="ca-plan" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/hourly-limo/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ca-hourly.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What to send for a smooth Los Angeles day</h3>
-                        <p>California chauffeur bookings go wrong when the reservation is vague. “LAX to downtown” is not enough. Name the terminal, the hotel, and the preferred door. If the afternoon includes a studio lot, a Westside office, or a dinner reservation, list those stops in order so the chauffeur is not inventing a route while you sit in traffic.</p>
+                        <p>California chauffeur bookings go wrong when the reservation is vague. â€œLAX to downtownâ€ is not enough. Name the terminal, the hotel, and the preferred door. If the afternoon includes a studio lot, a Westside office, or a dinner reservation, list those stops in order so the chauffeur is not inventing a route while you sit in traffic.</p>
                         <p>Tell us whether the passenger is a client who should not wait curbside, whether there are child seats, and whether the return to LAX is the same day. Those notes change staging and vehicle choice more than a marketing paragraph ever will. Travelers who also need Tri-State coverage can review our <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a> page.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
@@ -87,7 +87,7 @@
     <div class="alar-wrap">
         <div class="alar-head"><div><p class="alar-kicker">Quote</p><h2>How California chauffeur booking works</h2></div></div>
         <div class="alar-steps">
-            <article><h3>Neighborhood or hotel</h3><p>Downtown, Westside, or the address you actually mean. “Los Angeles” is not a door.</p></article>
+            <article><h3>Neighborhood or hotel</h3><p>Downtown, Westside, or the address you actually mean. â€œLos Angelesâ€ is not a door.</p></article>
             <article><h3>LAX terminal</h3><p>Airline, terminal, and flight number when the trip starts or ends at the airport.</p></article>
             <article><h3>Confirm the car</h3><p>We reply with the vehicle and the fare. Tolls and airport fees are explained with the quote.</p></article>
         </div>

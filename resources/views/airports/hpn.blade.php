@@ -3,7 +3,7 @@
 @section('meta_description', 'Westchester County Airport car service in White Plains. Quiet HPN pickups for Scarsdale, Rye, Greenwich-bound travelers, and Manhattan when the schedule fits.')
 @section('og_image', asset('assets/img/airports/hpn/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/airports/hpn/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'HPN', 'title' => 'Westchester airport car service and HPN limo', 'crumb' => 'Westchester'])
+@include('components.page-banner', ['image' => asset('assets/img/airports/hpn/banner.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'HPN', 'title' => 'Westchester airport car service and HPN limo', 'crumbs' => [['label' => 'Airports', 'url' => route('airports.index')], ['label' => 'Westchester HPN']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -18,10 +18,10 @@
             </div>
             <h2>Westchester County Airport car service, quieter on the ground</h2>
             <p>Westchester County Airport in White Plains is the regional field north of New York City—smaller terminals, lighter curb pressure than JFK or LaGuardia, and a practical choice when your address is already in Westchester or when the airline schedule fits HPN better than fighting Tri-State traffic to Queens. Alar Chauffeur Service books HPN with the airline and terminal area named, tracks arrivals when the flight number is provided, and quotes from Scarsdale, Rye, White Plains, Yonkers, and the rest of the county by town—not as a Manhattan crosstown ride with extra miles guessed in.</p>
-            <p>Reserve on the <a href="{{ route('book-online') }}">booking page</a>, see vehicles on <a href="{{ route('our-fleet') }}">our fleet</a>, and read <a href="{{ route('service-area.new-york') }}">New York car service</a> for how HPN fits beside JFK, LGA, and EWR. When you are comparing all three major fields, the <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a> still helps—even if HPN is the quiet fourth option in the conversation.</p>
+            <p>Reserve on the <a href="{{ route('book-online') }}">booking page</a>, see vehicles on <a href="{{ route('our-fleet') }}">our fleet</a>, and read <a href="{{ route('service-area.new-york') }}">New York car service</a> for how HPN fits beside JFK, LGA, and EWR. JFK and LaGuardia planning is in <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a>. HPN stays its own booking: send White Plains, not a Kennedy terminal.</p>
             <div class="alar-actions">
                 <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
-                <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
+                <a class="alar-btn alar-btn-line-dark" href="{{ route('contact-us') }}">Request a Quote</a>
             </div>
         </div>
     </div>
@@ -41,7 +41,7 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="hpn-arrivals" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/arrivals.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>HPN arrivals: regional flights, simpler curbs</h3>
                         <p>Westchester County Airport handles commercial regional service and private traffic with a compact airfield feel compared with JFK. Arrivals still need the airline and flight number on the booking so dispatch can track live times and place the chauffeur at the correct terminal curb or meet point. Passengers landing at HPN after a short hop from a hub should send the operating flight, not only the marketing code from a longer itinerary.</p>
@@ -50,7 +50,7 @@
                     </div>
                 </article>
                 <article id="hpn-departures" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/departures.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Departures from Westchester towns and from Manhattan</h3>
                         <p>HPN departures reward passengers who live in the county with shorter drives than LaGuardia or JFK when the flight schedule aligns. Leave time still includes parkway legs on the Hutchinson River Parkway, I-287, or local county roads from northern towns—not just the few miles shown to “White Plains.” Early-morning departures from Scarsdale feel different from rush-hour pickups in Yonkers aimed at the same gate.</p>
@@ -59,7 +59,7 @@
                     </div>
                 </article>
                 <article id="hpn-meet" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/meet.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Meet and greet versus curbside at White Plains</h3>
                         <p>Meet and greet at HPN means the chauffeur waits inside the terminal area with a name board when the airport layout allows for your flight’s arrival hall. It helps corporate visitors, older passengers, and anyone arriving in winter weather who prefers not to search for a curb. Request it on the booking so the driver is assigned to the correct door.</p>
@@ -68,7 +68,7 @@
                     </div>
                 </article>
                 <article id="hpn-vehicles" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/vehicles.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Vehicles for Westchester airport trips</h3>
                         <p>A luxury sedan fits typical Westchester business travel: one or two passengers with carry-ons and a modest checked bag. SUVs serve families heading to school breaks, ski weekends with soft bags, or three passengers with oversized luggage. Sprinters cover school groups, wedding parties, and small corporate teams when everyone must stay together from HPN to a venue in the county.</p>
@@ -80,7 +80,7 @@
                     </div>
                 </article>
                 <article id="hpn-quote" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/airports/hpn/quote.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>What to send for an HPN quote</h3>
                         <p>Send date and time, the Westchester town or Manhattan neighborhood, airline and flight number, passenger count, and bags. For arrivals, flight tracking applies when the number is on the reservation. For departures, note if you need extra time for regional-airline check-in counters during holiday weeks.</p>

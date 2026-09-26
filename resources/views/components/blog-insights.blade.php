@@ -3,33 +3,33 @@
         <div class="alar-head">
             <div>
                 <p class="alar-kicker">From the desk</p>
-                <h2>Airport and travel notes</h2>
+                <h2>Planning notes</h2>
             </div>
             <a class="alar-btn alar-btn-line-dark" href="{{ route('blog') }}">All articles</a>
         </div>
         <div class="alar-grid-3">
             <article class="alar-card">
-                <img src="{{ asset('assets/img/blogs/car-service-to-jfk-from-manhattan/card.png') }}" alt="Black car leaving Manhattan for JFK">
+                <img src="{{ asset('assets/img/blogs/best-hotels-near-jfk-airport/card.png') }}" alt="Hotel pickup near JFK">
                 <div class="alar-card-body">
-                    <h3>Car service to JFK from Manhattan</h3>
-                    <p>Fixed-rate airport transfers from Midtown and Downtown.</p>
-                    <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">Read</a>
+                    <h3>Best hotels near JFK airport</h3>
+                    <p>Which stay fits an early flight, and which stay belongs in the city.</p>
+                    <a href="{{ route('blog.best-hotels-near-jfk-airport') }}">Read</a>
                 </div>
             </article>
             <article class="alar-card">
-                <img src="{{ asset('assets/img/blogs/newark-airport-car-service-ewr/card.png') }}" alt="Chauffeur at Newark Airport">
+                <img src="{{ asset('assets/img/blogs/can-i-leave-jfk-during-a-long-layover/card.png') }}" alt="Leaving JFK on a long layover">
                 <div class="alar-card-body">
-                    <h3>Newark Airport car service</h3>
-                    <p>EWR pickups from New Jersey and New York with flight tracking.</p>
-                    <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Read</a>
+                    <h3>Can I leave JFK during a long layover?</h3>
+                    <p>The exit is the easy part. The booked ride back is the plan.</p>
+                    <a href="{{ route('blog.can-i-leave-jfk-during-a-long-layover') }}">Read</a>
                 </div>
             </article>
             <article class="alar-card">
-                <img src="{{ asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi/card.png') }}" alt="Reserved black car in New York">
+                <img src="{{ asset('assets/img/blogs/limo-service-cost-new-york/card.png') }}" alt="Vehicles that change a New York quote">
                 <div class="alar-card-body">
-                    <h3>Black car vs Uber and taxi</h3>
-                    <p>When a reserved chauffeur is the steadier airport choice.</p>
-                    <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">Read</a>
+                    <h3>Limo service cost in New York</h3>
+                    <p>Vehicle, hours, tolls, and why this page is not a rate card.</p>
+                    <a href="{{ route('blog.limo-service-cost-new-york') }}">Read</a>
                 </div>
             </article>
         </div>

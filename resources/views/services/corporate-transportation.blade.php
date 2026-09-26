@@ -3,7 +3,7 @@
 @section('meta_description', 'Executive black car and corporate limo service for meetings, roadshows, and airport guest pickups in New Jersey and New York.')
 @section('og_image', asset('assets/img/services/corporate-transportation/banner.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/services/corporate-transportation/banner.png'), 'kicker' => 'Corporate', 'title' => 'Corporate car service that waits out the meeting', 'crumb' => 'Services'])
+@include('components.page-banner', ['image' => asset('assets/img/services/corporate-transportation/banner.png'), 'kicker' => 'Corporate', 'title' => 'Corporate car service that waits out the meeting', 'crumbs' => [['label' => 'Services', 'url' => route('our-services')], ['label' => 'Corporate Transportation']]])
 @include('components.ticker')
 <section class="alar-section">
     <div class="alar-wrap alar-prose">
@@ -27,7 +27,7 @@
         <p>The quote is for the vehicle, the route, and the hours or the transfer you described. It is not a taxi meter. Tolls and airport fees should be explained with the price, not discovered on an invoice a month later. Waiting time beyond the agreed block is extra and should be stated up front. Gratuity, if it is included or optional, should be clear before your guest sits down so nobody is doing math in the driveway.</p>
         <p>Do not compare a sedan quote with an SUV quote and assume the cheaper one fits six people. The cheaper car is often the wrong cabin. Send the headcount and the bags and let us assign it.</p>
         <h2>Roadshows that leave the city</h2>
-        <p>Some executive days end in Philadelphia, Greenwich, or a New Jersey headquarters rather than back at the hotel. Those are still chauffeur jobs. A private car beats a connection when the meeting is the point of the trip. If the itinerary crosses into Pennsylvania, Connecticut, or toward Washington, say so when you book. Distance changes the vehicle choice and the rate. Our note on longer runs is the guide to <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">chauffeur service from NYC and New Jersey to Pennsylvania, Virginia, and Washington, DC</a>.</p>
+        <p>Some executive days end in Philadelphia, Greenwich, or a New Jersey headquarters rather than back at the hotel. Those are still chauffeur jobs. A private car beats a connection when the meeting is the point of the trip. If the day stays in New Jersey offices and a Newark flight, read <a href="{{ route('blog.corporate-car-service-new-jersey') }}">corporate car service in New Jersey</a>. Distance still changes the vehicle and the rate, so name every address when you book.</p>
         <h2>Billing and passenger names</h2>
         <p>Put the traveling passenger’s mobile number on the reservation, not only the assistant’s desk line. The chauffeur confirms curbside details with the person who is actually outside. If finance needs a cost center, add it in the notes when you book so the receipt matches the trip. A corporate car that cannot be reconciled is a problem for the office even when the ride itself was smooth. For airport-heavy weeks, keep the flight number in the same note as the passenger name so dispatch is not matching two John Smith arrivals at Newark.</p>
         <h2>Questions assistants ask</h2>

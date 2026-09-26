@@ -13,7 +13,14 @@
     </div>
 </section>
 <section class="alar-section">
-    <div class="alar-wrap alar-grid-3">
+    <div class="alar-wrap">
+        <div class="alar-head">
+            <div>
+                <p class="alar-kicker">Menu</p>
+                <h2>Every service we book</h2>
+            </div>
+        </div>
+        <div class="alar-grid-3">
         @foreach([
             ['Airport transportation', 'Travel', 'JFK, LGA, and EWR with flight tracking.', 'services.airport-transportation', 'assets/img/home/airport.png'],
             ['Corporate transportation', 'Business', 'Meetings, roadshows, and guest pickups.', 'services.corporate-transportation', 'assets/img/home/corporate.png'],
@@ -40,6 +47,7 @@
                 </div>
             </article>
         @endforeach
+        </div>
     </div>
 </section>
 <section class="alar-section">
@@ -49,7 +57,7 @@
         <p>Group size changes the vehicle more than the occasion does. Two executives and carry-ons are a sedan. Six people and checked bags are an SUV from <a href="{{ route('our-fleet') }}">the fleet</a>. A team that should arrive together is a Sprinter or a coach, which is <a href="{{ route('services.group-transportation') }}">group transportation</a>. A celebration that is partly the ride itself is a <a href="{{ route('services.party-bus') }}">party bus</a>. Prom night, with a parent’s phone number and a fixed return, is <a href="{{ route('services.prom-limo') }}">prom limo service</a>. Stadiums, especially MetLife, are <a href="{{ route('services.sporting-events') }}">sporting event transportation</a>. Shows are <a href="{{ route('services.concert-festival') }}">concert and festival transfers</a>. A ship morning with luggage is <a href="{{ route('services.cruise-port-transfers') }}">cruise port transportation</a>.</p>
         <h2>What to send so the quote is real</h2>
         <p>Every service on this page is priced from facts: date, both addresses, passenger count, bags, and whether a flight or a venue time is involved. A quote without those is a guess. Tolls and airport fees should be explained with the rate. Meet and greet is something you request, not something you discover you needed after you have walked the terminal. Child seats are the same. If the address is in New York, the neighborhood matters; read <a href="{{ route('service-area.new-york') }}">New York car service</a> before you assume Midtown pricing covers Jamaica or the Hamptons. New Jersey towns are on the <a href="{{ route('service-area.new-jersey') }}">New Jersey page</a>.</p>
-        <p>You can start on the booking page once you know the addresses, or write the itinerary in the contact form if there are many stops. Dispatch answers with the vehicle name and the rate before a chauffeur is assigned. If you are still deciding between a reserved car and an app, the practical comparison is <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
+        <p>You can start on the booking page once you know the addresses, or write the itinerary in the contact form if there are many stops. Dispatch answers with the vehicle name and the rate before a chauffeur is assigned. If the day has several stops and the car must wait, start with <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service in New York</a>.</p>
         <h2>How the services overlap</h2>
         <p>A wedding guest flying into Newark the night before should not be stuffed into the couple’s limousine the next morning. Book the guest as an airport transfer and the couple as a wedding limo. A roadshow that ends at JFK is corporate hourly time plus an airport drop, one reservation with both parts written down. A concert that becomes a second stop is hourly or a party bus, not a one-way that abandons the group at the venue. Saying which service you think you need is helpful. Describing the day is better. We will tell you if the label should change so the car and the hours match.</p>
         <p>Nothing here is a published fare. The same sedan costs a different amount at 5 a.m. for Newark than it does for a Saturday evening in Manhattan. Send the trip. The reply is the price.</p>

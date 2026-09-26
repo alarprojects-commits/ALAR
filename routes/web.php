@@ -82,6 +82,10 @@ Route::get('/services/hourly-limo', function () {
 })->name('services.hourly-limo');
 
 //cities
+Route::get('/service-areas', function () {
+    return view('service-areas.index');
+})->name('service-areas.index');
+
 Route::get('/service-areas/new-jersey', function () {
     return view('service-areas.new-jersey');
 })->name('service-area.new-jersey');
@@ -142,25 +146,107 @@ Route::get('/airports/sea', function () {
 })->name('airports.sea');
 
 //blogs
-Route::get('/blog/new-york-car-service-jfk-lga-ewr-tri-state', function () {
-    return view('blogs.new-york-car-service-jfk-lga-ewr-tri-state');
-})->name('blog.new-york-car-service-jfk-lga-ewr-tri-state');
+Route::redirect('/blog/car-service-to-jfk-from-manhattan', '/blog/airport-car-service-new-york', 301);
+Route::redirect('/blog/newark-airport-car-service-ewr', '/blog/newark-airport-car-service', 301);
+Route::redirect('/blog/new-york-car-service-jfk-lga-ewr-tri-state', '/blog/airport-car-service-new-york', 301);
+Route::redirect('/blog/black-car-service-nyc-vs-uber-taxi', '/blog/hourly-chauffeur-service-new-york', 301);
+Route::redirect('/blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc', '/blog/hourly-chauffeur-service-new-york', 301);
 
-Route::get('/blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc', function () {
-    return view('blogs.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc');
-})->name('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc');
+Route::get('/blog/airport-car-service-new-york', function () {
+    return view('blogs.airport-car-service-new-york');
+})->name('blog.airport-car-service-new-york');
 
-Route::get('/blog/car-service-to-jfk-from-manhattan', function () {
-    return view('blogs.car-service-to-jfk-from-manhattan');
-})->name('blog.car-service-to-jfk-from-manhattan');
+Route::get('/blog/newark-airport-car-service', function () {
+    return view('blogs.newark-airport-car-service');
+})->name('blog.newark-airport-car-service');
 
-Route::get('/blog/newark-airport-car-service-ewr', function () {
-    return view('blogs.newark-airport-car-service-ewr');
-})->name('blog.newark-airport-car-service-ewr');
+Route::get('/blog/car-service-new-jersey-to-jfk', function () {
+    return view('blogs.car-service-new-jersey-to-jfk');
+})->name('blog.car-service-new-jersey-to-jfk');
 
-Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
-    return view('blogs.black-car-service-nyc-vs-uber-taxi');
-})->name('blog.black-car-service-nyc-vs-uber-taxi');
+Route::get('/blog/wedding-limo-new-york', function () {
+    return view('blogs.wedding-limo-new-york');
+})->name('blog.wedding-limo-new-york');
+
+Route::get('/blog/wedding-limo-new-jersey', function () {
+    return view('blogs.wedding-limo-new-jersey');
+})->name('blog.wedding-limo-new-jersey');
+
+Route::get('/blog/prom-limo-new-york', function () {
+    return view('blogs.prom-limo-new-york');
+})->name('blog.prom-limo-new-york');
+
+Route::get('/blog/prom-limo-new-jersey', function () {
+    return view('blogs.prom-limo-new-jersey');
+})->name('blog.prom-limo-new-jersey');
+
+Route::get('/blog/party-bus-rental-new-york', function () {
+    return view('blogs.party-bus-rental-new-york');
+})->name('blog.party-bus-rental-new-york');
+
+Route::get('/blog/hourly-chauffeur-service-new-york', function () {
+    return view('blogs.hourly-chauffeur-service-new-york');
+})->name('blog.hourly-chauffeur-service-new-york');
+
+Route::get('/blog/corporate-car-service-new-jersey', function () {
+    return view('blogs.corporate-car-service-new-jersey');
+})->name('blog.corporate-car-service-new-jersey');
+
+Route::get('/blog/sprinter-van-with-driver', function () {
+    return view('blogs.sprinter-van-with-driver');
+})->name('blog.sprinter-van-with-driver');
+
+Route::get('/blog/cruise-port-transfer-new-york-new-jersey', function () {
+    return view('blogs.cruise-port-transfer-new-york-new-jersey');
+})->name('blog.cruise-port-transfer-new-york-new-jersey');
+
+Route::get('/blog/metlife-stadium-transportation', function () {
+    return view('blogs.metlife-stadium-transportation');
+})->name('blog.metlife-stadium-transportation');
+
+Route::get('/blog/concert-transportation-new-york', function () {
+    return view('blogs.concert-transportation-new-york');
+})->name('blog.concert-transportation-new-york');
+
+Route::get('/blog/los-angeles-airport-car-service', function () {
+    return view('blogs.los-angeles-airport-car-service');
+})->name('blog.los-angeles-airport-car-service');
+
+Route::get('/blog/las-vegas-chauffeur-airport-car-service', function () {
+    return view('blogs.las-vegas-chauffeur-airport-car-service');
+})->name('blog.las-vegas-chauffeur-airport-car-service');
+
+Route::get('/blog/seattle-airport-car-service', function () {
+    return view('blogs.seattle-airport-car-service');
+})->name('blog.seattle-airport-car-service');
+
+Route::get('/blog/best-hotels-near-jfk-airport', function () {
+    return view('blogs.best-hotels-near-jfk-airport');
+})->name('blog.best-hotels-near-jfk-airport');
+
+Route::get('/blog/best-hotels-near-newark-airport', function () {
+    return view('blogs.best-hotels-near-newark-airport');
+})->name('blog.best-hotels-near-newark-airport');
+
+Route::get('/blog/things-to-do-during-a-jfk-layover', function () {
+    return view('blogs.things-to-do-during-a-jfk-layover');
+})->name('blog.things-to-do-during-a-jfk-layover');
+
+Route::get('/blog/can-i-leave-jfk-during-a-long-layover', function () {
+    return view('blogs.can-i-leave-jfk-during-a-long-layover');
+})->name('blog.can-i-leave-jfk-during-a-long-layover');
+
+Route::get('/blog/best-restaurants-near-jfk-airport', function () {
+    return view('blogs.best-restaurants-near-jfk-airport');
+})->name('blog.best-restaurants-near-jfk-airport');
+
+Route::get('/blog/nyc-business-districts-for-business-travelers', function () {
+    return view('blogs.nyc-business-districts-for-business-travelers');
+})->name('blog.nyc-business-districts-for-business-travelers');
+
+Route::get('/blog/limo-service-cost-new-york', function () {
+    return view('blogs.limo-service-cost-new-york');
+})->name('blog.limo-service-cost-new-york');
 
 Route::fallback(function () {
     abort(404);

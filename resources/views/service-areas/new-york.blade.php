@@ -1,9 +1,9 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('meta_title', 'New York Car Service & Airport Limo | JFK, LGA, EWR | Alar')
 @section('meta_description', 'New York car service for JFK, LaGuardia, Newark, Manhattan, Brooklyn, and the surrounding counties. Flight-tracked chauffeur pickups.')
 @section('og_image', asset('assets/img/service-areas/new-york.png'))
 @section('content')
-@include('components.page-banner', ['image' => asset('assets/img/service-areas/new-york.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'New York', 'title' => 'New York car service and airport limo', 'crumb' => 'New York'])
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/new-york.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'New York', 'title' => 'New York car service and airport limo', 'crumbs' => [['label' => 'Service Areas', 'url' => route('service-areas.index')], ['label' => 'New York']]])
 @include('components.ticker')
 
 <section class="alar-section">
@@ -33,11 +33,11 @@
             </div>
             <div class="alar-guide-panels">
                 <article id="ny-airports" class="alar-guide-panel is-on">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/new-york-scene.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-airports.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Airports: JFK, LGA, EWR, HPN, and TEB</h3>
-                        <p>John F. Kennedy is the long airport. Terminals 1 through 8 are far enough apart that “JFK” is not a meeting point. We ask for the airline and the terminal on every JFK limo pickup and every departure. LaGuardia is closer to Manhattan and still slow at the throat of the airport. Name Terminal A, B, or C. Newark Liberty is often the better airport when the address is in New Jersey, and it is a full trip when the address is in the city. Westchester County Airport in White Plains is a smaller commercial and private field. Teterboro is private aviation: send the FBO, not just the airport code.</p>
-                        <p>Flight tracking is part of an arrival. The chauffeur follows the live time, including delays. Meet and greet means a name board inside. Curbside means the door we agreed. Read the Manhattan-specific version in <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">car service to JFK from Manhattan</a>, and the three-airport comparison in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">Tri-State airport guide</a>.</p>
+                        <p>John F. Kennedy is the long airport. Terminals 1 through 8 are far enough apart that â€œJFKâ€ is not a meeting point. We ask for the airline and the terminal on every JFK limo pickup and every departure. LaGuardia is closer to Manhattan and still slow at the throat of the airport. Name Terminal A, B, or C. Newark Liberty is often the better airport when the address is in New Jersey, and it is a full trip when the address is in the city. Westchester County Airport in White Plains is a smaller commercial and private field. Teterboro is private aviation: send the FBO, not just the airport code.</p>
+                        <p>Flight tracking is part of an arrival. The chauffeur follows the live time, including delays. Meet and greet means a name board inside. Curbside means the door we agreed. Read <a href="{{ route('blog.airport-car-service-new-york') }}">airport car service in New York</a> for JFK and LaGuardia, and <a href="{{ route('blog.newark-airport-car-service') }}">Newark airport car service</a> when the ticket says EWR.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('airports.jfk') }}">JFK guide</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('airports.lga') }}">LGA guide</a>
@@ -46,7 +46,7 @@
                     </div>
                 </article>
                 <article id="ny-manhattan" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/corporate-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-manhattan.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Manhattan</h3>
                         <p>Manhattan car service is door to door, which only helps if the door is the right one. Midtown hotels, Downtown, the Upper East Side, the Upper West Side, SoHo, Hudson Yards, and the Financial District do not share one pickup pattern. Some buildings require the car on a side street. Some only allow a stop in a driveway for a few minutes. Put the hotel name or the cross streets on the reservation, and add a phone number for the passenger, not only the assistant who booked.</p>
@@ -58,10 +58,10 @@
                     </div>
                 </article>
                 <article id="ny-boroughs" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/chauffeur-service/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-boroughs.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Brooklyn, Queens, the Bronx, and Staten Island</h3>
-                        <p>Brooklyn pickups we see most often include Brooklyn Heights, DUMBO, Williamsburg, and Park Slope. Queens includes Long Island City, Astoria, Flushing, and Jamaica, the last of which is the practical neighborhood for many JFK departures. The Bronx and Staten Island are booked when you name the address. None of these is “close enough” to price as Midtown. A Williamsburg Saturday night and a Jamaica 5 a.m. departure are different jobs, and the rate should say so.</p>
+                        <p>Brooklyn pickups we see most often include Brooklyn Heights, DUMBO, Williamsburg, and Park Slope. Queens includes Long Island City, Astoria, Flushing, and Jamaica, the last of which is the practical neighborhood for many JFK departures. The Bronx and Staten Island are booked when you name the address. None of these is â€œclose enoughâ€ to price as Midtown. A Williamsburg Saturday night and a Jamaica 5 a.m. departure are different jobs, and the rate should say so.</p>
                         <p>If you live in Queens and you are comparing a car service with the AirTrain plus a subway, the question is usually luggage and time, not whether transit exists. A chauffeur is the better answer when you have bags, a child, or a flight that will not wait for a transfer at Jamaica.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
@@ -70,7 +70,7 @@
                     </div>
                 </article>
                 <article id="ny-suburbs" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/fleet/mercedes-s550.webp') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-suburbs.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Westchester, Long Island, and the Hudson Valley</h3>
                         <p>Outside the boroughs we cover Westchester towns people name directly: White Plains, Scarsdale, Yonkers, and the rest of the county when the address is specific. Long Island means Nassau and Suffolk, including the Hamptons when that is truly the destination and not a guess. The Hudson Valley side includes Rockland, Orange, Putnam, and Dutchess. Upstate corridors toward Albany are on request, not a promise that a car sits there every day. Say the town when you ask for a quote.</p>
@@ -82,10 +82,10 @@
                     </div>
                 </article>
                 <article id="ny-city" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/blogs/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-city.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>City to city from New York</h3>
-                        <p>Not every New York trip stays in the city. Jersey City and Hoboken, Newark and Princeton, Greenwich and Stamford, Philadelphia, and Washington, DC are private-car distances. A chauffeur keeps you in one vehicle with your bags. That is often calmer than a flight once you count security, or a train once you count the last mile. The longer explanation is our guide to <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">chauffeur service from New York and New Jersey to Pennsylvania, Virginia, and Washington, DC</a>. New Jersey addresses are also covered on the <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a> page.</p>
+                        <p>Not every New York trip stays in the city. A New Jersey office, a stadium, or a day of meetings still needs both addresses on the reservation. When the car must wait, read <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service in New York</a>. New Jersey addresses are also covered on the <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a> page.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.chauffeured-service') }}">Chauffeur service</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
@@ -93,11 +93,11 @@
                     </div>
                 </article>
                 <article id="ny-events" class="alar-guide-panel">
-                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/wedding-limo/photo.png') }}')"></div>
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/ny-events.png') }}')"></div>
                     <div class="alar-guide-copy">
                         <h3>Events, weddings, and hourly nights</h3>
                         <p>MetLife Stadium and other venues are a New York and New Jersey shared problem: the drop-off is crowded and the ride home is worse if you try to invent it after the game. Book the return with the arrival. Weddings that start in the city and end in Westchester, or the reverse, use our <a href="{{ route('services.wedding-limo') }}">wedding limo service</a>. A night with more than one address is <a href="{{ route('services.hourly-limo') }}">hourly limo service</a>, not three separate curbside negotiations.</p>
-                        <p>A 5 a.m. JFK departure from Brooklyn and a midnight pickup in Midtown are both normal reservations, not special favors. The useful detail is the building’s overnight rule: some doormen will not hold a car in the driveway, so the chauffeur stages on the avenue and the passenger comes out when we call. Put a working mobile number on the booking.</p>
+                        <p>A 5 a.m. JFK departure from Brooklyn and a midnight pickup in Midtown are both normal reservations, not special favors. The useful detail is the buildingâ€™s overnight rule: some doormen will not hold a car in the driveway, so the chauffeur stages on the avenue and the passenger comes out when we call. Put a working mobile number on the booking.</p>
                         <div class="alar-guide-actions">
                             <a class="alar-btn alar-btn-gold" href="{{ route('services.wedding-limo') }}">Wedding limo</a>
                             <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
@@ -118,7 +118,7 @@
             <article><h3>Confirm the car</h3><p>We answer with the vehicle and the rate. Tolls and airport fees are explained with the quote. It is not a meter.</p></article>
         </div>
         <div class="alar-prose" style="margin-top:1.6rem;">
-            <p>Send the date and time, the New York address with a borough or town, the second address, the airport and terminal if there is one, the flight number for a pickup, the passenger count, and the bags. If you are choosing between a black car and an app, the useful comparison is on our page about <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
+            <p>Send the date and time, the New York address with a borough or town, the second address, the airport and terminal if there is one, the flight number for a pickup, the passenger count, and the bags. If the day is several stops rather than one airport leg, read <a href="{{ route('blog.hourly-chauffeur-service-new-york') }}">hourly chauffeur service in New York</a>.</p>
         </div>
     </div>
 </section>
