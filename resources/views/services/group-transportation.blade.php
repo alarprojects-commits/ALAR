@@ -1,573 +1,79 @@
-@extends('main')
-@section('meta_title', 'Group Transportation in New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Book group transportation in New Jersey for corporate events, airport transfers, weddings, sports events, and private group travel.')
-
-@push('schema')
-<script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@@graph": [
-
-    {
-      "@@type": "WebPage",
-      "@@id": "https://alarchauffeurservice.com/services/group-transportation/#webpage",
-      "url": "https://alarchauffeurservice.com/services/group-transportation",
-      "name": "Group Transportation Service | ALAR Chauffeur Service",
-      "description": "Luxury group transportation service for airport transfers, corporate groups, weddings, events, sports, and large group travel with professional chauffeurs.",
-      "isPartOf": {
-        "@@id": "https://alarchauffeurservice.com/#website"
-      },
-      "breadcrumb": {
-        "@@id": "https://alarchauffeurservice.com/services/group-transportation/#breadcrumb"
-      },
-      "primaryImageOfPage": {
-        "@@id": "https://alarchauffeurservice.com/#logo"
-      },
-      "about": {
-        "@@id": "https://alarchauffeurservice.com/services/group-transportation/#service"
-      }
-    },
-
-    {
-      "@@type": "BreadcrumbList",
-      "@@id": "https://alarchauffeurservice.com/services/group-transportation/#breadcrumb",
-      "itemListElement": [
-        {
-          "@@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://alarchauffeurservice.com/"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://alarchauffeurservice.com/services/"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 3,
-          "name": "Group Transportation",
-          "item": "https://alarchauffeurservice.com/services/group-transportation"
-        }
-      ]
-    },
-
-    {
-      "@@type": "ImageObject",
-      "@@id": "https://alarchauffeurservice.com/#logo",
-      "url": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "contentUrl": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "caption": "ALAR Chauffeur Service Logo"
-    },
-
-    {
-      "@@type": "LocalBusiness",
-      "@@id": "https://alarchauffeurservice.com/#localbusiness",
-      "name": "ALAR Chauffeur Service",
-      "url": "https://alarchauffeurservice.com",
-      "telephone": {!! config('contact.phones_schema_json') !!},
-      "email": "limo@alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "priceRange": "$150 - $3000",
-      "address": {
-        "@@type": "PostalAddress",
-        "streetAddress": "10 Fairmount Ave",
-        "addressLocality": "Edison",
-        "addressRegion": "NJ",
-        "postalCode": "08820",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
-        "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
-    },
-
-    {
-      "@@type": "Service",
-      "@@id": "https://alarchauffeurservice.com/services/group-transportation/#service",
-      "name": "Group Transportation Service",
-      "serviceType": "Group Travel & Shuttle Service",
-      "description": "Reliable and luxury group transportation service for corporate travel, airport transfers, weddings, sporting events, concerts, and large group movements.",
-      "provider": {
-        "@@id": "https://alarchauffeurservice.com/#localbusiness"
-      },
-      "areaServed": [
-        "New Jersey",
-        "New York",
-        "California",
-        "Nevada",
-        "Washington",
-        "Kansas City"
-      ],
-      "offers": {
-        "@@type": "Offer",
-        "price": "150",
-        "highPrice": "3000",
-        "priceCurrency": "USD",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-
-  ]
-}
-</script>
-@endpush
-
+@extends('layouts.app')
+@section('meta_title', 'Group Transportation New Jersey | Sprinter & Coach Bus | Alar')
+@section('meta_description', 'Group transportation in New Jersey with Sprinter vans, mini buses, and coach buses. One departure for teams, families, and conference groups from Alar.')
+@section('og_image', asset('assets/img/services/group-transportation/banner.png'))
 @section('content')
-
-<!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/group-transportation/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Travel Together</span>
-        <h1>Professional Group Transportation Services in <span>New Jersey & New York</span></h1>
-        <p class="text-white">Travel together with luxury group transportation in New Jersey. Perfect for corporate events, airport transfers, weddings, sporting events, and private group travel.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Group Transportation</li>
-            </ol>
-        </nav>
-    </div>
-</section>
-
-<!-- ===== SERVICE DETAIL SECTION ===== -->
-<section class="ve-section bg-light">
-    <div class="container">
-        <div class="row">
-            <!-- Sidebar Column -->
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0 order-2 order-lg-1">
-                @include('components.service-sidebar')
-            </div>
-
-            <!-- Content Column -->
-            <div class="col-12 col-lg-8 order-1 order-lg-2">
-                <div class="ve-service-detail-content">
-                    <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
-                        <img src="{{ asset('assets/img/our-services/group-transportation/1.webp') }}"
-                            alt="Group Transportation in New Jersey" class="img-fluid rounded-12 shadow-sm">
-                    </div>
-
-                    <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
-                        <span class="ve-section-tag">Logistics Perfected</span>
-                        <h2>Reliable Group Transportation in New Jersey for <span>Every Occasion</span></h2>
-                        <p class="ve-lead">Coordinating transportation for multiple people can quickly become complicated. Managing separate vehicles, different arrival times, parking issues, and traffic delays often creates unnecessary stress for organizers and travelers alike.</p>
-
-                        <p>Our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>group transportation in New Jersey</b></a> is designed to simplify travel by keeping everyone together in comfortable, professionally managed vehicles. Whether you are organizing a corporate event, wedding celebration, airport transfer, sports outing, family gathering, or business meeting, our transportation solutions help your group travel efficiently and comfortably.</p>
-
-                        <p>At <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>, we understand that successful group travel requires punctuality, organization, and flexibility. Our professional chauffeurs handle the logistics while your group focuses on enjoying the journey.</p>
-
-                        <h2>Why Choose Professional <span>Group Transportation Services</span></h2>
-                        <p>Traveling as a group should be convenient, comfortable, and organized. Our group transportation in New Jersey provides a dependable solution for groups of various sizes while maintaining luxury standards throughout the experience.</p>
-
-                        <h3>Benefits of Group Transportation</h3>
-                        <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Everyone travels together</li>
-                                        <li><i class="fa fa-check"></i> Professional and experienced chauffeurs</li>
-                                        <li><i class="fa fa-check"></i> Reduced parking and traffic concerns</li>
-                                        <li><i class="fa fa-check"></i> Convenient pickup and drop-off locations</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Comfortable seating and spacious vehicles</li>
-                                        <li><i class="fa fa-check"></i> Reliable scheduling and punctual arrivals</li>
-                                        <li><i class="fa fa-check"></i> Cost-effective transportation for larger groups</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p class="mt-20">Many travelers searching online are looking for:</p>
-                        <div class="ve-amenities-list mt-30">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> group transportation near me</li>
-                                        <li><i class="fa fa-check"></i> private group travel service</li>
-                                        <li><i class="fa fa-check"></i> luxury group transportation</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> executive group transportation</li>
-                                        <li><i class="fa fa-check"></i> group chauffeur service</li>
-                                        <li><i class="fa fa-check"></i> corporate transportation solutions</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mt-20">Our services are designed to meet these transportation needs professionally and efficiently.</p>
-
-                        <div class="ve-detail-extra-content mt-50">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/group-transportation/2.webp') }}"
-                                        alt="Corporate Group Transportation in New Jersey" class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                                <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <h2>Corporate Group Transportation <span>in New Jersey</span></h2>
-                                    <p>Business events often require dependable transportation for employees, executives, clients, and conference attendees.</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-30 wow fadeInUp" data-wow-delay="100ms">
-                                <h3>Corporate Transportation Solutions</h3>
-                                <p>Our <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation services</b></a> include:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Business meetings</li>
-                                        <li><i class="fa fa-check"></i> Corporate conferences</li>
-                                        <li><i class="fa fa-check"></i> Trade shows</li>
-                                        <li><i class="fa fa-check"></i> Executive travel</li>
-                                        <li><i class="fa fa-check"></i> Company events</li>
-                                        <li><i class="fa fa-check"></i> Team-building activities</li>
-                                        <li><i class="fa fa-check"></i> Client transportation</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">Our <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> helps businesses maintain a professional image while ensuring smooth transportation between offices, hotels, airports, and event venues.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <p>For companies searching for:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> corporate car service</li>
-                                                <li><i class="fa fa-check"></i> executive transportation</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> business travel solutions</li>
-                                                <li><i class="fa fa-check"></i> conference transportation</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-20">Our luxury transportation services provide a professional and reliable solution.</p>
-
-                                <h2>Group Airport Transportation for <span>Stress-Free Travel</span></h2>
-                                <p>Airport travel becomes much easier when your entire group arrives together. Coordinating multiple rides can lead to delays, confusion, and additional expenses.</p>
-
-                                <h3>Airport Transportation Services</h3>
-                                <p>Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation service</b></a> provides group travel to and from:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Newark Liberty International Airport</li>
-                                                <li><i class="fa fa-check"></i> John F. Kennedy International Airport</li>
-                                                <li><i class="fa fa-check"></i> LaGuardia Airport</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Private aviation terminals</li>
-                                                <li><i class="fa fa-check"></i> Regional airports</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-20">Whether you're traveling for business, family vacations, destination weddings, or special events, our airport transportation solutions help ensure a smooth journey from start to finish.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Wedding and Special Event <span>Group Transportation</span></h2>
-                                <p>Transportation plays a major role in keeping weddings and special events organized.</p>
-
-                                <h3>Event Transportation Services</h3>
-                                <p>Our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>group transportation in New Jersey</b></a> is ideal for:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Wedding transportation</b></a></li>
-                                                <li><i class="fa fa-check"></i> Bridal party transportation</li>
-                                                <li><i class="fa fa-check"></i> Rehearsal dinner travel</li>
-                                                <li><i class="fa fa-check"></i> Engagement celebrations</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Birthday parties</li>
-                                                <li><i class="fa fa-check"></i> Family reunions</li>
-                                                <li><i class="fa fa-check"></i> Graduation events</li>
-                                                <li><i class="fa fa-check"></i> Religious ceremonies</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-20">Our luxury transportation solutions help guests arrive comfortably and on time while reducing parking and traffic concerns at venues.</p>
-                                <p>For couples planning weddings, our <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>wedding limo service</b></a> and event transportation options provide elegant and reliable travel throughout the celebration.</p>
-                            </div>
-
-                            <div class="row align-items-center mt-50">
-                                <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/group-transportation/3.webp') }}"
-                                        alt="Group Transportation for Sporting Events" class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                                <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <h2>Group Transportation for <span>Sporting Events and Concerts</span></h2>
-                                    <p>Large sporting events and entertainment venues often attract heavy traffic and limited parking availability.</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-30 wow fadeInUp" data-wow-delay="100ms">
-                                <h3>Popular Group Travel Destinations</h3>
-                                <p>Our transportation services are perfect for:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Sporting events</li>
-                                        <li><i class="fa fa-check"></i> Professional football games</li>
-                                        <li><i class="fa fa-check"></i> Basketball games</li>
-                                        <li><i class="fa fa-check"></i> Soccer matches</li>
-                                        <li><i class="fa fa-check"></i> Concerts and music festivals</li>
-                                        <li><i class="fa fa-check"></i> Stadium events</li>
-                                        <li><i class="fa fa-check"></i> Live entertainment venues</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">Our <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>sporting and event limo service</b></a> allows groups to travel together comfortably while avoiding transportation challenges associated with large events.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Group Transportation Across <span>New Jersey and New York</span></h2>
-                                <p>Our transportation network covers major cities, airports, business districts, and event venues throughout New Jersey and nearby New York destinations.</p>
-
-                                <div class="mt-30">
-                                    <h3>Areas We Frequently Serve</h3>
-                                    <h4 class="mt-20 mb-15">New Jersey Service Areas</h4>
-                                    <div class="ve-amenities-list">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Jersey City transportation</b></a></li>
-                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Newark chauffeur service</b></a></li>
-                                                    <li><i class="fa fa-check"></i> Bergen County transportation</li>
-                                                    <li><i class="fa fa-check"></i> Hudson County group transportation</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li><i class="fa fa-check"></i> Essex County limo service</li>
-                                                    <li><i class="fa fa-check"></i> Middlesex County transportation</li>
-                                                    <li><i class="fa fa-check"></i> Union County chauffeur service</li>
-                                                    <li><i class="fa fa-check"></i> Passaic County luxury transportation</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="mt-30">
-                                    <h4 class="mb-15">New York Service Areas</h4>
-                                    <div class="ve-amenities-list">
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li><i class="fa fa-check"></i> Manhattan transportation</li>
-                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>Brooklyn chauffeur service</b></a></li>
-                                                    <li><i class="fa fa-check"></i> Queens airport transportation</li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li><i class="fa fa-check"></i> Bronx group travel service</li>
-                                                    <li><i class="fa fa-check"></i> Long Island transportation</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <p class="mt-20">This regional coverage helps travelers searching for both New Jersey and New York transportation solutions find dependable service from a single provider.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Luxury Fleet for <span>Group Transportation</span></h2>
-                                <p>Comfort is essential when transporting multiple passengers.</p>
-
-                                <h3>Our Premium Transportation Fleet</h3>
-                                <p>Our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a> includes:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Luxury sedans</li>
-                                                <li><i class="fa fa-check"></i> Executive SUVs</li>
-                                                <li><i class="fa fa-check"></i> Premium black cars</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Business transportation vehicles</li>
-                                                <li><i class="fa fa-check"></i> Airport transfer vehicles</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="mt-20">Every vehicle is professionally maintained to ensure safety, reliability, cleanliness, and comfort throughout your journey.</p>
-
-                                <h3>What Clients Appreciate About Our Fleet</h3>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Comfortable seating</li>
-                                        <li><i class="fa fa-check"></i> Spacious interiors</li>
-                                        <li><i class="fa fa-check"></i> Climate-controlled cabins</li>
-                                        <li><i class="fa fa-check"></i> Professional presentation</li>
-                                        <li><i class="fa fa-check"></i> Smooth ride quality</li>
-                                        <li><i class="fa fa-check"></i> Modern amenities</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">Whether your group is traveling across New Jersey or between New Jersey and New York, our fleet is designed to provide a premium transportation experience.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Easy Booking Process for <span>Group Transportation</span></h2>
-                                <p>Planning group transportation should be simple and efficient.</p>
-
-                                <h3>How to Reserve Group Transportation</h3>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Select your travel date</li>
-                                        <li><i class="fa fa-check"></i> Choose pickup and destination locations</li>
-                                        <li><i class="fa fa-check"></i> Confirm passenger count</li>
-                                        <li><i class="fa fa-check"></i> Select your preferred vehicle</li>
-                                        <li><i class="fa fa-check"></i> Complete your reservation</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">Our team assists with transportation planning to ensure your group's travel schedule runs smoothly from beginning to end.</p>
-                                <p><a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book online today</b></a> and receive a special 10% discount on your reservation.</p>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Why Choose Alar Chauffeur Service for Group Transportation in <span>New Jersey</span></h2>
-                                <p>When organizing group travel, reliability matters. Delays, miscommunication, and transportation issues can impact the entire experience.</p>
-                                <p>Our group transportation in New Jersey combines luxury vehicles, experienced chauffeurs, professional planning, and exceptional customer service to provide dependable transportation for every occasion.</p>
-                                <p>Whether you're arranging airport transfers, corporate events, sporting events, weddings, family gatherings, or business travel, our team is committed to delivering a comfortable and stress-free transportation experience.</p>
-                            </div>
-
-                            <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
-                                <span class="ve-section-tag">FAQs</span>
-                                <h2>Frequently Asked <span>Questions</span></h2>
-                                <div id="groupFaqAccordion" class="accordion ve-faq-accordion mt-30">
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingOne">
-                                            <button class="btn ve-faq-toggle btn-block text-left px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqOne"
-                                                aria-expanded="true" aria-controls="groupFaqOne">
-                                                What types of group transportation services do you provide?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqOne" class="collapse show"
-                                            aria-labelledby="groupFaqHeadingOne" data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                We provide transportation for corporate events, airport transfers, weddings, sporting events, concerts, family gatherings, conferences, and private group travel.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingTwo">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqTwo"
-                                                aria-expanded="false" aria-controls="groupFaqTwo">
-                                                Do you provide group airport transportation?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqTwo" class="collapse" aria-labelledby="groupFaqHeadingTwo"
-                                            data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes. We offer airport transportation for groups traveling to and from Newark Airport, JFK Airport, LaGuardia Airport, and private aviation terminals.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingThree">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqThree"
-                                                aria-expanded="false" aria-controls="groupFaqThree">
-                                                Can you accommodate corporate transportation needs?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqThree" class="collapse"
-                                            aria-labelledby="groupFaqHeadingThree" data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Absolutely. Our corporate transportation services support business meetings, conferences, executive travel, and company events throughout New Jersey and New York.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingFour">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqFour"
-                                                aria-expanded="false" aria-controls="groupFaqFour">
-                                                Which areas do you serve?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqFour" class="collapse"
-                                            aria-labelledby="groupFaqHeadingFour" data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                We serve major locations throughout New Jersey and New York, including Jersey City, Newark, Bergen County, Manhattan, Brooklyn, Queens, and surrounding areas.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingFive">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqFive"
-                                                aria-expanded="false" aria-controls="groupFaqFive">
-                                                Can we book transportation for sporting events and concerts?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqFive" class="collapse"
-                                            aria-labelledby="groupFaqHeadingFive" data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes. Our group transportation services are popular for sporting events, concerts, festivals, stadium transportation, and entertainment venues.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingSix">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#groupFaqSix"
-                                                aria-expanded="false" aria-controls="groupFaqSix">
-                                                Is group transportation available 24/7?
-                                            </button>
-                                        </div>
-                                        <div id="groupFaqSix" class="collapse"
-                                            aria-labelledby="groupFaqHeadingSix" data-parent="#groupFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes. Our professional chauffeur services operate 24 hours a day, 7 days a week, allowing flexible scheduling for airport transfers, corporate travel, and special events.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+@include('components.page-banner', ['image' => asset('assets/img/services/group-transportation/banner.png'), 'kicker' => 'Groups', 'title' => 'Group transportation New Jersey: Sprinter to coach bus', 'crumb' => 'Services'])
+@include('components.ticker')
+<section class="alar-section">
+    <div class="alar-wrap alar-split">
+        <img src="{{ asset('assets/img/services/group-transportation/photo.png') }}" alt="Sprinter and coach group transportation in New Jersey">
+        <div class="alar-prose">
+            <p>A group that splits into five cars spends the first half hour counting heads in a parking lot. One vehicle avoids that. Alar Chauffeur Service provides group transportation New Jersey trips in a Mercedes Sprinter, a twenty-five passenger mini bus, a forty-four passenger bus, or a fifty-five passenger coach. Teams, families, conference groups, and wedding parties leave together, arrive together, and keep the luggage in the same cabin.</p>
+            <p>Reserve the departure on our <a href="{{ route('book-online') }}">online booking page</a> or match headcount to cabin size on <a href="{{ route('our-fleet') }}">our luxury fleet</a>.</p>
         </div>
     </div>
 </section>
+<section class="alar-section alar-paper">
+    <div class="alar-wrap alar-prose">
+        <h2>What organizers ask before they book group transportation</h2>
+        <p>Most group searches are about capacity and timing. Planners want to know whether a Sprinter is enough for fourteen people with bags. They want to know when a coach bus is the honest answer. They want to know if the pickup can be a hotel lobby, a school lot, or an office curb. They want one departure time that the whole roster can see in writing. Those are the questions this page answers.</p>
+        <p>Alar operates from Edison, New Jersey, with more than three years of experience, more than two thousand passengers moved, a fleet of fifty-plus vehicles, and service across ten-plus cities. Group work is a core part of that mix: airport runs for reunions, venue transfers for conferences, and point-to-point moves when a team should not scatter across rideshares.</p>
+        <p>A reserved Sprinter or coach is steadier than hoping five separate cars hit the same curb at the same minute. One chauffeur, one departure, one rate confirmed while the guest list is still being finished.</p>
 
-@include('components.cta')
+        <h2>Sprinter, mini bus, bus, and coach: what fits whom</h2>
+        <p>A Mercedes Sprinter seating about fourteen is the usual first step up from SUVs when the group is a family reunion, a small sports team, or a conference breakout that needs to stay together. It is the right call when everyone should hear the same arrival instructions and nobody should be left refreshing an app in a hotel driveway.</p>
+        <p>A twenty-five passenger mini bus is the step when the Sprinter will not hold the roster plus luggage. A forty-four passenger bus and a fifty-five passenger coach are for larger programs: camps, corporate offsites, wedding guest shuttles between ceremony and reception hotels, and events where the passenger count and the bag count both matter. We ask for both numbers before the vehicle is promised, because sports bags, garment bags, and trade-show cases change the answer.</p>
+        <p>The Cadillac Escalade seats up to seven and sits below the Sprinter for smaller parties. Sedans seat up to four and are not group tools. Stretch limousines and the Escalade limo can move celebration groups, but a 25-, 44-, or 55-passenger bus is the clearer choice when the job is transportation volume rather than a party cabin. If the night is a celebration on wheels, compare our <a href="{{ route('services.party-bus') }}">party bus rental</a> page; if the job is simply moving people and bags, stay on this one.</p>
+
+        <h2>Typical group transportation New Jersey itineraries</h2>
+        <p>Hotel to airport is one of the most common group requests. A reunion flying out of Newark, a team heading to JFK, or a company group leaving LaGuardia all benefit from one vehicle and one flight-aware plan. We cover JFK, LGA, EWR, HPN, and TEB. Put the airline and terminal on the booking when you know them. For airport-specific detail, see our <a href="{{ route('services.airport-transportation') }}">airport transportation</a> page.</p>
+        <p>Hotel to venue is the other daily pattern: conference centers, banquet halls, stadiums, and waterfront events. The pickup can be staggered if two hotels are involved, but staggered pickups must be written down. Improvised second stops at the curb are how groups lose twenty minutes counting who is missing.</p>
+        <p>School and team transfers follow the same rules with stricter clock times. Coaches and parents want a leave time and an arrive time, not a vague window. Send both. If the return is part of the day, include it on the same reservation so the vehicle is still assigned when practice or the game ends.</p>
+
+        <h2>Luggage, equipment, and why headcount alone is not enough</h2>
+        <p>Fourteen people with backpacks are not the same job as fourteen people with checked bags and instrument cases. We confirm luggage space before the vehicle is assigned. That is why the booking form should list passengers and bags separately. A Sprinter that seats fourteen can still be the wrong vehicle if the cargo area is spoken for by hockey bags.</p>
+        <p>The same honesty applies to a coach bus. A fifty-five passenger coach has the seats; the undercarriage still needs a realistic bag plan for airport days. Tell us if you are moving coolers, poster tubes, or wheelchair equipment. Accessibility requests have to be on the reservation so the right vehicle is assigned.</p>
+        <p>Child seats, if needed for younger travelers in a family group, should be requested when you book. Adding them in a hotel driveway is how they get forgotten.</p>
+
+        <h2>Corporate groups and wedding guest moves</h2>
+        <p>Conference groups often need a morning hotel sweep and an evening return, sometimes with a midday museum or client site in between. When the day looks like account work with a fixed agenda, our <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a> page is the companion brief. When the day is simply a large headcount from A to B, group transportation New Jersey service on this page is the direct answer.</p>
+        <p>Wedding guest shuttles between ceremony, reception, and hotels are group jobs with emotional timing. Guests should not be stranded while the wedding party is in photos. Put the ceremony start, the reception address, and the last return on the booking. If the couple needs a separate limousine, that is a different vehicle on a different line item; the coach or Sprinter can still handle the guest list.</p>
+
+        <h2>What the rate depends on</h2>
+        <p>Group pricing depends on the vehicle, the distance, the time of day, the number of stops, and how long the chauffeur is reserved. It is not a meter, and we do not invent per-head prices on this page. Send the date, the pickup and drop addresses, the passenger count, the bag count, and whether you need a return or wait time. We reply with the vehicle and the rate. Tolls and parking fees can apply and should be explained with the quote.</p>
+        <p>If the itinerary is several stops over a block of hours rather than a single transfer, say so. Hourly reservations are sometimes cleaner than a chain of one-ways when the agenda is still shifting.</p>
+
+        <h2>How to book from our Edison desk</h2>
+        <p>Alar Chauffeur Service confirms the vehicle while the roster is still being finished, which is usually when organizers need certainty most. Our New Jersey coverage is described on the <a href="{{ route('service-area.new-jersey') }}">New Jersey service area</a> page; if the group is starting in the city, say the borough and the hotel name.</p>
+        <p>Send one organizer contact who can answer dispatch questions. A group with five “main contacts” is a group that misses the leave time. We will assign the Sprinter, mini bus, bus, or coach bus that matches the real numbers you give us, and the chauffeur will run the written route—not an open debate in the parking lot.</p>
+
+        <h2>Questions about group transportation</h2>
+        <div class="alar-faq">
+            <details open>
+                <summary>How large a group can you move?</summary>
+                <p>From a fourteen-passenger Sprinter up to a fifty-five passenger coach, with a twenty-five passenger mini bus and a forty-four passenger bus in between.</p>
+            </details>
+            <details>
+                <summary>Do you confirm luggage space?</summary>
+                <p>Yes. Tell us passenger count and bag count separately so we assign a vehicle with the cargo space you need.</p>
+            </details>
+            <details>
+                <summary>Can you pick up at more than one hotel?</summary>
+                <p>Yes, when the order and timing of each pickup are on the reservation before departure.</p>
+            </details>
+            <details>
+                <summary>Do you run group airport transfers?</summary>
+                <p>Yes, to JFK, LGA, EWR, HPN, and TEB. Include the airline and terminal when you know them.</p>
+            </details>
+            <details>
+                <summary>How do I confirm a price?</summary>
+                <p>Share the date, addresses, passenger count, bag count, and whether you need a return. We reply with the vehicle and the rate.</p>
+            </details>
+        </div>
+        <img src="{{ asset('assets/img/services/group-transportation/detail.png') }}" alt="Group transportation vehicle detail">
+    </div>
+</section>
+@include('components.related-services')
+@include('components.blog-insights')
 @endsection

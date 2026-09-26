@@ -1,372 +1,78 @@
-@extends('main')
-@section('meta_title', 'Chauffeur Service in New Jersey| Luxury Limo & Private Travel')
-@section('meta_description', 'Book premium Chauffeur Service in New Jersey. Enjoy private, luxury transportation, airport transfers, and long-distance limo service with ease.')
+@extends('layouts.app')
+@section('meta_title', 'Chauffeur Service New Jersey | Private Car Service NYC NJ | Alar')
+@section('meta_description', 'Chauffeur service New Jersey and private car service NYC NJ for point-to-point and long-distance trips. Sedans and SUVs from Alar in Edison.')
+@section('og_image', asset('assets/img/services/chauffeur-service/banner.png'))
 @section('content')
-
-<!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/chauffeured-service/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Premium Service</span>
-        <h1>Professional Chauffeur Service in  <span>NJ & NYC</span></h1>
-        <p class="text-white">Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Chauffeur Service</li>
-            </ol>
-        </nav>
-    </div>
-</section>
-
-<!-- ===== SERVICE DETAIL SECTION ===== -->
-<section class="ve-section bg-light">
-    <div class="container">
-        <div class="row">
-            <!-- Sidebar Column -->
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0 order-2 order-lg-1">
-                @include('components.service-sidebar')
-            </div>
-
-            <!-- Content Column -->
-            <div class="col-12 col-lg-8 order-1 order-lg-2">
-                <div class="ve-service-detail-content">
-                    <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
-                        <img src="{{ asset('assets/img/our-services/chauffeured-service/luxury-chauffeur-service-in-new-jersey-and-nyc.webp') }}"
-                            alt="Luxury chauffeur service in New Jersey and New York City by Alar" class="img-fluid rounded-12 shadow-sm">
-                    </div>
-
-                    <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
-                        <span class="ve-section-tag">Stress-Free Travel</span>
-                        <h2>Luxury Chauffeur Service in New Jersey <span>& NYC</span></h2>
-                        <p class="ve-lead">When it comes to comfortable and reliable travel, choosing a <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>chauffeur service in New Jersey</b></a> is the best decision for both personal and business needs. Whether you need a <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>limo service in NJ & NYC</b></a> for daily travel, airport transfers, or long-distance journeys, Alar Chauffeur Service provides a seamless experience.</p>
-
-                        <p>Unlike regular taxis or ride-sharing, a private chauffeur ensures professionalism, punctuality, and complete privacy. This makes it ideal for corporate travel, family trips, and even special events where comfort and reliability matter most.</p>
-
-                        <div class="row mt-40 mb-40">
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-clock-o"></i>
-                                    <h5>Punctual and Reliable</h5>
-                                    <p>We pride ourselves on our 100% on time performance record for airport pickups.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-plane"></i>
-                                    <h5>Flight Tracking</h5>
-                                    <p>Real-time monitoring of your flight ensures we're there exactly when you need us.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-suitcase"></i>
-                                    <h5>Luggage Assistance</h5>
-                                    <p>Your chauffeur handles all your bags, so you don't have to lift a finger.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-map-marker"></i>
-                                    <h5>Wait and Greet</h5>
-                                    <p>Professional signage and greeting services at the terminal for a VIP experience.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h2>Why Chauffeur Service is Important for <span>Private Travel</span></h2>
-                        <p>Privacy is one of the biggest reasons why people prefer a premium chauffeur service in New Jersey. When you book a professional chauffeur, you get a dedicated vehicle and driver, allowing you to travel without interruptions.</p>
-
-                        <p>This is especially important for:</p>
-
-                        <div class="row mt-40 mb-40">
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-briefcase"></i>
-                                    <p>Business professionals who need a quiet environment
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-shield"></i>
-                                    <p>Families who want safe and secure travel
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-futbol-o"></i>
-                                    <p>Travelers attending major <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>sporting events</b></a> and concerts.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-clock-o"></i>
-                                    <p>Same-day travel plans without delays
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <p>With <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>luxury transportation</b></a>, you avoid crowded public transport and maintain full control over your journey.</p>
-
-                        <div class="ve-detail-extra-content mt-50">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/chauffeured-service/chauffeur-service-from-new-jersey-to-new-york.webp') }}" alt="Executive chauffeur service from New Jersey to New York"
-                                        class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                                <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <h2>Chauffeur Service from New Jersey to New York</h2>
-                                    <p>Traveling between states is common, and limo service from New Jersey to New York is one of the most requested routes. Daily commuters, corporate clients, and tourists rely on intercity limo service for smooth travel between NJ and NYC.</p>
-                                    <p>Benefits include:</p>
-
-                                    <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                        <div class="row">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Door-to-door pickup and drop-off</li>
-                                                <li><i class="fa fa-check"></i> No parking stress in NYC</li>
-                                                <li><i class="fa fa-check"></i> Time-saving routes with experienced drivers</li>
-                                                <li><i class="fa fa-check"></i> Comfortable executive car service</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <p>Whether it’s a business meeting or a same-day trip, a chauffeur ensures timely and efficient travel.</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Travel from New York & New Jersey to Other States</h2>
-                                <p>For longer routes, such as New York to <a href="{{ route('service-area.san-francisco') }}" style="color: var(--ve-gold);"><b>San Francisco luxury chauffeur service</b></a> or other interstate destinations, Alar Chauffeur Service offers reliable Chauffeur Service in New Jersey.</p>
-
-                                <p>This service is ideal for:</p>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> State-to-state chauffeur service</li>
-                                            <li><i class="fa fa-check"></i> Business road trips</li>
-                                            <li><i class="fa fa-check"></i> Family travel across cities</li>
-                                            <li><i class="fa fa-check"></i> Flexible travel without flight delays</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>With professional planning and luxury vehicles, long-distance travel becomes smooth and enjoyable.</p>
-
-                                <div class="ve-quote-box mt-30">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p>Alar Chauffeur Service has been my go-to for years. Their airport service is
-                                        unbeatable for its reliability and the sheer quality of the vehicles. I never
-                                        have to worry about being late for a flight.</p>
-                                    <div class="ve-quote-author">
-                                        <strong>Robert Sterling</strong>
-                                        <span>Frequent Business Traveler</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center mt-50 mb-30">
-                                <div class="col-md-6 order-2 order-md-1 wow fadeInLeft" data-wow-delay="100ms">
-                                    <h2>Why Choose Chauffeur Service for Long-Distance Travel</h2>
-                                    <p>Long journeys require comfort, safety, and reliability. A Chauffeur Service in New Jersey provides all three.</p>
-                                    <p>Key advantages:</p>
-
-                                    <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                        <div class="row">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Spacious and comfortable vehicles</li>
-                                                <li><i class="fa fa-check"></i> Professional and trained drivers</li>
-                                                <li><i class="fa fa-check"></i> Flexible scheduling for same-day travel plans</li>
-                                                <li><i class="fa fa-check"></i> No stress of driving long hours</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <p>Instead of dealing with flights or rentals, you can enjoy a relaxed journey with executive car service.</p>
-                                </div>
-                                <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <img src="{{ asset('assets/img/our-services/chauffeured-service/why-choose-chauffeur-service-for-long-distance-travel.webp') }}"
-                                        alt="Private chauffeur long distance interstate travel" class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Group vs Solo Travel Options</h2>
-                                <p>Alar Chauffeur Service offers flexible options for both individuals and groups.</p>
-
-                                <h3>Group Travel Limo</h3>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Ideal for families, corporate teams, and events</li>
-                                            <li><i class="fa fa-check"></i> Cost-effective for shared travel</li>
-                                            <li><i class="fa fa-check"></i> Spacious SUVs and luxury vans</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <h3>Solo & Executive Travel</h3>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Private chauffeur for business professionals</li>
-                                            <li><i class="fa fa-check"></i> Premium sedans for comfort and privacy</li>
-                                            <li><i class="fa fa-check"></i> Personalized travel experience</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>No matter your travel type, there is a vehicle option available in <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a></p>
-
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Airport Transfers (JFK & Newark Airport)</h2>
-                                <p>Airport travel is one of the most important services offered. With airport transfers JFK and Newark Airport, you get reliable and timely transportation.</p>
-
-                                <p>Our airport transportation includes:</p>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Airport to city and city to airports service</li>
-                                            <li><i class="fa fa-check"></i> Meet and greet at terminals</li>
-                                            <li><i class="fa fa-check"></i> Luggage assistance</li>
-                                            <li><i class="fa fa-check"></i> On-time pickups and drop-offs</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>Avoid waiting in long taxi lines by booking our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transfer service</b></a> in advance.</p>
-
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Chauffeur Service for Every Event</h2>
-                                <p>A chauffeur service is not limited to one purpose—it is universal for every event. Whether it’s:</p>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Corporate meetings</li>
-                                            <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Weddings and parties</b></a></li>
-                                            <li><i class="fa fa-check"></i> Airport transfers</li>
-                                            <li><i class="fa fa-check"></i> Sports events and stadium transfers</li>
-                                            <li><i class="fa fa-check"></i> Same-day travel plans</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>A private chauffeur ensures your journey is smooth, professional, and stress-free.</p>
-
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Booking Process for Alar Chauffeur Service</h2>
-                                <p>Booking your ride is simple and quick. With schedule booking with Alar Chauffeur Service, you can plan your trip in advance.</p>
-
-                                <h3>How to Book:</h3>
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Visit our <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>home page</b></a></li>
-                                            <li><i class="fa fa-check"></i> Choose your vehicle from the <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a></li>
-                                            <li><i class="fa fa-check"></i> Enter pickup and drop-off details</li>
-                                            <li><i class="fa fa-check"></i> Select date and time</li>
-                                            <li><i class="fa fa-check"></i> <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Confirm your booking</b></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>Providing accurate details ensures a smooth and well-planned journey.</p>
-
-                            </div>
-
-                            <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
-                                <span class="ve-section-tag">FAQs</span>
-                                <h2>Chauffeured Services <span>Frequently Asked Questions</span></h2>
-                                <div id="airportFaqAccordion" class="accordion ve-faq-accordion mt-30">
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingOne">
-                                            <button class="btn ve-faq-toggle btn-block text-left px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqOne"
-                                                aria-expanded="true" aria-controls="airportFaqOne">
-                                                Can I book same-day service?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqOne" class="collapse show"
-                                            aria-labelledby="airportFaqHeadingOne" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes, depending on availability, same-day travel plans are possible.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingTwo">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqTwo"
-                                                aria-expanded="false" aria-controls="airportFaqTwo">
-                                                Is long-distance travel available?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqTwo" class="collapse" aria-labelledby="airportFaqHeadingTwo"
-                                            data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                 Yes, we provide state-to-state chauffeur service across the USA.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingThree">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqThree"
-                                                aria-expanded="false" aria-controls="airportFaqThree">
-                                                Are airport pickups reliable?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqThree" class="collapse"
-                                            aria-labelledby="airportFaqHeadingThree" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes, our chauffeurs track flights to ensure timely pickup.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingFour">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqFour"
-                                                aria-expanded="false" aria-controls="airportFaqFour">
-                                                Do you offer group travel options?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqFour" class="collapse"
-                                            aria-labelledby="airportFaqHeadingFour" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes, we provide vehicles for both small and large groups.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+@include('components.page-banner', ['image' => asset('assets/img/services/chauffeur-service/banner.png'), 'kicker' => 'Private', 'title' => 'Chauffeur service New Jersey and private car NYC NJ', 'crumb' => 'Services'])
+@include('components.ticker')
+<section class="alar-section">
+    <div class="alar-wrap alar-split">
+        <img src="{{ asset('assets/img/services/chauffeur-service/photo.png') }}" alt="Private chauffeur sedan for New Jersey and New York">
+        <div class="alar-prose">
+            <p>Point-to-point chauffeur service is a private car from the door you name to the door you name. Alar Chauffeur Service provides chauffeur service New Jersey travelers and private car service NYC NJ clients use for a single transfer or a longer run into Pennsylvania, Connecticut, Virginia, or Washington, DC. The car stays private. You are not sharing a seat or waiting on a terminal transfer board.</p>
+            <p>Reserve the ride on our <a href="{{ route('book-online') }}">online booking page</a> or choose a sedan or SUV on <a href="{{ route('our-fleet') }}">our luxury fleet</a>.</p>
         </div>
     </div>
 </section>
+<section class="alar-section alar-paper">
+    <div class="alar-wrap alar-prose">
+        <h2>What people mean when they search for a chauffeur</h2>
+        <p>Most chauffeur searches are about control. Travelers want a private car service NYC NJ option that shows up at a written time, takes the address seriously, and does not cancel when traffic looks inconvenient. They want to know how far the car will go. They want to know whether a sedan or an SUV fits the bags. They want a rate before the wheels move. Those are the questions this page answers.</p>
+        <p>Alar operates from Edison, New Jersey, with more than three years of private transfer work, more than two thousand passengers moved, fifty-plus vehicles, and service across ten-plus cities. Chauffeur service New Jersey jobs range from a short town-to-town hop to an interstate day that would otherwise consume a train connection and a rental car counter.</p>
+        <p>A reserved chauffeur is steadier than a rideshare that can change price or driver quality mid-week, and steadier than a taxi meter that climbs while you sit in a tunnel. For a longer comparison of black car expectations versus app rides, read our guide on <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>.</p>
 
-@include('components.cta')
+        <h2>Point-to-point private car service NYC NJ</h2>
+        <p>Point-to-point means two addresses and a time you need to arrive, not only a time you hope to leave. Midtown to Newark, Hoboken to Brooklyn, Edison to a Manhattan appointment, Jersey City to a Long Island meeting—these are everyday private car service NYC NJ patterns. The chauffeur is assigned to your cabin. There is no shared van and no stop for another passenger’s suitcase.</p>
+        <p>Send the arrival deadline when the meeting or reservation is fixed. We build the leave time with traffic in mind. A Downtown hotel and a Short Hills house do not share a departure clock for the same Midtown appointment. For coverage on each side of the river, see our <a href="{{ route('service-area.new-jersey') }}">New Jersey service area</a> and <a href="{{ route('service-area.new-york') }}">New York service area</a> pages.</p>
+        <p>Early mornings and late nights are normal. A desk that already runs airport red-eyes can assign a chauffeur for a five o’clock private car without asking you to hope an app is staffed.</p>
+
+        <h2>Longer interstate chauffeur trips</h2>
+        <p>Philadelphia, Connecticut, northern Virginia, and Washington, DC are booked as the same kind of job as a local transfer: one chauffeur, one cabin, room for bags, and a schedule that is not tied to a departure board. Interstate rides take planning. Tell us whether you need a straight shot or stops for lunch, a campus tour, or a second drop.</p>
+        <p>When the day has several addresses and waiting time between them, <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> is often cleaner than a chain of one-ways. As-directed chauffeur time keeps the car with you. Point-to-point remains the right booking when the trip is truly one ride.</p>
+        <p>For a deeper look at long-distance patterns from the region, read <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}">chauffeur service from NYC and NJ to Pennsylvania, Virginia, and Washington, DC</a>.</p>
+
+        <h2>Which vehicle to book for private chauffeur service</h2>
+        <p>Luxury sedans including the Cadillac CT5, Rolls-Royce Ghost, and Mercedes-Benz S550 seat up to four passengers with a normal luggage load. Book a sedan for a solo executive, a couple, or a small team that is not traveling with a week of checked bags. A Cadillac Escalade seating up to seven is the better private SUV when you have more passengers, golf clubs, or several large suitcases. A Mercedes Sprinter seating up to fourteen is available when the private group is larger than an SUV can honestly carry.</p>
+        <p>Stretch limousines and Escalade limos belong to celebration work more often than weekday chauffeur service, but they are in the fleet when the occasion calls for them. Party buses, mini bus twenty-five, bus forty-four, and coach fifty-five are group tools; ask for those when the roster is a team or a full guest list rather than a private car party.</p>
+        <p>Do not guess. List passengers and bags separately. A sedan that looks fine for three adults fails when each person has a checked bag and a carry-on.</p>
+
+        <h2>Airports, meetings, and when to choose another service page</h2>
+        <p>If the trip is primarily an airport transfer with flight tracking, use our airport transportation booking path and put the flight number on the reservation. Chauffeur service New Jersey still covers many airport doors, but flight tracking and meet-and-greet details live most clearly on the airport page. Private aviation at Teterboro needs the FBO name, not only “TEB.”</p>
+        <p>If the day is a sequence of client meetings with the car waiting, hourly or corporate patterns may fit better. If the trip is a wedding party timeline, ask for wedding limousine service instead of a generic point-to-point line. The right page keeps the quote honest.</p>
+
+        <h2>What the rate depends on</h2>
+        <p>Private chauffeur pricing depends on the addresses, the vehicle, the time of day, and whether waiting or extra stops are included. It is not a meter that starts when you sit down, and we do not invent flat citywide prices on this page. Send the date, both addresses, the arrival time you need, the passenger count, and the bags. We reply with the vehicle and the rate. Tolls can apply and should be explained with the quote.</p>
+        <p>Long-distance interstate quotes need realistic leave times. A Washington, DC arrival for an afternoon meeting is not priced like a Hoboken-to-Midtown hop. Give us the real deadline.</p>
+
+        <h2>How Alar runs private car service from Edison</h2>
+        <p>Alar Chauffeur Service keeps the reservation private. The chauffeur follows the doors you named. Dispatch stays reachable if a meeting runs long or an address changes before pickup. We have served the Tri-State for more than three years with a fleet of fifty-plus vehicles. Chauffeur service New Jersey and private car service NYC NJ bookings are the core of that work: door to door, without sharing the cabin. Put the real addresses and the arrival time you need on the booking, and we will answer with the car that fits.</p>
+
+        <h2>Questions about chauffeur and private car service</h2>
+        <div class="alar-faq">
+            <details open>
+                <summary>How far will you drive?</summary>
+                <p>Tri-State trips are routine. Interstate rides to Philadelphia, Virginia, and Washington, DC are booked the same way as local transfers, with timing and vehicle confirmed in advance.</p>
+            </details>
+            <details>
+                <summary>Is the car shared with other passengers?</summary>
+                <p>No. Chauffeur service is a private cabin for your party only.</p>
+            </details>
+            <details>
+                <summary>Should I book point-to-point or hourly?</summary>
+                <p>Book point-to-point for one ride. Book hourly when you need the chauffeur to stay between several stops.</p>
+            </details>
+            <details>
+                <summary>What sedan options do you have?</summary>
+                <p>Sedans in the fleet include the Cadillac CT5, Rolls-Royce Ghost, and Mercedes-Benz S550, each for up to four passengers.</p>
+            </details>
+            <details>
+                <summary>How do I confirm a price?</summary>
+                <p>Share the date, addresses, arrival needs, passenger count, and bags. We reply with the vehicle and the rate.</p>
+            </details>
+        </div>
+        <img src="{{ asset('assets/img/services/chauffeur-service/detail.png') }}" alt="Private chauffeur vehicle detail">
+    </div>
+</section>
+@include('components.related-services')
+@include('components.blog-insights')
 @endsection

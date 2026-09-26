@@ -15,7 +15,7 @@ class HomeController extends Controller
         $googleReviewsUrl = 'https://www.google.com/maps/place/?q=place_id:' . $placeId;
         $googleWriteUrl = 'https://search.google.com/local/writereview?placeid=' . $placeId;
 
-        return view('index', [
+        return view('pages.home', [
             'reviews' => $reviews,
             'googleReviewsUrl' => $googleReviewsUrl,
             'googleWriteUrl' => $googleWriteUrl,

@@ -7,33 +7,33 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/about-us', function () {
-    return view('about-us');
+    return view('pages.about');
 })->name('about-us');
 
 Route::get('/our-services', function () {
-    return view('our-services');
+    return view('pages.services');
 })->name('our-services');
 
 Route::get('/our-fleet', function () {
-    return view('our-fleet');
+    return view('pages.fleet');
 })->name('our-fleet');
 
 Route::get('/contact-us', function () {
-    return view('contact-us');
+    return view('pages.contact');
 })->name('contact-us');
 
 Route::get('/privacy-policy', function () {
-    return view('privacy-policy');
+    return view('pages.privacy');
 })->name('privacy-policy');
 
 Route::get('/blog', function () {
-    return view('blog');
+    return view('pages.blog');
 })->name('blog');
 
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/book-online', function () {
-    return view('book-online');
+    return view('pages.book-online');
 })->name('book-online');
 
 //services
@@ -94,17 +94,52 @@ Route::get('/service-areas/california', function () {
     return view('service-areas.california');
 })->name('service-area.california');
 
-Route::get('/service-areas/san-francisco', function () {
-    return view('service-areas.san-francisco');
-})->name('service-area.san-francisco');
-
 Route::get('/service-areas/nevada', function () {
     return view('service-areas.nevada');
 })->name('service-area.nevada');
 
-Route::get('/service-areas/seattle', function () {
-    return view('service-areas.seattle');
-})->name('service-area.seattle');
+Route::get('/service-areas/washington', function () {
+    return view('service-areas.washington');
+})->name('service-area.washington');
+
+Route::redirect('/service-areas/san-francisco', '/service-areas/california', 301);
+Route::redirect('/service-areas/seattle', '/service-areas/washington', 301);
+
+Route::get('/airports', function () {
+    return view('airports.index');
+})->name('airports.index');
+
+Route::get('/airports/jfk', function () {
+    return view('airports.jfk');
+})->name('airports.jfk');
+
+Route::get('/airports/lga', function () {
+    return view('airports.lga');
+})->name('airports.lga');
+
+Route::get('/airports/ewr', function () {
+    return view('airports.ewr');
+})->name('airports.ewr');
+
+Route::get('/airports/hpn', function () {
+    return view('airports.hpn');
+})->name('airports.hpn');
+
+Route::get('/airports/teb', function () {
+    return view('airports.teb');
+})->name('airports.teb');
+
+Route::get('/airports/lax', function () {
+    return view('airports.lax');
+})->name('airports.lax');
+
+Route::get('/airports/las', function () {
+    return view('airports.las');
+})->name('airports.las');
+
+Route::get('/airports/sea', function () {
+    return view('airports.sea');
+})->name('airports.sea');
 
 //blogs
 Route::get('/blog/new-york-car-service-jfk-lga-ewr-tri-state', function () {

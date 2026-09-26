@@ -1,408 +1,75 @@
-@extends('main')
+@extends('layouts.app')
 @section('meta_title', 'Airport Car Service NYC & NJ | JFK, LGA, EWR Limo | Alar')
-@section('meta_description', 'Airport car service NYC and NJ to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State limo with flight tracking and meet-and-greet.')
-
-@push('schema')
-<script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@@graph": [
-
-    {
-      "@@type": "WebPage",
-      "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#webpage",
-      "url": "https://alarchauffeurservice.com/services/airport-transportation",
-      "name": "Airport Car Service NYC & NJ | JFK, LGA, EWR Limo",
-      "description": "Airport car service NYC and Tri-State limo for John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), Westchester (HPN), SFO, LAX, and more with luxury chauffeurs.",
-      "isPartOf": {
-        "@@id": "https://alarchauffeurservice.com/#website"
-      },
-      "breadcrumb": {
-        "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#breadcrumb"
-      },
-      "primaryImageOfPage": {
-        "@@id": "https://alarchauffeurservice.com/#logo"
-      },
-      "about": {
-        "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#service"
-      }
-    },
-
-    {
-      "@@type": "BreadcrumbList",
-      "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#breadcrumb",
-      "itemListElement": [
-        {
-          "@@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://alarchauffeurservice.com/"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 2,
-          "name": "Services",
-          "item": "https://alarchauffeurservice.com/services/"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 3,
-          "name": "Airport Transportation",
-          "item": "https://alarchauffeurservice.com/services/airport-transportation"
-        }
-      ]
-    },
-
-    {
-      "@@type": "ImageObject",
-      "@@id": "https://alarchauffeurservice.com/#logo",
-      "url": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "contentUrl": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "caption": "ALAR Chauffeur Service Logo"
-    },
-
-    {
-      "@@type": "LocalBusiness",
-      "@@id": "https://alarchauffeurservice.com/#localbusiness",
-      "name": "ALAR Chauffeur Service",
-      "url": "https://alarchauffeurservice.com",
-      "telephone": {!! config('contact.phones_schema_json') !!},
-      "email": "limo@alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "priceRange": "$150 - $3000",
-      "address": {
-        "@@type": "PostalAddress",
-        "streetAddress": "10 Fairmount Ave",
-        "addressLocality": "Edison",
-        "addressRegion": "NJ",
-        "postalCode": "08820",
-        "addressCountry": "US"
-      },
-      "sameAs": [
-        "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
-        "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
-    },
-
-    {
-      "@@type": "Service",
-      "@@id": "https://alarchauffeurservice.com/services/airport-transportation/#service",
-      "name": "Airport Car Service NYC & NJ",
-      "serviceType": "Airport Transfer",
-      "description": "Luxury airport car service covering JFK Airport Limo Service NYC, LGA Limo Service LaGuardia, Newark Airport Limo Service EWR, Westchester HPN, SFO, LAX, and other major airports.",
-      "provider": {
-        "@@id": "https://alarchauffeurservice.com/#localbusiness"
-      },
-      "areaServed": [
-        "New Jersey",
-        "New York",
-        "California",
-        "Nevada",
-        "Washington",
-        "Kansas City"
-      ],
-      "offers": {
-        "@@type": "Offer",
-        "price": "150",
-        "priceCurrency": "USD",
-        "highPrice": "3000",
-        "availability": "https://schema.org/InStock"
-      }
-    }
-
-  ]
-}
-</script>
-@endpush
-
+@section('meta_description', 'Book airport car service for JFK, LaGuardia, and Newark. Flight tracking, meet and greet, and chauffeur sedans or SUVs from Alar.')
+@section('og_image', asset('assets/img/services/airport-transportation/banner.png'))
 @section('content')
-
-<!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/airport-transportation/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Premium Service</span>
-        <h1>Airport Car Service NYC & NJ | <span>JFK, LGA, EWR Limo</span></h1>
-        <p class="text-white">ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Airport Transportation</li>
-            </ol>
-        </nav>
-    </div>
-</section>
-
-<!-- ===== SERVICE DETAIL SECTION ===== -->
-<section class="ve-section bg-light">
-    <div class="container">
-        <div class="row">
-            <!-- Sidebar Column -->
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0 order-2 order-lg-1">
-                @include('components.service-sidebar')
-            </div>
-
-            <!-- Content Column -->
-            <div class="col-12 col-lg-8 order-1 order-lg-2">
-                <div class="ve-service-detail-content">
-                    <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
-                        <img src="{{ asset('assets/img/our-services/airport-transportation/1.webp') }}"
-                            alt="Alar Chauffeur Service luxury airport transfer in New Jersey" class="img-fluid rounded-12 shadow-sm">
-                    </div>
-
-                    <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
-                        <span class="ve-section-tag">Stress-Free Travel</span>
-                        <h2>Airport Car Service NYC & <span>Tri-State Airport Limo</span></h2>
-                        <p class="ve-lead">Welcome to <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur
-                                    Service</b></a>, your premier choice for airport car service NYC and New Jersey. We provide smooth, reliable transfers with professionalism and care—including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia Airport, and Newark Airport Limo Service EWR.</p>
-
-                        <p>Travel in comfort and style with our diverse fleet, including elegant sedans, spacious SUVs,
-                            versatile mid-size crossover SUVs, and roomy Sprinter vans. Whatever your preference, we
-                            have the perfect vehicle to suit your needs and make every journey enjoyable and
-                            stress-free.
-                        </p>
-
-                        <h3 class="mt-30">Airports We Serve Across the <span>Tri-State Area</span></h3>
-                        <div class="ve-amenities-list mt-20 mb-30">
-                            <ul>
-                                <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>
-                                <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — LGA Limo Service LaGuardia Airport</li>
-                                <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Newark Airport Limo Service EWR</li>
-                                <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — Westchester and White Plains car service</li>
-                            </ul>
-                        </div>
-
-                        <div class="row mt-40 mb-40">
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-clock-o"></i>
-                                    <h5>Punctual and Reliable</h5>
-                                    <p>We pride ourselves on our 100% on time performance record for airport pickups.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-plane"></i>
-                                    <h5>Flight Tracking</h5>
-                                    <p>Real-time monitoring of your flight ensures we're there exactly when you need us.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-suitcase"></i>
-                                    <h5>Luggage Assistance</h5>
-                                    <p>Your chauffeur handles all your bags, so you don't have to lift a finger.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 mb-30">
-                                <div class="ve-feature-box">
-                                    <i class="fa fa-map-marker"></i>
-                                    <h5>Wait and Greet</h5>
-                                    <p>Professional signage and greeting services at the terminal for a VIP experience.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <h3>Timely, Expert, and Premium <span>Airport Transportation Experience</span></h3>
-                        <p>At <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur Service</b></a>, punctuality
-                            is our top priority, especially for airport transfers. Our skilled chauffeurs ensure
-                            seamless travel between your location and theairport, making your journey stress-free and
-                            reliable. Whether you are a business traveler, a family on vacation, or someone seeking a
-                            luxurious ride, our airport transport service is designed to meet every need.</p>
-
-                        <p>We also specialize in a range of premium services, including <a
-                                href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>JFK Airport
-                                    Limo Service NYC</b></a>, <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Newark Airport Limo Service EWR</b></a>, <a
-                                href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>Escalade Limo
-                                    Rental</b></a>, and Corporate Limo New Jersey. Experience comfort, style, and
-                            professionalism with every ride.</p>
-
-                        <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> 60 Minutes Complimentary Wait Time</li>
-                                        <li><i class="fa fa-check"></i> Bottled Water & WiFi Access</li>
-                                        <li><i class="fa fa-check"></i> Child Safety Seats (Upon Request)</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Clean, Sanitized Late Model Fleet</li>
-                                        <li><i class="fa fa-check"></i> Professional Suited Chauffeurs</li>
-                                        <li><i class="fa fa-check"></i> 24/7 Dispatch and Support</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ve-detail-extra-content mt-50">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 mb-30 wow fadeInLeft" data-wow-delay="100ms">
-                                    <img src="{{ asset('assets/img/our-services/airport-transportation/2.webp') }}" alt="Mercedes-Benz S-Class luxury sedan for airport chauffeur service"
-                                        class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                                <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <h2>Travel in Luxury with Our Premium S-Class <span>Chauffeur Service</span></h2>
-                                    <p>Travel in ultimate comfort and style with ALAR Chauffeur Service’s Mercedes
-                                        S-Class Chauffeur Service, designed to meet the highest standards of elegance
-                                        and convenience.</p>
-                                    <p>Our premium service ensures unmatched luxury and comfort, whether you’re heading
-                                        to a corporate meeting, a special event, or need seamless airport
-                                        transportation. Let our professional chauffeurs handle every detail of your
-                                        journey, providing discretion, expertise, and smooth, hassle-free travel from
-                                        start to finish.</p>
-                                </div>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h3>Professionalism <span>at Every Turn</span></h3>
-                                <p>Our chauffeurs are more than just drivers; they are trained hospitality professionals
-                                    who understand the nuances of executive travel. From discretion and confidentiality
-                                    to knowing the most efficient routes to avoid unexpected delays, your chauffeur is
-                                    dedicated to your safety and satisfaction.</p>
-
-                                <div class="ve-quote-box mt-30">
-                                    <i class="fa fa-quote-left"></i>
-                                    <p>Alar Chauffeur Service has been my go-to for years. Their airport service is
-                                        unbeatable for its reliability and the sheer quality of the vehicles. I never
-                                        have to worry about being late for a flight.</p>
-                                    <div class="ve-quote-author">
-                                        <strong>Robert Sterling</strong>
-                                        <span>Frequent Business Traveler</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center mt-50 mb-30">
-                                <div class="col-md-6 order-2 order-md-1 wow fadeInLeft" data-wow-delay="100ms">
-                                    <h3>Personalized <span>Meet and Greet</span></h3>
-                                    <p>Avoid the confusion of crowded terminals. Our professional Meet and Greet service
-                                        includes your chauffeur waiting for you at the arrivals area with a personalized
-                                        sign. We'll assist with your luggage and lead you directly to your waiting
-                                        vehicle, parked in the closest possible proximity to the terminal.</p>
-                                    <p>This service is highly recommended for international travelers, families with
-                                        young children, or anyone looking for the smoothest possible transition from
-                                        flight to car.</p>
-                                </div>
-                                <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <img src="{{ asset('assets/img/our-services/airport-transportation/3.webp') }}"
-                                        alt="Professional airport chauffeur meet and greet terminal assistance" class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                            </div>
-
-                            <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
-                                <span class="ve-section-tag">FAQs</span>
-                                <h2>Airport Transfer <span>Frequently Asked Questions</span></h2>
-                                <div id="airportFaqAccordion" class="accordion ve-faq-accordion mt-30">
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingOne">
-                                            <button class="btn ve-faq-toggle btn-block text-left px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqOne"
-                                                aria-expanded="true" aria-controls="airportFaqOne">
-                                                What airport transportation services does ALAR Chauffeur Service offer
-                                                in New Jersey and New York?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqOne" class="collapse show"
-                                            aria-labelledby="airportFaqHeadingOne" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                ALAR Chauffeur Service offers luxury airport transfers, corporate limo
-                                                rides, and group transportation across NJ, NY, and nearby states.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingTwo">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqTwo"
-                                                aria-expanded="false" aria-controls="airportFaqTwo">
-                                                How can I book an airport limo service with ALAR Chauffeur Service near
-                                                me?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqTwo" class="collapse" aria-labelledby="airportFaqHeadingTwo"
-                                            data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                You can quickly book an airport limo online, by phone, or through our
-                                                website for pickups in New Jersey and New York.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingThree">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqThree"
-                                                aria-expanded="false" aria-controls="airportFaqThree">
-                                                What happens if my flight is delayed or arrives early for my airport
-                                                transfer?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqThree" class="collapse"
-                                            aria-labelledby="airportFaqHeadingThree" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Our chauffeurs track your flight in real-time to adjust pickup times for
-                                                delays or early arrivals.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingFour">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqFour"
-                                                aria-expanded="false" aria-controls="airportFaqFour">
-                                                Which luxury vehicles are available for airport limo and corporate
-                                                transfers?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqFour" class="collapse"
-                                            aria-labelledby="airportFaqHeadingFour" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Choose from Mercedes S-Class, SUVs, Sprinter vans, sedans, and party
-                                                buses for airport or corporate travel.
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card ve-faq-card">
-                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingFive">
-                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
-                                                type="button" data-toggle="collapse" data-target="#airportFaqFive"
-                                                aria-expanded="false" aria-controls="airportFaqFive">
-                                                Are ALAR Chauffeur Service’s airport transfers and limo services
-                                                available 24/7?
-                                            </button>
-                                        </div>
-                                        <div id="airportFaqFive" class="collapse"
-                                            aria-labelledby="airportFaqHeadingFive" data-parent="#airportFaqAccordion">
-                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes, our luxury airport transfers and limo services are available 24/7
-                                                across New Jersey, New York, and the nearby states.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+@include('components.page-banner', ['image' => asset('assets/img/services/airport-transportation/banner.png'), 'kicker' => 'Airports', 'title' => 'Airport car service for JFK, LGA, and EWR', 'crumb' => 'Services'])
+@include('components.ticker')
+<section class="alar-section">
+    <div class="alar-wrap alar-split">
+        <img src="{{ asset('assets/img/services/airport-transportation/photo.png') }}" alt="Airport car service sedan at a terminal at night">
+        <div class="alar-prose">
+            <p>Alar Chauffeur Service runs airport car service between New York, New Jersey, and the three Tri-State airports travelers actually use: John F. Kennedy, LaGuardia, and Newark Liberty. The reservation names the terminal, the flight, and the address. The chauffeur follows the live arrival instead of the time printed on the ticket.</p>
+            <p>Reserve on the <a href="{{ route('book-online') }}">online booking page</a> or compare vehicles on <a href="{{ route('our-fleet') }}">our luxury fleet</a>.</p>
         </div>
     </div>
 </section>
-
-@include('components.cta')
+@include('components.airport-directory')
+<section class="alar-section alar-paper">
+    <div class="alar-wrap alar-prose">
+        <h2>What people ask before they book an airport car</h2>
+        <p>Most airport searches are practical. Travelers want to know whether a car service to JFK from Manhattan is a flat reservation or a meter that starts in traffic. They want to know if a Newark airport car service will wait when the inbound is late. They want to know whether LaGuardia car service is worth it compared with a taxi line at Terminal B. Those are the questions this page answers.</p>
+        <p>A reserved chauffeur is the steadier choice when the flight, the luggage, or the meeting after landing cannot slip. A taxi is a queue. A rideshare price can change while you are still at baggage claim. An airport limo or sedan from Alar is assigned before you take off. You already know the vehicle and the rate. If the board changes, dispatch moves the pickup. That is the difference people are paying for.</p>
+        <h2>JFK car service</h2>
+        <p>John F. Kennedy International is a campus, not a single curb. Terminals 1 through 8 sit far enough apart that a driver who only has “JFK” on the job will be at the wrong door. We ask for the airline and the terminal on every JFK airport transfer. Arrivals can be a meet and greet inside, with a name board, or a curbside pickup at the door you were given. Departures are timed so you reach the correct terminal with a buffer for the Van Wyck, not a guess.</p>
+        <p>Car service to JFK from Manhattan is the trip we are asked for most often. Midtown, Downtown, the Upper East Side, the Upper West Side, SoHo, and the hotels along the avenues each have a different path to the airport. Brooklyn and Queens pickups, including Long Island City, Williamsburg, and Jamaica, are booked the same way. If you are starting in <a href="{{ route('service-area.new-jersey') }}">New Jersey</a>, say the town. Edison, Jersey City, Hoboken, and Princeton are not the same drive as Midtown, and the quote should reflect the real address.</p>
+        <p>For a fuller walkthrough of the Manhattan route, read <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">car service to JFK from Manhattan</a>.</p>
+        <h2>LaGuardia limo and car service</h2>
+        <p>LaGuardia is closer to Manhattan than JFK and still punishes a late departure. The airport’s roads bunch up at the terminals, especially when weather or a runway delay stacks arrivals. A LaGuardia car service works when the chauffeur is already staged for Terminal A, B, or C, not circling the old central roadway out of habit. We track the flight on pickups and we build departure times backward from the terminal, not from a generic “leave two hours before” rule that ignores where you actually are.</p>
+        <p>LGA transfers suit business travelers who need to be in Midtown or on the East Side quickly, and families who would rather not manage car seats and bags in a taxi line. An SUV is the usual upgrade when there are more than three passengers or the bags will not fit a sedan trunk. Tell us the terminal. It changes both the meeting point and the time we recommend you leave.</p>
+        <h2>Newark airport car service</h2>
+        <p>Newark Liberty is the home airport for our Edison desk. A Newark airport limo from Jersey City, Hoboken, Newark, or Princeton is often shorter than a ride to JFK, which is why many New Jersey travelers prefer EWR when the airfare is close. Manhattan to EWR is a real crossing, not a neighborhood hop, and it should be priced that way. We cover Terminals A, B, and C and we ask which one, because the walk between them is not trivial with luggage.</p>
+        <p>Meet and greet is available inside the terminal. Curbside pickup is available when you would rather walk out to a waiting car. Private aviation at Teterboro is a separate request: send the FBO, not just “TEB,” so the chauffeur is at the right building. The longer guide is on our <a href="{{ route('blog.newark-airport-car-service-ewr') }}">Newark airport car service</a> page.</p>
+        <h2>How flight tracking changes the pickup</h2>
+        <p>The arrival time on your confirmation is a plan, not a promise. Inbound flights slip, and sometimes they arrive early. Alar follows the live flight on airport pickups. If you land late, the chauffeur’s window moves with you instead of starting a wait-time argument at the curb. If you land early, dispatch can move the car forward when the schedule allows. Put the flight number on the reservation. Without it, we can still meet you at a clock time, but we cannot adjust for a delay we were never given.</p>
+        <p>For departures, send the airline and the terminal even if you do not need a tracked pickup. The value is leaving the house or hotel at a time that fits that terminal and that address. A Downtown hotel and a Short Hills house do not share a departure clock for the same JFK flight.</p>
+        <h2>Which vehicle to book</h2>
+        <p>A luxury sedan, including the Cadillac CT5, Rolls-Royce Ghost, and Mercedes-Benz S550, fits up to four passengers with a normal amount of luggage. Book it for a couple, a solo executive, or a small team that is not checking bags for a week. A Cadillac Escalade, up to seven passengers, is the better airport SUV when you have more people, golf bags, or several large suitcases. A Mercedes Sprinter is the group answer, up to fourteen passengers, and it is the right call for a family reunion or a sports team that should arrive together.</p>
+        <p>Do not guess. On the booking, list passengers and bags separately. A sedan that looks fine for three adults fails when each person has a checked bag and a carry-on. We would rather assign the SUV before the trip than discover the trunk at the terminal. See capacities on the fleet page, and read how the three airports differ in our <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">JFK, LGA, and EWR Tri-State guide</a>.</p>
+        <h2>Meet and greet, curbside, and child seats</h2>
+        <p>Meet and greet means the chauffeur waits inside arrivals with a name board, helps with bags, and walks you to the car. It is the right choice after a long flight, with children, or when you do not want to hunt for a texted pin in a crowd. Curbside means you come out to the door we named and the car is there. Both are reserved. Neither is a random lane.</p>
+        <p>Ask for a child seat when you book, and say the age or the type you need. Adding it in the arrivals hall is how car seats get forgotten. The same is true for a wheelchair-accessible request or extra stop: it has to be on the reservation so the vehicle and the time are right.</p>
+        <h2>What the rate depends on</h2>
+        <p>Airport car service is priced from the addresses, the time of day, the vehicle, and whether you want meet and greet or extra waiting. It is not a meter that starts when you sit down, and it is not a number copied from a blog. Tolls and airport fees can apply and should be explained with the quote. If you need the car to wait while you collect a second passenger, say so. Hourly waiting is different from a standard pickup window that already includes a delay.</p>
+        <p>Send the date, the flight, the terminal if you know it, the pickup or drop-off address, the passenger count, and the bags. We reply with the vehicle and the rate. You can book online or send the same details through the contact form. For city context, start with <a href="{{ route('service-area.new-york') }}">New York car service</a> if the address is in the boroughs, or the New Jersey page if it is on our side of the river.</p>
+        <h2>Early mornings, late nights, and international arrivals</h2>
+        <p>International arrivals need more time in the hall for immigration and bags. Build that into the plan, and still give us the flight number so we are not waiting on a domestic clock. Red-eye landings and 5 a.m. departures are normal work for a 24/7 desk. The chauffeur is assigned overnight. You should not have to hope a rideshare is staffed at that hour.</p>
+        <p>If you are connecting the airport ride to a meeting the same day, <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a> can hold the car between the terminal and the office instead of ending the trip at the curb. If the group is large enough for a van, ask for group transportation when you write.</p>
+        <h2>Questions about airport transfers</h2>
+        <div class="alar-faq">
+            <details open>
+                <summary>Do you track flights for JFK, LGA, and EWR?</summary>
+                <p>Yes. Put the flight number on the reservation and the pickup follows the live arrival, including delays.</p>
+            </details>
+            <details>
+                <summary>Is meet and greet included?</summary>
+                <p>It is available at all three airports. Ask for it when you book so the chauffeur waits inside with a name board.</p>
+            </details>
+            <details>
+                <summary>How early should I leave for a departure?</summary>
+                <p>It depends on the address and the terminal. We recommend a leave time with the quote instead of a single rule for every hotel.</p>
+            </details>
+            <details>
+                <summary>Can you do a car seat or extra luggage?</summary>
+                <p>Yes, if it is on the booking. Extra bags may mean an SUV instead of a sedan.</p>
+            </details>
+            <details>
+                <summary>Is the price a meter?</summary>
+                <p>No. You receive a rate for the vehicle and the route before the car is dispatched.</p>
+            </details>
+        </div>
+    </div>
+</section>
+@include('components.related-services')
+@include('components.blog-insights')
 @endsection

@@ -35,11 +35,6 @@ return [
         ],
     ],
 
-    'turnstile' => [
-        'site_key' => env('TURNSTILE_SITE_KEY'),
-        'secret_key' => env('TURNSTILE_SECRET_KEY'),
-    ],
-
     'google_places' => [
         'api_key'  => env('GOOGLE_PLACES_API_KEY'),
         'place_id' => env('GOOGLE_PLACE_ID'),

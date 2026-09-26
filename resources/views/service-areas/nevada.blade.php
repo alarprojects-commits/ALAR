@@ -1,269 +1,110 @@
-@extends('main')
+@extends('layouts.app')
 @section('meta_title', 'Luxury Transportation in Nevada | Private Chauffeur')
-@section('meta_description', 'Book luxury transportation in Nevada for airport transfers, corporate travel, events & private chauffeur rides across Las Vegas and Reno.')
-
-@push('schema')
-<script type="application/ld+json">
-{
-  "@@context": "https://schema.org",
-  "@@graph": [
-    {
-      "@@type": "WebPage",
-      "@@id": "https://alarchauffeurservice.com/service-areas/nevada/#webpage",
-      "url": "https://alarchauffeurservice.com/service-areas/nevada",
-      "name": "Chauffeur Service in Nevada",
-      "description": "Luxury chauffeur service in Nevada offering airport transfers, black car service, corporate transportation, wedding transportation, hourly chauffeur service, and event transportation.",
-      "about": {
-        "@@id": "https://alarchauffeurservice.com/service-areas/nevada/#service"
-      }
-    },
-    {
-      "@@type": "Service",
-      "@@id": "https://alarchauffeurservice.com/service-areas/nevada/#service",
-      "name": "Chauffeur Service in Nevada",
-      "serviceType": "Luxury Chauffeur Transportation",
-      "url": "https://alarchauffeurservice.com/service-areas/nevada",
-      "provider": {
-        "@@id": "https://alarchauffeurservice.com/#business"
-      },
-      "areaServed": {
-        "@@type": "State",
-        "name": "Nevada"
-      },
-      "description": "Professional chauffeur service throughout Nevada including airport transfers, corporate travel, black car service, wedding transportation, sporting event transportation, group transportation, and VIP transportation.",
-      "offers": {
-        "@@type": "Offer",
-        "availability": "https://schema.org/InStock"
-      }
-    },
-    {
-      "@@type": "BreadcrumbList",
-      "@@id": "https://alarchauffeurservice.com/service-areas/nevada/#breadcrumb",
-      "itemListElement": [
-        {
-          "@@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://alarchauffeurservice.com"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 2,
-          "name": "Service Areas",
-          "item": "https://alarchauffeurservice.com/service-areas"
-        },
-        {
-          "@@type": "ListItem",
-          "position": 3,
-          "name": "Nevada",
-          "item": "https://alarchauffeurservice.com/service-areas/nevada"
-        }
-      ]
-    }
-  ]
-}
-</script>
-@endpush
-
+@section('meta_description', 'Nevada chauffeur service built around Las Vegas limo transfers: Harry Reid airport LAS arrivals, Strip hotels, and reserved event cars.')
+@section('og_image', asset('assets/img/service-areas/nevada.png'))
 @section('content')
+@include('components.page-banner', ['image' => asset('assets/img/service-areas/nevada.png'), 'modifier' => 'alar-banner-tall', 'kicker' => 'Nevada', 'title' => 'Las Vegas limo and Nevada chauffeur service', 'crumb' => 'Nevada'])
+@include('components.ticker')
 
-    <!-- ===== PAGE HERO (Sophisticated Text-Only) ===== -->
-    <section class="ve-page-hero-simple">
-        <div class="container">
-            <div class="ve-hero-simple-content">
-                <span class="ve-section-tag">Service Areas</span>
-                <h1>Luxury Transportation in Nevada for <span>Airport, Corporate & Private Travel</span></h1>
-                <p>Experience luxury transportation in Nevada for airport transfers, corporate travel, and private rides with comfort, reliability, and professional chauffeurs.</p>
-            </div>
+<section class="alar-section">
+    <div class="alar-wrap alar-split">
+        <img src="{{ asset('assets/img/service-areas/nevada-scene.png') }}" alt="Black SUV at a Las Vegas resort entrance at night">
+        <div class="alar-prose">
+            <p class="alar-kicker">Nevada</p>
+            <h2>Nevada chauffeur service around Las Vegas</h2>
+            <p>Searches for Nevada chauffeur service almost always mean Las Vegas limo work: a Harry Reid airport LAS arrival, a drop at a specific Strip hotel tower, a convention transfer, or a reserved car for a show night. This page is built around Las Vegas, not every town in the state overnight.</p>
+            <p>Airport mornings start with <a href="{{ route('services.airport-transportation') }}">airport transportation</a>. Multi-stop convention days fit <a href="{{ route('services.corporate-transportation') }}">corporate transportation</a>. Lock the car on the <a href="{{ route('book-online') }}">booking page</a>.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- ===== DETAIL CONTENT ===== -->
-    <section class="ve-section bg-white">
-        <div class="container">
-            <div class="row">
-                <!-- Main Content -->
-                <div class="col-12 col-lg-8">
-                    <div class="ve-service-area-detail">
-                        <div class="ve-area-intro mb-50">
-                            <h2 class="mb-20">Luxury Transportation in Nevada | Premium <span>Chauffeur Services</span></h2>
-                            <p class="ve-lead">Traveling across Nevada requires more than just a ride, it demands reliability, comfort, and precision. With luxury transportation in Nevada, you get a seamless experience tailored for business professionals, tourists, and event travelers.</p>
-                            <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> delivers high-end mobility solutions designed for efficiency and comfort. Whether you need airport transfers or private city travel, every ride is planned with attention to timing and service quality.</p>
-                        </div>
-
-                        <div class="ve-area-features mb-50">
-                            <h3>Our Nevada <span>Expertise</span></h3>
-                            <div class="row mt-30">
-                                <div class="col-md-6 mb-30">
-                                    <div class="ve-feature-text-item">
-                                        <i class="fa fa-plane"></i>
-                                        <h5>LAS Airport Specialists</h5>
-                                        <p>Expert navigation to Harry Reid International Airport (LAS) with personalized pickup and drop-off services.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-30">
-                                    <div class="ve-feature-text-item">
-                                        <i class="fa fa-building"></i>
-                                        <h5>Entertainment & Strip</h5>
-                                        <p>Seamless transport for the Las Vegas Strip, Downtown Las Vegas, and major conventions.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-30">
-                                    <div class="ve-feature-text-item">
-                                        <i class="fa fa-star"></i>
-                                        <h5>Resort & Casino Travel</h5>
-                                        <p>Sophisticated transportation for luxury resorts, gala events, and private entertainment in Nevada.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mb-30">
-                                    <div class="ve-feature-text-item">
-                                        <i class="fa fa-road"></i>
-                                        <h5>Southwest Regional Travel</h5>
-                                        <p>Comfortable long-distance journeys between Nevada and neighboring states like California and Arizona.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ve-area-description">
-                            <h2>Airport Transportation Services <span>Across Nevada</span></h2>
-                            <p>Air travel can be unpredictable, but your ground transport should remain consistent. Our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>luxury transportation in Nevada</b></a> ensures smooth airport pickups and timely drop-offs.</p>
-
-                            <h3>Major Airports <span>Covered</span></h3>
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Harry Reid International Airport</li>
-                                    <li><i class="fa fa-check"></i> Reno-Tahoe International Airport</li>
-                                </ul>
-                            </div>
-
-                            <h3>
-                                What You Get
-                            </h3>
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Real-time flight tracking</li>
-                                    <li><i class="fa fa-check"></i> Meet-and-greet service</li>
-                                    <li><i class="fa fa-check"></i> Direct, non-stop transfers</li>
-                                    <li><i class="fa fa-check"></i> Clean, executive vehicles</li>
-                                </ul>
-                            </div>
-
-                            <h2>Private Transportation Across <span>Nevada Cities</span></h2>
-                            <p>Navigating cities like Las Vegas and Reno can be time-consuming without proper planning. Our luxury transportation in Nevada offers a refined way to travel with full control over your schedule.</p>
-
-                            <h3>Top Destinations</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Las Vegas Strip</li>
-                                    <li><i class="fa fa-check"></i> Fremont Street</li>
-                                    <li><i class="fa fa-check"></i> Lake Tahoe</li>
-                                </ul>
-                            </div>
-
-                            <h3>Why Choose Private Travel</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> No waiting or delays</li>
-                                    <li><i class="fa fa-check"></i> Flexible routes and stops</li>
-                                    <li><i class="fa fa-check"></i> Comfortable interiors</li>
-                                    <li><i class="fa fa-check"></i> Ideal for leisure and business</li>
-                                </ul>
-                            </div>
-
-                            <h2>Corporate Chauffeur & <span>Executive Travel</span></h2>
-                            <p>
-                                <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>Business travel in Nevada</b></a> requires punctuality and professionalism. Our executive solutions are built for clients who need dependable service.
-                            </p>
-                            <p>With luxury transportation in Nevada, corporate travelers benefit from:</p>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> On-time arrivals</li>
-                                    <li><i class="fa fa-check"></i> Quiet environment for work</li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>Professional chauffeurs</b></a></li>
-                                    <li><i class="fa fa-check"></i> Efficient multi-stop planning</li>
-                                </ul>
-                            </div>
-
-                            <h2>Event & Wedding Transportation Services</h2>
-                            <p>From large-scale events to private celebrations, transportation plays a key role. Our service ensures you arrive on time and in style.</p>
-
-                            <h3>Events Covered</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Weddings and receptions</b></a></li>
-                                    <li><i class="fa fa-check"></i> Concerts and nightlife</li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>Sporting events</b></a></li>
-                                    <li><i class="fa fa-check"></i> Private parties</li>
-                                </ul>
-                            </div>
-                            <p>Our luxury transportation in Nevada is ideal for making important occasions stress-free and memorable.</p>
-
-                            <h2>Long-Distance & Intercity Travel</h2>
-                            <p>Nevada’s distances can make travel exhausting. Our chauffeur-driven service offers a smooth alternative.</p>
-
-                            <h3>Popular Routes</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Las Vegas to Reno</li>
-                                    <li><i class="fa fa-check"></i> Las Vegas to Lake Tahoe</li>
-                                    <li><i class="fa fa-check"></i> Reno to nearby regions</li>
-                                </ul>
-                            </div>
-                            <h3>Benefits</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Door-to-door service</li>
-                                    <li><i class="fa fa-check"></i> No flight hassle</li>
-                                    <li><i class="fa fa-check"></i> Flexible timing</li>
-                                </ul>
-                            </div>
-
-                            <h2>Hourly Chauffeur Service for Flexible Plans</h2>
-                            <p>For travelers needing flexibility, hourly bookings provide full control. Whether it’s meetings, tours, or events, your chauffeur stays available as needed.</p>
-
-                            <h2>Why Choose Our Luxury Transportation in Nevada</h2>
-                            <p>Choosing the right provider makes all the difference. Our service focuses on quality, reliability, and consistency.</p>
-
-                            <h3>Key Highlights</h3>
-
-                            <div class="ve-amenities-list">
-                                <ul>
-                                    <li><i class="fa fa-check"></i> Professional chauffeurs</li>
-                                    <li><i class="fa fa-check"></i> Premium fleet (sedans & SUVs)</li>
-                                    <li><i class="fa fa-check"></i> 24/7 availability</li>
-                                    <li><i class="fa fa-check"></i> On-time service guarantee</li>
-                                    <li><i class="fa fa-check"></i> Easy booking process</li>
-                                </ul>
-                            </div>
-
-                            <h2>Simple Booking Process</h2>
-                            <p>Booking <a href="{{ route('book-online') }}" style="color: var(--ve-gold);""><b>luxury transportation in Nevada</b></a> is quick and efficient. Choose your location, time, and vehicle, and your ride is confirmed.</p>
-
-                            <p>Advance booking is recommended during peak seasons and major events in Nevada.</p>
-
-                            <h2>A Better Way to Travel in Nevada</h2>
-                            <p>
-                                From <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transfers</b></a> to corporate travel and private rides, choosing luxury transportation in Nevada ensures a smooth, stress-free journey every time.
-                            </p>
+<section class="alar-guide">
+    <div class="alar-wrap">
+        <div class="alar-head"><div><p class="alar-kicker">Plan the trip</p><h2>Pick a Las Vegas route</h2></div></div>
+        <p class="alar-guide-lead">Open LAS, the Strip, peak nights, or why to reserve. Only that guide shows on the right.</p>
+        <div class="alar-guide-shell">
+            <div class="alar-guide-nav" role="tablist" aria-label="Nevada topics">
+                <button type="button" class="is-on" data-guide="nv-las"><span class="alar-guide-num">01</span><span class="alar-guide-label">Harry Reid</span><span class="alar-guide-hint">LAS airport</span></button>
+                <button type="button" data-guide="nv-strip"><span class="alar-guide-num">02</span><span class="alar-guide-label">Strip</span><span class="alar-guide-hint">Resorts and conventions</span></button>
+                <button type="button" data-guide="nv-peaks"><span class="alar-guide-num">03</span><span class="alar-guide-label">Peak nights</span><span class="alar-guide-hint">Shows and weekends</span></button>
+                <button type="button" data-guide="nv-why"><span class="alar-guide-num">04</span><span class="alar-guide-label">Why reserve</span><span class="alar-guide-hint">When an app is not enough</span></button>
+            </div>
+            <div class="alar-guide-panels">
+                <article id="nv-las" class="alar-guide-panel is-on">
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/airport-transportation/photo.png') }}')"></div>
+                    <div class="alar-guide-copy">
+                        <h3>Harry Reid airport LAS pickups and departures</h3>
+                        <p>Harry Reid International Airport is the commercial gateway for Las Vegas limo arrivals. Harry Reid airport LAS service only works when the airline and the terminal are on the reservation. Flight tracking follows the live arrival so an early inbound is met and a delayed inbound does not strand you while an app price climbs.</p>
+                        <p>If you are leaving a Strip hotel for a morning flight, put the resort name, the tower if the property has more than one, and the preferred exit on the booking. A wrong tower with luggage is a long walk.</p>
+                        <div class="alar-guide-actions">
+                            <a class="alar-btn alar-btn-gold" href="{{ route('airports.las') }}">LAS guide</a>
+                            <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Sidebar -->
-                <div class="col-12 col-lg-4 mt-50 mt-lg-0">
-                    <x-service-area-sidebar />
-                </div>
+                </article>
+                <article id="nv-strip" class="alar-guide-panel">
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/service-areas/nevada-scene.png') }}')"></div>
+                    <div class="alar-guide-copy">
+                        <h3>Strip hotels, downtown resorts, and conventions</h3>
+                        <p>Strip hotels are the most common Las Vegas limo destinations. The resort name is not optional detail. Properties on the Strip can span long frontages, multiple towers, and different loading rules. Send the hotel, the tower if you know it, and a mobile number for the guest who will meet the chauffeur.</p>
+                        <p>For a day with several venue stops, <a href="{{ route('services.hourly-limo') }}">hourly limo service</a> keeps one chauffeur on your clock instead of releasing the car after the first drop.</p>
+                        <div class="alar-guide-actions">
+                            <a class="alar-btn alar-btn-gold" href="{{ route('services.hourly-limo') }}">Hourly limo</a>
+                            <a class="alar-btn alar-btn-line" href="{{ route('book-online') }}">Book Online</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="nv-peaks" class="alar-guide-panel">
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/services/concert-festival/photo.png') }}')"></div>
+                    <div class="alar-guide-copy">
+                        <h3>Conventions, residencies, and weekend peaks</h3>
+                        <p>Las Vegas limo demand spikes when a major convention, a residency calendar, and weekend leisure arrivals overlap. A reserved chauffeur does not invent extra lanes on Las Vegas Boulevard, but it does remove the search for a vehicle while you stand with bags under the hotel canopy.</p>
+                        <p>Send the flight number early. Send the resort tower. Send the return time if you already know when the evening ends. Those three details prevent most of the avoidable friction.</p>
+                        <div class="alar-guide-actions">
+                            <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
+                            <a class="alar-btn alar-btn-line" href="{{ route('contact-us') }}">Request a Quote</a>
+                        </div>
+                    </div>
+                </article>
+                <article id="nv-why" class="alar-guide-panel">
+                    <div class="alar-guide-media" style="background-image:url('{{ asset('assets/img/fleet/cadillac-escalade.webp') }}')"></div>
+                    <div class="alar-guide-copy">
+                        <h3>Why a reserved Las Vegas limo helps</h3>
+                        <p>On a quiet Tuesday with one carry-on, an on-demand car can be enough. On a Friday night when conferences, residencies, and weekend arrivals overlap, a reserved Las Vegas limo is the steadier choice. The price was agreed before the flight landed. The chauffeur already has the resort. The vehicle size already matches the bags.</p>
+                        <p>A fair comparison is in our guide to <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}">black car service versus Uber and taxi</a>. Travelers who also need Tri-State coverage can review <a href="{{ route('service-area.new-jersey') }}">New Jersey car service</a>.</p>
+                        <div class="alar-guide-actions">
+                            <a class="alar-btn alar-btn-gold" href="{{ route('book-online') }}">Book Online</a>
+                            <a class="alar-btn alar-btn-line" href="{{ route('our-fleet') }}">View fleet</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    @include('components.cta')
+<section class="alar-section">
+    <div class="alar-wrap">
+        <div class="alar-head"><div><p class="alar-kicker">Quote</p><h2>How to get a Nevada quote</h2></div></div>
+        <div class="alar-steps">
+            <article><h3>Resort and tower</h3><p>The property name, and the tower if the hotel has more than one entrance.</p></article>
+            <article><h3>LAS terminal</h3><p>Airline, terminal, and flight number for Harry Reid arrivals and departures.</p></article>
+            <article><h3>Return time</h3><p>Book the ride home with the arrival when you already know when the show ends.</p></article>
+        </div>
+    </div>
+</section>
 
+<section class="alar-section alar-paper">
+    <div class="alar-wrap">
+        <h2>Questions about Nevada</h2>
+        <div class="alar-faq">
+            <details open><summary>Do you track flights at Harry Reid airport LAS?</summary><p>Yes. When the flight number is on the reservation, the chauffeur follows the live arrival time, including delays.</p></details>
+            <details><summary>Do you pick up at Strip hotels by tower?</summary><p>Yes when you send the resort and tower or preferred door. The property name is required so the drop is not a long walk with luggage.</p></details>
+            <details><summary>Can we book a return after a show or convention?</summary><p>Yes. Reserve the return with the arrival when you know the end time, or book hourly coverage for multi-stop evenings.</p></details>
+            <details><summary>Which vehicles are available for Las Vegas limo trips?</summary><p>Sedans and SUVs are assigned from headcount and bags. Larger vehicles are available when a standard SUV is too small.</p></details>
+            <details><summary>How do we book Nevada chauffeur service?</summary><p>Use the booking page or send both addresses, the date, LAS details if relevant, and the passenger count.</p></details>
+        </div>
+    </div>
+</section>
+@include('components.related-services')
 @endsection
