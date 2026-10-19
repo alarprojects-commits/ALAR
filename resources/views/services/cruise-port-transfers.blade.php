@@ -12,7 +12,7 @@
             <p>Luxury Cruise Port Transfers NJ & NY | Reliable Transfers to Manhattan & Cape Liberty Cruise Terminals with 24/7 Chauffeur Service</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>

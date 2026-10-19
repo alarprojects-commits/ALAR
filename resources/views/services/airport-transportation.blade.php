@@ -131,7 +131,7 @@
             <p>ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>

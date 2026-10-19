@@ -128,7 +128,7 @@
             <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>

@@ -13,7 +13,7 @@
                 <p>State guides for New Jersey, New York, Connecticut, and Pennsylvania—plus California, Nevada, and Washington. Every page links to the airports travelers actually book.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                    <a href="{{ route('airports.index') }}" class="ve-btn-outline">Airport Guides</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
                 </div>
             </div>
         </div>

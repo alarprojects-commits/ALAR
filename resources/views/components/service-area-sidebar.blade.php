@@ -47,6 +47,7 @@
         <h4 style="color: #fff; margin-bottom: 15px;">Book Your Ride</h4>
         <p style="font-size: 14px; opacity: 0.8; margin-bottom: 20px;">Ready for a reserved chauffeur? Get a quote or book online today.</p>
         <a href="{{ route('book-online') }}" class="ve-btn-primary" style="width: 100%; text-align: center;">Book Online</a>
+        <a href="{{ route('free-quote') }}" class="ve-btn-outline" style="width: 100%; text-align: center; margin-top: 12px; display: block;">Free Quote</a>
         <p class="mt-3 mb-0" style="font-size: 14px;">
             <a href="tel:{{ config('contact.phone_tel') }}" style="color: var(--ve-gold);">{{ config('contact.phone_display') }}</a>
         </p>

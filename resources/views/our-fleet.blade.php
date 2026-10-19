@@ -117,7 +117,7 @@
             <p>Luxury sedans, SUVs, Sprinter vans, and party buses for airport transfers, events, and corporate travel.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('our-services') }}" class="ve-btn-outline">Our Services</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>
@@ -176,8 +176,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -198,8 +198,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -220,8 +220,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -243,8 +243,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -265,8 +265,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -287,8 +287,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -309,8 +309,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -332,8 +332,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -355,8 +355,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -378,8 +378,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -400,8 +400,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -423,8 +423,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -446,8 +446,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -468,8 +468,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>
@@ -491,8 +491,8 @@
                             <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
                                 <a href="{{ route('book-online') }}" class="ve-btn-primary"
                                     style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Call Now</a>
+                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
+                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
                             </div>
                         </div>
                     </div>

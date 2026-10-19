@@ -3,12 +3,15 @@
     <div class="ve-cta-overlay"></div>
     <div class="container ve-cta-content">
         <div class="row align-items-center">
-            <div class="col-12 col-lg-8">
+            <div class="col-12 col-lg-7">
                 <h2>Ready to Experience <span>True Luxury?</span></h2>
-                <p>Book your premium ride today or call us for a custom quote for your next special event.</p>
+                <p>Book your premium ride today or request a free quote for your next trip or special event.</p>
             </div>
-            <div class="col-12 col-lg-4 text-lg-right">
-                <a href="{{ route('book-online') }}" class="ve-btn-white">Book Your Ride Now</a>
+            <div class="col-12 col-lg-5 text-lg-right">
+                <div class="ve-cta-btns">
+                    <a href="{{ route('book-online') }}" class="ve-btn-white">Book Online</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
+                </div>
             </div>
         </div>
     </div>

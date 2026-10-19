@@ -80,6 +80,7 @@
     <div class="ve-sidebar-widget ve-book-widget">
         <h4 class="ve-widget-title">Book Online</h4>
         <p>Save time by booking your luxury transportation through our secure online portal.</p>
-        <a href="{{ route('book-online') }}" class="ve-btn-ghost-dark w-100">Reserve Now</a>
+        <a href="{{ route('book-online') }}" class="ve-btn-ghost-dark w-100 mb-2">Reserve Now</a>
+        <a href="{{ route('free-quote') }}" class="ve-btn-primary w-100">Free Quote</a>
     </div>
 </aside>

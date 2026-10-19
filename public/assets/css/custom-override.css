@@ -1088,6 +1088,18 @@ h6 {
     color: var(--ve-dark);
     transform: translateY(-2px);
 }
+.ve-cta-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 16px;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media (max-width: 991px) {
+    .ve-cta-btns {
+        justify-content: flex-start;
+    }
+}
 .text-lg-right {
     text-align: right;
 }

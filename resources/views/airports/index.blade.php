@@ -12,8 +12,8 @@
                 <h1>Airport Car Service Guides</h1>
                 <p>Helpful, query-based pages for Tri-State airports first—then PHL, BDL, and our West Coast airports. Each guide covers pickup, flight tracking, and how to book.</p>
                 <div class="ve-hero-ctas">
-                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book a Transfer</a>
-                    <a href="{{ route('services.airport-transportation') }}" class="ve-btn-outline">Airport Transportation</a>
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
                 </div>
             </div>
         </div>

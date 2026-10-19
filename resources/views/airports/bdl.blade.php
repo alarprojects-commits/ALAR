@@ -13,7 +13,7 @@
                 <p>BDL Hartford airport car service for Connecticut with chauffeur connections to New York, New Jersey, and Westchester.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
                 </div>
             </div>
         </div>

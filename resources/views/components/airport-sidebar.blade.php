@@ -53,5 +53,6 @@
         <h4 style="color: #fff; margin-bottom: 15px;">Reserve Your Transfer</h4>
         <p style="font-size: 14px; opacity: 0.8; margin-bottom: 20px;">Send flight details for a quoted chauffeur airport transfer.</p>
         <a href="{{ route('book-online') }}" class="ve-btn-primary" style="width: 100%; text-align: center;">Book Online</a>
+        <a href="{{ route('free-quote') }}" class="ve-btn-outline" style="width: 100%; text-align: center; margin-top: 12px; display: block;">Free Quote</a>
     </div>
 </div>

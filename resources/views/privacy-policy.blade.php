@@ -22,7 +22,7 @@
             <p>How Alar Chauffeur Service collects, uses, and protects your information when you book or contact us.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('contact-us') }}" class="ve-btn-outline">Contact Us</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>

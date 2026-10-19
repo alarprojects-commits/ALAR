@@ -13,7 +13,7 @@
                 <p>Reserved chauffeur transfers to and from JFK with flight tracking, terminal meet points, and Tri-State coverage from New Jersey, New York, Connecticut, and Pennsylvania.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
                 </div>
             </div>
         </div>

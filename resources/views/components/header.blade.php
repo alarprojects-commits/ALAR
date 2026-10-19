@@ -22,6 +22,7 @@
                 <ul>
                     <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
                     <li class="{{ request()->routeIs('book-online') ? 'active' : '' }}"><a href="{{ route('book-online') }}">Book Online</a></li>
+                    <li class="{{ request()->routeIs('free-quote') ? 'active' : '' }}"><a href="{{ route('free-quote') }}">Free Quote</a></li>
                     <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}"><a href="{{ route('about-us') }}">About us</a></li>
                     <li class="{{ request()->routeIs('our-services') ? 'active' : '' }}"><a href="{{ route('our-services') }}">Our Services</a></li>
                     <li class="{{ request()->routeIs('our-fleet') ? 'active' : '' }}"><a href="{{ route('our-fleet') }}">Our Fleet</a></li>

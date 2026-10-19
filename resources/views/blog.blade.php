@@ -122,7 +122,7 @@
             <p>Guides and tips on airport car service, Tri-State limo travel, and when a reserved chauffeur beats rideshare.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('our-services') }}" class="ve-btn-outline">Our Services</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>

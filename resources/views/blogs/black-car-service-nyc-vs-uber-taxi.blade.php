@@ -59,7 +59,7 @@
             <p>What people really search before airport day—and when a reserved chauffeur is the smarter choice.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
             </div>
         </div>
     </div>
