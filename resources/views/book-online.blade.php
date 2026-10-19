@@ -153,7 +153,8 @@
             <h1>Book Your <span>Ride</span></h1>
             <p>Reserve your chauffeur online with pickup details, flight info, and a confirmed rate—not surge pricing.</p>
             <div class="ve-hero-ctas">
-                <a href="{{ route('free-quote') }}" class="ve-btn-primary">Free Quote</a>
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
                 <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
             </div>
         </div>

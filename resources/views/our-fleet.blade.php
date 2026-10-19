@@ -118,6 +118,7 @@
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
             </div>
         </div>
     </div>
@@ -173,12 +174,7 @@
                                 <span><i class="fa fa-user"></i> 3 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 2 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -195,12 +191,7 @@
                                 <span><i class="fa fa-user"></i> 4 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 4 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -217,12 +208,7 @@
                                 <span><i class="fa fa-user"></i> 3 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 3 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -240,12 +226,7 @@
                                 <span><i class="fa fa-user"></i> 3 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 3 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -262,12 +243,7 @@
                                 <span><i class="fa fa-user"></i> 6 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 6 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -284,12 +260,7 @@
                                 <span><i class="fa fa-user"></i> 6 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 6 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -306,12 +277,7 @@
                                 <span><i class="fa fa-user"></i> 14 Passengers</span>
                                 <span><i class="fa fa-briefcase"></i> 10 Bags</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -329,12 +295,7 @@
                                 <span><i class="fa fa-user"></i> 8-10 Passengers</span>
                                 <span><i class="fa fa-glass"></i> Mini Bar</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -352,12 +313,7 @@
                                 <span><i class="fa fa-user"></i> 8-10 Passengers</span>
                                 <span><i class="fa fa-music"></i> Premium Sound</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -375,12 +331,7 @@
                                 <span><i class="fa fa-user"></i> 14-18 Passengers</span>
                                 <span><i class="fa fa-lightbulb"></i> Fiber Optics</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -397,12 +348,7 @@
                                 <span><i class="fa fa-user"></i> 16-20 Passengers</span>
                                 <span><i class="fa fa-star"></i> VIP Lounge</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -420,12 +366,7 @@
                                 <span><i class="fa fa-user"></i> 10-14 Passengers</span>
                                 <span><i class="fa fa-tv"></i> Flat Screens</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -443,12 +384,7 @@
                                 <span><i class="fa fa-user"></i> 25 Passengers</span>
                                 <span><i class="fa fa-suitcase"></i> Ample Luggage</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -465,12 +401,7 @@
                                 <span><i class="fa fa-user"></i> 44 Passengers</span>
                                 <span><i class="fa fa-wifi"></i> Onboard WiFi</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>
@@ -488,12 +419,7 @@
                                 <span><i class="fa fa-user"></i> 55 Passengers</span>
                                 <span><i class="fa fa-restroom"></i> Restroom Equipped</span>
                             </div>
-                            <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
                         </div>
                     </div>
                 </div>

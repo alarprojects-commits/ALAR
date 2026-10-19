@@ -252,10 +252,7 @@
             quick and convenient. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Request a quote
                     online</b></a> in justminutes, and our team will assist you with vehicle selection, transparent
             pricing, availability, and enjoy 10% off.</p>
-        <div class="ve-hero-btns">
-            <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-            <a href="{{ route('free-quote') }}" class="ve-btn-ghost">Free Quote</a>
-        </div>
+        @include('components.cta-buttons', ['variant' => 'home'])
     </div>
     <!-- Right Panel: overlapping image cards -->
     <div class="ve-hero-right">
@@ -299,12 +296,7 @@
                             href="{{ route('services.wedding-limo') }}"
                             style="color: var(--ve-dark);"><b>weddings</b></a>, proms, and
                         event transportation designed with comfort, punctuality, and elegance in mind.</p>
-                    <div class="ve-fleet-btns mt-4" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                            style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                        <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                            style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                    </div>
+                    @include('components.cta-buttons', ['variant' => 'compact'])
                 </div>
             </div>
         </div>
@@ -460,13 +452,7 @@
                         <div class="ve-af-item"><i class="fa fa-clock-o"></i><span>Guaranteed On Time Arrival</span>
                         </div>
                         <div class="ve-af-item"><i class="fa fa-star"></i><span>5 Star Premium Amenities</span></div>
-                        <div class="ve-fleet-btns mt-4" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="#" class="ve-btn-primary"
-                                style="padding: 10px 18px; font-size: 13px; color: #fff;">Book
-                                Online</a>
-                            <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost-dark"
-                            style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -564,13 +550,7 @@
                         <h5>Airport Transportation</h5>
                         <p>Reliable and luxurious transportation to and from all major airports with professional
                             chauffeurs.</p>
-                        <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                            <a href="{{ route('services.airport-transportation') }}" class="ve-btn-ghost-dark"
-                                style="padding: 10px 18px; font-size: 13px;">Read More</a>
-
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -584,12 +564,7 @@
                         <h5>Wedding Limo</h5>
                         <p>Make your wedding day unforgettable with our elegant and beautifully decorated stretch
                             limousines.</p>
-                        <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                            <a href="{{ route('services.wedding-limo') }}" class="ve-btn-ghost-dark"
-                                style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -602,13 +577,7 @@
                         <h5>Corporate Transportation</h5>
                         <p>Sophisticated transportation solutions for executives and business events with premium
                             comfort.</p>
-                        <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                            <a href="{{ route('services.corporate-transportation') }}" class="ve-btn-ghost-dark"
-                                style="padding: 10px 18px; font-size: 13px;">Read More</a>
-
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -643,12 +612,7 @@
                             <span><i class="fa fa-user"></i> 3 Passengers</span>
                             <span><i class="fa fa-briefcase"></i> 3 Bags</span>
                         </div>
-                        <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                            style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                        <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                            style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -665,12 +629,7 @@
                             <span><i class="fa fa-user"></i> 6 Passengers</span>
                             <span><i class="fa fa-briefcase"></i> 6 Bags</span>
                         </div>
-                        <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                            style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                        <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                            style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>
@@ -688,12 +647,7 @@
                             <span><i class="fa fa-user"></i> 14 Passengers</span>
                             <span><i class="fa fa-glass"></i> Mini Bar</span>
                         </div>
-                        <div class="ve-fleet-btns mt-3" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                            <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                            style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                        <a href="{{ route('free-quote') }}" class="ve-btn-ghost-dark"
-                            style="padding: 10px 18px; font-size: 13px;">Free Quote</a>
-                        </div>
+                        @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
             </div>

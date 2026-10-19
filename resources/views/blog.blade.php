@@ -123,6 +123,7 @@
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
             </div>
         </div>
     </div>
@@ -146,12 +147,8 @@
                         <div class="ve-insight-body">
                             <h5>Car Service to JFK from Manhattan</h5>
                             <p>Fixed-rate JFK airport car service from Midtown and Downtown—what travelers search before every flight.</p>
-                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -165,12 +162,8 @@
                         <div class="ve-insight-body">
                             <h5>Newark Airport Car Service (EWR)</h5>
                             <p>Car service to Newark Airport from NJ and NYC with flight tracking and meet-and-greet.</p>
-                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.newark-airport-car-service-ewr') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.newark-airport-car-service-ewr') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -184,12 +177,8 @@
                         <div class="ve-insight-body">
                             <h5>Black Car Service NYC vs Uber & Taxi</h5>
                             <p>When a reserved chauffeur beats surge pricing—airport and business travel comparison.</p>
-                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -203,12 +192,8 @@
                         <div class="ve-insight-body">
                             <h5>New York Car Service for JFK, LGA, EWR & the Tri-State</h5>
                             <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester (HPN).</p>
-                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -222,12 +207,8 @@
                         <div class="ve-insight-body">
                             <h5>Chauffeur Service to PA, Virginia & Washington DC</h5>
                             <p>Long-distance private chauffeur travel from New York and New Jersey to Pennsylvania, Virginia, and Washington, D.C.</p>
-                            <div class="ve-services-btns mt-35" style="display: flex; gap: 10px; flex-wrap: wrap;">
-                                <a href="{{ route('book-online') }}" class="ve-btn-primary"
-                                    style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
-                                <a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}" class="ve-btn-ghost-dark"
-                                    style="padding: 10px 18px; font-size: 13px;">Read More</a>
-                            </div>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
                     </div>
                 </div>

@@ -14,6 +14,7 @@
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
                 </div>
             </div>
         </div>
@@ -81,7 +82,9 @@
                 <p>Date, door addresses, passenger and bag count, airline, flight number, and terminal.</p>
                 <h3>What you get</h3>
                 <p>A confirmed chauffeur vehicle and rate—aligned with airport shuttle service and chauffeur service, not street-hail taxi.</p>
-                <p class="mb-0"><a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a></p>
+                <div class="mt-3">
+                    @include('components.cta-buttons', ['variant' => 'hero'])
+                </div>
             </div>
         </div>
     </section>

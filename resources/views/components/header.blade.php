@@ -64,6 +64,7 @@
                 <a href="tel:{{ config('contact.phone_tel') }}" class="ve-nav-phone">
                     <i class="fa fa-phone"></i> {{ config('contact.phone_display') }}
                 </a>
+                <a href="{{ route('book-online') }}" class="ve-cta-btn">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-cta-btn"><i class="fa fa-quote-right"></i> Free Quote</a>
             </div>
             <!-- Mobile Toggle -->
