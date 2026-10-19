@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\QuoteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -32,11 +33,14 @@ Route::get('/blog', function () {
 
 Route::post('/contact-us', [ContactController::class, 'store'])->name('contact.store');
 
+Route::get('/free-quote', [QuoteController::class, 'create'])->name('free-quote');
+Route::post('/free-quote', [QuoteController::class, 'store'])->name('quote.store');
+
 Route::get('/book-online', function () {
     return view('book-online');
 })->name('book-online');
 
-//services
+// Services
 Route::get('/services/airport-transportation', function () {
     return view('services.airport-transportation');
 })->name('services.airport-transportation');
@@ -81,7 +85,11 @@ Route::get('/services/hourly-limo', function () {
     return view('services.hourly-limo');
 })->name('services.hourly-limo');
 
-//cities
+// Service areas (states)
+Route::get('/service-areas', function () {
+    return view('service-areas.index');
+})->name('service-areas.index');
+
 Route::get('/service-areas/new-jersey', function () {
     return view('service-areas.new-jersey');
 })->name('service-area.new-jersey');
@@ -90,23 +98,76 @@ Route::get('/service-areas/new-york', function () {
     return view('service-areas.new-york');
 })->name('service-area.new-york');
 
+Route::get('/service-areas/connecticut', function () {
+    return view('service-areas.connecticut');
+})->name('service-area.connecticut');
+
+Route::get('/service-areas/pennsylvania', function () {
+    return view('service-areas.pennsylvania');
+})->name('service-area.pennsylvania');
+
 Route::get('/service-areas/california', function () {
     return view('service-areas.california');
 })->name('service-area.california');
-
-Route::get('/service-areas/san-francisco', function () {
-    return view('service-areas.san-francisco');
-})->name('service-area.san-francisco');
 
 Route::get('/service-areas/nevada', function () {
     return view('service-areas.nevada');
 })->name('service-area.nevada');
 
-Route::get('/service-areas/seattle', function () {
-    return view('service-areas.seattle');
-})->name('service-area.seattle');
+Route::get('/service-areas/washington', function () {
+    return view('service-areas.washington');
+})->name('service-area.washington');
 
-//blogs
+// Legacy city URLs → state hubs
+Route::redirect('/service-areas/san-francisco', '/service-areas/california', 301);
+Route::redirect('/service-areas/seattle', '/service-areas/washington', 301);
+
+// Airports
+Route::get('/airports', function () {
+    return view('airports.index');
+})->name('airports.index');
+
+Route::get('/airports/jfk', function () {
+    return view('airports.jfk');
+})->name('airports.jfk');
+
+Route::get('/airports/lga', function () {
+    return view('airports.lga');
+})->name('airports.lga');
+
+Route::get('/airports/ewr', function () {
+    return view('airports.ewr');
+})->name('airports.ewr');
+
+Route::get('/airports/hpn', function () {
+    return view('airports.hpn');
+})->name('airports.hpn');
+
+Route::get('/airports/teb', function () {
+    return view('airports.teb');
+})->name('airports.teb');
+
+Route::get('/airports/phl', function () {
+    return view('airports.phl');
+})->name('airports.phl');
+
+Route::get('/airports/bdl', function () {
+    return view('airports.bdl');
+})->name('airports.bdl');
+
+Route::get('/airports/lax', function () {
+    return view('airports.lax');
+})->name('airports.lax');
+
+Route::get('/airports/las', function () {
+    return view('airports.las');
+})->name('airports.las');
+
+Route::get('/airports/sea', function () {
+    return view('airports.sea');
+})->name('airports.sea');
+
+// Blogs
 Route::get('/blog/new-york-car-service-jfk-lga-ewr-tri-state', function () {
     return view('blogs.new-york-car-service-jfk-lga-ewr-tri-state');
 })->name('blog.new-york-car-service-jfk-lga-ewr-tri-state');

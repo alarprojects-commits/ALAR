@@ -88,17 +88,17 @@
 @endpush
 
 @section('content')
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/about-us.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Who We Are</span>
-        <h1>About <span>Us</span></h1>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li class="active">About Us</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Who We Are</span>
+            <h1>About <span>Us</span></h1>
+            <p>Premium chauffeur and limousine service based in New Jersey—serving the Tri-State and beyond with reserved luxury vehicles.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('contact-us') }}" class="ve-btn-outline">Contact Us</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -172,7 +172,7 @@
                         stress-free ride.</p>
                     <p>We’re here to assist with last-minute bookings or schedule rides in advance for your upcoming
                         trips. Our fleet is available 24/7 at major airports, including JFK, LaGuardia, Newark Liberty
-                        International, San Francisco International, Los Angeles International, Harry Reid International,
+                        International, Philadelphia International, Bradley International, Los Angeles International, Harry Reid International,
                         and Seattle-Tacoma International.</p>
                     <p><a href="tel:{{ config('contact.phone_tel') }}" style="color: var(--ve-gold);"><b>Call us
                                 now</b></a> and experience the
@@ -271,37 +271,37 @@
                                 <div class="ve-checklist">
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.new-york') }}" style="color: #000;"><b>John F.
+                                        <a href="{{ route('airports.jfk') }}" style="color: #000;"><b>John F.
                                                 Kennedy International Airport (JFK)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.new-york') }}" style="color: #000;"><b>LaGuardia
+                                        <a href="{{ route('airports.lga') }}" style="color: #000;"><b>LaGuardia
                                                 Airport (LGA)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.new-jersey') }}" style="color: #000;"><b>Newark
+                                        <a href="{{ route('airports.ewr') }}" style="color: #000;"><b>Newark
                                                 Liberty International Airport (EWR)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.san-francisco') }}" style="color: #000;"><b>San
-                                                Francisco International Airport (SFO)</b></a>
+                                        <a href="{{ route('airports.phl') }}" style="color: #000;"><b>Philadelphia
+                                                International Airport (PHL)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.california') }}" style="color: #000;"><b>Los
+                                        <a href="{{ route('airports.lax') }}" style="color: #000;"><b>Los
                                                 Angeles International Airport (LAX)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.nevada') }}" style="color: #000;"><b>Harry Reid
+                                        <a href="{{ route('airports.las') }}" style="color: #000;"><b>Harry Reid
                                                 International Airport (LAS)</b></a>
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.seattle') }}"
+                                        <a href="{{ route('airports.sea') }}"
                                             style="color: #000;"><b>Seattle-Tacoma International Airport (SEA)</b></a>
                                     </div>
                                 </div>
@@ -385,7 +385,7 @@
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.san-francisco') }}" style="color: #000;"><b>San
+                                        <a href="{{ route('service-area.california') }}" style="color: #000;"><b>San
                                                 Francisco</b></a>
                                     </div>
                                     <div class="ve-check-item">
@@ -400,8 +400,7 @@
                                     </div>
                                     <div class="ve-check-item">
                                         <i class="fa fa-check-circle"></i>
-                                        <a href="{{ route('service-area.seattle') }}" style="color: #000;"><b>Seattle
-                                            </b></a>
+                                        <a href="{{ route('service-area.washington') }}" style="color: #000;"><b>Washington</b></a>
                                     </div>
                                 </div>
                             </div>

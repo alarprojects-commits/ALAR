@@ -81,3 +81,31 @@ document.querySelectorAll('.ve-faq-q').forEach(function(q) {
         if (!wasOpen) item.classList.add('open');
     });
 });
+
+// US phone formatting: (XXX) XXX-XXXX
+function formatUsPhone(value) {
+    var digits = String(value || '').replace(/\D/g, '');
+    if (digits.length > 10 && digits.charAt(0) === '1') {
+        digits = digits.slice(1);
+    }
+    digits = digits.slice(0, 10);
+    if (digits.length === 0) return '';
+    if (digits.length < 4) return '(' + digits;
+    if (digits.length < 7) return '(' + digits.slice(0, 3) + ') ' + digits.slice(3);
+    return '(' + digits.slice(0, 3) + ') ' + digits.slice(3, 6) + '-' + digits.slice(6);
+}
+
+document.querySelectorAll('.js-us-phone').forEach(function(input) {
+    if (input.value) {
+        input.value = formatUsPhone(input.value);
+    }
+
+    input.addEventListener('input', function() {
+        var formatted = formatUsPhone(this.value);
+        this.value = formatted;
+    });
+
+    input.addEventListener('blur', function() {
+        this.value = formatUsPhone(this.value);
+    });
+});

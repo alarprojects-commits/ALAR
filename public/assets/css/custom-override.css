@@ -436,6 +436,56 @@ h6 {
     box-shadow: 0 8px 25px rgba(212, 160, 23, 0.4);
     color: var(--ve-dark);
 }
+.ve-btn-outline {
+    display: inline-block;
+    color: var(--ve-gold);
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    padding: 14px 8px;
+    transition: var(--ve-trans);
+}
+.ve-btn-outline:hover {
+    color: var(--ve-gold2);
+    text-decoration: underline;
+}
+.ve-hero-ctas {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Free Quote form */
+.ve-quote-form-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.ve-quote-section-label {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--ve-gold);
+    margin: 28px 0 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(212, 160, 23, 0.25);
+}
+.ve-quote-section-label:first-of-type {
+    margin-top: 8px;
+}
+.ve-contact-form .ve-form-row-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+@media (max-width: 991px) {
+    .ve-contact-form .ve-form-row-3 {
+        grid-template-columns: 1fr;
+    }
+}
 .ve-btn-ghost {
     display: inline-block;
     border: 2px solid rgba(255, 255, 255, 0.25);
@@ -3279,6 +3329,16 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-items: stretch;
+}
+.ve-contact-card-link {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+.ve-contact-card-link .ve-contact-info-card {
+    height: 100%;
 }
 .ve-contact-info-card {
     background: #fff;
@@ -3969,7 +4029,7 @@ body {
    BOOK ONLINE FORM
    ============================================================ */
 .ve-booking-section {
-    background: var(--ve-dark);
+    background: #ffffff;
 }
 
 /* Main card */
@@ -4670,8 +4730,20 @@ textarea.ve-form-input {
 .ve-hero-simple-content p {
     color: rgba(255,255,255,0.7);
     font-size: 18px;
-    max-width: 600px;
+    max-width: 640px;
     margin: 0 auto;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .ve-page-hero-simple {
+        padding: 100px 0 60px;
+    }
+    .ve-hero-simple-content h1 {
+        font-size: 32px;
+    }
+    .ve-hero-simple-content p {
+        font-size: 16px;
+    }
 }
 
 /* Feature Text Item */
@@ -4812,4 +4884,21 @@ textarea.ve-form-input {
     .ve-service-area-detail h3 {
         font-size: 20px;
     }
+}
+
+/* ============================================================
+   PAGE HEROES — solid color only (no background images)
+   ============================================================ */
+.ve-page-hero,
+.ve-page-hero-sm,
+.ve-page-hero-simple {
+    background-color: var(--ve-dark) !important;
+    background-image: none !important;
+    background-size: auto !important;
+    background-position: initial !important;
+    background-repeat: no-repeat !important;
+}
+
+.ve-page-hero-overlay {
+    display: none !important;
 }

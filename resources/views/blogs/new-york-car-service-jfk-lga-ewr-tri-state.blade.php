@@ -120,24 +120,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state/banner.webp') }})">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Blog</span>
-        <h1>
-            New York Car Service for
-            <span>JFK, LGA, EWR & the Tri-State</span>
-        </h1>
-        <p class="text-white">
-            Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).
-        </p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                <li class="active">New York Car Service JFK LGA EWR</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Blog</span>
+            <h1>New York Car Service for <span>JFK, LGA, EWR & the Tri-State</span></h1>
+            <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+            </div>
+        </div>
     </div>
 </section>
 

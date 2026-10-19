@@ -51,19 +51,17 @@
 
 @section('content')
 
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/blogs/car-service-to-jfk-from-manhattan/banner.webp') }})">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Blog</span>
-        <h1>Car Service to JFK from <span>Manhattan</span></h1>
-        <p class="text-white">Fixed-rate JFK airport car service from Midtown, Downtown, and Uptown—with flight tracking and no surge pricing.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                <li class="active">Car Service to JFK from Manhattan</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Blog</span>
+            <h1>Car Service to JFK from <span>Manhattan</span></h1>
+            <p>Fixed-rate JFK airport car service from Midtown, Downtown, and Uptown—with flight tracking and no surge pricing.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+            </div>
+        </div>
     </div>
 </section>
 

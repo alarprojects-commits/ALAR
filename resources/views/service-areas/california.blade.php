@@ -142,12 +142,16 @@
 @section('content')
 
     <!-- ===== PAGE HERO (Sophisticated Text-Only) ===== -->
-    <section class="ve-page-hero-simple">
+        <section class="ve-page-hero-simple">
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
                 <h1>California Chauffeur Service Designed for Comfort, <span>Precision & Luxury</span></h1>
                 <p>From airport pickups to long-distance travel, enjoy a seamless journey across California with professional chauffeurs and premium vehicles.</p>
+                <div class="ve-hero-ctas">
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                </div>
             </div>
         </div>
     </section>
@@ -212,7 +216,8 @@
                         <div class="ve-amenities-list">
                             <ul>
                                 <li><i class="fa fa-check"></i> Los Angeles International Airport </li>
-                                <li><i class="fa fa-check"></i> San Francisco International Airport</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Los Angeles International (LAX)</b></a></li>
+                                <li><i class="fa fa-check"></i> See also: <a href="{{ route('service-area.nevada') }}" style="color: var(--ve-gold);"><b>Nevada</b></a> · <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a> · <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airports</b></a></li>
                                 <li><i class="fa fa-check"></i> San Diego International Airport</li>
                             </ul>
                         </div>

@@ -126,17 +126,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/contact-us.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Ready to Ride?</span>
-        <h1>Get In <span>Touch</span></h1>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li class="active">Contact Us</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Ready to Ride?</span>
+            <h1>Get In <span>Touch</span></h1>
+            <p>Reach Alar Chauffeur Service for quotes, reservations, and trip changes. We confirm every booking before dispatch.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -224,8 +224,8 @@
                             </div>
                             <div class="ve-form-group">
                                 <label>Phone Number</label>
-                                <input type="text" name="phone" placeholder="Your phone number" required minlength="10"
-                                    maxlength="15" oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                                <input type="tel" name="phone" class="js-us-phone" placeholder="(201) 555-0123"
+                                    required minlength="14" maxlength="14" inputmode="numeric" autocomplete="tel"
                                     value="{{ old('phone') }}">
                                 @error('phone')
                                 <span class="text-danger" style="font-size: 12px;">{{ $message }}</span>
@@ -308,32 +308,29 @@
             <div class="ve-coverage-item wow fadeInUp" data-wow-delay="100ms">
                 <h5>Northeast Hub</h5>
                 <ul>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.new-york') }}">New York
-                            City</a></li>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.new-jersey') }}">New Jersey</a>
-                    </li>
-                    <li><i class="fa fa-map-marker"></i> Newark Airport</li>
-                    <li><i class="fa fa-map-marker"></i> JFK & LGA</li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.new-jersey') }}">New Jersey</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.new-york') }}">New York</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('airports.ewr') }}">Newark (EWR)</a> · <a href="{{ route('airports.jfk') }}">JFK</a> · <a href="{{ route('airports.lga') }}">LGA</a></li>
                 </ul>
             </div>
             <div class="ve-coverage-item wow fadeInUp" data-wow-delay="200ms">
                 <h5>West Coast</h5>
                 <ul>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.california') }}">California</a>
-                    </li>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.san-francisco') }}">San
-                            Francisco</a></li>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.seattle') }}">Seattle</a></li>
-                    <li><i class="fa fa-map-marker"></i> Los Angeles</li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.california') }}">California</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.washington') }}">Washington</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('airports.sea') }}">Seattle (SEA)</a></li>
                 </ul>
             </div>
             <div class="ve-coverage-item wow fadeInUp" data-wow-delay="300ms">
-                <h5>Midwest & Nevada</h5>
+                <h5>Nevada</h5>
                 <ul>
-                    <li><i class="fa fa-map-marker"></i> Kansas City</li>
-                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.nevada') }}">Las Vegas</a></li>
-                    <li><i class="fa fa-map-marker"></i> Reno</li>
-                    <li><i class="fa fa-map-marker"></i> Henderson</li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-area.nevada') }}">Nevada</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('service-areas.index') }}">All service areas</a></li>
+                    <li><i class="fa fa-map-marker"></i> <a href="{{ route('airports.index') }}">All airport guides</a></li>
                 </ul>
             </div>
         </div>

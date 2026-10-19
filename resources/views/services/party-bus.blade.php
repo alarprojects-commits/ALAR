@@ -4,20 +4,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/party-bus/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Rolling Celebration</span>
-        <h1>Luxury Group Travel Made Easy Across <span>New Jersey & New York</span></h1>
-        <p class="text-white">Reserve a premium party bus in New Jersey and New York for weddings, proms, concerts, birthdays, and nightlife with professional chauffeurs, spacious vehicles, and stress-free group coordination.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Party Bus</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Rolling Celebration</span>
+            <h1>Luxury Group Travel Made Easy Across <span>New Jersey & New York</span></h1>
+            <p>Reserve a premium party bus in New Jersey and New York for weddings, proms, concerts, birthdays, and nightlife with professional chauffeurs, spacious vehicles, and stress-free group coordination.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 

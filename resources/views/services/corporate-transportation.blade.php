@@ -124,26 +124,17 @@ reliable luxury chauffeurs.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero" style="background-image:url({{
-        asset('assets/img/our-services/corporate-limo/banner.webp')
-    }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Executive Service</span>
-        <h1>
-            Professional Corporate Limo Service in <span>New Jersey City</span>
-        </h1>
-        <p class="text-white">
-            Reliable executive transportation for meetings, airport travel, and
-            business events across New Jersey City and nearby counties.
-        </p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Corporate Transportation</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Executive Service</span>
+            <h1>Professional Corporate Limo Service in <span>New Jersey City</span></h1>
+            <p>Reliable executive transportation for meetings, airport travel, and business events across New Jersey City and nearby counties.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -524,7 +515,7 @@ reliable luxury chauffeurs.')
                                                 <i class="fa fa-check"></i>
                                                 <a href="{{
                                                         route(
-                                                            'service-area.seattle'
+                                                            'service-area.washington'
                                                         )
                                                     }}" style="
                                                         color: var(--ve-gold);

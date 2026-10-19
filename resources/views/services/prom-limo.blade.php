@@ -123,20 +123,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/prom-night/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Unforgettable Night</span>
-        <h1>Luxury Prom Limo Services in New Jersey for an <span>Unforgettable Night</span></h1>
-        <p class="text-white">Celebrate prom night with safe, stylish, and professional prom limo services in New Jersey offering luxury vehicles, student packages, and reliable chauffeur transportation.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Prom Limo</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Unforgettable Night</span>
+            <h1>Luxury Prom Limo Services in New Jersey for an <span>Unforgettable Night</span></h1>
+            <p>Celebrate prom night with safe, stylish, and professional prom limo services in New Jersey offering luxury vehicles, student packages, and reliable chauffeur transportation.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -358,7 +355,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <ul>
-                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.seattle') }}" style="color: var(--ve-gold);"><b>New Jersey to Seattle transportation</b></a></li>
+                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington state car service</b></a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-4">

@@ -4,20 +4,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/cruise-port-transfer/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Start Your Vacation Right</span>
-        <h1>Luxury Cruise Port Transfers Between <span>New Jersey & New York Cruise Terminals</span></h1>
-        <p class="text-white">Luxury Cruise Port Transfers NJ & NY | Reliable Transfers to Manhattan & Cape Liberty Cruise Terminals with 24/7 Chauffeur Service</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Cruise Port Transfers</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Start Your Vacation Right</span>
+            <h1>Luxury Cruise Port Transfers Between <span>New Jersey & New York Cruise Terminals</span></h1>
+            <p>Luxury Cruise Port Transfers NJ & NY | Reliable Transfers to Manhattan & Cape Liberty Cruise Terminals with 24/7 Chauffeur Service</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 

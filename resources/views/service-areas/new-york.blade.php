@@ -138,12 +138,16 @@
 @section('content')
 
     <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero-simple">
+        <section class="ve-page-hero-simple">
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
                 <h1>New York Car Service & <span>Airport Limo</span></h1>
                 <p>Reliable NY car service, Tri-State limo, and airport transfers to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
+                <div class="ve-hero-ctas">
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                </div>
             </div>
         </div>
     </section>
@@ -218,11 +222,12 @@
                             <h3>Major Airports We Serve</h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — Terminals 1 through 8 with private meet & greet</li>
-                                    <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — Swift pickups across Terminal A, B, and C</li>
-                                    <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Seamless Tri-State airport connections</li>
-                                    <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — White Plains and Westchester FBO transfers</li>
-                                    <li><i class="fa fa-check"></i> <strong>Teterboro Airport (TEB)</strong> — Private aviation and FBO transfers</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> — Terminals with meet & greet</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Teterboro (TEB) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> Nearby states: <a href="{{ route('service-area.connecticut') }}" style="color: var(--ve-gold);"><b>Connecticut</b></a> · <a href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-gold);"><b>Pennsylvania</b></a> · <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey</b></a></li>
                                 </ul>
                             </div>
 

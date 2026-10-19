@@ -51,19 +51,17 @@
 
 @section('content')
 
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi/banner.webp') }})">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Blog</span>
-        <h1>Black Car Service NYC vs <span>Uber &amp; Taxi</span></h1>
-        <p class="text-white">What people really search before airport day—and when a reserved chauffeur is the smarter choice.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                <li class="active">Black Car Service NYC vs Uber Taxi</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Blog</span>
+            <h1>Black Car Service NYC vs <span>Uber &amp; Taxi</span></h1>
+            <p>What people really search before airport day—and when a reserved chauffeur is the smarter choice.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+            </div>
+        </div>
     </div>
 </section>
 

@@ -19,17 +19,30 @@
         </script>
         <!-- End Google Tag Manager -->
 
+        @php
+            $pageSeo = \App\Support\PageSeo::current();
+            $metaRobots = trim($__env->yieldContent('meta_robots')) ?: ($pageSeo['robots'] ?? 'index, follow');
+            $metaKeywords = trim($__env->yieldContent('meta_keywords')) ?: ($pageSeo['keywords'] ?? '');
+            $metaPublisher = trim($__env->yieldContent('meta_publisher')) ?: ($pageSeo['publisher'] ?? config('business.name', 'ALAR Chauffeur Service'));
+        @endphp
         <meta charset="UTF-8" />
         <meta
             name="description"
             content="@yield('meta_description', config('app.name', 'Premium Limousine') . ' - Luxury Chauffeur & Limousine Services')"
         />
+        @if($metaKeywords !== '')
+        <meta name="keywords" content="{{ $metaKeywords }}" />
+        @endif
+        <meta name="robots" content="{{ $metaRobots }}" />
+        <meta name="publisher" content="{{ $metaPublisher }}" />
+        <meta name="author" content="{{ $metaPublisher }}" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="canonical" href="{{ url()->current() }}" />
+        <link rel="publisher" href="{{ config('business.url', 'https://alarchauffeurservice.com') }}" />
         <meta
             name="google-site-verification"
             content="0ofhTEJk68G98MZAdCK4Uamv7r8U-hbBpsqbpYZ8-bc"
@@ -90,7 +103,9 @@
             rel="stylesheet"
             href="{{ asset('assets/css/custom-override.css') }}"
         />
-        @stack('schema') @stack('head')
+        @include('components.structured-data')
+        @stack('schema')
+        @stack('head')
 
         <!-- Google tag (gtag.js) -->
         <script

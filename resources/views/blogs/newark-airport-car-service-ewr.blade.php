@@ -51,19 +51,17 @@
 
 @section('content')
 
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/blogs/newark-airport-car-service-ewr/banner.webp') }})">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Blog</span>
-        <h1>Newark Airport Car Service <span>(EWR)</span></h1>
-        <p class="text-white">Car service to Newark Airport from New Jersey, Manhattan, and the Tri-State—with flight tracking and meet-and-greet.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('blog') }}">Blogs</a></li>
-                <li class="active">Newark Airport Car Service EWR</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Blog</span>
+            <h1>Newark Airport Car Service <span>(EWR)</span></h1>
+            <p>Car service to Newark Airport from New Jersey, Manhattan, and the Tri-State—with flight tracking and meet-and-greet.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('blog') }}" class="ve-btn-outline">All Blogs</a>
+            </div>
+        </div>
     </div>
 </section>
 

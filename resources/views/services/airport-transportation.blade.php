@@ -123,20 +123,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/airport-transportation/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Premium Service</span>
-        <h1>Airport Car Service NYC & NJ | <span>JFK, LGA, EWR Limo</span></h1>
-        <p class="text-white">ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Airport Transportation</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Premium Service</span>
+            <h1>Airport Car Service NYC & NJ | <span>JFK, LGA, EWR Limo</span></h1>
+            <p>ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -170,6 +167,7 @@
                         </p>
 
                         <h3 class="mt-30">Airports We Serve Across the <span>Tri-State Area</span></h3>
+                        <p>Open a dedicated guide for pickup tips and booking details: <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>, <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>HPN</b></a>, <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>TEB</b></a>, <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>PHL</b></a>, <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>BDL</b></a>, plus <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>all airport guides</b></a>.</p>
                         <div class="ve-amenities-list mt-20 mb-30">
                             <ul>
                                 <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>

@@ -109,19 +109,19 @@
 @section('content')
 
     <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/our-fleet.webp') }});">
-        <div class="ve-page-hero-overlay"></div>
-        <div class="container ve-page-hero-content">
+    <section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Luxury Voyage</span>
             <h1>Our Premium <span>Fleet</span></h1>
-            <nav aria-label="breadcrumb">
-                <ol class="ve-breadcrumb">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="active">Our Fleet</li>
-                </ol>
-            </nav>
+            <p>Luxury sedans, SUVs, Sprinter vans, and party buses for airport transfers, events, and corporate travel.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('our-services') }}" class="ve-btn-outline">Our Services</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== FLEET CATEGORIES STRIP ===== -->
     <section class="ve-fleet-cats-strip">

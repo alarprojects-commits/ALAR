@@ -68,12 +68,16 @@
 @section('content')
 
     <!-- ===== PAGE HERO (Sophisticated Text-Only) ===== -->
-    <section class="ve-page-hero-simple">
+        <section class="ve-page-hero-simple">
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
                 <h1>Luxury Transportation in Nevada for <span>Airport, Corporate & Private Travel</span></h1>
                 <p>Experience luxury transportation in Nevada for airport transfers, corporate travel, and private rides with comfort, reliability, and professional chauffeurs.</p>
+                <div class="ve-hero-ctas">
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                </div>
             </div>
         </div>
     </section>
@@ -132,7 +136,8 @@
                             <h3>Major Airports <span>Covered</span></h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> Harry Reid International Airport</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Harry Reid International (LAS) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> Related: <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California</b></a> · <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a></li>
                                     <li><i class="fa fa-check"></i> Reno-Tahoe International Airport</li>
                                 </ul>
                             </div>

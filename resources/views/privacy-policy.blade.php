@@ -14,17 +14,17 @@
     }
 </style>
 
-<section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/about-us.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Trust & Security</span>
-        <h1>Privacy <span>Policy</span></h1>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li class="active">Privacy Policy</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Trust & Security</span>
+            <h1>Privacy <span>Policy</span></h1>
+            <p>How Alar Chauffeur Service collects, uses, and protects your information when you book or contact us.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('contact-us') }}" class="ve-btn-outline">Contact Us</a>
+            </div>
+        </div>
     </div>
 </section>
 

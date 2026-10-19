@@ -4,20 +4,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/chauffeured-service/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Premium Service</span>
-        <h1>Professional Chauffeur Service in  <span>NJ & NYC</span></h1>
-        <p class="text-white">Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Chauffeur Service</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Premium Service</span>
+            <h1>Professional Chauffeur Service in <span>NJ & NYC</span></h1>
+            <p>Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -143,7 +140,7 @@
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
                                 <h2>Travel from New York & New Jersey to Other States</h2>
-                                <p>For longer routes, such as New York to <a href="{{ route('service-area.san-francisco') }}" style="color: var(--ve-gold);"><b>San Francisco luxury chauffeur service</b></a> or other interstate destinations, Alar Chauffeur Service offers reliable Chauffeur Service in New Jersey.</p>
+                                <p>For longer routes, such as New York to <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California luxury chauffeur service</b></a> or other interstate destinations, Alar Chauffeur Service offers reliable Chauffeur Service in New Jersey.</p>
 
                                 <p>This service is ideal for:</p>
 

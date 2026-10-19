@@ -25,18 +25,36 @@
                     <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}"><a href="{{ route('about-us') }}">About us</a></li>
                     <li class="{{ request()->routeIs('our-services') ? 'active' : '' }}"><a href="{{ route('our-services') }}">Our Services</a></li>
                     <li class="{{ request()->routeIs('our-fleet') ? 'active' : '' }}"><a href="{{ route('our-fleet') }}">Our Fleet</a></li>
-                    <li class="has-drop">
-                        <a href="#">Service Areas <i class="fa fa-angle-down"></i></a>
+                    <li class="has-drop {{ request()->routeIs('service-area.*') || request()->routeIs('service-areas.*') ? 'active' : '' }}">
+                        <a href="{{ route('service-areas.index') }}">Service Areas <i class="fa fa-angle-down"></i></a>
                         <ul class="ve-dropdown">
+                            <li><a href="{{ route('service-areas.index') }}">All Service Areas</a></li>
                             <li><a href="{{ route('service-area.new-jersey') }}">New Jersey</a></li>
                             <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
+                            <li><a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
+                            <li><a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
                             <li><a href="{{ route('service-area.california') }}">California</a></li>
-                            <li><a href="{{ route('service-area.san-francisco') }}">San Francisco</a></li>
                             <li><a href="{{ route('service-area.nevada') }}">Nevada</a></li>
-                            <li><a href="{{ route('service-area.seattle') }}">Seattle</a></li>
+                            <li><a href="{{ route('service-area.washington') }}">Washington</a></li>
                         </ul>
                     </li>
-                    <li class="{{ request()->routeIs('blog') ? 'active' : '' }}"><a href="{{ route('blog') }}">Blog</a></li>
+                    <li class="has-drop {{ request()->routeIs('airports.*') ? 'active' : '' }}">
+                        <a href="{{ route('airports.index') }}">Airports <i class="fa fa-angle-down"></i></a>
+                        <ul class="ve-dropdown">
+                            <li><a href="{{ route('airports.index') }}">All Airports</a></li>
+                            <li><a href="{{ route('airports.jfk') }}">JFK</a></li>
+                            <li><a href="{{ route('airports.lga') }}">LaGuardia (LGA)</a></li>
+                            <li><a href="{{ route('airports.ewr') }}">Newark (EWR)</a></li>
+                            <li><a href="{{ route('airports.hpn') }}">Westchester (HPN)</a></li>
+                            <li><a href="{{ route('airports.teb') }}">Teterboro (TEB)</a></li>
+                            <li><a href="{{ route('airports.phl') }}">Philadelphia (PHL)</a></li>
+                            <li><a href="{{ route('airports.bdl') }}">Bradley (BDL)</a></li>
+                            <li><a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
+                            <li><a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
+                            <li><a href="{{ route('airports.sea') }}">Seattle (SEA)</a></li>
+                        </ul>
+                    </li>
+                    <li class="{{ request()->routeIs('blog') || request()->routeIs('blog.*') ? 'active' : '' }}"><a href="{{ route('blog') }}">Blog</a></li>
                     <li class="{{ request()->routeIs('contact-us') ? 'active' : '' }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
                 </ul>
             </nav>
@@ -45,7 +63,7 @@
                 <a href="tel:{{ config('contact.phone_tel') }}" class="ve-nav-phone">
                     <i class="fa fa-phone"></i> {{ config('contact.phone_display') }}
                 </a>
-                <a href="{{ route('book-online') }}" class="ve-cta-btn"><i class="fa fa-quote-right"></i> Get A Quote</a>
+                <a href="{{ route('free-quote') }}" class="ve-cta-btn"><i class="fa fa-quote-right"></i> Free Quote</a>
             </div>
             <!-- Mobile Toggle -->
             <button class="ve-toggler" id="ve-toggle">
@@ -62,23 +80,46 @@
             <ul>
                 <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>
                 <li class="{{ request()->routeIs('book-online') ? 'active' : '' }}"><a href="{{ route('book-online') }}">Book Online</a></li>
+                <li class="{{ request()->routeIs('free-quote') ? 'active' : '' }}"><a href="{{ route('free-quote') }}">Free Quote</a></li>
                 <li class="{{ request()->routeIs('about-us') ? 'active' : '' }}"><a href="{{ route('about-us') }}">About us</a></li>
                 <li class="{{ request()->routeIs('our-services') || request()->routeIs('services.*') ? 'active' : '' }}"><a href="{{ route('our-services') }}">Our Services</a></li>
                 <li class="{{ request()->routeIs('our-fleet') ? 'active' : '' }}"><a href="{{ route('our-fleet') }}">Our Fleet</a></li>
-                <li class="ve-mobile-accordion {{ request()->routeIs('service-area.*') ? 'active' : '' }}">
+                <li class="ve-mobile-accordion {{ request()->routeIs('service-area.*') || request()->routeIs('service-areas.*') ? 'active' : '' }}">
                     <button class="ve-mobile-accordion-toggle" type="button" aria-expanded="false">
                         <span>Service Areas</span>
                         <i class="fa fa-angle-down"></i>
                     </button>
                     <ul class="ve-mobile-dropdown">
+                        <li><a href="{{ route('service-areas.index') }}">All Service Areas</a></li>
                         <li><a href="{{ route('service-area.new-jersey') }}">New Jersey</a></li>
                         <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
+                        <li><a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
+                        <li><a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
                         <li><a href="{{ route('service-area.california') }}">California</a></li>
-                        <li><a href="{{ route('service-area.san-francisco') }}">Luxury Limo Service in San Francisco</a></li>
                         <li><a href="{{ route('service-area.nevada') }}">Nevada</a></li>
-                        <li><a href="{{ route('service-area.seattle') }}">Seattle</a></li>
+                        <li><a href="{{ route('service-area.washington') }}">Washington</a></li>
                     </ul>
                 </li>
+                <li class="ve-mobile-accordion {{ request()->routeIs('airports.*') ? 'active' : '' }}">
+                    <button class="ve-mobile-accordion-toggle" type="button" aria-expanded="false">
+                        <span>Airports</span>
+                        <i class="fa fa-angle-down"></i>
+                    </button>
+                    <ul class="ve-mobile-dropdown">
+                        <li><a href="{{ route('airports.index') }}">All Airports</a></li>
+                        <li><a href="{{ route('airports.jfk') }}">JFK</a></li>
+                        <li><a href="{{ route('airports.lga') }}">LaGuardia (LGA)</a></li>
+                        <li><a href="{{ route('airports.ewr') }}">Newark (EWR)</a></li>
+                        <li><a href="{{ route('airports.hpn') }}">Westchester (HPN)</a></li>
+                        <li><a href="{{ route('airports.teb') }}">Teterboro (TEB)</a></li>
+                        <li><a href="{{ route('airports.phl') }}">Philadelphia (PHL)</a></li>
+                        <li><a href="{{ route('airports.bdl') }}">Bradley (BDL)</a></li>
+                        <li><a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
+                        <li><a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
+                        <li><a href="{{ route('airports.sea') }}">Seattle (SEA)</a></li>
+                    </ul>
+                </li>
+                <li class="{{ request()->routeIs('blog') || request()->routeIs('blog.*') ? 'active' : '' }}"><a href="{{ route('blog') }}">Blog</a></li>
                 <li class="{{ request()->routeIs('contact-us') ? 'active' : '' }}"><a href="{{ route('contact-us') }}">Contact us</a></li>
             </ul>
             <div class="ve-mobile-contact">

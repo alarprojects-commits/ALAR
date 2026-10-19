@@ -174,19 +174,19 @@
 @section('content')
 
     <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/our-services.webp') }});">
-        <div class="ve-page-hero-overlay"></div>
-        <div class="container ve-page-hero-content">
+    <section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
             <span class="ve-section-tag">What We Offer</span>
             <h1>Our Premium <span>Services</span></h1>
-            <nav aria-label="breadcrumb">
-                <ol class="ve-breadcrumb">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="active">Our Services</li>
-                </ol>
-            </nav>
+            <p>Airport transfers, corporate travel, weddings, hourly charters, and more—booked with professional chauffeurs.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== SERVICES GRID ===== -->
     <section class="ve-section bg-light">

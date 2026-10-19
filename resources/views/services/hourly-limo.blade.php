@@ -124,20 +124,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/hourly-limo/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Flexible Travel</span>
-        <h1>Hourly Limo Service in New Jersey City with <span>Flexible Luxury Travel</span></h1>
-        <p class="text-white">Travel on your schedule with professional hourly chauffeur service in New Jersey City for airports, meetings, events, and private rides.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Hourly Limo</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Flexible Travel</span>
+            <h1>Hourly Limo Service in New Jersey City with <span>Flexible Luxury Travel</span></h1>
+            <p>Travel on your schedule with professional hourly chauffeur service in New Jersey City for airports, meetings, events, and private rides.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -279,7 +276,7 @@
                                             </div>
                                             <div class="col-md-4">
                                                 <ul>
-                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.seattle') }}" style="color: var(--ve-gold);"><b>NJ to Seattle limo service</b></a></li>
+                                                    <li><i class="fa fa-check"></i> <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington state limo service</b></a></li>
                                                 </ul>
                                             </div>
                                         </div>

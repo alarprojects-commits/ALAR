@@ -111,12 +111,16 @@
 @section('content')
 
     <!-- ===== PAGE HERO (Sophisticated Text-Only) ===== -->
-    <section class="ve-page-hero-simple">
+        <section class="ve-page-hero-simple">
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
                 <h1>New Jersey Car Service & <span>Airport Limo</span></h1>
                 <p>Tri-State chauffeur service, Newark Airport Limo Service EWR, and reliable transfers to John F. Kennedy (JFK), LaGuardia (LGA), and Westchester County (HPN).</p>
+                <div class="ve-hero-ctas">
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                </div>
             </div>
         </div>
     </section>
@@ -190,10 +194,12 @@
                             <h3>Airports We <span>Serve</span></h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Newark Airport Limo Service EWR</li>
-                                    <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>
-                                    <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — LGA Limo Service LaGuardia</li>
-                                    <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — White Plains and Westchester transfers</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Liberty (EWR) airport car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Teterboro (TEB) car service</b></a></li>
+                                    <li><i class="fa fa-check"></i> Nearby: <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>PHL</b></a> · <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>BDL</b></a> · <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York</b></a> · <a href="{{ route('service-area.connecticut') }}" style="color: var(--ve-gold);"><b>Connecticut</b></a> · <a href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-gold);"><b>Pennsylvania</b></a></li>
                                 </ul>
                             </div>
 

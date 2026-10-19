@@ -114,19 +114,19 @@
 @section('content')
 
     <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/blog.webp') }});">
-        <div class="ve-page-hero-overlay"></div>
-        <div class="container ve-page-hero-content">
+    <section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
             <h1>Our <span>Blogs</span></h1>
-            <nav aria-label="breadcrumb">
-                <ol class="ve-breadcrumb">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="active">Blogs</li>
-                </ol>
-            </nav>
+            <p>Guides and tips on airport car service, Tri-State limo travel, and when a reserved chauffeur beats rideshare.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="{{ route('our-services') }}" class="ve-btn-outline">Our Services</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== SERVICES GRID ===== -->
     <section class="ve-section bg-light">

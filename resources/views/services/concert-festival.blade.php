@@ -4,20 +4,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/concerts-and-festivals/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Arrive Like a Star</span>
-        <h1>Concert and Festival Limo Service in <span>New Jersey</span></h1>
-        <p class="text-white">Enjoy stress-free transportation to concerts, music festivals, cultural events, and live performances with luxury chauffeur service across New Jersey and New York.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Concerts & Festivals</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Arrive Like a Star</span>
+            <h1>Concert and Festival Limo Service in <span>New Jersey</span></h1>
+            <p>Enjoy stress-free transportation to concerts, music festivals, cultural events, and live performances with luxury chauffeur service across New Jersey and New York.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 

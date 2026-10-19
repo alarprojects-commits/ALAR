@@ -146,19 +146,19 @@
 
 @section('content')
     <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero" style="background-image:url({{ asset('assets/img/banner/book-online.webp') }});">
-        <div class="ve-page-hero-overlay"></div>
-        <div class="container ve-page-hero-content">
+    <section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Easy Booking</span>
             <h1>Book Your <span>Ride</span></h1>
-            <nav aria-label="breadcrumb">
-                <ol class="ve-breadcrumb">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li class="active">Book Online</li>
-                </ol>
-            </nav>
+            <p>Reserve your chauffeur online with pickup details, flight info, and a confirmed rate—not surge pricing.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== BOOKING FORM ===== -->
     <section class="ve-section ve-booking-section">

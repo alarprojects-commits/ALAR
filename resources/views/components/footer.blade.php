@@ -23,14 +23,17 @@
                     </div>
                 </div>
             </div>
-            <!-- Col 2: Quick Links -->
+            <!-- Col 2: Explore -->
             <div class="col-12 col-sm-6 col-lg-2 mb-50">
-                <h5 class="ve-footer-title">Quick Links</h5>
+                <h5 class="ve-footer-title">Explore</h5>
                 <ul class="ve-footer-links">
                     <li><a href="{{ route('home') }}">Home</a></li>
                     <li><a href="{{ route('book-online') }}">Book Online</a></li>
+                    <li><a href="{{ route('free-quote') }}">Free Quote</a></li>
                     <li><a href="{{ route('about-us') }}">About us</a></li>
                     <li><a href="{{ route('our-services') }}">Our Services</a></li>
+                    <li><a href="{{ route('service-areas.index') }}">Service Areas</a></li>
+                    <li><a href="{{ route('airports.index') }}">Airport Guides</a></li>
                     <li><a href="{{ route('our-fleet') }}">Our Fleet</a></li>
                     <li><a href="{{ route('contact-us') }}">Contact us</a></li>
                     <li><a href="{{ route('privacy-policy') }}">Privacy Policy</a></li>
@@ -43,13 +46,12 @@
                     <li><a href="{{ route('services.airport-transportation') }}">Airport Transportation</a></li>
                     <li><a href="{{ route('services.corporate-transportation') }}">Corporate Transportation</a></li>
                     <li><a href="{{ route('services.wedding-limo') }}">Wedding Limo</a></li>
-                    <li><a href="{{ route('services.prom-limo') }}">Prom Limo</a></li>
-                    <li><a href="{{ route('services.sporting-events') }}">Sporting Events</a></li>
-                    <li><a href="{{ route('services.group-transportation') }}">Group Transportation</a></li>
-                    <li><a href="{{ route('services.concert-festival') }}">Concerts & Festivals</a></li>
-                    <li><a href="{{ route('services.party-bus') }}">Party Buses</a></li>
-                    <li><a href="{{ route('services.cruise-port-transfers') }}">Cruise Port Transfers</a></li>
+                    <li><a href="{{ route('services.hourly-limo') }}">Hourly Limo</a></li>
                     <li><a href="{{ route('services.chauffeured-service') }}">Chauffeured Service</a></li>
+                    <li><a href="{{ route('services.cruise-port-transfers') }}">Cruise Port Transfers</a></li>
+                    <li><a href="{{ route('airports.ewr') }}">Newark Airport Car Service</a></li>
+                    <li><a href="{{ route('airports.jfk') }}">JFK Airport Car Service</a></li>
+                    <li><a href="{{ route('airports.lga') }}">LaGuardia Car Service</a></li>
                 </ul>
             </div>
             <!-- Col 4: Contact -->

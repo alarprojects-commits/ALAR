@@ -123,20 +123,17 @@
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
-<section class="ve-page-hero"
-    style="background-image:url({{ asset('assets/img/our-services/group-transportation/banner.webp') }});">
-    <div class="ve-page-hero-overlay"></div>
-    <div class="container ve-page-hero-content">
-        <span class="ve-section-tag">Travel Together</span>
-        <h1>Professional Group Transportation Services in <span>New Jersey & New York</span></h1>
-        <p class="text-white">Travel together with luxury group transportation in New Jersey. Perfect for corporate events, airport transfers, weddings, sporting events, and private group travel.</p>
-        <nav aria-label="breadcrumb">
-            <ol class="ve-breadcrumb">
-                <li><a href="{{ route('home') }}">Home</a></li>
-                <li><a href="{{ route('our-services') }}">Services</a></li>
-                <li class="active">Group Transportation</li>
-            </ol>
-        </nav>
+<section class="ve-page-hero-simple">
+    <div class="container">
+        <div class="ve-hero-simple-content">
+            <span class="ve-section-tag">Travel Together</span>
+            <h1>Professional Group Transportation Services in <span>New Jersey & New York</span></h1>
+            <p>Travel together with luxury group transportation in New Jersey. Perfect for corporate events, airport transfers, weddings, sporting events, and private group travel.</p>
+            <div class="ve-hero-ctas">
+                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+            </div>
+        </div>
     </div>
 </section>
 

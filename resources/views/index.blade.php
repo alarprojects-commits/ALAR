@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Luxury Limo & Chauffeur Service in New Jersey | Alar')
-@section('meta_description', 'Book premium chauffeur & limo service in New Jersey. Luxury sedans, SUVs & party buses for airport transfers, weddings & events. Reserve today!')
+@section('meta_title', 'Luxury Chauffeur & Airport Car Service | Tri-State | Alar')
+@section('meta_description', 'Book chauffeur service and airport transfers across New Jersey, New York, Connecticut, and Pennsylvania. Sedans, SUVs, and limos for EWR, JFK, LGA, and more.')
 @section('og_image', asset('assets/img/slider/slider-1.webp'))
 @section('og_type', 'website')
 
@@ -232,16 +232,21 @@
     <!-- Left Panel -->
     <div class="ve-hero-left">
         <h1>WELCOME TO <span class="ve-highlight">ALAR CHAUFFEUR SERVICE</span><br> WITH WORLD-CLASS FLEETS</h1>
-        <p>For over three years, Alar Chauffeur Service has been a trusted choice for premium chauffeur and luxury
-            transportation services. We proudly serve clients across <a href="{{ route('service-area.new-jersey') }}"
+        <p>Alar Chauffeur Service is a trusted choice for premium chauffeur and luxury transportation across the Tri-State.
+            We proudly serve <a href="{{ route('service-area.new-jersey') }}"
                 style="color: var(--ve-gold);"><b>New Jersey</b></a>, <a href="{{ route('service-area.new-york') }}"
-                style="color: var(--ve-gold);"><b>New York</b></a>, <a href="{{ route('service-area.san-francisco') }}"
-                style="color: var(--ve-gold);"><b>San Francisco</b></a>, and <a
-                href="{{ route('service-area.san-francisco') }}" style="color: var(--ve-gold);"><b>Nevada</b></a>,
-            delivering reliable, high-quality rides for every occasion. Whether you’re planning a wedding, corporate
-            event, <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport
-                    transfer</b></a>, or a night out, our team ensures every detail is handled with precision, care, and
-            a level of service that reflects our growing reputation.</p>
+                style="color: var(--ve-gold);"><b>New York</b></a>, <a href="{{ route('service-area.connecticut') }}"
+                style="color: var(--ve-gold);"><b>Connecticut</b></a>, and <a
+                href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-gold);"><b>Pennsylvania</b></a>—plus
+            <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California</b></a>,
+            <a href="{{ route('service-area.nevada') }}" style="color: var(--ve-gold);"><b>Nevada</b></a>, and
+            <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a>.
+            Whether you need a wedding limo, corporate ride, or
+            <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport
+                    transfer</b></a> to <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>,
+            <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, or
+            <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, our team handles the details
+            with care.</p>
         <p>Every vehicle in <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a> is
             carefully inspected before each booking and professionally detailed on the day of service.Getting started is
             quick and convenient. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Request a quote
@@ -287,12 +292,13 @@
                     <p>Alar Chauffeur Service delivers a smarter way to travel in luxury by combining premium vehicles
                         with highly trained professional chauffeurs for a smooth, stylish, and reliable experience.
                         Serving <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-dark);"><b>New
-                                Jersey</b></a>, New York, California, San Francisco, Nevada, Seattle, and
-                        Kansas City, we provide airport transfers, corporate travel, <a
+                                Jersey</b></a>, <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-dark);"><b>New York</b></a>,
+                        <a href="{{ route('service-area.connecticut') }}" style="color: var(--ve-dark);"><b>Connecticut</b></a>,
+                        <a href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-dark);"><b>Pennsylvania</b></a>,
+                        and our West Coast states, we provide airport transfers, corporate travel, <a
                             href="{{ route('services.wedding-limo') }}"
                             style="color: var(--ve-dark);"><b>weddings</b></a>, proms, and
-                        event transportation designed with comfort, punctuality, and elegance in mind. Every ride
-                        reflects our commitment to high-end service and consistent quality..</p>
+                        event transportation designed with comfort, punctuality, and elegance in mind.</p>
                     <div class="ve-fleet-btns mt-4" style="display: flex; gap: 10px; flex-wrap: wrap;">
                         <a href="{{ route('book-online') }}" class="ve-btn-primary"
                             style="padding: 10px 18px; font-size: 13px; color: #fff;">Book Online</a>
@@ -311,103 +317,79 @@
         <div class="ve-section-header text-center">
             <span class="ve-section-tag">Tri-State Coverage</span>
             <h2>Major Airports <span>We Serve</span></h2>
-            <p>Premium airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and destinations nationwide.
+            <p>Query-based airport guides for JFK, LaGuardia, Newark, Westchester, Teterboro, Philadelphia, Bradley, and our West Coast airports.
+                <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>Browse all airport guides</b></a>
             </p>
         </div>
 
         <div class="row g-4 gy-5">
-            <!-- Row 1 -->
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <div class="ve-airport-card-text">
-                    <h4>JFK Airport Limo Service NYC</h4>
-                    <p>John F. Kennedy International Airport (JFK) is our specialty. Professional car and limo service to JFK from all five boroughs, Long Island, Westchester, and New Jersey.</p>
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.jfk') }}" style="color: inherit;">JFK Airport Car Service</a></h3>
+                    <p>Terminal pickups and Tri-State chauffeur transfers from John F. Kennedy International.</p>
+                    <p><a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>Open JFK guide</b></a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/jfk.webp') }});"></div>
+                <a href="{{ route('airports.jfk') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/jfk.webp') }});"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
-                    <h4>LGA Limo Service LaGuardia Airport</h4>
-                    <p>Seamless transfers to and from LaGuardia Airport (LGA). Our chauffeurs ensure you never miss a flight or a critical business meeting across the Tri-State area.</p>
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.lga') }}" style="color: inherit;">LaGuardia (LGA) Car Service</a></h3>
+                    <p>Flight-tracked LGA transfers across New York, New Jersey, Connecticut, and Pennsylvania.</p>
+                    <p><a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>Open LGA guide</b></a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/lga.webp') }});"></div>
+                <a href="{{ route('airports.lga') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/lga.webp') }});"></a>
             </div>
 
-            <!-- Row 2 -->
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/ewr.webp') }});"></div>
+                <a href="{{ route('airports.ewr') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/ewr.webp') }});"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
-                    <h4>Newark Airport Limo Service EWR</h4>
-                    <p>Corporate or family travel—book limo service to Newark Liberty International Airport (EWR) with flight tracking and pristine vehicles for every Newark Liberty trip.</p>
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.ewr') }}" style="color: inherit;">Newark (EWR) Car Service</a></h3>
+                    <p>Edison-based dispatch for Newark Liberty with meet points and flight tracking.</p>
+                    <p><a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Open EWR guide</b></a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/sfo.webp') }});"></div>
+                <a href="{{ route('airports.phl') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/phl.webp') }});"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <div class="ve-airport-card-text">
-                    <h4>San Francisco International SFO</h4>
-                    <p>Arrive in the Bay Area with absolute confidence. Our SFO chauffeur service provides premium
-                        transportation to San Francisco and Silicon Valley.</p>
-                </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
-                <div class="ve-airport-card-text">
-                    <h4>Harry Reid International LAS</h4>
-                    <p>Experience the excitement of Las Vegas from the moment you land. We provide seamless, high class
-                        transfers from Harry Reid Airport to the Strip.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/las.webp') }});"></div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
-                <div class="ve-airport-card-text">
-                    <h4>Seattle-Tacoma International SEA</h4>
-                    <p>Reliable airport transfers in the Pacific Northwest. We serve Sea-Tac with the same commitment to
-                        excellence and absolute punctuality for every traveler.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/sea.webp') }});">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.phl') }}" style="color: inherit;">Philadelphia (PHL) Car Service</a></h3>
+                    <p>PHL transfers for Pennsylvania travelers with Tri-State connections.</p>
+                    <p><a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>Open PHL guide</b></a></p>
                 </div>
             </div>
 
-            <!-- Row 4 -->
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/mci.webp') }});"></div>
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.lax') }}" style="color: inherit;">LAX Airport Car Service</a></h3>
+                    <p>Los Angeles International chauffeur transfers for our California service area.</p>
+                    <p><a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Open LAX guide</b></a></p>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
-                <div class="ve-airport-card-text">
-                    <h4>Kansas City International MCI</h4>
-                    <p>Your local partner for professional travel. We provide premium chauffeur services to and from
-                        MCI, ensuring a smooth start to your journey from home.</p>
-                </div>
+                <a href="{{ route('airports.lax') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/lax.webp') }});"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
-                <div class="ve-airport-card-img"
-                    style="background-image:url({{ asset('assets/img/airports/lax.webp') }});"></div>
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.sea') }}" style="color: inherit;">Seattle (SEA) Car Service</a></h3>
+                    <p>Sea-Tac transfers for Washington state—paired with our Washington service area page.</p>
+                    <p><a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Open SEA guide</b></a></p>
+                </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
-                <div class="ve-airport-card-text">
-                    <h4>Los Angeles International LAX</h4>
-                    <p>Navigate the West Coast with ease. Our LAX airport service provides a stress free alternative to
-                        the famous Southern California traffic.</p>
-                </div>
+                <a href="{{ route('airports.sea') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/sea.webp') }});"></a>
             </div>
         </div>
     </div>
