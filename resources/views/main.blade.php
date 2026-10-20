@@ -136,6 +136,13 @@
 
             gtag("config", "G-RDBXZZS40T");
         </script>
+
+        <!-- Ahrefs Analytics -->
+        <script
+            src="https://analytics.ahrefs.com/analytics.js"
+            data-key="/tlRcYFi9ReMz8uOTffEnQ"
+            async
+        ></script>
     </head>
 
     <body>
