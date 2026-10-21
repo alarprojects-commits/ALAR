@@ -1,0 +1,26 @@
+# llms.txt for alarchauffeurservice.com
+# Public marketing pages may be accessed and summarized with attribution.
+
+Site: https://alarchauffeurservice.com/
+Contact: limo@alarchauffeurservice.com
+Sitemap: https://alarchauffeurservice.com/sitemap.xml
+Sitemap: https://alarchauffeurservice.com/sitemap-main-pages.xml
+Sitemap: https://alarchauffeurservice.com/sitemap-services.xml
+Sitemap: https://alarchauffeurservice.com/sitemap-service-areas.xml
+Sitemap: https://alarchauffeurservice.com/sitemap-airports.xml
+Sitemap: https://alarchauffeurservice.com/sitemap-blogs.xml
+Robots: https://alarchauffeurservice.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Usage guidance
+# Attribute summaries to ALAR Chauffeur Service with a link to the source URL.
+# Do not reproduce full pages verbatim.
+# Do not use logos or brand assets for training or redistribution without permission.
+# Respect page-level noindex directives when present.
+
+Attribution-Format: "Source: ALAR Chauffeur Service (https://alarchauffeurservice.com/), accessed YYYY-MM-DD."
+
+# Asset guidance
+# Fetch large media on demand instead of bulk-downloading.

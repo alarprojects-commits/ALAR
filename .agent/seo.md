@@ -1,0 +1,24 @@
+# SEO Rules
+
+- Never generate a page without SEO elements
+- Every public page must define `@section('meta_title')` or a matching `config/seo.php` entry consumed by the layout
+- Every public page must define `@section('meta_description')` or a matching `config/seo.php` entry
+- Prefer `@section('meta_keywords')` when the page benefits from explicit keywords; otherwise rely on `config/seo.php`
+- Canonical output defaults to `url()->current()` in `resources/views/main.blade.php`; do not break that default unless a page intentionally needs a custom canonical
+- Keep title length between 50 and 60 characters when practical
+- Keep meta description length between 140 and 160 characters when practical
+- Use relevant approved keywords from `/.agent/blog-keywords.md` naturally across titles, descriptions, headings, body copy, alt text, and internal anchor text where applicable
+- Do not force keywords into pages where they do not match user intent or page purpose
+- Use exactly one `<h1>` per page
+- Keep heading order hierarchical (`h1` -> `h2` -> `h3`)
+- Use semantic sections (`header`, `main`, `section`, `article`, `nav`, `footer`) where applicable
+- Every informative image must have a non-empty `alt`
+- Use descriptive anchor text for internal links
+- Keep URLs lowercase and hyphenated
+- Ensure every page is responsive and readable on mobile
+- Keep `meta viewport` and canonical tags present
+- Add structured data only as valid JSON-LD
+- Prefer the existing `@push('schema')` pattern or `components.structured-data` / `PageSeo` helpers already used in the project
+- Keep brand mentions as ALAR Chauffeur Service
+- Prefer Tri-State, Edison NJ, and named airport codes when the page intent supports them
+- Keep copy commercially accurate: reserved chauffeur, fixed or confirmed rate, flight tracking, meet and greet when relevant
