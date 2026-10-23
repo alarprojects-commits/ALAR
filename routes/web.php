@@ -197,5 +197,5 @@ Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
 })->name('blog.black-car-service-nyc-vs-uber-taxi');
 
 Route::fallback(function () {
-    abort(404);
+    return response()->view('errors.404', [], 404);
 });

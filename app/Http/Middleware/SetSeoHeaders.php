@@ -18,9 +18,11 @@ class SetSeoHeaders
         }
 
         $seo = PageSeo::current();
-        $robots = $seo['robots'] ?? 'index, follow';
+        $robots = $response->getStatusCode() === 404
+            ? 'noindex, follow'
+            : ($seo['robots'] ?? 'index, follow');
 
-        if (! $response->headers->has('X-Robots-Tag')) {
+        if (! $response->headers->has('X-Robots-Tag') || $response->getStatusCode() === 404) {
             $response->headers->set('X-Robots-Tag', $robots);
         }
 
