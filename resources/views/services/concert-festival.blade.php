@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Concert and Festival Limo Service New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Book concert and festival limo service in New Jersey for luxury event transportation, private chauffeurs, airport transfers, and group travel.')
+@section('meta_title', 'Concert Limo Service in New Jersey — Event Drop-Off')
+@section('meta_description', 'Book concert and festival limo service in New Jersey for venue drop-offs and late-night returns. Private chauffeur or group Sprinter with confirmed rates.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->

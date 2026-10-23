@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Seattle Airport Car Service | Alar')
-@section('meta_description', 'SEA airport car service for Seattle, Bellevue, and Washington state chauffeur transfers.')
+@section('meta_title', 'Seattle Airport Car Service (SEA) — Sea-Tac Transfers')
+@section('meta_description', 'Book Sea-Tac (SEA) airport car service for Seattle and Bellevue. Reserved Washington chauffeur with a confirmed rate for stress-free airport transfers.')
 @section('og_image', asset('assets/img/airports/sea.webp'))
 @section('og_type', 'website')
 

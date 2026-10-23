@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Chauffeur Service in New Jersey| Luxury Limo & Private Travel')
-@section('meta_description', 'Book premium Chauffeur Service in New Jersey. Enjoy private, luxury transportation, airport transfers, and long-distance limo service with ease.')
+@section('meta_title', 'Chauffeur Service in New Jersey — Private Black Car')
+@section('meta_description', 'Book chauffeur service in New Jersey for airport transfers, private city travel, and long-distance black car trips with confirmed rates and 24/7 dispatch.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -11,13 +11,44 @@
             <h1>Professional Chauffeur Service in <span>NJ & NYC</span></h1>
             <p>Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
             <div class="ve-hero-ctas">
-                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline" data-engage="click_to_call">{{ config('contact.phone_display') }}</a>
             </div>
         </div>
     </div>
 </section>
+
+@include('components.commercial-path-chooser', [
+    'paths' => [
+        [
+            'title' => 'Airport Transfer',
+            'copy' => 'Flight-tracked pickups, confirmed rate.',
+            'book' => route('book-online') . '#booking-form',
+            'service' => route('services.airport-transportation'),
+            'icon' => 'fa-plane',
+        ],
+        [
+            'title' => 'Private & Hourly',
+            'copy' => 'As-directed chauffeur for multi-stop days.',
+            'book' => route('book-online') . '#booking-form',
+            'service' => route('services.hourly-limo'),
+            'icon' => 'fa-clock-o',
+        ],
+        [
+            'title' => 'Long Distance',
+            'copy' => 'Reserved black car for Tri-State trips.',
+            'book' => route('book-online') . '#booking-form',
+            'service' => route('services.chauffeured-service'),
+            'icon' => 'fa-road',
+        ],
+    ],
+])
+@include('components.commercial-trust-strip')
+@include('components.reviews-compact', [
+    'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+])
 
 <!-- ===== SERVICE DETAIL SECTION ===== -->
 <section class="ve-section bg-light">

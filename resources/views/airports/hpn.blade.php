@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Westchester Airport Car Service | Alar')
-@section('meta_description', 'HPN airport car service for White Plains and Tri-State transfers with reserved chauffeurs—not taxi lines.')
+@section('meta_title', 'Westchester Airport Car Service (HPN) — Reserve Now')
+@section('meta_description', 'Book Westchester County Airport (HPN) car service for White Plains and Tri-State transfers. Reserved chauffeur with a confirmed rate—not curb taxis.')
 @section('og_image', asset('assets/img/airports/hpn.webp'))
 @section('og_type', 'website')
 

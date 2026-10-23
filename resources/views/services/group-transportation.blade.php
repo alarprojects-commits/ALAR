@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Group Transportation in New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Book group transportation in New Jersey for corporate events, airport transfers, weddings, sports events, and private group travel.')
+@section('meta_title', 'Group Transportation in New Jersey — Sprinter Vans')
+@section('meta_description', 'Book group transportation in New Jersey with Sprinter vans and coaches for corporate shuttles, wedding guests, and airport groups—one confirmed rate.')
 
 @push('schema')
 <script type="application/ld+json">

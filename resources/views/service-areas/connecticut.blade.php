@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Connecticut Car Service | BDL, JFK, LGA, EWR | Alar')
-@section('meta_description', 'Connecticut car service with chauffeur transfers to Bradley (BDL), JFK, LaGuardia, Newark, and Westchester across Fairfield, New Haven, Hartford, and more.')
+@section('meta_title', 'Connecticut Car Service — BDL, JFK, LGA & Newark Rides')
+@section('meta_description', 'Book Connecticut car service to Bradley, JFK, LaGuardia, and Newark. Fairfield to Hartford chauffeur transfers with confirmed airport rates from Alar.')
 @section('og_image', asset('assets/img/service-areas/new-york.webp'))
 @section('og_type', 'website')
 

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Hourly Limo Service in New Jersey City | Alar Chauffeur Service')
-@section('meta_description', 'Book hourly limo service in New Jersey City for airport transfers, corporate travel, events, and flexible luxury chauffeur rides available 24/7.')
+@section('meta_title', 'Hourly Chauffeur Service in New Jersey — Book Today')
+@section('meta_description', 'Book hourly limo and as-directed chauffeur service in New Jersey for meetings, events, and multi-stop days. Keep the vehicle with you at a confirmed rate.')
 
 @push('schema')
 <script type="application/ld+json">

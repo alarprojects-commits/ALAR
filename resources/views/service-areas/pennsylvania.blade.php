@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Pennsylvania Car Service | PHL & Tri-State Airports | Alar')
-@section('meta_description', 'Pennsylvania car service with chauffeur transfers to Philadelphia (PHL), Newark, JFK, and LaGuardia for Philly, Bucks, Montgomery, and nearby counties.')
+@section('meta_title', 'Pennsylvania Car Service — PHL Airport Limo Transfers')
+@section('meta_description', 'Book Pennsylvania car service and PHL airport transfers. Chauffeur links to Newark, JFK, and LaGuardia for Philly and nearby counties—confirmed rates.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 

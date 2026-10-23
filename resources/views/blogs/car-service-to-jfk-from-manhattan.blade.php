@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Car Service to JFK from Manhattan | Fixed-Rate Airport Transfer | Alar')
-@section('meta_description', 'Book reliable car service to JFK from Manhattan with flight tracking, meet-and-greet, and no surge pricing. Flat-rate JFK airport car service from Midtown, Downtown, and Upper East Side.')
+@section('meta_title', 'Car Service to JFK from Manhattan — Fixed Rate Guide')
+@section('meta_description', 'How to book car service to JFK from Manhattan with a fixed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.')
 @section('og_image', asset('assets/img/blogs/car-service-to-jfk-from-manhattan.webp'))
 @section('og_type', 'article')
 

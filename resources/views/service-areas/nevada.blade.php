@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Luxury Transportation in Nevada | Private Chauffeur')
-@section('meta_description', 'Book luxury transportation in Nevada for airport transfers, corporate travel, events & private chauffeur rides across Las Vegas and Reno.')
+@section('meta_title', 'Nevada Car Service — Las Vegas LAS Airport Transfers')
+@section('meta_description', 'Book Nevada chauffeur service for Las Vegas Strip hotels and LAS airport transfers. Confirmed-rate black car for conventions and nights out—reserve ahead.')
 
 @push('schema')
 <script type="application/ld+json">

@@ -4914,3 +4914,375 @@ textarea.ve-form-input {
 .ve-page-hero-overlay {
     display: none !important;
 }
+
+/* ============================================================
+   COMMERCIAL BOOKER MODULES — lean UI for conversion
+   ============================================================ */
+.ve-trust-bar {
+    background: var(--ve-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.ve-trust-bar-list {
+    list-style: none;
+    margin: 0;
+    padding: 14px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 12px 24px;
+}
+.ve-trust-bar-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.82);
+    font-size: 13px;
+    line-height: 1.3;
+}
+.ve-trust-bar-list i {
+    color: var(--ve-gold);
+    font-size: 15px;
+    width: 18px;
+    text-align: center;
+}
+.ve-trust-bar-list strong {
+    color: #fff;
+    font-weight: 700;
+}
+
+.ve-booker-prep {
+    padding: 28px 0 8px;
+    background: #f6f4ef;
+}
+.ve-booker-prep-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 28px 40px;
+    align-items: start;
+}
+.ve-booker-prep-label {
+    margin: 0 0 12px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgba(13,27,42,0.55);
+}
+.ve-trip-pills,
+.ve-ready-pills {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.ve-trip-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid rgba(13,27,42,0.1);
+    color: var(--ve-dark);
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: border-color .2s ease, background .2s ease, color .2s ease;
+}
+.ve-trip-pill i {
+    color: var(--ve-gold);
+}
+.ve-trip-pill:hover {
+    border-color: var(--ve-gold);
+    color: var(--ve-dark);
+    text-decoration: none;
+    background: #fffdf6;
+}
+.ve-ready-pills li {
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(13,27,42,0.06);
+    color: var(--ve-dark);
+    font-size: 13px;
+    font-weight: 600;
+}
+.ve-booker-prep-escape {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 10px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(13,27,42,0.08);
+    font-size: 14px;
+    color: rgba(13,27,42,0.65);
+}
+.ve-booker-prep-escape a {
+    color: var(--ve-gold);
+    font-weight: 700;
+    text-decoration: none;
+}
+.ve-booker-prep-escape a:hover {
+    text-decoration: underline;
+}
+.ve-booker-prep-dot {
+    opacity: 0.45;
+}
+
+.ve-rating-bar {
+    padding: 12px 0 20px;
+    background: #f6f4ef;
+}
+.ve-rating-bar-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid rgba(13,27,42,0.08);
+}
+.ve-rating-bar-score {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--ve-dark);
+}
+.ve-rating-bar-stars {
+    color: var(--ve-gold);
+    letter-spacing: 1px;
+}
+.ve-rating-bar-meta {
+    color: rgba(13,27,42,0.55);
+    font-size: 13px;
+}
+.ve-rating-bar-inner a {
+    margin-left: auto;
+    color: var(--ve-gold);
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: none;
+}
+.ve-rating-bar-inner a:hover {
+    text-decoration: underline;
+}
+
+.ve-fleet-peek {
+    padding: 56px 0;
+    background: #fff;
+}
+.ve-fleet-peek-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 28px;
+}
+.ve-fleet-peek-head h2 {
+    margin: 8px 0 0;
+    font-size: 28px;
+    color: var(--ve-dark);
+}
+.ve-fleet-peek-head h2 span {
+    color: var(--ve-gold);
+}
+.ve-fleet-peek-all {
+    color: var(--ve-gold);
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ve-fleet-peek-all:hover {
+    text-decoration: underline;
+    color: var(--ve-gold);
+}
+.ve-fleet-peek-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+.ve-fleet-peek-card {
+    display: block;
+    overflow: hidden;
+    border-radius: 16px;
+    background: var(--ve-dark);
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 0 14px 30px rgba(13,27,42,0.12);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.ve-fleet-peek-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 36px rgba(13,27,42,0.18);
+    color: #fff;
+    text-decoration: none;
+}
+.ve-fleet-peek-media {
+    display: block;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+.ve-fleet-peek-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 18px 20px;
+}
+.ve-fleet-peek-copy strong {
+    font-size: 17px;
+}
+.ve-fleet-peek-copy em {
+    font-style: normal;
+    font-size: 13px;
+    color: rgba(255,255,255,0.65);
+}
+.ve-fleet-peek-cta {
+    margin-top: 10px;
+    color: var(--ve-gold);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.ve-path-chooser {
+    padding: 40px 0 20px;
+    background: #f6f4ef;
+}
+.ve-path-chooser-head {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.ve-path-chooser-head h2 {
+    margin: 8px 0 10px;
+    font-size: 28px;
+    color: var(--ve-dark);
+}
+.ve-path-chooser-head h2 span {
+    color: var(--ve-gold);
+}
+.ve-path-chooser-head p {
+    margin: 0;
+    color: rgba(13,27,42,0.65);
+}
+.ve-path-chooser-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+.ve-path-item {
+    padding: 22px 20px;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid rgba(13,27,42,0.08);
+}
+.ve-path-item > i {
+    color: var(--ve-gold);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.ve-path-item h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+    color: var(--ve-dark);
+}
+.ve-path-item p {
+    margin: 0 0 16px;
+    font-size: 14px;
+    color: rgba(13,27,42,0.65);
+    min-height: 42px;
+}
+.ve-path-item-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.ve-path-item-actions a:not(.ve-btn-primary) {
+    color: var(--ve-gold);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+.ve-path-item-more {
+    color: rgba(13,27,42,0.5);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.ve-path-item-more:hover {
+    color: var(--ve-gold);
+}
+
+.ve-booking-iframe-wrap {
+    position: relative;
+    min-height: 420px;
+}
+.ve-booking-loader {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    color: var(--ve-dark);
+    font-weight: 600;
+    transition: opacity .3s ease, visibility .3s ease;
+}
+.ve-booking-loader.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.ve-booking-loader-spinner {
+    width: 36px;
+    height: 36px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-top-color: var(--ve-gold);
+    border-radius: 50%;
+    animation: ve-spin 0.8s linear infinite;
+}
+@keyframes ve-spin {
+    to { transform: rotate(360deg); }
+}
+.ve-booking-related a {
+    color: var(--ve-gold);
+    font-weight: 700;
+}
+.ve-booking-faq details {
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.06);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-bottom: 10px;
+}
+.ve-booking-faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--ve-dark);
+}
+.ve-booking-faq details p {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: rgba(0,0,0,0.7);
+}
+
+@media (max-width: 991px) {
+    .ve-booker-prep-grid,
+    .ve-fleet-peek-grid,
+    .ve-path-chooser-grid {
+        grid-template-columns: 1fr;
+    }
+    .ve-trust-bar-list {
+        justify-content: flex-start;
+    }
+    .ve-rating-bar-inner a {
+        margin-left: 0;
+    }
+}

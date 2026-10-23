@@ -2,9 +2,10 @@
 
 namespace App\Providers;
 
+use App\Services\GooglePlaces;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -38,5 +39,20 @@ class AppServiceProvider extends ServiceProvider
         if ($queryString && str_contains($queryString, 'item')) {
             abort(404);
         }
+
+        View::composer(
+            ['book-online', 'services.corporate-transportation', 'services.chauffeur-service'],
+            function ($view) {
+                $places = app(GooglePlaces::class);
+                $reviews = $places->details();
+                $placeId = config('services.google_places.place_id');
+
+                $view->with([
+                    'reviews' => $reviews,
+                    'googleReviewsUrl' => 'https://www.google.com/maps/place/?q=place_id:' . $placeId,
+                    'googleWriteUrl' => 'https://search.google.com/local/writereview?placeid=' . $placeId,
+                ]);
+            }
+        );
     }
 }

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Our Chauffeur Services | Alar Chauffeur Service NJ')
-@section('meta_description', "Explore Alar's luxury transport services: airport transfers, corporate travel, weddings, proms, cruise transfers & group travel across New Jersey.")
+@section('meta_title', 'Chauffeur & Airport Limo Services in NJ & NYC | Alar')
+@section('meta_description', 'Explore Alar chauffeur services: airport car service, corporate travel, wedding limo, hourly rides, and group transport across New Jersey and New York.')
 @section('og_image', asset('assets/img/banner/our-services.webp'))
 @section('og_type', 'website')
 

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Cruise Port Transport In New Jersey')
-@section('meta_description', 'Book cruise port transport in New Jersey & New York for NYC cruise terminals, Cape Liberty, Manhattan ports, and luxury chauffeur transfers.')
+@section('meta_title', 'Cruise Port Transfers NJ & NYC — Cape Liberty Ready')
+@section('meta_description', 'Book cruise port transfers for Cape Liberty, Manhattan, and Brooklyn terminals. Luggage-friendly chauffeur service with a confirmed rate before sail day.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Wedding Limo Service in New Jersey | Luxury Wedding Rides')
-@section('meta_description', 'Book wedding limo service in New Jersey for luxury bridal transportation, guest travel, airport pickups, and elegant chauffeur service.')
+@section('meta_title', 'Wedding Limo Service in New Jersey — Book Your Date')
+@section('meta_description', 'Book wedding limo service in New Jersey for bridal party rides, guest shuttles, and airport transfers. Elegant chauffeurs and luxury fleet—reserve your date.')
 
 @push('schema')
 <script type="application/ld+json">

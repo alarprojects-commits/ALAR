@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New Jersey Car Service & Airport Limo | EWR, JFK, LGA | Alar')
-@section('meta_description', 'Book New Jersey car service and airport limo to Newark Liberty (EWR), John F. Kennedy (JFK), LaGuardia (LGA) and Westchester (HPN). Tri-State chauffeur across NJ, NY, CT and PA.')
+@section('meta_title', 'New Jersey Car Service — EWR, JFK & LGA Airport Rides')
+@section('meta_description', 'Book New Jersey car service and airport limo to Newark, JFK, and LaGuardia. Edison-based Tri-State chauffeurs with confirmed rates—reserve your ride today.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 

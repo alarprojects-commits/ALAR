@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Book Online | Alar Chauffeur Service')
-@section('meta_description', 'Reserve your luxury chauffeur service online with Alar Chauffeur Service for airport transportation, executive travel, weddings, group transportation, and more.')
+@section('meta_title', 'Book Airport Car Service Online Now — Instant Rate | Alar')
+@section('meta_description', 'Reserve airport car service, black car, or hourly chauffeur online with Alar. Confirmed rate before dispatch for JFK, LGA, EWR, and Tri-State trips.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -145,101 +145,137 @@
 @endpush
 
 @section('content')
-    <!-- ===== PAGE HERO ===== -->
-    <section class="ve-page-hero-simple">
+<section class="ve-page-hero-simple">
     <div class="container">
         <div class="ve-hero-simple-content">
-            <span class="ve-section-tag">Easy Booking</span>
-            <h1>Book Your <span>Ride</span></h1>
-            <p>Reserve your chauffeur online with pickup details, flight info, and a confirmed rate—not surge pricing.</p>
+            <span class="ve-section-tag">Reserve Now</span>
+            <h1>Reserve Your <span>Chauffeur</span></h1>
+            <p>Book online with a confirmed rate—not surge pricing. Share pickup, drop-off, and flight details for a reserved vehicle.</p>
             <div class="ve-hero-ctas">
-                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                <a href="#booking-form" class="ve-btn-primary" data-engage="start_booking">Start Booking</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline" data-engage="click_to_call">{{ config('contact.phone_display') }}</a>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- ===== BOOKING FORM ===== -->
-    <section class="ve-section ve-booking-section">
-        <div class="container">
-            <!-- Full Width Iframe Row -->
-            <div class="row mb-50">
-                <div class="col-12">
-                    <div class="ve-booking-iframe-wrap"
-                        style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.05);">
-                        <iframe name="oresframe" marginwidth="0" marginheight="0" height="1200" width="100%"
-                            scrolling="yes" border="0" frameborder="0" src="https://book.mylimobiz.com/v4/alarchauffeur"
-                            style="display: block; width: 100%;">
-                            Your browser does not support inline frames.
-                        </iframe>
+@include('components.commercial-trust-strip')
+@include('components.booker-prep', ['mode' => 'scroll'])
+@include('components.reviews-compact', [
+    'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+])
+
+<section class="ve-section ve-booking-section bg-light" id="booking-form">
+    <div class="container">
+        <div class="ve-section-header text-center mb-4">
+            <span class="ve-section-tag">Online Reservation</span>
+            <h2 class="h3 mb-2">Complete your <span>booking</span></h2>
+            <p class="mb-0">Prefer help from our desk? <a href="{{ route('free-quote') }}" data-engage="click_free_quote">Request a free quote</a> or call <a href="tel:{{ config('contact.phone_tel') }}" data-engage="click_to_call">{{ config('contact.phone_display') }}</a>.</p>
+        </div>
+
+        <div class="row mb-50">
+            <div class="col-12">
+                <div class="ve-booking-iframe-wrap"
+                    data-booking-iframe
+                    style="background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.12); border: 1px solid rgba(0,0,0,0.05);">
+                    <div class="ve-booking-loader" data-booking-loader>
+                        <div class="ve-booking-loader-spinner" aria-hidden="true"></div>
+                        <span>Booking form loading…</span>
                     </div>
+                    <iframe name="oresframe" title="Alar Chauffeur Service online booking form" marginwidth="0" marginheight="0" height="1200" width="100%"
+                        scrolling="yes" border="0" frameborder="0" src="https://book.mylimobiz.com/v4/alarchauffeur"
+                        style="display: block; width: 100%;" loading="lazy">
+                        Your browser does not support inline frames.
+                    </iframe>
                 </div>
             </div>
+        </div>
 
-            <!-- Enhanced Info Section Below Iframe -->
-            <div class="row align-items-stretch">
-                <!-- Why Us List (Left) -->
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <div class="ve-booking-why h-100" style="margin-top: 0; padding: 40px; background: var(--ve-dark);">
-                        <h5 class="ve-booking-why-title"
-                            style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 25px; font-size: 20px;">
-                            Why Book With Us?</h5>
-                        <ul class="ve-booking-why-list">
-                            <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span
-                                    style="color: rgba(255,255,255,0.85); font-weight: 500;">Professional, licensed
-                                    chauffeurs</span></li>
-                            <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span
-                                    style="color: rgba(255,255,255,0.85); font-weight: 500;">Luxury, well-maintained
-                                    fleet</span></li>
-                            <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span
-                                    style="color: rgba(255,255,255,0.85); font-weight: 500;">Transparent, fixed
-                                    pricing</span></li>
-                            <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span
-                                    style="color: rgba(255,255,255,0.85); font-weight: 500;">Flight tracking
-                                    included</span></li>
-                            <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span
-                                    style="color: rgba(255,255,255,0.85); font-weight: 500;">24/7 Dispatch &
-                                    Support</span></li>
-                        </ul>
-                    </div>
+        <div class="row align-items-stretch mb-50">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <div class="ve-booking-why h-100" style="margin-top: 0; padding: 40px; background: var(--ve-dark);">
+                    <h5 class="ve-booking-why-title"
+                        style="color: #fff; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 25px; font-size: 20px;">
+                        Why Book With Us?</h5>
+                    <ul class="ve-booking-why-list">
+                        <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span style="color: rgba(255,255,255,0.85); font-weight: 500;">Professional, licensed chauffeurs</span></li>
+                        <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span style="color: rgba(255,255,255,0.85); font-weight: 500;">Luxury, well-maintained fleet</span></li>
+                        <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span style="color: rgba(255,255,255,0.85); font-weight: 500;">Transparent, fixed pricing</span></li>
+                        <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span style="color: rgba(255,255,255,0.85); font-weight: 500;">Flight tracking included</span></li>
+                        <li><i class="fa fa-check-circle" style="color: var(--ve-gold);"></i> <span style="color: rgba(255,255,255,0.85); font-weight: 500;">24/7 Dispatch &amp; Support</span></li>
+                    </ul>
                 </div>
-
-                <!-- Contact Info Cards (Right) -->
-                <div class="col-lg-7">
-                    <div class="row h-100">
-                        <div class="col-md-12 mb-4">
-                            <div class="ve-booking-info-card h-100"
-                                style="background: var(--ve-dark); border-color: rgba(255,255,255,0.1); padding: 30px; margin-bottom: 0;">
-                                <div class="ve-binfo-icon" style="background: rgba(173, 139, 36, 0.2);"><i
-                                        class="fa fa-phone"></i></div>
-                                <div style="min-width: 0;">
-                                    <h5 style="color: rgba(255,255,255,0.6); font-size: 13px; text-transform: uppercase;">
-                                        Call Us Directly</h5>
-                                    <a href="tel:{{ config('contact.phone_tel') }}"
-                                        style="color: #fff; font-size: 24px; font-weight: 700; display: block;">{{ config('contact.phone_display') }}</a>
-                                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="row h-100">
+                    <div class="col-md-12 mb-4">
+                        <div class="ve-booking-info-card h-100"
+                            style="background: var(--ve-dark); border-color: rgba(255,255,255,0.1); padding: 30px; margin-bottom: 0;">
+                            <div class="ve-binfo-icon" style="background: rgba(173, 139, 36, 0.2);"><i class="fa fa-phone"></i></div>
+                            <div style="min-width: 0;">
+                                <h5 style="color: rgba(255,255,255,0.6); font-size: 13px; text-transform: uppercase;">Call Us Directly</h5>
+                                <a href="tel:{{ config('contact.phone_tel') }}" data-engage="click_to_call"
+                                    style="color: #fff; font-size: 24px; font-weight: 700; display: block;">{{ config('contact.phone_display') }}</a>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="ve-booking-info-card h-100"
-                                style="background: var(--ve-dark); border-color: rgba(255,255,255,0.1); padding: 30px; margin-bottom: 0;">
-                                <div class="ve-binfo-icon" style="background: rgba(173, 139, 36, 0.2);"><i
-                                        class="fa fa-envelope"></i></div>
-                                <div style="min-width: 0;">
-                                    <h5 style="color: rgba(255,255,255,0.6); font-size: 13px; text-transform: uppercase;">
-                                        Email Support</h5>
-                                    <a href="mailto:{{ config('contact.email') }}"
-                                        style="color: #fff; font-size: 18px; font-weight: 600; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
-                                        title="{{ config('contact.email') }}">{{ config('contact.email') }}</a>
-                                </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="ve-booking-info-card h-100"
+                            style="background: var(--ve-dark); border-color: rgba(255,255,255,0.1); padding: 30px; margin-bottom: 0;">
+                            <div class="ve-binfo-icon" style="background: rgba(173, 139, 36, 0.2);"><i class="fa fa-envelope"></i></div>
+                            <div style="min-width: 0;">
+                                <h5 style="color: rgba(255,255,255,0.6); font-size: 13px; text-transform: uppercase;">Email Support</h5>
+                                <a href="mailto:{{ config('contact.email') }}"
+                                    style="color: #fff; font-size: 18px; font-weight: 600; display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;"
+                                    title="{{ config('contact.email') }}">{{ config('contact.email') }}</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
+        <div class="row ve-booking-faq mb-50">
+            <div class="col-lg-10 mx-auto">
+                <div class="ve-section-header text-center mb-4">
+                    <span class="ve-section-tag">Booking FAQ</span>
+                    <h2 class="h3 mb-0">Questions before you <span>reserve</span></h2>
+                </div>
+                <details>
+                    <summary>Do I get a confirmed rate before dispatch?</summary>
+                    <p>Yes. Every reservation is a reserved chauffeur vehicle with a confirmed rate—not an on-demand rideshare or street-hail pickup.</p>
+                </details>
+                <details>
+                    <summary>What if my flight is delayed?</summary>
+                    <p>Share your flight number when you book. Dispatch follows the live arrival so your chauffeur is staged for your terminal.</p>
+                </details>
+                <details>
+                    <summary>Can I get a quote instead of booking online?</summary>
+                    <p>Absolutely. Use <a href="{{ route('free-quote') }}" data-engage="click_free_quote">Free Quote</a> or call us for multi-stop, group, or same-day trips.</p>
+                </details>
+                <details>
+                    <summary>Is meet and greet available at the airport?</summary>
+                    <p>Yes. Request meet and greet in your booking notes for terminal pickup help with luggage.</p>
+                </details>
+            </div>
+        </div>
+
+        <div class="ve-booking-related text-center">
+            <p class="mb-2"><strong>Related pages</strong></p>
+            <p class="mb-0">
+                <a href="{{ route('our-fleet') }}" data-engage="view_fleet">Our Fleet</a> ·
+                <a href="{{ route('airports.ewr') }}">EWR</a> ·
+                <a href="{{ route('airports.jfk') }}">JFK</a> ·
+                <a href="{{ route('airports.lga') }}">LGA</a> ·
+                <a href="{{ route('services.airport-transportation') }}">Airport Transportation</a> ·
+                <a href="{{ route('contact-us') }}">Contact Us</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+@include('components.fleet-peek', ['mode' => 'scroll'])
+@include('components.cta')
 @endsection

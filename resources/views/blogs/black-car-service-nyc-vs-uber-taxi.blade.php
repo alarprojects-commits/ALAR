@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Black Car Service NYC vs Uber & Taxi | Airport Transfer Guide | Alar')
-@section('meta_description', 'Compare black car service NYC vs Uber and taxi for airport transfers. When fixed-rate private chauffeurs beat surge pricing for JFK, LGA, and Newark.')
+@section('meta_title', 'Black Car Service NYC vs Uber — Airport Truth Guide')
+@section('meta_description', 'Compare black car service NYC vs Uber and taxi for JFK, LGA, and Newark. When a fixed-rate chauffeur beats surge—and when rideshare still makes sense.')
 @section('og_image', asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi.webp'))
 @section('og_type', 'article')
 

@@ -11,15 +11,10 @@
                     <p>Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe
                         transportation since 2012.</p>
                     <div class="ve-social">
-                        <a href="https://www.facebook.com/profile.php?id=61581788001748" target="_blank"><i
+                        <a href="https://www.facebook.com/profile.php?id=61581788001748" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
                                 class="fa fa-facebook"></i></a>
-                        <a href="https://x.com/Alar_chauffeur" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/alar_chauffeur_service/" target="_blank"><i
+                        <a href="https://www.instagram.com/alar_chauffeur_service/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
                                 class="fa fa-instagram"></i></a>
-                        <a href="https://www.scoop.it/u/alar-chauffeur-service" target="_blank"><i
-                                class="fa fa-link"></i></a>
-                        <a href="https://www.linkedin.com/in/alar-chauffeur-services-415862383" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>

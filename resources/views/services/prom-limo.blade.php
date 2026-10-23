@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Prom Limo Services in New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Book prom limo services in New Jersey for safe luxury transportation, student prom packages, group rides, and professional chauffeur service.')
+@section('meta_title', 'Prom Limo Service in New Jersey — Stretch & Sprinter')
+@section('meta_description', 'Book prom limo service in New Jersey with stretch limos and Sprinter vans. Safe chauffeured prom packages—reserve early before popular dates fill up.')
 
 @push('schema')
 <script type="application/ld+json">

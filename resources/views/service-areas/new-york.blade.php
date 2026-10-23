@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New York Car Service & Airport Limo | JFK, LGA, EWR | Alar')
-@section('meta_description', 'Book NY car service and airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State chauffeur service across NY, NJ, CT and PA.')
+@section('meta_title', 'New York Car Service — JFK, LGA & EWR Black Car Rides')
+@section('meta_description', 'Book New York car service and airport limo to JFK, LaGuardia, and Newark. Manhattan and borough black car with confirmed rates for Tri-State travel.')
 @section('og_image', asset('assets/img/service-areas/new-york.webp'))
 @section('og_type', 'website')
 

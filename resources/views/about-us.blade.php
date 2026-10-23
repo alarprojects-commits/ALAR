@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'About Alar Chauffeur Service | NJ Luxury Transport')
-@section('meta_description', "Meet Alar Chauffeur Service, New Jersey's trusted luxury transportation company. Professional chauffeurs, safety-first standards & premium vehicles.")
+@section('meta_title', 'About Alar Chauffeur Service — Edison NJ Team Story')
+@section('meta_description', 'Learn about Alar Chauffeur Service in Edison, NJ—Tri-State airport car service, black car travel, professional chauffeurs, and a premium maintained fleet.')
 @section('og_image', asset('assets/img/about-us/excellence-in-luxury-1.webp'))
 @section('og_type', 'website')
 

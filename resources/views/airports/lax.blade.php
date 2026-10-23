@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'LAX Airport Car Service | Alar')
-@section('meta_description', 'LAX airport car service with reserved chauffeurs for California arrivals, departures, and corporate transfers.')
+@section('meta_title', 'LAX Airport Car Service — Los Angeles Chauffeur Ready')
+@section('meta_description', 'Book LAX airport car service with a reserved chauffeur and confirmed rate. California arrivals, departures, and corporate transfers without curb-side wait.')
 @section('og_image', asset('assets/img/airports/lax.webp'))
 @section('og_type', 'website')
 

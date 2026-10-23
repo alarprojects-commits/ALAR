@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Our Luxury Fleet | Sedans, SUVs & Limos | Alar')
-@section('meta_description', "Browse Alar Chauffeur Service's luxury fleet — sedans, SUVs, limousines & sprinter vans for executive travel & special events in New Jersey.")
+@section('meta_title', 'Luxury Sedan, SUV & Sprinter Fleet — Book Alar Now')
+@section('meta_description', 'Browse Alar luxury sedans, executive SUVs, Sprinter vans, and limos for airport car service and events in New Jersey. Choose a class and book online.')
 @section('og_image', asset('assets/img/fleet/mercedes-s550.webp'))
 @section('og_type', 'website')
 

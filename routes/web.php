@@ -130,6 +130,15 @@ Route::get('/service-areas/washington', function () {
 Route::redirect('/service-areas/san-francisco', '/service-areas/california', 301);
 Route::redirect('/service-areas/seattle', '/service-areas/washington', 301);
 
+// Legacy / alternate paths still seen in Search Console
+Route::redirect('/party-bus-service', '/services/party-bus', 301);
+Route::redirect('/party-bus-rental', '/services/party-bus', 301);
+Route::redirect('/states', '/service-areas', 301);
+Route::redirect('/kansas-city', '/service-areas', 301);
+Route::redirect('/reserve/tool', '/book-online', 301);
+Route::redirect('/services/fifa-world-cup-2026-transportation', '/services/sporting-events', 301);
+Route::redirect('/blog/luxury-chauffeur-service-for-fifa-2026-in-nyc-new-jersey', '/blog', 301);
+
 // Airports
 Route::get('/airports', function () {
     return view('airports.index');
@@ -197,5 +206,26 @@ Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
 })->name('blog.black-car-service-nyc-vs-uber-taxi');
 
 Route::fallback(function () {
+    $path = '/'.ltrim(request()->path(), '/');
+
+    // Bot / legacy CMS probes — never real Alar pages. 410 helps Google drop them faster than 404.
+    $spam = [
+        '#^/shop(/|$)#i',
+        '#^/wp-(admin|content|includes|json|login|v2)(/|$)#i',
+        '#^/wordpress(/|$)#i',
+        '#\\.aspx$#i',
+        '#\\.jsp$#i',
+        '#^/cgi-bin(/|$)#i',
+        '#^/xmlrpc\\.php$#i',
+        '#^/contents(/|$)#i',
+        '#^/toyu(/|$)#i',
+    ];
+
+    foreach ($spam as $pattern) {
+        if (preg_match($pattern, $path)) {
+            return response('Gone', 410);
+        }
+    }
+
     return response()->view('errors.404', [], 404);
 });

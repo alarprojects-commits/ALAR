@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Teterboro Airport Car Service | Alar')
-@section('meta_description', 'TEB private aviation car service with FBO coordination and chauffeur transfers across New Jersey and New York.')
+@section('meta_title', 'Teterboro Airport Car Service (TEB) — Private Jet FBO')
+@section('meta_description', 'Book Teterboro (TEB) airport car service with FBO pickup coordination. Executive chauffeur transfers for private aviation across New Jersey and New York.')
 @section('og_image', asset('assets/img/airports/teb.webp'))
 @section('og_type', 'website')
 

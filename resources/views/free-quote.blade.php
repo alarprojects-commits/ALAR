@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Free Quote | Alar Chauffeur Service')
-@section('meta_description', 'Request a free chauffeur quote from Alar Chauffeur Service. Share pickup, destination, service, and vehicle details for a confirmed Tri-State rate.')
+@section('meta_title', 'Get a Free Airport & Black Car Quote Today | Alar NJ')
+@section('meta_description', 'Request a free quote for airport car service, corporate chauffeur, or hourly limo. Share trip details and get a confirmed Tri-State rate from Alar today.')
 @section('og_type', 'website')
 
 @section('content')

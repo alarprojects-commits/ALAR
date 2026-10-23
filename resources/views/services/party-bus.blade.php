@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Party Bus Rental Service New Jersey | Luxury Group')
-@section('meta_description', 'Luxury party bus rental service in New Jersey & New York for weddings, proms, concerts, birthdays, and group travel with chauffeur service.')
+@section('meta_title', 'Party Bus Rental in New Jersey — Group Night Rides')
+@section('meta_description', 'Book party bus rental in New Jersey for birthdays, bachelor parties, and nightlife. Chauffeured group travel with space for your crew—reserve with Alar.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->

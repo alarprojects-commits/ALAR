@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'LaGuardia Airport Car Service | Alar')
-@section('meta_description', 'LGA airport car service with terminal pickups, flight tracking, and chauffeur rides across New York, New Jersey, Connecticut, and Pennsylvania.')
+@section('meta_title', 'LaGuardia Airport Car Service (LGA) — Book Your Ride')
+@section('meta_description', 'Book LaGuardia (LGA) airport car service with terminal pickup and flight tracking. Confirmed-rate chauffeur across NYC, New Jersey, and the Tri-State.')
 @section('og_image', asset('assets/img/airports/lga.webp'))
 @section('og_type', 'website')
 

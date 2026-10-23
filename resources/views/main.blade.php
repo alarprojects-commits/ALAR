@@ -171,6 +171,7 @@
         <script src="{{ asset('assets/js/plugins/plugins.js') }}"></script>
         <script src="{{ asset('assets/js/active.js') }}"></script>
         <script src="{{ asset('assets/js/vaultedge.js') }}"></script>
+        <script src="{{ asset('assets/js/booking-engage.js') }}"></script>
         @stack('scripts')
 
         <!-- WhatsApp Floating Button -->

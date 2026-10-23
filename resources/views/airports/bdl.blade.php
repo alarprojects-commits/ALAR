@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Bradley Airport Car Service | Alar')
-@section('meta_description', 'BDL Hartford airport car service for Connecticut with chauffeur connections to New York, New Jersey, and Westchester.')
+@section('meta_title', 'Bradley Airport Car Service (BDL) — Hartford CT Rides')
+@section('meta_description', 'Book Bradley International (BDL) airport car service for Hartford and Connecticut. Confirmed-rate chauffeur links to NYC, New Jersey, and Westchester.')
 @section('og_image', asset('assets/img/airports/bdl.webp'))
 @section('og_type', 'website')
 

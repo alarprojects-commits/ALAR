@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Service Areas | Tri-State & Beyond | Alar')
-@section('meta_description', 'Explore Alar Chauffeur Service coverage across New Jersey, New York, Connecticut, Pennsylvania, California, Nevada, and Washington—plus airport guides.')
+@section('meta_title', 'Car Service Areas: Tri-State & West Coast Coverage')
+@section('meta_description', 'See Alar chauffeur and airport car service coverage across New Jersey, New York, Connecticut, Pennsylvania, California, Nevada, and Washington state.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 

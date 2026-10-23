@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service NYC & NJ | JFK, LGA, EWR Limo | Alar')
-@section('meta_description', 'Airport car service NYC and NJ to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Tri-State limo with flight tracking and meet-and-greet.')
+@section('meta_title', 'Airport Car Service for JFK, LGA & EWR — Book Alar')
+@section('meta_description', 'Book airport car service for JFK, LaGuardia, and Newark with flight tracking and meet and greet. Confirmed-rate chauffeur transfers across NYC and NJ.')
 
 @push('schema')
 <script type="application/ld+json">

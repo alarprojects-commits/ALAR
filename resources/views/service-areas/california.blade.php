@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'California Chauffeur & Limo Service | Alar')
-@section('meta_description', 'Premium chauffeur service in California for airport transfers, executive travel & long-distance rides. Book luxury limo service today.')
+@section('meta_title', 'California Car Service — LAX Airport Chauffeur Rides')
+@section('meta_description', 'Book California chauffeur and LAX airport car service. Reserved black car for Los Angeles arrivals and corporate travel with a confirmed rate before landing.')
 @section('og_image', asset('assets/img/airports/lax.webp'))
 @section('og_type', 'website')
 

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Contact Us | Alar Chauffeur Service')
-@section('meta_description', 'Contact Alar Chauffeur Service for bookings, quotes, airport transfers, and luxury transportation assistance in New Jersey, New York, and surrounding service areas.')
+@section('meta_title', 'Contact Alar Chauffeur Service in Edison, NJ Today')
+@section('meta_description', 'Contact Alar in Edison, NJ for airport car service bookings, black car quotes, and chauffeur help across New Jersey and NYC. Call or send a trip request.')
 
 @push('schema')
 <script type="application/ld+json">

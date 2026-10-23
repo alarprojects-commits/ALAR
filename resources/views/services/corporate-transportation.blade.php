@@ -1,7 +1,6 @@
-@extends('main') @section('meta_title', 'Corporate Limo Service in New Jersey &
-New York') @section('meta_description', 'Book corporate limo service in New
-Jersey & New York for airport transfers, meetings, and executive travel with
-reliable luxury chauffeurs.')
+@extends('main')
+@section('meta_title', 'Corporate Car Service in NJ & NYC — Executive Rides')
+@section('meta_description', 'Book corporate car service and executive chauffeur in New Jersey and NYC for meetings, airport runs, and hourly travel with a confirmed business rate.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -128,16 +127,23 @@ reliable luxury chauffeurs.')
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Executive Service</span>
-            <h1>Professional Corporate Limo Service in <span>New Jersey City</span></h1>
-            <p>Reliable executive transportation for meetings, airport travel, and business events across New Jersey City and nearby counties.</p>
+            <h1>Professional Corporate Limo Service in <span>New Jersey</span></h1>
+            <p>Reliable executive transportation for meetings, airport travel, and business events across New Jersey and the Tri-State.</p>
             <div class="ve-hero-ctas">
-                <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
-                <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
-                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline">{{ config('contact.phone_display') }}</a>
+                <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
+                <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
+                <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-outline" data-engage="click_to_call">{{ config('contact.phone_display') }}</a>
             </div>
         </div>
     </div>
 </section>
+
+@include('components.commercial-path-chooser')
+@include('components.commercial-trust-strip')
+@include('components.reviews-compact', [
+    'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+])
 
 <!-- ===== SERVICE DETAIL SECTION ===== -->
 <section class="ve-section bg-light">
@@ -182,13 +188,13 @@ reliable luxury chauffeurs.')
                         </p>
 
                         <p>
-                            Our corporate limo service in New Jersey City is
+                            Our corporate limo service in New Jersey is
                             designed for professionals who expect reliable
                             scheduling, privacy, and luxury transportation
                             during business travel.
                             <a href="{{ route('home') }}" style="color: var(--ve-gold)"><b>Alar Chauffeur
                                     Service</b></a>
-                            provides executive rides across New Jersey City,
+                            provides executive rides across New Jersey,
                             nearby counties, and major airports with a focus on
                             professionalism and comfort.
                         </p>
@@ -253,7 +259,7 @@ reliable luxury chauffeurs.')
                         </h3>
                         <p>
                             Time matters during business travel. Our corporate
-                            limo service in New Jersey City helps professionals
+                            limo service in New Jersey helps professionals
                             move efficiently between offices, hotels, airports,
                             and event venues.
                         </p>

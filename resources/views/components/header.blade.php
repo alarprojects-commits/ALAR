@@ -129,9 +129,7 @@
                 <p><a href="mailto:{{ config('contact.email') }}"><i class="fa fa-envelope"></i> {{ config('contact.email') }}</a></p>
                 <div class="ve-mobile-social">
                     <a href="https://www.facebook.com/profile.php?id=61581788001748" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="https://x.com/Alar_chauffeur" target="_blank" rel="noopener noreferrer" aria-label="X"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.instagram.com/alar_chauffeur_service/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/alar-chauffeur-services-415862383" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
                 </div>
             </div>
         </div>

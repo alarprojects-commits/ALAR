@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Newark Airport Car Service EWR | Car Service to Newark Airport | Alar')
-@section('meta_description', 'Book Newark Airport car service (EWR) with flight tracking and meet-and-greet. Reliable car service to Newark Airport from New Jersey, Manhattan, Brooklyn, and the Tri-State area.')
+@section('meta_title', 'Newark Airport Car Service EWR — Full Booking Guide')
+@section('meta_description', 'What travelers book most for Newark Airport car service (EWR): flight tracking, meet and greet, and confirmed rates from New Jersey, Manhattan, and Brooklyn.')
 @section('og_image', asset('assets/img/blogs/newark-airport-car-service-ewr.webp'))
 @section('og_type', 'article')
 

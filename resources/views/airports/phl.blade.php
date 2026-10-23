@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Philadelphia Airport Car Service | Alar')
-@section('meta_description', 'PHL airport car service for Pennsylvania travelers with chauffeur links into New Jersey, New York, and the wider Tri-State.')
+@section('meta_title', 'Philadelphia Airport Car Service (PHL) — Reserve Now')
+@section('meta_description', 'Book Philadelphia (PHL) airport car service with a confirmed rate. Chauffeur transfers across Pennsylvania and into New Jersey and NYC with flight tracking.')
 @section('og_image', asset('assets/img/airports/phl.webp'))
 @section('og_type', 'website')
 

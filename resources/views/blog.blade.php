@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Blogs | Alar Chauffeur Service')
-@section('meta_description', 'Explore blogs of Alar Chauffeur Service, including airport transfers, corporate transportation, weddings, prom, group travel, cruise transfers, and special events.')
+@section('meta_title', 'Airport Car Service Tips Blog — JFK, EWR & NYC Guides')
+@section('meta_description', 'Read Alar guides on Newark Airport car service, car service to JFK, black car vs Uber, and Tri-State chauffeur travel before you book your next ride.')
 
 @push('schema')
 <script type="application/ld+json">

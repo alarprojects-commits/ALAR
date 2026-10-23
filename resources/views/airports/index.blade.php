@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service Guides | JFK, LGA, EWR & More | Alar')
-@section('meta_description', 'Airport car service guides for JFK, LaGuardia, Newark, Westchester, Teterboro, Philadelphia, Bradley, LAX, Las Vegas, and Seattle with chauffeur booking CTAs.')
+@section('meta_title', 'Airport Car Service Guides: JFK, LGA, EWR & More | Alar')
+@section('meta_description', 'Browse Alar airport car service guides for JFK, LaGuardia, Newark, Westchester, and more. Flight-tracked chauffeurs with confirmed rates—open a guide.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 

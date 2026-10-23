@@ -1,6 +1,6 @@
 @extends('main')
 
-@section('meta_title', 'Page Not Found | Alar Chauffeur Service')
+@section('meta_title', 'Page Not Found — Go Home or Book Alar Chauffeur Now')
 @section('meta_description', 'The page you requested was not found. Return home or book a chauffeur with Alar Chauffeur Service for airport transfers and Tri-State travel.')
 @section('meta_robots', 'noindex, follow')
 

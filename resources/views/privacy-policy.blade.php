@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Privacy Policy | Alar Chauffeur Service')
-@section('meta_description', 'Privacy Policy for Alar Chauffeur Service. Learn how we collect, use, disclose, and protect your personal information, including our SMS messaging program.')
+@section('meta_title', 'Privacy Policy for Alar Chauffeur Service Bookings')
+@section('meta_description', 'Read how Alar Chauffeur Service collects, uses, and protects personal information for bookings, quotes, and SMS updates across our chauffeur website.')
 @section('content')
 <style>
     .ve-privacy-content a {

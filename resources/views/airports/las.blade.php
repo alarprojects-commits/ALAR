@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Las Vegas Airport Car Service | Alar')
-@section('meta_description', 'LAS airport car service for Strip hotels, conventions, and Nevada chauffeur transfers.')
+@section('meta_title', 'Las Vegas Airport Car Service (LAS) — Strip Transfers')
+@section('meta_description', 'Book Harry Reid (LAS) airport car service to Strip hotels and conventions. Confirmed-rate Nevada chauffeur transfers—arrive ready, not stuck in a queue.')
 @section('og_image', asset('assets/img/airports/las.webp'))
 @section('og_type', 'website')
 

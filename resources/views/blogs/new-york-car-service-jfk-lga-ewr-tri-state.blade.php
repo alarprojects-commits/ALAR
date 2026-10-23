@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New York Car Service | JFK, LGA, EWR Tri-State Limo | Alar')
-@section('meta_description', 'Book New York car service and Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR) and Westchester (HPN). Professional chauffeurs across NY, NJ and CT.')
+@section('meta_title', 'New York Car Service for JFK, LGA, EWR & Tri-State')
+@section('meta_description', 'Guide to New York car service across JFK, LaGuardia, Newark, and Westchester. How Tri-State travelers book confirmed-rate airport limo with Alar today.')
 @section('og_image', asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp'))
 @section('og_type', 'article')
 

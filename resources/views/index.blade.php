@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Luxury Chauffeur & Airport Car Service | Tri-State | Alar')
-@section('meta_description', 'Book chauffeur service and airport transfers across New Jersey, New York, Connecticut, and Pennsylvania. Sedans, SUVs, and limos for EWR, JFK, LGA, and more.')
+@section('meta_title', 'Book Airport Car Service NJ & NYC — Reserve Today | Alar')
+@section('meta_description', 'Book airport car service and Tri-State chauffeur transfers for JFK, LGA, and Newark. Confirmed rates, flight tracking, and professional drivers from Alar.')
 @section('og_image', asset('assets/img/slider/slider-1.webp'))
 @section('og_type', 'website')
 
@@ -232,26 +232,8 @@
     <!-- Left Panel -->
     <div class="ve-hero-left">
         <h1>WELCOME TO <span class="ve-highlight">ALAR CHAUFFEUR SERVICE</span><br> WITH WORLD-CLASS FLEETS</h1>
-        <p>Alar Chauffeur Service is a trusted choice for premium chauffeur and luxury transportation across the Tri-State.
-            We proudly serve <a href="{{ route('service-area.new-jersey') }}"
-                style="color: var(--ve-gold);"><b>New Jersey</b></a>, <a href="{{ route('service-area.new-york') }}"
-                style="color: var(--ve-gold);"><b>New York</b></a>, <a href="{{ route('service-area.connecticut') }}"
-                style="color: var(--ve-gold);"><b>Connecticut</b></a>, and <a
-                href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-gold);"><b>Pennsylvania</b></a>—plus
-            <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California</b></a>,
-            <a href="{{ route('service-area.nevada') }}" style="color: var(--ve-gold);"><b>Nevada</b></a>, and
-            <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a>.
-            Whether you need a wedding limo, corporate ride, or
-            <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport
-                    transfer</b></a> to <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>,
-            <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, or
-            <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, our team handles the details
-            with care.</p>
-        <p>Every vehicle in <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a> is
-            carefully inspected before each booking and professionally detailed on the day of service.Getting started is
-            quick and convenient. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Request a quote
-                    online</b></a> in justminutes, and our team will assist you with vehicle selection, transparent
-            pricing, availability, and enjoy 10% off.</p>
+        <p>Reserved chauffeur and airport car service across the Tri-State—New Jersey, New York, Connecticut, and Pennsylvania—with confirmed rates, flight tracking, and professional chauffeurs for EWR, JFK, and LGA.</p>
+        <p>Book online in minutes for airport transfers, corporate travel, weddings, and hourly service. Prefer a human quote? Request pricing or call our Edison, NJ desk.</p>
         @include('components.cta-buttons', ['variant' => 'home'])
     </div>
     <!-- Right Panel: overlapping image cards -->
@@ -264,6 +246,12 @@
 
     </div>
 </section>
+
+@include('components.booker-prep', ['mode' => 'link'])
+@include('components.reviews-compact', [
+    'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+])
 
 <section class="ve-section ve-whyus-section">
     <div class="container">

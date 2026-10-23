@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'JFK Airport Car Service | Alar')
-@section('meta_description', 'Reserved chauffeur transfers to and from JFK with flight tracking, terminal meet points, and Tri-State coverage from New Jersey, New York, Connecticut, and')
+@section('meta_title', 'JFK Airport Car Service — Fixed-Rate NYC Transfer Now')
+@section('meta_description', 'Book JFK airport car service with flight tracking and meet and greet. Fixed-rate chauffeur from Manhattan, Brooklyn, and New Jersey—skip the taxi lines.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 

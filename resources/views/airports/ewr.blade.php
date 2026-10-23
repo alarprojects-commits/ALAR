@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Newark Airport Car Service | Alar')
-@section('meta_description', 'EWR airport car service from our Edison desk with flight tracking, meet and greet, and Tri-State chauffeur coverage.')
+@section('meta_title', 'Newark Airport Car Service (EWR) — Meet & Greet Ready')
+@section('meta_description', 'Book Newark Airport car service (EWR) from our Edison desk with flight tracking and meet and greet. Confirmed rates to NJ, Manhattan, and the Tri-State.')
 @section('og_image', asset('assets/img/airports/ewr.webp'))
 @section('og_type', 'website')
 

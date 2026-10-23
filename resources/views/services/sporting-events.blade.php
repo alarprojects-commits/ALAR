@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Sporting Event Chauffeur Service in New Jersey | Alar Chauffeur Service')
-@section('meta_description', 'Book professional sporting event chauffeur service in New Jersey with Alar Chauffeur Service. Luxury transportation to MetLife Stadium, Madison Square Garden, Yankee Stadium, Citi Field, Prudential Center, and major sporting events throughout New Jersey and New York.')
+@section('meta_title', 'MetLife Stadium Car Service — Game Day Chauffeur Ride')
+@section('meta_description', 'Book sporting event chauffeur service to MetLife Stadium, MSG, and Yankee Stadium. Skip parking stress with a reserved black car and confirmed game-day rate.')
 
 @push('schema')
 <script type="application/ld+json">
