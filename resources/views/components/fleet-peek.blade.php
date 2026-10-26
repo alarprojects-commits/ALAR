@@ -1,5 +1,5 @@
 {{--
-  Compact fleet class selector — whole card is the CTA.
+  Compact fleet class selector - whole card is the CTA.
   @var string $mode  scroll|link
 --}}
 @php
@@ -8,13 +8,13 @@
     $classes = [
         [
             'title' => 'Luxury Sedan',
-            'meta' => '1–3 passengers',
+            'meta' => '1-3 passengers',
             'img' => 'assets/img/fleet/mercedes-s550.webp',
             'alt' => 'Luxury sedan for chauffeur airport transfers',
         ],
         [
             'title' => 'Executive SUV',
-            'meta' => '1–6 passengers',
+            'meta' => '1-6 passengers',
             'img' => 'assets/img/fleet/cadillac-escalade.webp',
             'alt' => 'Executive SUV for corporate and airport travel',
         ],

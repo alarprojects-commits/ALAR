@@ -8,6 +8,7 @@
 - `new-york` -> route `service-area.new-york`
 - `connecticut` -> route `service-area.connecticut`
 - `pennsylvania` -> route `service-area.pennsylvania`
+- `massachusetts` -> route `service-area.massachusetts`
 - `california` -> route `service-area.california`
 - `nevada` -> route `service-area.nevada`
 - `washington` -> route `service-area.washington`

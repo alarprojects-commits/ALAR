@@ -1,5 +1,5 @@
 /* ============================================================
-   VaultEdge — Custom Override CSS
+   VaultEdge - Custom Override CSS
    Completely new visual identity: dark navy + gold accent
    Fonts: Nunito (headings) + DM Sans (body)
    ============================================================ */
@@ -101,6 +101,7 @@ h6 {
     font-weight: 500;
     text-decoration: none;
     border-radius: 6px;
+    white-space: nowrap;
     transition: var(--ve-trans);
 }
 .ve-nav ul li a:hover,
@@ -374,6 +375,304 @@ h6 {
     background: var(--ve-dark);
     overflow: hidden;
 }
+
+/* Full-bleed cinematic homepage hero */
+.ve-hero-cinematic {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding: 110px 0 80px;
+    background-color: var(--ve-dark);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ve-hero-cinematic-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(8, 14, 24, 0.88) 0%, rgba(8, 14, 24, 0.55) 48%, rgba(8, 14, 24, 0.42) 100%),
+        linear-gradient(180deg, rgba(8, 14, 24, 0.35) 0%, rgba(8, 14, 24, 0.15) 40%, rgba(8, 14, 24, 0.55) 100%);
+    pointer-events: none;
+}
+.ve-hero-cinematic-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+.ve-hero-cinematic-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 1.05fr);
+    gap: 36px;
+    align-items: center;
+}
+.ve-hero-cinematic-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.ve-hero-trust {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 22px;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.88);
+}
+.ve-hero-stars {
+    color: var(--ve-gold);
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.ve-hero-cinematic-copy h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    color: #fff;
+    font-weight: 800;
+    margin: 0 0 18px;
+    letter-spacing: -0.02em;
+}
+.ve-hero-lead {
+    max-width: 620px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0 0 28px;
+}
+.ve-hero-cinematic-btns {
+    margin-bottom: 22px;
+}
+.ve-hero-cinematic-btns .ve-btn-primary,
+.ve-hero-cinematic-btns .ve-btn-hero-light,
+.ve-hero-cinematic-btns .ve-btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.ve-btn-hero-light {
+    display: inline-block;
+    background: #fff;
+    color: var(--ve-dark);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    transition: var(--ve-trans);
+}
+.ve-btn-hero-light:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--ve-dark);
+    transform: translateY(-2px);
+}
+.ve-hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+}
+.ve-hero-features li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.ve-hero-features li i {
+    color: var(--ve-gold);
+}
+.ve-hero-stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+.ve-hero-stat-box {
+    padding: 16px 14px;
+    border-radius: 10px;
+    border: 1px solid rgba(173, 139, 36, 0.45);
+    background: rgba(0, 0, 0, 0.28);
+}
+.ve-hero-stat-box strong {
+    display: block;
+    font-size: 28px;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 6px;
+}
+.ve-hero-stat-box span {
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.65);
+}
+.ve-hero-plan {
+    align-self: center;
+    width: 100%;
+    max-width: 480px;
+    margin-left: auto;
+    padding: 32px 28px;
+    border-radius: 16px;
+    background: rgba(18, 24, 34, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+.ve-hero-plan-eyebrow {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: var(--ve-gold);
+}
+.ve-hero-plan h2 {
+    margin: 0 0 8px;
+    font-size: 28px;
+    line-height: 1.2;
+    color: #fff;
+}
+.ve-hero-plan > p {
+    margin: 0 0 18px;
+    font-size: 14px;
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.65);
+}
+.ve-hero-plan-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ve-hero-plan-list li + li {
+    margin-top: 8px;
+}
+.ve-hero-plan-list a {
+    display: grid;
+    grid-template-columns: 40px 1fr 16px;
+    gap: 12px;
+    align-items: center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    transition: var(--ve-trans);
+}
+.ve-hero-plan-list a:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+.ve-hero-plan-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(173, 139, 36, 0.15);
+    color: var(--ve-gold);
+}
+.ve-hero-plan-text strong {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.ve-hero-plan-text small {
+    display: block;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+}
+.ve-hero-plan-list a > .fa-angle-right {
+    color: var(--ve-gold);
+    font-size: 16px;
+}
+.ve-hero-plan-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+    color: var(--ve-gold);
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+.ve-hero-plan-all:hover {
+    color: var(--ve-gold2);
+}
+.ve-hero-float-dock {
+    position: fixed;
+    right: 18px;
+    bottom: 24px;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.ve-hero-float-book,
+.ve-hero-float-quote {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 118px;
+    padding: 12px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+.ve-hero-float-book {
+    background: var(--ve-gold);
+    color: var(--ve-dark);
+}
+.ve-hero-float-quote {
+    background: rgba(13, 27, 42, 0.85);
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.ve-hero-float-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25d366;
+    color: #fff;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+    transition: var(--ve-trans);
+}
+.ve-hero-float-whatsapp:hover {
+    background: #128c7e;
+    color: #fff;
+    transform: translateY(-2px);
+}
+.ve-hero-float-book:hover,
+.ve-hero-float-quote:hover {
+    transform: translateY(-1px);
+    color: inherit;
+}
+/* Avoid duplicate WhatsApp when homepage dock is present */
+body:has(.ve-hero-float-dock) .ve-whatsapp-float {
+    display: none;
+}
+
 .ve-hero-left {
     flex: 0 0 55%;
     padding: 80px 60px 80px 80px;
@@ -1408,7 +1707,60 @@ h6 {
 /* ============================================================
    RESPONSIVE
    ============================================================ */
+
+/* Compact desktop nav on mid laptops before hamburger kicks in */
+@media (max-width: 1599px) {
+    .ve-nav-wrap {
+        padding: 0 18px;
+        gap: 10px;
+    }
+    .ve-logo img {
+        max-height: 56px;
+    }
+    .ve-nav > ul {
+        gap: 0;
+    }
+    .ve-nav ul li a {
+        padding: 7px 8px;
+        font-size: 12.5px;
+    }
+    .ve-nav-cta {
+        gap: 10px;
+    }
+    .ve-nav-cta .ve-nav-phone {
+        font-size: 13px;
+    }
+    .ve-nav-cta .ve-cta-btn {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+    /* Free Quote already in nav links - drop duplicate CTA to save space */
+    .ve-nav-cta .ve-cta-btn:last-child {
+        display: none;
+    }
+}
+
+/* Big tablets + small laptops: hamburger instead of cramped wrap */
+@media (max-width: 1399px) {
+    .ve-nav,
+    .ve-nav-cta {
+        display: none;
+    }
+    .ve-toggler {
+        display: flex;
+    }
+    .ve-nav-wrap {
+        padding: 0 24px;
+    }
+}
+
 @media (max-width: 1199px) {
+    .ve-hero-cinematic-grid {
+        gap: 24px;
+    }
+    .ve-hero-stat-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
     .ve-hero-left {
         padding: 70px 40px;
     }
@@ -1426,6 +1778,20 @@ h6 {
     }
 }
 @media (max-width: 991px) {
+    .ve-hero-cinematic {
+        min-height: auto;
+        padding: 100px 0 48px;
+    }
+    .ve-hero-cinematic-grid {
+        grid-template-columns: 1fr;
+    }
+    .ve-hero-plan {
+        order: 2;
+    }
+    .ve-hero-float-dock {
+        right: 12px;
+        bottom: 20px;
+    }
     .ve-hero {
         flex-direction: column;
         min-height: auto;
@@ -1437,13 +1803,6 @@ h6 {
     .ve-hero-right {
         flex: none;
         height: 350px;
-    }
-    .ve-nav,
-    .ve-nav-cta {
-        display: none;
-    }
-    .ve-toggler {
-        display: flex;
     }
     .ve-whyus-content {
         padding-left: 0;
@@ -1462,6 +1821,31 @@ h6 {
     }
 }
 @media (max-width: 767px) {
+    .ve-hero-cinematic-copy h1 {
+        font-size: 36px;
+    }
+    .ve-hero-lead {
+        font-size: 15px;
+    }
+    .ve-hero-stat-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .ve-hero-float-dock {
+        right: 12px;
+        bottom: 16px;
+        gap: 10px;
+    }
+    .ve-hero-float-book,
+    .ve-hero-float-quote {
+        min-width: 104px;
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+    .ve-hero-float-whatsapp {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+    }
     .ve-hero-left h1 {
         font-size: 38px;
     }
@@ -4899,7 +5283,7 @@ textarea.ve-form-input {
 }
 
 /* ============================================================
-   PAGE HEROES — solid color only (no background images)
+   PAGE HEROES - solid color only (no background images)
    ============================================================ */
 .ve-page-hero,
 .ve-page-hero-sm,
@@ -4916,7 +5300,7 @@ textarea.ve-form-input {
 }
 
 /* ============================================================
-   COMMERCIAL BOOKER MODULES — lean UI for conversion
+   COMMERCIAL BOOKER MODULES - lean UI for conversion
    ============================================================ */
 .ve-trust-bar {
     background: var(--ve-dark);

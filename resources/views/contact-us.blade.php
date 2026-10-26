@@ -1,6 +1,6 @@
 @extends('main')
 @section('meta_title', 'Contact Alar Chauffeur Service in Edison, NJ Today')
-@section('meta_description', 'Contact Alar in Edison, NJ for airport car service bookings, black car quotes, and chauffeur help across New Jersey and NYC. Call or send a trip request.')
+@section('meta_description', 'Contact Alar Chauffeur Service in Edison, NJ for airport bookings, black car quotes, and chauffeur help across New Jersey and NYC. Call or send a request.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -130,7 +130,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Ready to Ride?</span>
-            <h1>Get In <span>Touch</span></h1>
+            <h1>Contact Alar Chauffeur Service in <span>Edison, NJ</span></h1>
             <p>Reach Alar Chauffeur Service for quotes, reservations, and trip changes. We confirm every booking before dispatch.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>

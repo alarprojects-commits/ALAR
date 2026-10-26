@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Prom Limo Service in New Jersey — Stretch & Sprinter')
-@section('meta_description', 'Book prom limo service in New Jersey with stretch limos and Sprinter vans. Safe chauffeured prom packages—reserve early before popular dates fill up.')
+@section('meta_title', 'Prom Limo Service New Jersey - Stretch & Sprinter | Alar')
+@section('meta_description', 'Book prom limo service in New Jersey with stretch limos and Sprinter vans. Safe chauffeured prom packages-reserve early before popular dates fill.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Unforgettable Night</span>
-            <h1>Luxury Prom Limo Services in New Jersey for an <span>Unforgettable Night</span></h1>
+            <h1>Prom Limo Service in <span>New Jersey</span></h1>
             <p>Celebrate prom night with safe, stylish, and professional prom limo services in New Jersey offering luxury vehicles, student packages, and reliable chauffeur transportation.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -421,6 +421,8 @@
 
                                 <p>Whether you need transportation for prom dinner, venue arrivals, group travel, or late night return rides, our team is committed to delivering dependable service across every part of the journey.</p>
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'event'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>

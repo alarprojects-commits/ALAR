@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New Jersey Car Service — EWR, JFK & LGA Airport Rides')
-@section('meta_description', 'Book New Jersey car service and airport limo to Newark, JFK, and LaGuardia. Edison-based Tri-State chauffeurs with confirmed rates—reserve your ride today.')
+@section('meta_title', 'New Jersey Car Service & Airport Chauffeur | Alar NJ')
+@section('meta_description', 'Book New Jersey car service from Edison to Jersey City, Short Hills, and Central Jersey. Airport transfers to JFK, LGA, and EWR with confirmed rates.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 
@@ -115,7 +115,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>New Jersey Car Service & <span>Airport Limo</span></h1>
+                <h1>New Jersey Car Service &amp; <span>Airport Chauffeur</span></h1>
                 <p>Tri-State chauffeur service, Newark Airport Limo Service EWR, and reliable transfers to John F. Kennedy (JFK), LaGuardia (LGA), and Westchester County (HPN).</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -255,19 +255,22 @@
                             </p>
 
                             <h3>Airport Transfers</h3>
-                            <p>Reliable airport transportation in New Jersey with on-time pickups and drop-offs.</p>
+                            <p>Reliable <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service NJ</b></a> with on-time pickups for <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>, <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, and <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>.</p>
 
                             <h3>Corporate Chauffeur Service</h3>
-                            <p>Professional <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>executive car service in New Jersey City</b></a> for business meetings and corporate travel.</p>
+                            <p>Professional <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a> and <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>executive chauffeur service NJ</b></a> for meetings and roadshows.</p>
+
+                            <h3>Group & Cruise Transportation</h3>
+                            <p>Coordinate <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or <a href="{{ route('services.cruise-port-transfers') }}" style="color: var(--ve-gold);"><b>cruise port transfers</b></a> with confirmed rates.</p>
 
                             <h3>Event & Sports Transportation</h3>
-                            <p>Book a chauffeur service to <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium</b></a> or any major event with ease and comfort.</p>
+                            <p>Book a chauffeur for <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium car service</b></a>, <a href="{{ route('services.concert-festival') }}" style="color: var(--ve-gold);"><b>event transportation NJ</b></a>, or nightlife with <a href="{{ route('services.party-bus') }}" style="color: var(--ve-gold);"><b>party bus rental New Jersey</b></a>.</p>
 
                             <h3>Wedding & Special Events</h3>
-                            <p>Luxury <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b></b>wedding limo service in New Jersey</b></a> for a memorable and elegant experience.</p>
+                            <p>Luxury <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>wedding limo service in New Jersey</b></a> for a memorable and elegant experience.</p>
 
                             <h3>Hourly & Point-to-Point Rides</h3>
-                            <p>Flexible hourly chauffeur service near you for city travel and custom plans.</p>
+                            <p>Flexible <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>hourly chauffeur service</b></a> and hotel transfers NJ-see our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a>.</p>
 
                             <h2>Why Choose <span>Alar Chauffeur Service</span> in New Jersey</h2>
                             <p>Choosing the right <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service in New Jersey City</b></a> makes all the difference. With Alar Chauffeur Service, you get</p>

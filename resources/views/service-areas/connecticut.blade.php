@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Connecticut Car Service — BDL, JFK, LGA & Newark Rides')
-@section('meta_description', 'Book Connecticut car service to Bradley, JFK, LaGuardia, and Newark. Fairfield to Hartford chauffeur transfers with confirmed airport rates from Alar.')
+@section('meta_title', 'Connecticut Car Service - BDL & NYC Airports | Alar')
+@section('meta_description', 'Book Connecticut car service to Bradley, JFK, LaGuardia, and Newark. Greenwich to Hartford chauffeur transfers with confirmed airport rates from Alar.')
 @section('og_image', asset('assets/img/service-areas/new-york.webp'))
 @section('og_type', 'website')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Connecticut Car Service & Airport Limo</h1>
+                <h1>Connecticut Car Service &amp; Airport Limo</h1>
                 <p>Connecticut car service with chauffeur transfers to Bradley (BDL), JFK, LaGuardia, Newark, and Westchester across Fairfield, New Haven, Hartford, and more.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -31,27 +31,27 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Professional chauffeur service across <span>Connecticut</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle—not a taxi line or rideshare gamble. Whether you are leaving Greenwich for JFK or meeting a flight at Bradley, we price the real drive and confirm the car before dispatch.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle-not a taxi line or rideshare gamble. Whether you are leaving Greenwich for JFK or meeting a flight at Bradley, we price the real drive and confirm the car before dispatch.</p>
                         </div>
 
                         <div class="ve-area-description">
                             <h2>Airports we serve from <span>Connecticut</span></h2>
                             <p>Open an airport guide for pickup tips, flight tracking notes, and booking checklists.</p>
                             <div class="ve-amenities-list"><ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL) car service</b></a> — Hartford-area commercial flights</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> — NYC international banks</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a> — Close-in NYC flights</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a> — NJ and Manhattan corridors</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a> — White Plains regional flights</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL) car service</b></a> - Hartford-area commercial flights</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> - NYC international banks</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a> - Close-in NYC flights</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a> - NJ and Manhattan corridors</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a> - White Plains regional flights</li>
                             </ul></div>
 
                             <h2>Why Connecticut travelers book a reserved chauffeur</h2>
                             <p>Train schedules and rideshare surges do not always match early departures or late international arrivals. A reserved chauffeur keeps the itinerary predictable from door to terminal.</p>
                             <h3>Corporate and shoreline itineraries</h3>
-                            <p>Fairfield County executives often combine office stops with airport runs—hourly service keeps one vehicle on the schedule.</p>
+                            <p>Fairfield County executives often combine office stops with airport runs-hourly service keeps one vehicle on the schedule.</p>
 
                             <h2>Counties and communities we cover</h2>
-                            <p>If your town is not listed, send the address on the quote—coverage is door-to-door, not limited to a downtown pin.</p>
+                            <p>If your town is not listed, send the address on the quote-coverage is door-to-door, not limited to a downtown pin.</p>
                             <div class="ve-amenities-list"><div class="row"><div class="col-md-6"><ul>
                                     <li><i class="fa fa-check"></i> Fairfield County</li>
                                     <li><i class="fa fa-check"></i> New Haven County</li>
@@ -77,6 +77,7 @@
                             <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York car service</b></a></li>
                             <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a></li>
                             <li><i class="fa fa-check"></i> <a href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-gold);"><b>Pennsylvania car service</b></a></li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('service-area.massachusetts') }}" style="color: var(--ve-gold);"><b>Massachusetts car service</b></a></li>
                                 <li><i class="fa fa-check"></i> <a href="{{ route('service-areas.index') }}" style="color: var(--ve-gold);"><b>All service areas</b></a></li>
                                 <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
                             </ul></div>

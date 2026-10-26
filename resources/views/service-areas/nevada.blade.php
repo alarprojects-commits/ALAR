@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Nevada Car Service — Las Vegas LAS Airport Transfers')
-@section('meta_description', 'Book Nevada chauffeur service for Las Vegas Strip hotels and LAS airport transfers. Confirmed-rate black car for conventions and nights out—reserve ahead.')
+@section('meta_title', 'Nevada Car Service - Las Vegas LAS Transfers | Alar')
+@section('meta_description', 'Book Nevada car service for Las Vegas Strip hotels and LAS airport transfers. Confirmed-rate black car for conventions and nights out-reserve with Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -72,7 +72,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Luxury Transportation in Nevada for <span>Airport, Corporate & Private Travel</span></h1>
+                <h1>Nevada Car Service &amp; Las Vegas Airport Limo</h1>
                 <p>Experience luxury transportation in Nevada for airport transfers, corporate travel, and private rides with comfort, reliability, and professional chauffeurs.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>

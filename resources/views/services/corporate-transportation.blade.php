@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Corporate Car Service in NJ & NYC — Executive Rides')
-@section('meta_description', 'Book corporate car service and executive chauffeur in New Jersey and NYC for meetings, airport runs, and hourly travel with a confirmed business rate.')
+@section('meta_title', 'Corporate Transportation New Jersey | Executive Alar')
+@section('meta_description', 'Book corporate transportation New Jersey for meetings, airports, and roadshows. Executive car service NJ with a confirmed business rate-reserve with Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Executive Service</span>
-            <h1>Professional Corporate Limo Service in <span>New Jersey</span></h1>
+            <h1>Corporate Transportation in <span>New Jersey</span></h1>
             <p>Reliable executive transportation for meetings, airport travel, and business events across New Jersey and the Tri-State.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
@@ -706,4 +706,5 @@
     </div>
 </section>
 
+@include('components.related-service-links', ['cluster' => 'corporate'])
 @include('components.cta') @endsection

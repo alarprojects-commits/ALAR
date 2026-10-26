@@ -26,6 +26,9 @@
             <li class="{{ Request::routeIs('airports.bdl') ? 'active' : '' }}">
                 <a href="{{ route('airports.bdl') }}">Bradley (BDL)</a>
             </li>
+            <li class="{{ Request::routeIs('airports.bos') ? 'active' : '' }}">
+                <a href="{{ route('airports.bos') }}">Boston (BOS)</a>
+            </li>
             <li class="{{ Request::routeIs('airports.lax') ? 'active' : '' }}">
                 <a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a>
             </li>
@@ -45,7 +48,13 @@
             <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
             <li><a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
             <li><a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
-            <li><a href="{{ route('services.airport-transportation') }}">Airport Transportation</a></li>
+            <li><a href="{{ route('service-area.massachusetts') }}">Massachusetts</a></li>
+            <li><a href="{{ route('service-area.california') }}">California</a></li>
+            <li><a href="{{ route('service-area.nevada') }}">Nevada</a></li>
+            <li><a href="{{ route('service-area.washington') }}">Washington</a></li>
+            <li><a href="{{ route('services.airport-transportation') }}">Airport Chauffeur Service</a></li>
+            <li><a href="{{ route('services.group-transportation') }}">Group Transportation</a></li>
+            <li><a href="{{ route('our-fleet') }}">Our Fleet</a></li>
         </ul>
     </div>
 

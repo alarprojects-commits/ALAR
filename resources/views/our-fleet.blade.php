@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Luxury Sedan, SUV & Sprinter Fleet — Book Alar Now')
-@section('meta_description', 'Browse Alar luxury sedans, executive SUVs, Sprinter vans, and limos for airport car service and events in New Jersey. Choose a class and book online.')
+@section('meta_title', 'Premium Chauffeur Fleet - Sedan, SUV, Sprinter | Alar')
+@section('meta_description', 'Browse Alar premium chauffeur fleet: luxury sedans, executive SUVs, and Sprinter vans for airport car service and events in New Jersey-book a class online.')
 @section('og_image', asset('assets/img/fleet/mercedes-s550.webp'))
 @section('og_type', 'website')
 
@@ -44,7 +44,7 @@
       "@@id": "https://alarchauffeurservice.com/our-fleet#webpage",
       "url": "https://alarchauffeurservice.com/our-fleet",
       "name": "Our Luxury Fleet | Sedans, SUVs & Limos | Alar",
-      "description": "Browse Alar Chauffeur Service's luxury fleet — sedans, SUVs, limousines & sprinter vans for executive travel & special events in New Jersey.",
+      "description": "Browse Alar Chauffeur Service's luxury fleet - sedans, SUVs, limousines & sprinter vans for executive travel & special events in New Jersey.",
       "image": "https://alarchauffeurservice.com/assets/img/fleet/mercedes-s550.webp",
 
       "isPartOf": {
@@ -113,7 +113,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Luxury Voyage</span>
-            <h1>Our Premium <span>Fleet</span></h1>
+            <h1>Premium Chauffeur Fleet for New Jersey <span>Travel</span></h1>
             <p>Luxury sedans, SUVs, Sprinter vans, and party buses for airport transfers, events, and corporate travel.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>

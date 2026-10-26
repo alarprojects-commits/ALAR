@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Pennsylvania Car Service — PHL Airport Limo Transfers')
-@section('meta_description', 'Book Pennsylvania car service and PHL airport transfers. Chauffeur links to Newark, JFK, and LaGuardia for Philly and nearby counties—confirmed rates.')
+@section('meta_title', 'Pennsylvania Car Service - PHL Airport Limo | Alar')
+@section('meta_description', 'Book Pennsylvania car service and Philadelphia airport car service (PHL). Chauffeur links to Newark, JFK, and LGA for Philly-area travelers-confirmed rates.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Pennsylvania Car Service & Airport Limo</h1>
+                <h1>Pennsylvania Car Service &amp; Airport Limo</h1>
                 <p>Pennsylvania car service with chauffeur transfers to Philadelphia (PHL), Newark, JFK, and LaGuardia for Philly, Bucks, Montgomery, and nearby counties.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -31,17 +31,17 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Professional chauffeur service across <span>Pennsylvania</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle—not a taxi line or rideshare gamble. From Center City hotels to Bucks County homes, we arrange door-to-door chauffeur rides with clear rates before the trip starts.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle-not a taxi line or rideshare gamble. From Center City hotels to Bucks County homes, we arrange door-to-door chauffeur rides with clear rates before the trip starts.</p>
                         </div>
 
                         <div class="ve-area-description">
                             <h2>Airports we serve from <span>Pennsylvania</span></h2>
                             <p>Open an airport guide for pickup tips, flight tracking notes, and booking checklists.</p>
                             <div class="ve-amenities-list"><ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>Philadelphia (PHL) car service</b></a> — Primary PA commercial airport</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a> — North Jersey and NYC access</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> — International NYC banks</li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a> — Domestic NYC flights</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>Philadelphia (PHL) car service</b></a> - Primary PA commercial airport</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a> - North Jersey and NYC access</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> - International NYC banks</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a> - Domestic NYC flights</li>
                             </ul></div>
 
                             <h2>PHL and Tri-State airport connections</h2>
@@ -50,7 +50,7 @@
                             <p>Roadshows and venue timelines fit hourly chauffeur service when multiple stops matter more than a single point-to-point drop.</p>
 
                             <h2>Counties and communities we cover</h2>
-                            <p>If your town is not listed, send the address on the quote—coverage is door-to-door, not limited to a downtown pin.</p>
+                            <p>If your town is not listed, send the address on the quote-coverage is door-to-door, not limited to a downtown pin.</p>
                             <div class="ve-amenities-list"><div class="row"><div class="col-md-6"><ul>
                                     <li><i class="fa fa-check"></i> Philadelphia County</li>
                                     <li><i class="fa fa-check"></i> Bucks County</li>

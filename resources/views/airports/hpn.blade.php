@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Westchester Airport Car Service (HPN) — Reserve Now')
-@section('meta_description', 'Book Westchester County Airport (HPN) car service for White Plains and Tri-State transfers. Reserved chauffeur with a confirmed rate—not curb taxis.')
+@section('meta_title', 'Westchester Airport Car Service HPN - White Plains Alar')
+@section('meta_description', 'Book Westchester airport car service (HPN) for White Plains and Tri-State transfers. Reserved chauffeur with confirmed rates-not curb taxis.')
 @section('og_image', asset('assets/img/airports/hpn.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>Westchester Airport Car Service</h1>
-                <p>HPN airport car service for White Plains and Tri-State transfers with reserved chauffeurs—not taxi lines.</p>
+                <h1>Westchester Airport Car Service (HPN)</h1>
+                <p>HPN airport car service for White Plains and Tri-State transfers with reserved chauffeurs-not taxi lines.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -31,7 +31,7 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Reserved chauffeur transfers for <span>HPN</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Westchester County Airport (HPN). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch—not an on-demand rideshare curb queue.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Westchester County Airport (HPN). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch-not an on-demand rideshare curb queue.</p>
                             <p>Westchester County Airport is compact compared with JFK, but we still confirm the terminal side and your door address for an accurate quote.</p>
                         </div>
 
@@ -71,7 +71,7 @@
                             <h3>Sedans and executive SUVs</h3>
                             <p>Best for one to three passengers with standard luggage on most HPN runs.</p>
                             <h3>Sprinters and group vehicles</h3>
-                            <p>Use when the party or bag count exceeds a sedan trunk—especially for international arrivals.</p>
+                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
                             <h2>How to book your <span>HPN</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
@@ -79,20 +79,12 @@
                                 <ul>
                                     <li><i class="fa fa-check"></i> Flight tracking when the flight number is on the reservation</li>
                                     <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
-                                    <li><i class="fa fa-check"></i> Professional chauffeurs—not street-hail taxi service</li>
+                                    <li><i class="fa fa-check"></i> Professional chauffeurs-not street-hail taxi service</li>
                                     <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
                                 </ul>
                             </div>
 
-                            <h2>Related airport guides</h2>
-                            <div class="ve-amenities-list">
-                                <ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL) car service</b></a></li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
-                                </ul>
-                            </div>
+                            @include('components.related-airport-guides', ['current' => 'hpn'])
 
                             <div class="ve-area-faq mt-50">
                                 <span class="ve-section-tag">FAQs</span>
@@ -106,7 +98,7 @@
                                         </div>
                                         <div id="hpnFaq1" class="collapse show" data-parent="#hpnFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival—including delays—so the chauffeur is staged for your terminal, not a generic airport pin.</p>
+                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival-including delays-so the chauffeur is staged for your terminal, not a generic airport pin.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +122,7 @@
                                         </div>
                                         <div id="hpnFaq3" class="collapse" data-parent="#hpnFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate—aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
                                             </div>
                                         </div>
                                     </div>

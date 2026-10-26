@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'JFK Airport Car Service — Fixed-Rate NYC Transfer Now')
-@section('meta_description', 'Book JFK airport car service with flight tracking and meet and greet. Fixed-rate chauffeur from Manhattan, Brooklyn, and New Jersey—skip the taxi lines.')
+@section('meta_title', 'JFK Airport Car Service - NJ & NYC Transfers | Alar')
+@section('meta_description', 'Book JFK airport car service and limo to NJ-Hoboken, Jersey City, and beyond. Flight tracking, meet and greet, and confirmed rates from Alar.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>JFK Airport Car Service</h1>
+                <h1>JFK Airport Car Service to New Jersey &amp; NYC</h1>
                 <p>Reserved chauffeur transfers to and from JFK with flight tracking, terminal meet points, and Tri-State coverage from New Jersey, New York, Connecticut, and Pennsylvania.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -31,8 +31,8 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Reserved chauffeur transfers for <span>JFK</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at John F. Kennedy International Airport (JFK). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch—not an on-demand rideshare curb queue.</p>
-                            <p>JFK is a multi-terminal campus. We ask for the airline and terminal on every reservation so the chauffeur stages at the correct door—not a generic “JFK” pin.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at John F. Kennedy International Airport (JFK). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch-not an on-demand rideshare curb queue.</p>
+                            <p>JFK is a multi-terminal campus. We ask for the airline and terminal on every reservation so the chauffeur stages at the correct door-not a generic “JFK” pin.</p>
                         </div>
 
                         <div class="ve-area-description">
@@ -71,7 +71,7 @@
                             <h3>Sedans and executive SUVs</h3>
                             <p>Best for one to three passengers with standard luggage on most JFK runs.</p>
                             <h3>Sprinters and group vehicles</h3>
-                            <p>Use when the party or bag count exceeds a sedan trunk—especially for international arrivals.</p>
+                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
                             <h2>How to book your <span>JFK</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
@@ -79,20 +79,12 @@
                                 <ul>
                                     <li><i class="fa fa-check"></i> Flight tracking when the flight number is on the reservation</li>
                                     <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
-                                    <li><i class="fa fa-check"></i> Professional chauffeurs—not street-hail taxi service</li>
+                                    <li><i class="fa fa-check"></i> Professional chauffeurs-not street-hail taxi service</li>
                                     <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
                                 </ul>
                             </div>
 
-                            <h2>Related airport guides</h2>
-                            <div class="ve-amenities-list">
-                                <ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a></li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
-                                </ul>
-                            </div>
+                            @include('components.related-airport-guides', ['current' => 'jfk'])
 
                             <div class="ve-area-faq mt-50">
                                 <span class="ve-section-tag">FAQs</span>
@@ -106,7 +98,7 @@
                                         </div>
                                         <div id="jfkFaq1" class="collapse show" data-parent="#jfkFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival—including delays—so the chauffeur is staged for your terminal, not a generic airport pin.</p>
+                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival-including delays-so the chauffeur is staged for your terminal, not a generic airport pin.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +122,7 @@
                                         </div>
                                         <div id="jfkFaq3" class="collapse" data-parent="#jfkFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate—aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
                                             </div>
                                         </div>
                                     </div>

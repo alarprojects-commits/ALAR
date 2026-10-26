@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Book Airport Car Service Online Now — Instant Rate | Alar')
-@section('meta_description', 'Reserve airport car service, black car, or hourly chauffeur online with Alar. Confirmed rate before dispatch for JFK, LGA, EWR, and Tri-State trips.')
+@section('meta_title', 'Book Airport Car Service NJ Online - Instant Rate | Alar')
+@section('meta_description', 'Book airport car service NJ online for black car or hourly chauffeur. Confirmed rate before dispatch for JFK, LGA, EWR, and Tri-State trips with Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -149,8 +149,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Reserve Now</span>
-            <h1>Reserve Your <span>Chauffeur</span></h1>
-            <p>Book online with a confirmed rate—not surge pricing. Share pickup, drop-off, and flight details for a reserved vehicle.</p>
+            <h1>Book Airport Car Service NJ <span>Online</span></h1>
+            <p>Book online with a confirmed rate-not surge pricing. Share pickup, drop-off, and flight details for a reserved vehicle.</p>
             <div class="ve-hero-ctas">
                 <a href="#booking-form" class="ve-btn-primary" data-engage="start_booking">Start Booking</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
@@ -245,7 +245,7 @@
                 </div>
                 <details>
                     <summary>Do I get a confirmed rate before dispatch?</summary>
-                    <p>Yes. Every reservation is a reserved chauffeur vehicle with a confirmed rate—not an on-demand rideshare or street-hail pickup.</p>
+                    <p>Yes. Every reservation is a reserved chauffeur vehicle with a confirmed rate-not an on-demand rideshare or street-hail pickup.</p>
                 </details>
                 <details>
                     <summary>What if my flight is delayed?</summary>

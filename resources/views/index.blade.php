@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Book Airport Car Service NJ & NYC — Reserve Today | Alar')
-@section('meta_description', 'Book airport car service and Tri-State chauffeur transfers for JFK, LGA, and Newark. Confirmed rates, flight tracking, and professional drivers from Alar.')
+@section('meta_title', 'Airport Car Service NJ - JFK, LGA & EWR | Book Alar')
+@section('meta_description', 'Book airport car service NJ with Alar chauffeurs for JFK, LGA, and Newark. Confirmed rates, flight tracking, and professional drivers from Edison, NJ.')
 @section('og_image', asset('assets/img/slider/slider-1.webp'))
 @section('og_type', 'website')
 
@@ -227,23 +227,137 @@
 
 @section('content')
 
-<!-- ===== HERO: Split layout — left text, right image panel ===== -->
-<section class="ve-hero">
-    <!-- Left Panel -->
-    <div class="ve-hero-left">
-        <h1>WELCOME TO <span class="ve-highlight">ALAR CHAUFFEUR SERVICE</span><br> WITH WORLD-CLASS FLEETS</h1>
-        <p>Reserved chauffeur and airport car service across the Tri-State—New Jersey, New York, Connecticut, and Pennsylvania—with confirmed rates, flight tracking, and professional chauffeurs for EWR, JFK, and LGA.</p>
-        <p>Book online in minutes for airport transfers, corporate travel, weddings, and hourly service. Prefer a human quote? Request pricing or call our Edison, NJ desk.</p>
-        @include('components.cta-buttons', ['variant' => 'home'])
-    </div>
-    <!-- Right Panel: overlapping image cards -->
-    <div class="ve-hero-right">
-        <div class="ve-hero-img-main bg-img" role="img" aria-label="Alar Chauffeur Service luxury sedan for airport transfers in New Jersey" style="background-image:url(../assets/img/slider/slider-1.webp);">
-        </div>
-        <div class="ve-hero-img-accent bg-img" role="img" aria-label="Alar Chauffeur Service executive transport vehicle in New Jersey" style="background-image:url(../assets/img/slider/slider-2.webp);">
-        </div>
-        <!-- Floating card -->
+{{-- Hero background: replace assets/img/slider/hero-bg.webp with your final image --}}
+<section class="ve-hero ve-hero-cinematic" style="background-image:url({{ asset('assets/img/slider/hero-bg.webp') }});">
+    <div class="ve-hero-cinematic-overlay"></div>
+    <div class="container ve-hero-cinematic-inner">
+        <div class="ve-hero-cinematic-grid">
+            <div class="ve-hero-cinematic-copy">
+                <div class="ve-hero-trust">
+                    <span class="ve-hero-stars" aria-hidden="true">★★★★★</span>
+                    <span>Trusted Tri-State luxury airport transportation</span>
+                </div>
 
+                <h1>ALAR Chauffeur Service</h1>
+                <p class="ve-hero-lead">Luxury limousine and chauffeur service across New Jersey, New York, Connecticut, Pennsylvania, and Massachusetts - airport transfers, corporate travel, weddings, and private journeys from Edison, NJ.</p>
+
+                <div class="ve-hero-btns ve-hero-cinematic-btns">
+                    <a href="{{ route('book-online') }}" class="ve-btn-primary" data-engage="start_booking"><i class="fa fa-calendar"></i> Book Reservation</a>
+                    <a href="{{ route('free-quote') }}" class="ve-btn-hero-light" data-engage="click_free_quote"><i class="fa fa-refresh"></i> Free Quote</a>
+                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost" data-engage="click_to_call"><i class="fa fa-phone"></i> Call Now</a>
+                </div>
+
+                <ul class="ve-hero-features">
+                    <li><i class="fa fa-user"></i> Pro Chauffeurs</li>
+                    <li><i class="fa fa-shield"></i> Commercially Insured</li>
+                    <li><i class="fa fa-plane"></i> Flight Tracking</li>
+                    <li><i class="fa fa-clock-o"></i> 24/7 Dispatch</li>
+                    <li><i class="fa fa-map-marker"></i> Tri-State &amp; Beyond</li>
+                </ul>
+
+                <div class="ve-hero-stat-grid">
+                    <div class="ve-hero-stat-box">
+                        <strong>JFK+</strong>
+                        <span>Major airports served nationwide</span>
+                    </div>
+                    <div class="ve-hero-stat-box">
+                        <strong>14+</strong>
+                        <span>Luxury fleet options</span>
+                    </div>
+                    <div class="ve-hero-stat-box">
+                        <strong>24/7</strong>
+                        <span>Live reservation support</span>
+                    </div>
+                    <div class="ve-hero-stat-box">
+                        <strong>US</strong>
+                        <span>Northeast &amp; West Coast coverage</span>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="ve-hero-plan" aria-label="Popular routes and services">
+                <span class="ve-hero-plan-eyebrow">Plan Your Trip</span>
+                <h2>Popular routes &amp; services</h2>
+                <p>Start with the trip type travelers book most, then reserve a confirmed-rate chauffeur.</p>
+                <ul class="ve-hero-plan-list">
+                    <li>
+                        <a href="{{ route('services.airport-transportation') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-plane"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Airport Transfers</strong>
+                                <small>Flight-aware pickups and curb timing</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('services.corporate-transportation') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-briefcase"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Corporate Travel</strong>
+                                <small>Executives, roadshows, client hosting</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('our-fleet') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-car"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Luxury Fleet</strong>
+                                <small>Sedans, SUVs, Sprinters, and coaches</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('services.hourly-limo') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-clock-o"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Hourly Chauffeur</strong>
+                                <small>Flexible multi-stop private days</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('services.wedding-limo') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-heart"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Wedding Limo</strong>
+                                <small>Ceremony timing and photo stops</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('services.group-transportation') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-road"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Group &amp; Long Distance</strong>
+                                <small>City-to-city and group road travel</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+                <a href="{{ route('our-services') }}" class="ve-hero-plan-all">View all services <i class="fa fa-arrow-right"></i></a>
+            </aside>
+        </div>
+    </div>
+
+    <div class="ve-hero-float-dock" aria-label="Quick actions">
+        <a href="{{ route('book-online') }}" class="ve-hero-float-book" data-engage="start_booking">Book Now</a>
+        <a href="{{ route('free-quote') }}" class="ve-hero-float-quote" data-engage="click_free_quote">Free Quote</a>
+        <a
+            href="{{ config('contact.whatsapp_link') }}"
+            class="ve-hero-float-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat on WhatsApp"
+        >
+            <i class="fa fa-whatsapp"></i>
+        </a>
     </div>
 </section>
 
@@ -297,8 +411,9 @@
         <div class="ve-section-header text-center">
             <span class="ve-section-tag">Tri-State Coverage</span>
             <h2>Major Airports <span>We Serve</span></h2>
-            <p>Query-based airport guides for JFK, LaGuardia, Newark, Westchester, Teterboro, Philadelphia, Bradley, and our West Coast airports.
-                <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>Browse all airport guides</b></a>
+            <p>Airport chauffeur service NJ and Tri-State guides for JFK, LaGuardia, Newark, Westchester, Teterboro, Philadelphia, Bradley, and West Coast hubs.
+                <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport transfers</b></a>
+                · <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>Browse all airport guides</b></a>
             </p>
         </div>
 
@@ -363,7 +478,7 @@
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
                     <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.sea') }}" style="color: inherit;">Seattle (SEA) Car Service</a></h3>
-                    <p>Sea-Tac transfers for Washington state—paired with our Washington service area page.</p>
+                    <p>Sea-Tac transfers for Washington state-paired with our Washington service area page.</p>
                     <p><a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Open SEA guide</b></a></p>
                 </div>
             </div>

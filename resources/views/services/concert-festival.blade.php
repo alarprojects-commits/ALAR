@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Concert Limo Service in New Jersey — Event Drop-Off')
-@section('meta_description', 'Book concert and festival limo service in New Jersey for venue drop-offs and late-night returns. Private chauffeur or group Sprinter with confirmed rates.')
+@section('meta_title', 'Event Transportation NJ - Concert & Festival Limo | Alar')
+@section('meta_description', 'Book event transportation NJ for concert drop-offs and late-night returns. Hire a chauffeur for your event or group Sprinter-confirmed rates from Alar.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,7 +8,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Arrive Like a Star</span>
-            <h1>Concert and Festival Limo Service in <span>New Jersey</span></h1>
+            <h1>Event Transportation NJ for Concerts &amp; <span>Festivals</span></h1>
             <p>Enjoy stress-free transportation to concerts, music festivals, cultural events, and live performances with luxury chauffeur service across New Jersey and New York.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -361,22 +361,7 @@
                                 <h2>Additional Transportation Services <span>You May Need</span></h2>
                                 <p>Many clients attending concerts and festivals also book additional transportation services before or after the event.</p>
 
-                                <h3>Popular Related Services</h3>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport transportation service</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>Chauffeur service</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>Group transportation</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>Sporting and event limo service</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Wedding limo service</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>Corporate transportation</b></a></li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>Hourly chauffeur service</b></a></li>
-                                        <li><i class="fa fa-check"></i> Point-to-point transportation</li>
-                                        <li><i class="fa fa-check"></i> Long-distance transportation</li>
-                                        <li><i class="fa fa-check"></i> <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New Jersey to New York limo service</b></a></li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">These internal transportation options help travelers create complete transportation plans for business, entertainment, and personal travel needs.</p>
+                                @include('components.related-service-links', ['cluster' => 'event'])
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">

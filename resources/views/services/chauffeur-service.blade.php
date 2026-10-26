@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Chauffeur Service in New Jersey — Private Black Car')
-@section('meta_description', 'Book chauffeur service in New Jersey for airport transfers, private city travel, and long-distance black car trips with confirmed rates and 24/7 dispatch.')
+@section('meta_title', 'Executive Chauffeur Service NJ - Hire Private Car | Alar')
+@section('meta_description', 'Hire executive chauffeur service NJ for airports, hotel transfers, and private travel. Premium black car with confirmed rates from Alar in Edison.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,7 +8,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Premium Service</span>
-            <h1>Professional Chauffeur Service in <span>NJ & NYC</span></h1>
+            <h1>Executive Chauffeur Service in <span>New Jersey</span></h1>
             <p>Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
@@ -280,7 +280,7 @@
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
                                 <h2>Chauffeur Service for Every Event</h2>
-                                <p>A chauffeur service is not limited to one purpose—it is universal for every event. Whether it’s:</p>
+                                <p>A chauffeur service is not limited to one purpose-it is universal for every event. Whether it’s:</p>
 
                                 <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
                                     <div class="row">
@@ -318,6 +318,8 @@
                                 <p>Providing accurate details ensures a smooth and well-planned journey.</p>
 
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'corporate'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>

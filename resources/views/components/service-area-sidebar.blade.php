@@ -17,6 +17,9 @@
             <li class="{{ Request::routeIs('service-area.pennsylvania') ? 'active' : '' }}">
                 <a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a>
             </li>
+            <li class="{{ Request::routeIs('service-area.massachusetts') ? 'active' : '' }}">
+                <a href="{{ route('service-area.massachusetts') }}">Massachusetts</a>
+            </li>
             <li class="{{ Request::routeIs('service-area.california') ? 'active' : '' }}">
                 <a href="{{ route('service-area.california') }}">California</a>
             </li>
@@ -40,6 +43,21 @@
             <li><a href="{{ route('airports.teb') }}">Teterboro (TEB)</a></li>
             <li><a href="{{ route('airports.phl') }}">Philadelphia (PHL)</a></li>
             <li><a href="{{ route('airports.bdl') }}">Bradley (BDL)</a></li>
+            <li><a href="{{ route('airports.bos') }}">Boston (BOS)</a></li>
+            <li><a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
+            <li><a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
+            <li><a href="{{ route('airports.sea') }}">Sea-Tac (SEA)</a></li>
+        </ul>
+    </div>
+
+    <div class="ve-sidebar-widget mt-30">
+        <h5>Popular Services</h5>
+        <ul class="ve-sidebar-links">
+            <li><a href="{{ route('services.airport-transportation') }}">Airport Chauffeur Service</a></li>
+            <li><a href="{{ route('services.corporate-transportation') }}">Corporate Transportation</a></li>
+            <li><a href="{{ route('services.group-transportation') }}">Group Transportation</a></li>
+            <li><a href="{{ route('services.cruise-port-transfers') }}">Cruise Port Transfers</a></li>
+            <li><a href="{{ route('our-fleet') }}">Our Fleet</a></li>
         </ul>
     </div>
 

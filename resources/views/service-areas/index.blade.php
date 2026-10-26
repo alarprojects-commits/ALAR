@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Car Service Areas: Tri-State & West Coast Coverage')
-@section('meta_description', 'See Alar chauffeur and airport car service coverage across New Jersey, New York, Connecticut, Pennsylvania, California, Nevada, and Washington state.')
+@section('meta_title', 'New Jersey Car Service Areas - Tri-State & West | Alar')
+@section('meta_description', 'See Alar New Jersey car service coverage plus New York, Connecticut, Pennsylvania, California, Nevada, and Washington-airport chauffeurs in every market.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Coverage</span>
-                <h1>Service Areas Across the Tri-State & Beyond</h1>
-                <p>State guides for New Jersey, New York, Connecticut, and Pennsylvania—plus California, Nevada, and Washington. Every page links to the airports travelers actually book.</p>
+                <h1>New Jersey Car Service Areas Across Tri-State &amp; Beyond</h1>
+                <p>State guides for New Jersey, New York, Connecticut, Pennsylvania, and Massachusetts-plus California, Nevada, and Washington. Every page links to the airports travelers actually book.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -24,7 +24,7 @@
         <div class="container">
             <div class="ve-area-intro mb-50 text-center" style="max-width: 720px; margin-left: auto; margin-right: auto;">
                 <h2>Core Tri-State coverage</h2>
-                <p>Start with the state that matches your pickup or drop-off. Each guide lists counties, airports, and how to request a confirmed chauffeur rate.</p>
+                <p>Start with the state that matches your pickup or drop-off. Each guide lists counties, airports, and how to request a confirmed chauffeur rate. Pair coverage with <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service NJ</b></a>, <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation</b></a>, or <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a>.</p>
             </div>
             <div class="row">
                 @foreach ([
@@ -32,8 +32,9 @@
                     ['route' => 'service-area.new-york', 'title' => 'New York', 'text' => 'Manhattan, boroughs, Long Island, and Westchester with JFK, LGA, EWR, and HPN.'],
                     ['route' => 'service-area.connecticut', 'title' => 'Connecticut', 'text' => 'Bradley (BDL) plus NYC-area airports across Fairfield, New Haven, and more.'],
                     ['route' => 'service-area.pennsylvania', 'title' => 'Pennsylvania', 'text' => 'PHL transfers and Tri-State links for Philly and surrounding counties.'],
+                    ['route' => 'service-area.massachusetts', 'title' => 'Massachusetts', 'text' => 'Boston Logan (BOS) transfers across Greater Boston and Northeast links.'],
                 ] as $card)
-                    <div class="col-md-6 col-lg-3 mb-30">
+                    <div class="col-md-6 col-lg-4 mb-30">
                         <div class="ve-feature-text-item h-100">
                             <h3 style="font-size: 1.25rem;"><a href="{{ route($card['route']) }}" style="color: inherit;">{{ $card['title'] }}</a></h3>
                             <p>{{ $card['text'] }}</p>
@@ -49,7 +50,7 @@
             </div>
             <div class="row justify-content-center">
                 @foreach ([
-                    ['route' => 'service-area.california', 'title' => 'California', 'text' => 'LAX-focused chauffeur and airport car service.'],
+                    ['route' => 'service-area.california', 'title' => 'California', 'text' => 'Chauffeur service San Francisco & Bay Area plus LAX airport car service.'],
                     ['route' => 'service-area.nevada', 'title' => 'Nevada', 'text' => 'Las Vegas Strip and LAS airport transfers.'],
                     ['route' => 'service-area.washington', 'title' => 'Washington', 'text' => 'Seattle-area coverage with SEA airport guides.'],
                 ] as $card)
@@ -73,7 +74,12 @@
                         <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
                         <li><i class="fa fa-check"></i> <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>Philadelphia (PHL) car service</b></a></li>
                         <li><i class="fa fa-check"></i> <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL) car service</b></a></li>
+                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.bos') }}" style="color: var(--ve-gold);"><b>Boston Logan (BOS) car service</b></a></li>
+                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX airport car service</b></a></li>
+                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Las Vegas (LAS) car service</b></a></li>
+                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Sea-Tac (SEA) car service</b></a></li>
                         <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>Browse all airports</b></a></li>
+                        <li><i class="fa fa-check"></i> <a href="{{ route('our-services') }}" style="color: var(--ve-gold);"><b>All chauffeur services</b></a></li>
                     </ul>
                 </div>
             </div>

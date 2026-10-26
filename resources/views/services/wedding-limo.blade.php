@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Wedding Limo Service in New Jersey — Book Your Date')
-@section('meta_description', 'Book wedding limo service in New Jersey for bridal party rides, guest shuttles, and airport transfers. Elegant chauffeurs and luxury fleet—reserve your date.')
+@section('meta_title', 'Wedding Limo Service New Jersey - Event Day | Alar')
+@section('meta_description', 'Book wedding limo service in New Jersey for bridal party rides, guest shuttles, and airport transfers. Elegant chauffeurs-reserve your wedding date with Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Elegant Experience</span>
-            <h1>Luxury Wedding Limo Service in New Jersey for <span>Your Special Day</span></h1>
+            <h1>Wedding Limo Service in <span>New Jersey</span></h1>
             <p>Arrive in style with professional wedding limo service in New Jersey offering luxury vehicles, experienced chauffeurs, and smooth transportation for weddings, receptions, and guest travel.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -398,6 +398,8 @@
 
                                 <p>Whether you need transportation for a private ceremony, luxury reception arrival, airport guest pickups, or full day chauffeur service, our team is committed to delivering a smooth and memorable experience.</p>
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'event'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>

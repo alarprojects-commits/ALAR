@@ -18,9 +18,9 @@ Events push to `dataLayer` and `gtag('event', …)` when available.
 
 ## What to compare
 
-1. **Top pages/screens** — Book Online, Corporate, Chauffeur / home bounce rate vs prior period.
-2. **Events** — volume of `start_booking`, `click_free_quote`, `click_to_call`.
-3. **Engaged sessions** — should rise on Book Online as trust and CTAs sit above the iframe.
+1. **Top pages/screens** - Book Online, Corporate, Chauffeur / home bounce rate vs prior period.
+2. **Events** - volume of `start_booking`, `click_free_quote`, `click_to_call`.
+3. **Engaged sessions** - should rise on Book Online as trust and CTAs sit above the iframe.
 
 ## Target
 

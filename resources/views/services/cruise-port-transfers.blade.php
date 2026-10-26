@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Cruise Port Transfers NJ & NYC — Cape Liberty Ready')
-@section('meta_description', 'Book cruise port transfers for Cape Liberty, Manhattan, and Brooklyn terminals. Luggage-friendly chauffeur service with a confirmed rate before sail day.')
+@section('meta_title', 'Cruise Port Transportation NJ - Packages & Transfers | Alar')
+@section('meta_description', 'Book cruise port transportation and transfer packages for Cape Liberty, Manhattan, and Brooklyn. Luggage-ready chauffeur service NJ-confirmed rates from Alar.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,7 +8,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Start Your Vacation Right</span>
-            <h1>Luxury Cruise Port Transfers Between <span>New Jersey & New York Cruise Terminals</span></h1>
+            <h1>Cruise Port Transfers &amp; Transportation in <span>New Jersey</span></h1>
             <p>Luxury Cruise Port Transfers NJ & NY | Reliable Transfers to Manhattan & Cape Liberty Cruise Terminals with 24/7 Chauffeur Service</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -43,9 +43,9 @@
 
                         <p>Whether you're departing for a Caribbean cruise, international voyage, or weekend getaway, our professional chauffeurs ensure timely pickup from your home, hotel, or airport and a comfortable ride directly to the cruise terminal.</p>
 
-                        <p>At <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>, we specialize in long-distance cruise transfers, family travel, group transportation, and private luxury chauffeur service across New Jersey and New York.</p>
+                        <p>At <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>, we specialize in cruise port transport packages, long-distance cruise transfers, family travel, <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a>, and private luxury chauffeur service across New Jersey and New York.</p>
 
-                        <p>If you are searching for cruise port transportation near me, NYC cruise terminal transfer, or luxury cruise shuttle service, this page is built to serve your travel needs.</p>
+                        <p>If you need cruise port transportation, cruise terminal transportation NJ, NYC cruise terminal transfer, or a Cape Liberty package, this page covers embarkation and return-day transfers.</p>
 
                         <div class="ve-detail-extra-content mt-50">
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
@@ -77,7 +77,7 @@
                                         <li><i class="fa fa-check"></i> Baltimore Cruise Port (Maryland)</li>
                                         <li><i class="fa fa-check"></i> Philadelphia Cruise Port (Pennsylvania)</li>
                                         <li><i class="fa fa-check"></i> Boston Cruise Terminal (Massachusetts)</li>
-                                        <li><i class="fa fa-check"></i> Norfolk Cruise Port (Virginia – seasonal routes)</li>
+                                        <li><i class="fa fa-check"></i> Norfolk Cruise Port (Virginia - seasonal routes)</li>
                                     </ul>
                                 </div>
                                 <p class="mt-20">This wide coverage makes our service ideal for travelers across the Northeast USA cruise corridor.</p>
@@ -141,19 +141,19 @@
                                 <p>Many travelers arrive via airports before boarding cruises. We offer seamless airport-to-port transfers.</p>
 
                                 <h3>Major Airport Coverage</h3>
-                                <p><a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport transportation service</b></a> includes:</p>
+                                <p><a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport transfers New Jersey</b></a> into cruise terminals include:</p>
                                 <div class="ve-amenities-list mt-30">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> Newark Liberty International Airport (EWR)</li>
-                                                <li><i class="fa fa-check"></i> John F. Kennedy International Airport (JFK)</li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Liberty (EWR)</b></a></li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>John F. Kennedy (JFK)</b></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> LaGuardia Airport (LGA)</li>
-                                                <li><i class="fa fa-check"></i> Teterboro Airport (TEB)</li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA)</b></a></li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Teterboro (TEB)</b></a></li>
                                                 <li><i class="fa fa-check"></i> Private aviation terminals</li>
                                             </ul>
                                         </div>
@@ -163,10 +163,10 @@
                                 <h3>Common Travel Routes</h3>
                                 <div class="ve-amenities-list mt-30">
                                     <ul>
-                                        <li><i class="fa fa-check"></i> JFK Airport → Manhattan Cruise Terminal</li>
-                                        <li><i class="fa fa-check"></i> Newark Airport → Cape Liberty Cruise Port</li>
-                                        <li><i class="fa fa-check"></i> LaGuardia Airport → Brooklyn Cruise Terminal</li>
-                                        <li><i class="fa fa-check"></i> Hotels in NYC/NJ → Cruise Ports</li>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK Airport</b></a> → Manhattan Cruise Terminal</li>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Airport</b></a> → Cape Liberty Cruise Port</li>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia Airport</b></a> → Brooklyn Cruise Terminal</li>
+                                        <li><i class="fa fa-check"></i> Hotels in NYC/NJ → Cruise Ports (hotel transfers NJ)</li>
                                     </ul>
                                 </div>
                                 <p class="mt-20">We also offer <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>hourly limo service</b></a> for travelers needing flexible waiting time before cruise departure.</p>
@@ -301,6 +301,8 @@
                             </div>
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
+                            @include('components.related-service-links', ['cluster' => 'cruise'])
+
                                 <span class="ve-section-tag">FAQs</span>
                                 <h2>Frequently Asked <span>Questions</span></h2>
                                 <div id="cruiseFaqAccordion" class="accordion ve-faq-accordion mt-30">

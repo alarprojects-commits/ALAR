@@ -3,7 +3,7 @@
     <div class="container">
         <div class="ve-section-header text-center">
             <span class="ve-section-tag">What Clients Say</span>
-            <h2>Trusted Worldwide — <span>Verified Google Reviews</span></h2>
+            <h2>Trusted Worldwide - <span>Verified Google Reviews</span></h2>
             @if($reviews['rating'])
                 <p class="ve-google-rating">
                     @for($i = 0; $i < floor($reviews['rating']); $i++)

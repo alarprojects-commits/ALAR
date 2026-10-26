@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Washington Car Service — SEA Airport Transfer Ready')
-@section('meta_description', 'Book Washington car service and Sea-Tac airport transfers for Seattle and Bellevue. Reserved chauffeur with a confirmed rate—skip the airport scramble.')
+@section('meta_title', 'Chauffeur Service Washington - SEA Transfers | Alar')
+@section('meta_description', 'Book chauffeur service Washington and Sea-Tac airport car service for Seattle and Bellevue. Reserved transfers with a confirmed rate from Alar.')
 @section('og_image', asset('assets/img/service-areas/new-york-aerial.webp'))
 @section('og_type', 'website')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>Washington Car Service & SEA Airport Limo</h1>
+                <h1>Chauffeur Service Washington &amp; SEA Airport Limo</h1>
                 <p>Washington state chauffeur and Sea-Tac (SEA) airport car service for Seattle, Bellevue, and surrounding cities.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -31,14 +31,14 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Professional chauffeur service across <span>Washington</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle—not a taxi line or rideshare gamble. Our Washington page replaces the old Seattle city landing so coverage is framed at the state level—with SEA as the primary airport guide.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides reserved <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> and <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for travelers who want a confirmed vehicle-not a taxi line or rideshare gamble. Our Washington page replaces the old Seattle city landing so coverage is framed at the state level-with SEA as the primary airport guide.</p>
                         </div>
 
                         <div class="ve-area-description">
                             <h2>Airports we serve from <span>Washington</span></h2>
                             <p>Open an airport guide for pickup tips, flight tracking notes, and booking checklists.</p>
                             <div class="ve-amenities-list"><ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Seattle (SEA) car service</b></a> — Sea-Tac arrivals and departures</li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Seattle (SEA) car service</b></a> - Sea-Tac arrivals and departures</li>
                             </ul></div>
 
                             <h2>Sea-Tac airport transfers</h2>
@@ -47,7 +47,7 @@
                             <p>Send the exact door address. Downtown Seattle and Eastside drives differ enough that we price them as real trips.</p>
 
                             <h2>Counties and communities we cover</h2>
-                            <p>If your town is not listed, send the address on the quote—coverage is door-to-door, not limited to a downtown pin.</p>
+                            <p>If your town is not listed, send the address on the quote-coverage is door-to-door, not limited to a downtown pin.</p>
                             <div class="ve-amenities-list"><div class="row"><div class="col-md-6"><ul>
                                     <li><i class="fa fa-check"></i> Seattle / King County corridors</li>
                                     <li><i class="fa fa-check"></i> Bellevue and Eastside</li>

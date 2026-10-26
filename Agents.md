@@ -2,11 +2,11 @@
 
 ## Brand Context
 - Brand: ALAR Chauffeur Service
-- Primary market: United States, Tri-State focus (New Jersey, New York, Connecticut, Pennsylvania)
+- Primary market: United States, Tri-State focus (New Jersey, New York, Connecticut, Pennsylvania) plus Massachusetts
 - HQ / desk: Edison, New Jersey
 - Secondary markets: California, Nevada, Washington
 - Core offer: reserved chauffeur, airport car service, black car, limo, Sprinter, and group transportation
-- Primary airports: JFK, LGA, EWR, HPN, TEB, PHL, BDL, LAX, LAS, SEA
+- Primary airports: JFK, LGA, EWR, HPN, TEB, PHL, BDL, BOS, LAX, LAS, SEA
 
 ## Context Loading Rules
 - Always load all files inside `.agent`

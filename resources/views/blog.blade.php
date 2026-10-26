@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service Tips Blog — JFK, EWR & NYC Guides')
-@section('meta_description', 'Read Alar guides on Newark Airport car service, car service to JFK, black car vs Uber, and Tri-State chauffeur travel before you book your next ride.')
+@section('meta_title', 'Airport Car Service Tips Blog - JFK, EWR & NYC | Alar')
+@section('meta_description', 'Read Alar airport car service tips on JFK, Newark EWR, and NYC transfers. Practical Tri-State chauffeur guides before you book your next reserved ride.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -118,7 +118,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
-            <h1>Our <span>Blogs</span></h1>
+            <h1>Airport Car Service Tips &amp; Tri-State <span>Guides</span></h1>
             <p>Guides and tips on airport car service, Tri-State limo travel, and when a reserved chauffeur beats rideshare.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -146,7 +146,7 @@
                         </div>
                         <div class="ve-insight-body">
                             <h5>Car Service to JFK from Manhattan</h5>
-                            <p>Fixed-rate JFK airport car service from Midtown and Downtown—what travelers search before every flight.</p>
+                            <p>Fixed-rate JFK airport car service from Midtown and Downtown-what travelers search before every flight.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>
@@ -176,7 +176,7 @@
                         </div>
                         <div class="ve-insight-body">
                             <h5>Black Car Service NYC vs Uber & Taxi</h5>
-                            <p>When a reserved chauffeur beats surge pricing—airport and business travel comparison.</p>
+                            <p>When a reserved chauffeur beats surge pricing-airport and business travel comparison.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Las Vegas Airport Car Service (LAS) — Strip Transfers')
-@section('meta_description', 'Book Harry Reid (LAS) airport car service to Strip hotels and conventions. Confirmed-rate Nevada chauffeur transfers—arrive ready, not stuck in a queue.')
+@section('meta_title', 'Las Vegas Airport Car Service LAS - Strip Rides | Alar')
+@section('meta_description', 'Book Las Vegas airport car service (LAS) to Strip hotels and conventions. Confirmed-rate Nevada chauffeur transfers-arrive ready, not stuck in a queue.')
 @section('og_image', asset('assets/img/airports/las.webp'))
 @section('og_type', 'website')
 
@@ -9,7 +9,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>Las Vegas Airport Car Service</h1>
+                <h1>Las Vegas Airport Car Service (LAS)</h1>
                 <p>LAS airport car service for Strip hotels, conventions, and Nevada chauffeur transfers.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -31,14 +31,14 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Reserved chauffeur transfers for <span>LAS</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Harry Reid International Airport (LAS). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch—not an on-demand rideshare curb queue.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Harry Reid International Airport (LAS). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch-not an on-demand rideshare curb queue.</p>
                             <p>Harry Reid International feeds the Strip and convention corridor. Share hotel or venue name plus flight details for a clean handoff.</p>
                         </div>
 
                         <div class="ve-area-description">
                             <h2>Airport pickup and meet points at <span>LAS</span></h2>
                             <h3>Strip and resorts</h3>
-                            <p>Hotel porte-cochères differ—put the property name on the reservation.</p>
+                            <p>Hotel porte-cochères differ-put the property name on the reservation.</p>
                             <h3>Groups</h3>
                             <p>Sprinters help when the party or luggage exceeds a sedan.</p>
                             <h3>Conventions</h3>
@@ -68,7 +68,7 @@
                             <h3>Sedans and executive SUVs</h3>
                             <p>Best for one to three passengers with standard luggage on most LAS runs.</p>
                             <h3>Sprinters and group vehicles</h3>
-                            <p>Use when the party or bag count exceeds a sedan trunk—especially for international arrivals.</p>
+                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
                             <h2>How to book your <span>LAS</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
@@ -76,19 +76,12 @@
                                 <ul>
                                     <li><i class="fa fa-check"></i> Flight tracking when the flight number is on the reservation</li>
                                     <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
-                                    <li><i class="fa fa-check"></i> Professional chauffeurs—not street-hail taxi service</li>
+                                    <li><i class="fa fa-check"></i> Professional chauffeurs-not street-hail taxi service</li>
                                     <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
                                 </ul>
                             </div>
 
-                            <h2>Related airport guides</h2>
-                            <div class="ve-amenities-list">
-                                <ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX airport car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Seattle (SEA) car service</b></a></li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
-                                </ul>
-                            </div>
+                            @include('components.related-airport-guides', ['current' => 'las'])
 
                             <div class="ve-area-faq mt-50">
                                 <span class="ve-section-tag">FAQs</span>
@@ -102,7 +95,7 @@
                                         </div>
                                         <div id="lasFaq1" class="collapse show" data-parent="#lasFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival—including delays—so the chauffeur is staged for your terminal, not a generic airport pin.</p>
+                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival-including delays-so the chauffeur is staged for your terminal, not a generic airport pin.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,7 +119,7 @@
                                         </div>
                                         <div id="lasFaq3" class="collapse" data-parent="#lasFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate—aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
                                             </div>
                                         </div>
                                     </div>

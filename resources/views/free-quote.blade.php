@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Get a Free Airport & Black Car Quote Today | Alar NJ')
-@section('meta_description', 'Request a free quote for airport car service, corporate chauffeur, or hourly limo. Share trip details and get a confirmed Tri-State rate from Alar today.')
+@section('meta_title', 'Free Quote for Airport Chauffeur Hire in NJ | Alar')
+@section('meta_description', 'Request a free quote for airport chauffeur hire in NJ, corporate travel, or hourly limo. Share trip details and get a confirmed Tri-State rate from Alar.')
 @section('og_type', 'website')
 
 @section('content')
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Free Quote</span>
-            <h1>Get Your <span>Free Quote</span></h1>
-            <p>Tell us where you’re going and we’ll confirm a reserved chauffeur rate—no surge pricing, no curb queue.</p>
+            <h1>Free Quote for Airport &amp; Black Car Service <span>NJ</span></h1>
+            <p>Tell us where you’re going and we’ll confirm a reserved chauffeur rate-no surge pricing, no curb queue.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -144,29 +144,57 @@
                                 @enderror
                             </div>
                             <div class="ve-form-group">
-                                <label for="quote-vehicle">Type of Vehicle</label>
+                                <label for="quote-vehicle">Fleet Category / Vehicle</label>
                                 <select id="quote-vehicle" name="vehicle_type" required>
-                                    <option value="" disabled {{ old('vehicle_type') ? '' : 'selected' }}>Select a vehicle</option>
-                                    @foreach ([
-                                        'Hyundai Genesis',
-                                        'Lincoln MKT',
-                                        'Cadillac XTS',
-                                        'Mercedes Benz S550',
-                                        'Chevrolet Suburban',
-                                        'Cadillac Escalade',
-                                        'Mercedes Sprinter',
-                                        'Lincoln Town Car Stretch',
-                                        'Lincoln MKT Stretch',
-                                        'Escalade Limo',
-                                        'Black Hummer Limo',
-                                        'Mercedes Sprinter Limo',
-                                        'Mini Bus 25 Passenger',
-                                        '44 Passengers Bus',
-                                        '55 Passengers Coach',
-                                    ] as $vehicle)
-                                        <option value="{{ $vehicle }}" @selected(old('vehicle_type') === $vehicle)>{{ $vehicle }}</option>
+                                    <option value="" disabled {{ old('vehicle_type') ? '' : 'selected' }}>Select a fleet category</option>
+                                    @php
+                                        $fleetOptions = [
+                                            'Luxury Sedans' => [
+                                                'Luxury Sedan (Any)',
+                                                'Hyundai Genesis',
+                                                'Lincoln MKT',
+                                                'Cadillac XTS',
+                                                'Mercedes Benz S550',
+                                            ],
+                                            'Executive SUVs' => [
+                                                'Executive SUV (Any)',
+                                                'Chevrolet Suburban',
+                                                'Cadillac Escalade',
+                                            ],
+                                            'Stretch Limousines' => [
+                                                'Stretch Limo (Any)',
+                                                'Lincoln Town Car Stretch',
+                                                'Lincoln MKT Stretch',
+                                                'Escalade Limo',
+                                                'Black Hummer Limo',
+                                            ],
+                                            'Sprinter Vans' => [
+                                                'Sprinter Van (Any)',
+                                                'Mercedes Sprinter',
+                                                'Mercedes Sprinter Limo',
+                                            ],
+                                            'Buses & Coaches' => [
+                                                'Bus / Coach (Any)',
+                                                'Mini Bus 25 Passenger',
+                                                '44 Passengers Bus',
+                                                '55 Passengers Coach',
+                                            ],
+                                            'Not Sure' => [
+                                                'Not Sure - Recommend for Me',
+                                            ],
+                                        ];
+                                    @endphp
+                                    @foreach ($fleetOptions as $category => $vehicles)
+                                        <optgroup label="{{ $category }}">
+                                            @foreach ($vehicles as $vehicle)
+                                                <option value="{{ $vehicle }}" @selected(old('vehicle_type') === $vehicle)>{{ $vehicle }}</option>
+                                            @endforeach
+                                        </optgroup>
                                     @endforeach
                                 </select>
+                                <small style="display:block; margin-top:6px; color: var(--ve-text); opacity: 0.75;">
+                                    Browse categories on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>Our Fleet</b></a> if you need help choosing.
+                                </small>
                                 @error('vehicle_type')
                                     <span class="text-danger" style="font-size: 12px;">{{ $message }}</span>
                                 @enderror

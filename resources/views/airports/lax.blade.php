@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'LAX Airport Car Service — Los Angeles Chauffeur Ready')
-@section('meta_description', 'Book LAX airport car service with a reserved chauffeur and confirmed rate. California arrivals, departures, and corporate transfers without curb-side wait.')
+@section('meta_title', 'LAX Airport Car Service - Flat-Rate Los Angeles | Alar')
+@section('meta_description', 'Book LAX airport car service with a reserved chauffeur and confirmed flat rate. Los Angeles airport transfers for arrivals, departures, and corporate travel.')
 @section('og_image', asset('assets/img/airports/lax.webp'))
 @section('og_type', 'website')
 
@@ -31,18 +31,18 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2>Reserved chauffeur transfers for <span>LAX</span></h2>
-                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Los Angeles International Airport (LAX). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch—not an on-demand rideshare curb queue.</p>
+                            <p class="ve-lead">Alar Chauffeur Service provides <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> and chauffeur pickups at Los Angeles International Airport (LAX). Share your flight number, terminal, and destination so we can confirm the vehicle and rate before dispatch-not an on-demand rideshare curb queue.</p>
                             <p>LAX terminals and LAX-it style pickup rules change. Tell us airline, terminal, and whether you need terminal curb or the designated rideshare/private-hire area in effect for your booking.</p>
                         </div>
 
                         <div class="ve-area-description">
                             <h2>Airport pickup and meet points at <span>LAX</span></h2>
                             <h3>Terminal details</h3>
-                            <p>LAX is spread out—airline and terminal prevent a wrong-side meet.</p>
+                            <p>LAX is spread out-airline and terminal prevent a wrong-side meet.</p>
                             <h3>Flight tracking</h3>
                             <p>We follow live arrivals for international and domestic flights when the number is on the reservation.</p>
                             <h3>California doors</h3>
-                            <p>Common for Westside, Downtown, and South Bay addresses—confirm the exact door for pricing.</p>
+                            <p>Common for Westside, Downtown, and South Bay addresses-confirm the exact door for pricing.</p>
 
                             <h2>Where we drive from <span>LAX</span></h2>
                             <p>We regularly run transfers between LAX and the states below. Open a state guide for counties and related airports.</p>
@@ -68,7 +68,7 @@
                             <h3>Sedans and executive SUVs</h3>
                             <p>Best for one to three passengers with standard luggage on most LAX runs.</p>
                             <h3>Sprinters and group vehicles</h3>
-                            <p>Use when the party or bag count exceeds a sedan trunk—especially for international arrivals.</p>
+                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
                             <h2>How to book your <span>LAX</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
@@ -76,19 +76,12 @@
                                 <ul>
                                     <li><i class="fa fa-check"></i> Flight tracking when the flight number is on the reservation</li>
                                     <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
-                                    <li><i class="fa fa-check"></i> Professional chauffeurs—not street-hail taxi service</li>
+                                    <li><i class="fa fa-check"></i> Professional chauffeurs-not street-hail taxi service</li>
                                     <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
                                 </ul>
                             </div>
 
-                            <h2>Related airport guides</h2>
-                            <div class="ve-amenities-list">
-                                <ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Las Vegas (LAS) car service</b></a></li>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Seattle (SEA) car service</b></a></li>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
-                                </ul>
-                            </div>
+                            @include('components.related-airport-guides', ['current' => 'lax'])
 
                             <div class="ve-area-faq mt-50">
                                 <span class="ve-section-tag">FAQs</span>
@@ -102,7 +95,7 @@
                                         </div>
                                         <div id="laxFaq1" class="collapse show" data-parent="#laxFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival—including delays—so the chauffeur is staged for your terminal, not a generic airport pin.</p>
+                                                <p>Yes. When the flight number is on the booking, dispatch follows the live arrival-including delays-so the chauffeur is staged for your terminal, not a generic airport pin.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -126,7 +119,7 @@
                                         </div>
                                         <div id="laxFaq3" class="collapse" data-parent="#laxFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate—aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                                <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
                                             </div>
                                         </div>
                                     </div>

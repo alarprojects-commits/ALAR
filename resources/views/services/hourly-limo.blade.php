@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Hourly Chauffeur Service in New Jersey — Book Today')
-@section('meta_description', 'Book hourly limo and as-directed chauffeur service in New Jersey for meetings, events, and multi-stop days. Keep the vehicle with you at a confirmed rate.')
+@section('meta_title', 'Hourly Chauffeur Service New Jersey - Flexible | Alar')
+@section('meta_description', 'Book hourly chauffeur service in New Jersey for meetings, hotel transfers, and multi-stop days. Keep the vehicle with you at a confirmed hourly rate.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -128,7 +128,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Flexible Travel</span>
-            <h1>Hourly Limo Service in New Jersey City with <span>Flexible Luxury Travel</span></h1>
+            <h1>Hourly Chauffeur Service in <span>New Jersey</span></h1>
             <p>Travel on your schedule with professional hourly chauffeur service in New Jersey City for airports, meetings, events, and private rides.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -365,6 +365,8 @@
 
                                 <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> continues to provide dependable hourly limo service in New Jersey City for travelers who expect professionalism, flexibility, and luxury transportation across every trip.</p>
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'corporate'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>

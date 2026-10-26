@@ -83,6 +83,11 @@ BDL car service
 LAX airport car service
 Las Vegas airport car service
 SEA airport car service
+Boston airport car service
+BOS airport car service
+Logan Airport limo
+Massachusetts car service
+Boston Logan car service
 New York car service
 New Jersey car service
 Connecticut car service
@@ -112,6 +117,88 @@ Edison to JFK car service
 long distance chauffeur service
 chauffeur to Washington DC
 New Jersey to Philadelphia car service
+airport chauffeur service NJ
+hire airport chauffeur NJ
+airport transfers New Jersey
+private airport transfer NJ
+flight tracking limo service NJ
+book airport car service NJ
+airport car service NJ
+airport transportation limo New Jersey
+group travel transportation NJ
+private group transportation NJ
+luxury group transportation NJ
+group transportation NJ
+corporate transportation New Jersey
+corporate transportation NJ
+executive chauffeur service NJ
+hire executive chauffeur NJ
+professional executive transport NJ
+corporate car service NJ
+cruise port transport packages
+cruise port transportation
+cruise port transfers
+cruise terminal transportation NJ
+cruise port chauffeur service
+chauffeur service San Francisco
+chauffeur service Bay Area
+Bay Area chauffeur service
+luxury chauffeur service San Francisco
+SFO chauffeur service
+hourly chauffeur service San Francisco
+chauffeur service California
+car service NJ to JFK
+car service JFK to NJ
+Hoboken to JFK car service
+Jersey City airport limo
+limo service to JFK
+JFK chauffeur service
+event transportation NJ
+hotel transfers NJ
+westchester airport car service
+HPN airport limo service
+airport car service White Plains
+new York airport limo
+NYC airport limo service
+chauffeur service New York
+chauffeur service Washington
+Philadelphia airport car service
+Sea-Tac airport car service
+ny airport limo
+nyc airport limo
+airport limo service JFK
+airport limo service NYC
+ny airport limo service
+airport limo NYC
+new york limo service airport
+nyc airports limo
+airport limo service New York
+nyc limo service airport
+airport limo New York
+nyc airport limousine service
+nyc limo airport
+connecticut limo
+airport transportation Connecticut
+airport limo service CT
+airport car service CT
+connecticut limousine airport shuttle
+connecticut airport shuttle
+connecticut car services
+car service to JFK from CT
+car service CT to JFK
+airport shuttle to JFK from CT
+airport shuttle from CT to JFK
+JFK shuttle from CT
+ride to JFK from CT
+connecticut limo to JFK
+connecticut limo JFK
+Westport to JFK
+Shelton CT to JFK
+car service CT to NYC
+door-to-door New York to Connecticut
+limo to Atlantic City from NYC
+car service JFK to Philadelphia
+shuttle EWR to LGA
 
 ## Keyword Clusters
 
@@ -127,6 +214,8 @@ New Jersey to Philadelphia car service
   - Jersey City to EWR car service
   - Edison to Newark Airport transfer
   - airport car service New Jersey
+  - professional chauffeur EWR
+  - private car service to EWR
 - Notes:
   - Strong home-market cluster for Edison NJ desk
 
@@ -142,8 +231,17 @@ New Jersey to Philadelphia car service
   - Midtown to JFK car service
   - JFK meet and greet car service
   - airport car service NYC
+  - limo service to JFK
+  - airport limo service JFK
+  - car service NJ to JFK
+  - car service JFK to NJ
+  - Hoboken to JFK car service
+  - JFK chauffeur service
+  - car service to JFK from CT
+  - car service CT to JFK
 - Notes:
   - Keep timing, terminals, and fixed-rate messaging practical
+  - GSC shows heavy NJ↔JFK and CT↔JFK corridor demand
 
 ### Cluster: LaGuardia / LGA transfers
 - Intent: commercial and informational
@@ -157,6 +255,7 @@ New Jersey to Philadelphia car service
   - Queens to LGA car service
   - Manhattan to LaGuardia transfer
   - airport transportation New York
+  - car service NJ to LGA
 - Notes:
   - Pair with NYC and Tri-State destination coverage
 
@@ -193,17 +292,40 @@ New Jersey to Philadelphia car service
 ### Cluster: Corporate and hourly chauffeur
 - Intent: commercial
 - Primary keyword candidates:
-  - corporate car service New Jersey
-  - executive car service
+  - corporate transportation New Jersey
+  - executive chauffeur service NJ
   - hourly chauffeur service
 - Secondary keyword candidates:
+  - corporate transportation NJ
+  - corporate car service NJ
+  - hire executive chauffeur NJ
+  - professional executive transport NJ
   - corporate transportation NYC
   - hourly limo New Jersey
+  - hotel transfers NJ
   - as directed chauffeur
-  - roadshow car service
   - business black car Tri-State
 - Notes:
   - Emphasize punctuality, multi-stop days, and confirmed vehicles
+  - GSC: strong NJ corporate and executive chauffeur demand
+
+### Cluster: Group and cruise transportation
+- Intent: commercial
+- Primary keyword candidates:
+  - group transportation NJ
+  - cruise port transportation
+  - cruise port transfers
+- Secondary keyword candidates:
+  - group travel transportation NJ
+  - private group transportation NJ
+  - luxury group transportation NJ
+  - group transportation New Jersey
+  - cruise port transport packages
+  - cruise terminal transportation NJ
+  - cruise port chauffeur service
+  - Cape Liberty cruise transfer
+- Notes:
+  - GSC shows cruise packages and NJ group travel as high-impression intents
 
 ### Cluster: Wedding, prom, and event transportation
 - Intent: commercial
@@ -216,6 +338,7 @@ New Jersey to Philadelphia car service
   - Sprinter van chauffeur
   - MetLife Stadium car service
   - concert limo New Jersey
+  - event transportation NJ
   - event chauffeur Tri-State
 - Notes:
   - Keep guest logistics and group sizing practical
@@ -232,8 +355,13 @@ New Jersey to Philadelphia car service
   - interstate black car service
   - private car service to DC
   - Tri-State to Philadelphia transfer
+  - limo to Atlantic City from NYC
+  - car service JFK to Philadelphia
+  - car service CT to NYC
+  - door-to-door New York to Connecticut
 - Notes:
-  - Useful for PA, Virginia, and DC itineraries
+  - Useful for PA, Virginia, DC, Atlantic City, and CT↔NYC itineraries
+  - GSC: Atlantic City from NYC and JFK↔Philadelphia show commercial corridor intent
 
 ### Cluster: Westchester, Teterboro, PHL, BDL
 - Intent: commercial
@@ -243,26 +371,111 @@ New Jersey to Philadelphia car service
   - PHL airport car service
 - Secondary keyword candidates:
   - HPN car service
+  - HPN airport limo service
+  - airport car service White Plains
   - TEB car service
   - Bradley airport car service
   - BDL car service
+  - Philadelphia airport car service
   - private aviation car service New Jersey
+  - car service JFK to Philadelphia
+  - shuttle EWR to LGA
 - Notes:
   - Keep FBO and regional airport language accurate
+  - GSC: EWR↔LGA shuttle and JFK↔PHL are usable airport-to-airport intents
 
-### Cluster: West Coast airport coverage
+### Cluster: NJ airport chauffeur hub
+- Intent: commercial
+- Primary keyword candidates:
+  - airport chauffeur service NJ
+  - airport transfers New Jersey
+  - book airport car service NJ
+- Secondary keyword candidates:
+  - hire airport chauffeur NJ
+  - private airport transfer NJ
+  - flight tracking limo service NJ
+  - airport car service NJ
+  - airport transportation New Jersey
+  - New York airport limo
+  - NYC airport limo service
+- Notes:
+  - GSC hub cluster for services.airport-transportation and NJ area pages
+
+### Cluster: NYC / New York airport limo
+- Intent: commercial
+- Primary keyword candidates:
+  - nyc airport limo
+  - ny airport limo
+  - airport limo service NYC
+- Secondary keyword candidates:
+  - nyc airport limo service
+  - ny airport limo service
+  - airport limo NYC
+  - new york limo service airport
+  - nyc airports limo
+  - airport limo service New York
+  - nyc limo service airport
+  - airport limo New York
+  - nyc airport limousine service
+  - nyc limo airport
+  - airport limo service JFK
+  - New York airport limo
+- Notes:
+  - GSC Oct 2026: high-impression NYC/NY airport limo variants with solid CTR
+  - Map to airports hub, JFK/LGA/EWR pages, and New York service-area page
+  - Prefer reserved limo/chauffeur framing; do not rank as generic taxi
+
+### Cluster: Connecticut limo and CT↔JFK corridor
+- Intent: commercial
+- Primary keyword candidates:
+  - connecticut limo
+  - airport transportation Connecticut
+  - car service to JFK from CT
+- Secondary keyword candidates:
+  - airport limo service CT
+  - airport car service CT
+  - connecticut limousine airport shuttle
+  - connecticut airport shuttle
+  - connecticut car services
+  - car service CT to JFK
+  - airport shuttle to JFK from CT
+  - airport shuttle from CT to JFK
+  - JFK shuttle from CT
+  - ride to JFK from CT
+  - connecticut limo to JFK
+  - connecticut limo JFK
+  - Westport to JFK
+  - Shelton CT to JFK
+  - car service CT to NYC
+  - door-to-door New York to Connecticut
+  - Connecticut car service
+  - Bradley airport car service
+- Notes:
+  - GSC Oct 2026: strong CT local + CT↔JFK shuttle/car-service demand
+  - Use on Connecticut service-area, BDL, JFK, and related blog posts
+  - Skip competitor brand queries (CT Limo, High Class Taxi)
+
+### Cluster: West Coast airport and Bay Area coverage
 - Intent: commercial
 - Primary keyword candidates:
   - LAX airport car service
-  - Las Vegas airport car service
+  - chauffeur service San Francisco
   - SEA airport car service
 - Secondary keyword candidates:
+  - chauffeur service Bay Area
+  - Bay Area chauffeur service
+  - luxury chauffeur service San Francisco
+  - SFO chauffeur service
+  - hourly chauffeur service San Francisco
+  - chauffeur service California
   - California car service LAX
-  - Harry Reid airport limo
-  - Sea-Tac car service
+  - Las Vegas airport car service
+  - Sea-Tac airport car service
+  - chauffeur service Washington
   - Los Angeles chauffeur transfer
   - Las Vegas Strip airport transfer
 - Notes:
+  - SF/Bay Area GSC demand maps to California service-area page; LAX/LAS/SEA keep airport pages
   - Use only for California, Nevada, and Washington pages or related blogs
 
 ## Keyword Bank Template

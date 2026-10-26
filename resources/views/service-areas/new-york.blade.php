@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New York Car Service — JFK, LGA & EWR Black Car Rides')
-@section('meta_description', 'Book New York car service and airport limo to JFK, LaGuardia, and Newark. Manhattan and borough black car with confirmed rates for Tri-State travel.')
+@section('meta_title', 'New York Car Service & NYC Airport Limo | Book Alar')
+@section('meta_description', 'Book New York car service and NYC airport limo to JFK, LaGuardia, and Newark. Manhattan and borough black car with confirmed Tri-State rates from Alar.')
 @section('og_image', asset('assets/img/service-areas/new-york.webp'))
 @section('og_type', 'website')
 
@@ -142,7 +142,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>New York Car Service & <span>Airport Limo</span></h1>
+                <h1>New York Car Service &amp; <span>NYC Airport Limo</span></h1>
                 <p>Reliable NY car service, Tri-State limo, and airport transfers to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -166,7 +166,7 @@
 
                         <div class="ve-area-intro mb-50">
                             <h2 class="mb-20">Professional <span>New York Car Service</span> & NY Limo</h2>
-                            <p class="ve-lead">Book <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> with punctual chauffeurs, pristine vehicles, and transparent rates. <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides NY limo service, airport car service NYC, and private transportation across New York City, Long Island, Westchester, and the Tri-State region of New York, New Jersey, and Connecticut—with connections into Pennsylvania and beyond.</p>
+                            <p class="ve-lead">Book <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> with punctual chauffeurs, pristine vehicles, and transparent rates. <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides NY limo service, airport car service NYC, and private transportation across New York City, Long Island, Westchester, and the Tri-State region of New York, New Jersey, and Connecticut-with connections into Pennsylvania and beyond.</p>
                             <p>From Wall Street meetings to Broadway evenings, JFK Airport Limo Service NYC, LGA Limo Service LaGuardia, Newark Airport Limo Service EWR, and stadium transfers to MetLife Stadium, we deliver comfort and professionalism throughout New York.</p>
                         </div>
 
@@ -205,11 +205,11 @@
                         </div>
 
                         <div class="ve-area-description">
-                            <h2>Airport Car Service NYC — <span>JFK, LGA, EWR & HPN</span></h2>
+                            <h2>Airport Car Service NYC - <span>JFK, LGA, EWR & HPN</span></h2>
                             <p>Navigating New York’s busy airports should never be stressful. Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport car service NYC</b></a> and airport limo service deliver punctual transfers with real-time flight monitoring and personalized care throughout the Tri-State area.</p>
 
                             <h3>JFK Airport Limo Service NYC</h3>
-                            <p>We specialize in JFK limousine service and airport transportation to and from John F. Kennedy International Airport (JFK). Best limo service to JFK from Manhattan, Brooklyn, Queens, Long Island, Westchester, New Jersey, and Connecticut—with terminal meet-and-greet and luggage assistance.</p>
+                            <p>We specialize in JFK limousine service and airport transportation to and from John F. Kennedy International Airport (JFK). Best limo service to JFK from Manhattan, Brooklyn, Queens, Long Island, Westchester, New Jersey, and Connecticut-with terminal meet-and-greet and luggage assistance.</p>
 
                             <h3>LGA Limo Service LaGuardia Airport</h3>
                             <p>Travel to and from LaGuardia Airport (LGA) in Queens without hassle. Our LGA Limo Service and limousine service LaGuardia Airport cover Manhattan, Brooklyn, Bronx, Staten Island, and Long Island with on-time pickups at Terminals A, B, and C.</p>
@@ -223,7 +223,7 @@
                             <h3>Major Airports We Serve</h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> — Terminals with meet & greet</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> - Terminals with meet & greet</li>
                                     <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
                                     <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) car service</b></a></li>
                                     <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a></li>
@@ -247,7 +247,7 @@
                             </div>
 
                             <h2>Serving NYC Boroughs and <span>New York Counties</span></h2>
-                            <p>Alar Chauffeur Service provides NY car service across New York City and surrounding counties—Nassau, Suffolk, Westchester, Rockland, Orange, Putnam, Dutchess, and more—ensuring dependable luxury travel wherever your plans take you:</p>
+                            <p>Alar Chauffeur Service provides NY car service across New York City and surrounding counties-Nassau, Suffolk, Westchester, Rockland, Orange, Putnam, Dutchess, and more-ensuring dependable luxury travel wherever your plans take you:</p>
 
                             <div class="ve-amenities-list">
                                 <div class="row">

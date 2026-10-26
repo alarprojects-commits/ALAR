@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service Guides: JFK, LGA, EWR & More | Alar')
-@section('meta_description', 'Browse Alar airport car service guides for JFK, LaGuardia, Newark, Westchester, and more. Flight-tracked chauffeurs with confirmed rates—open a guide.')
+@section('meta_title', 'NYC Airport Limo Guides: JFK, LGA & EWR | Book Alar')
+@section('meta_description', 'Browse Alar NYC airport limo guides for JFK, LaGuardia, and Newark. Flight-tracked chauffeurs with confirmed rates-open a guide and reserve.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airports</span>
-                <h1>Airport Car Service Guides</h1>
-                <p>Helpful, query-based pages for Tri-State airports first—then PHL, BDL, and our West Coast airports. Each guide covers pickup, flight tracking, and how to book.</p>
+                <h1>New York Airport Limo &amp; Car Service Guides</h1>
+                <p>Helpful, query-based pages for Tri-State airports first-then PHL, BDL, Boston Logan (BOS), and our West Coast airports. Each guide covers pickup, flight tracking, and how to book.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -35,24 +35,25 @@
                         <a href="{{ route($route) }}" class="d-block">
                             <img src="{{ asset($img) }}" alt="{{ $code }} airport car service" class="img-fluid rounded-12 shadow-sm w-100 mb-3" style="height: 180px; object-fit: cover;">
                         </a>
-                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} — {{ $name }}</a></h3>
+                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} - {{ $name }}</a></h3>
                         <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>Open {{ $code }} guide</b></a></p>
                     </div>
                 @endforeach
             </div>
 
-            <h2 class="mb-30 mt-40">Extended Tri-State airports</h2>
+            <h2 class="mb-30 mt-40">Extended Northeast airports</h2>
             <div class="row">
                 @foreach ([
-                    ['airports.phl', 'PHL', 'Philadelphia International', 'Pennsylvania', 'assets/img/airports/phl.webp'],
-                    ['airports.bdl', 'BDL', 'Bradley International (Hartford)', 'Connecticut', 'assets/img/airports/bdl.webp'],
-                ] as [$route, $code, $name, $state, $img])
-                    <div class="col-md-6 mb-40">
+                    ['airports.phl', 'PHL', 'Philadelphia International', 'service-area.pennsylvania', 'Pennsylvania', 'assets/img/airports/phl.webp'],
+                    ['airports.bdl', 'BDL', 'Bradley International (Hartford)', 'service-area.connecticut', 'Connecticut', 'assets/img/airports/bdl.webp'],
+                    ['airports.bos', 'BOS', 'Boston Logan International', 'service-area.massachusetts', 'Massachusetts', 'assets/img/airports/bos.webp'],
+                ] as [$route, $code, $name, $stateRoute, $state, $img])
+                    <div class="col-md-6 col-lg-4 mb-40">
                         <a href="{{ route($route) }}" class="d-block">
                             <img src="{{ asset($img) }}" alt="{{ $code }} airport car service" class="img-fluid rounded-12 shadow-sm w-100 mb-3" style="height: 200px; object-fit: cover;">
                         </a>
-                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} — {{ $name }}</a></h3>
-                        <p>Primary airport guide for our <a href="{{ route($state === 'Pennsylvania' ? 'service-area.pennsylvania' : 'service-area.connecticut') }}" style="color: var(--ve-gold);"><b>{{ $state }} service area</b></a>.</p>
+                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} - {{ $name }}</a></h3>
+                        <p>Primary airport guide for our <a href="{{ route($stateRoute) }}" style="color: var(--ve-gold);"><b>{{ $state }} service area</b></a>.</p>
                         <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>Open {{ $code }} guide</b></a></p>
                     </div>
                 @endforeach
@@ -69,7 +70,7 @@
                         <a href="{{ route($route) }}" class="d-block">
                             <img src="{{ asset($img) }}" alt="{{ $code }} airport car service" class="img-fluid rounded-12 shadow-sm w-100 mb-3" style="height: 180px; object-fit: cover;">
                         </a>
-                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} — {{ $name }}</a></h3>
+                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} - {{ $name }}</a></h3>
                         <p>Pairs with our <a href="{{ route($stateRoute) }}" style="color: var(--ve-gold);"><b>{{ $state }}</b></a> state page.</p>
                         <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>Open {{ $code }} guide</b></a></p>
                     </div>
@@ -81,7 +82,7 @@
                 <h3>What to send</h3>
                 <p>Date, door addresses, passenger and bag count, airline, flight number, and terminal.</p>
                 <h3>What you get</h3>
-                <p>A confirmed chauffeur vehicle and rate—aligned with airport shuttle service and chauffeur service, not street-hail taxi.</p>
+                <p>A confirmed chauffeur vehicle and rate-aligned with airport shuttle service and chauffeur service, not street-hail taxi.</p>
                 <div class="mt-3">
                     @include('components.cta-buttons', ['variant' => 'hero'])
                 </div>

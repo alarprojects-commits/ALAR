@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Chauffeur & Airport Limo Services in NJ & NYC | Alar')
-@section('meta_description', 'Explore Alar chauffeur services: airport car service, corporate travel, wedding limo, hourly rides, and group transport across New Jersey and New York.')
+@section('meta_title', 'Chauffeur Service New Jersey & Airport Limo | Alar')
+@section('meta_description', 'Explore Alar chauffeur service in New Jersey: airport chauffeur, corporate transport, group travel, cruise ports, and hourly black car across NJ and NYC.')
 @section('og_image', asset('assets/img/banner/our-services.webp'))
 @section('og_type', 'website')
 
@@ -178,8 +178,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">What We Offer</span>
-            <h1>Our Premium <span>Services</span></h1>
-            <p>Airport transfers, corporate travel, weddings, hourly charters, and more—booked with professional chauffeurs.</p>
+            <h1>Chauffeur Service &amp; Airport Limo in <span>New Jersey</span></h1>
+            <p>Airport chauffeur service NJ, corporate transportation, group travel, cruise ports, and hourly black car-booked with professional chauffeurs across the Tri-State. Explore our <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>airport guides</b></a> and <a href="{{ route('service-areas.index') }}" style="color: var(--ve-gold);"><b>service areas</b></a>.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -368,6 +368,17 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="ve-section">
+        <div class="container">
+            <div class="ve-section-header text-center">
+                <span class="ve-section-tag">Plan Your Trip</span>
+                <h2>Airports &amp; Service <span>Areas</span></h2>
+                <p>Match your service to the right corridor-Tri-State airports, New Jersey coverage, and West Coast hubs.</p>
+            </div>
+            @include('components.related-service-links', ['cluster' => 'default'])
         </div>
     </section>
 

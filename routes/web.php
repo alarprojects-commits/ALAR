@@ -114,6 +114,10 @@ Route::get('/service-areas/pennsylvania', function () {
     return view('service-areas.pennsylvania');
 })->name('service-area.pennsylvania');
 
+Route::get('/service-areas/massachusetts', function () {
+    return view('service-areas.massachusetts');
+})->name('service-area.massachusetts');
+
 Route::get('/service-areas/california', function () {
     return view('service-areas.california');
 })->name('service-area.california');
@@ -172,6 +176,10 @@ Route::get('/airports/bdl', function () {
     return view('airports.bdl');
 })->name('airports.bdl');
 
+Route::get('/airports/bos', function () {
+    return view('airports.bos');
+})->name('airports.bos');
+
 Route::get('/airports/lax', function () {
     return view('airports.lax');
 })->name('airports.lax');
@@ -208,7 +216,7 @@ Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
 Route::fallback(function () {
     $path = '/'.ltrim(request()->path(), '/');
 
-    // Bot / legacy CMS probes — never real Alar pages. 410 helps Google drop them faster than 404.
+    // Bot / legacy CMS probes - never real Alar pages. 410 helps Google drop them faster than 404.
     $spam = [
         '#^/shop(/|$)#i',
         '#^/wp-(admin|content|includes|json|login|v2)(/|$)#i',

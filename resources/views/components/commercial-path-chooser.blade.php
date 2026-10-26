@@ -1,4 +1,4 @@
-{{-- Corporate / chauffeur commercial path chooser — compact, not card bloat --}}
+{{-- Corporate / chauffeur commercial path chooser - compact, not card bloat --}}
 @php
     $paths = $paths ?? [
         [

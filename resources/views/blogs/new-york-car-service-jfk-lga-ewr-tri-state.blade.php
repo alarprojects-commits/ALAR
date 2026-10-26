@@ -1,6 +1,6 @@
 @extends('main')
 @section('meta_title', 'New York Car Service for JFK, LGA, EWR & Tri-State')
-@section('meta_description', 'Guide to New York car service across JFK, LaGuardia, Newark, and Westchester. How Tri-State travelers book confirmed-rate airport limo with Alar today.')
+@section('meta_description', 'Guide to New York car service across JFK, LaGuardia, Newark, and Westchester. How Tri-State travelers book confirmed-rate NYC airport limo with Alar.')
 @section('og_image', asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp'))
 @section('og_type', 'article')
 
@@ -124,7 +124,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
-            <h1>New York Car Service for <span>JFK, LGA, EWR & the Tri-State</span></h1>
+            <h1>New York Car Service for <span>JFK, LGA, EWR &amp; the Tri-State</span></h1>
             <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN).</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -146,7 +146,7 @@
                             Why Book <span>New York Car Service</span> for Airport Travel
                         </h2>
                         <p>
-                            Traveling through New York’s airports means navigating traffic, terminals, and tight schedules. A dedicated <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> gives you a private chauffeur, flight tracking, and door-to-door comfort—without taxi lines or rideshare uncertainty.
+                            Traveling through New York’s airports means navigating traffic, terminals, and tight schedules. A dedicated <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> gives you a private chauffeur, flight tracking, and door-to-door comfort-without taxi lines or rideshare uncertainty.
                         </p>
                         <p>
                             <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides airport car service NYC and Tri-State limo across New York, New Jersey, and Connecticut, with reliable connections into Pennsylvania. Our fleet of executive sedans, SUVs, and Sprinter vans is maintained for punctual, professional private transportation.
@@ -190,7 +190,7 @@
                             Westchester County Airport <span>(HPN)</span> Car Service
                         </h2>
                         <p>
-                            Westchester County Airport (HPN) in White Plains is ideal for regional and private aviation. We provide car service between HPN and Manhattan, Brooklyn, Staten Island, Long Island, and New Jersey—plus connections onward to JFK, LGA, or EWR when itineraries require multiple airports.
+                            Westchester County Airport (HPN) in White Plains is ideal for regional and private aviation. We provide car service between HPN and Manhattan, Brooklyn, Staten Island, Long Island, and New Jersey-plus connections onward to JFK, LGA, or EWR when itineraries require multiple airports.
                         </p>
 
                         <h2>

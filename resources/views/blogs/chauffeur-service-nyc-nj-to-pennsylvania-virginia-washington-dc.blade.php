@@ -155,7 +155,7 @@
                             Chauffeur Service to <span>Pennsylvania</span>
                         </h2>
                         <p>
-                            Popular routes include New York City and New Jersey to Philadelphia, King of Prussia, Harrisburg, and other Pennsylvania destinations. A private limo or executive SUV keeps your schedule flexible—ideal for same-day business meetings, medical appointments, or weekend leisure travel.
+                            Popular routes include New York City and New Jersey to Philadelphia, King of Prussia, Harrisburg, and other Pennsylvania destinations. A private limo or executive SUV keeps your schedule flexible-ideal for same-day business meetings, medical appointments, or weekend leisure travel.
                         </p>
                         <p>
                             Clients frequently combine Pennsylvania trips with Tri-State airport connections at John F. Kennedy (JFK), LaGuardia (LGA), or Newark Liberty (EWR). Our chauffeurs coordinate pickup timing so interstate and airport legs stay seamless.
@@ -179,7 +179,7 @@
                             New York &amp; New Jersey to <span>Washington, D.C.</span>
                         </h2>
                         <p>
-                            Washington, D.C. remains one of the most requested long-distance destinations from the Tri-State area. Private car service to D.C. hotels, Capitol Hill appointments, museums, and conference centers offers predictability that flights and Amtrak schedules cannot always match—especially for multi-stop days.
+                            Washington, D.C. remains one of the most requested long-distance destinations from the Tri-State area. Private car service to D.C. hotels, Capitol Hill appointments, museums, and conference centers offers predictability that flights and Amtrak schedules cannot always match-especially for multi-stop days.
                         </p>
                         <p>
                             Round-trip and one-way options are available. Many clients request wait-and-return service for same-day hearings or meetings, then a comfortable evening return to New York or New Jersey.

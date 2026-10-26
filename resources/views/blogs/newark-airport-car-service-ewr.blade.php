@@ -1,5 +1,5 @@
 @extends('main')
-@section('meta_title', 'Newark Airport Car Service EWR — Full Booking Guide')
+@section('meta_title', 'Newark Airport Car Service EWR - Full Booking Guide')
 @section('meta_description', 'What travelers book most for Newark Airport car service (EWR): flight tracking, meet and greet, and confirmed rates from New Jersey, Manhattan, and Brooklyn.')
 @section('og_image', asset('assets/img/blogs/newark-airport-car-service-ewr.webp'))
 @section('og_type', 'article')
@@ -56,7 +56,7 @@
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
             <h1>Newark Airport Car Service <span>(EWR)</span></h1>
-            <p>Car service to Newark Airport from New Jersey, Manhattan, and the Tri-State—with flight tracking and meet-and-greet.</p>
+            <p>Car service to Newark Airport from New Jersey, Manhattan, and the Tri-State-with flight tracking and meet-and-greet.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -74,7 +74,7 @@
                     <div class="ve-detail-text">
                         <h2>Top Searches: <span>Car Service to Newark Airport</span></h2>
                         <p>Newark Liberty International Airport (EWR) is one of the most searched airport transfer destinations in New Jersey. People look for <strong>Newark Airport car service</strong>, <strong>EWR car service</strong>, <strong>Newark Airport limo</strong>, and <strong>car service from Newark Airport to Manhattan</strong> because EWR combines heavy air traffic with toll roads and tunnel timing into NYC.</p>
-                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>—based in Edison, NJ—specializes in reliable <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a> to and from Newark Liberty.</p>
+                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>-based in Edison, NJ-specializes in reliable <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a> to and from Newark Liberty.</p>
 
                         <h2>Who Books <span>Newark Airport Car Service</span>?</h2>
                         <div class="ve-amenities-list">
@@ -113,7 +113,7 @@
                         <p>Pair EWR trips with our broader <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> for JFK and LaGuardia when your itinerary uses multiple airports.</p>
 
                         <h2>How to Book <span>Car Service to Newark Airport</span></h2>
-                        <p>Share pickup address, flight number, and passenger count. We confirm vehicle type and timing. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Reserve Newark Airport car service online</b></a> or call for a quick quote—especially for early-morning departures and large groups.</p>
+                        <p>Share pickup address, flight number, and passenger count. We confirm vehicle type and timing. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Reserve Newark Airport car service online</b></a> or call for a quick quote-especially for early-morning departures and large groups.</p>
                     </div>
                 </div>
             </div>

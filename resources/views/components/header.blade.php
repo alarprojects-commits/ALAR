@@ -34,6 +34,7 @@
                             <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
                             <li><a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
                             <li><a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
+                            <li><a href="{{ route('service-area.massachusetts') }}">Massachusetts</a></li>
                             <li><a href="{{ route('service-area.california') }}">California</a></li>
                             <li><a href="{{ route('service-area.nevada') }}">Nevada</a></li>
                             <li><a href="{{ route('service-area.washington') }}">Washington</a></li>
@@ -50,6 +51,7 @@
                             <li><a href="{{ route('airports.teb') }}">Teterboro (TEB)</a></li>
                             <li><a href="{{ route('airports.phl') }}">Philadelphia (PHL)</a></li>
                             <li><a href="{{ route('airports.bdl') }}">Bradley (BDL)</a></li>
+                            <li><a href="{{ route('airports.bos') }}">Boston (BOS)</a></li>
                             <li><a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
                             <li><a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
                             <li><a href="{{ route('airports.sea') }}">Seattle (SEA)</a></li>
@@ -97,6 +99,7 @@
                         <li><a href="{{ route('service-area.new-york') }}">New York</a></li>
                         <li><a href="{{ route('service-area.connecticut') }}">Connecticut</a></li>
                         <li><a href="{{ route('service-area.pennsylvania') }}">Pennsylvania</a></li>
+                        <li><a href="{{ route('service-area.massachusetts') }}">Massachusetts</a></li>
                         <li><a href="{{ route('service-area.california') }}">California</a></li>
                         <li><a href="{{ route('service-area.nevada') }}">Nevada</a></li>
                         <li><a href="{{ route('service-area.washington') }}">Washington</a></li>
@@ -116,6 +119,7 @@
                         <li><a href="{{ route('airports.teb') }}">Teterboro (TEB)</a></li>
                         <li><a href="{{ route('airports.phl') }}">Philadelphia (PHL)</a></li>
                         <li><a href="{{ route('airports.bdl') }}">Bradley (BDL)</a></li>
+                        <li><a href="{{ route('airports.bos') }}">Boston (BOS)</a></li>
                         <li><a href="{{ route('airports.lax') }}">Los Angeles (LAX)</a></li>
                         <li><a href="{{ route('airports.las') }}">Las Vegas (LAS)</a></li>
                         <li><a href="{{ route('airports.sea') }}">Seattle (SEA)</a></li>

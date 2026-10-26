@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'California Car Service — LAX Airport Chauffeur Rides')
-@section('meta_description', 'Book California chauffeur and LAX airport car service. Reserved black car for Los Angeles arrivals and corporate travel with a confirmed rate before landing.')
+@section('meta_title', 'Chauffeur Service San Francisco Bay Area | Book Alar')
+@section('meta_description', 'Book chauffeur service San Francisco and Bay Area luxury transfers, plus LAX airport car service. Reserved black car with confirmed rates from Alar.')
 @section('og_image', asset('assets/img/airports/lax.webp'))
 @section('og_type', 'website')
 
@@ -146,7 +146,7 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Service Areas</span>
-                <h1>California Chauffeur Service Designed for Comfort, <span>Precision & Luxury</span></h1>
+                <h1>Chauffeur Service San Francisco &amp; <span>Bay Area</span></h1>
                 <p>From airport pickups to long-distance travel, enjoy a seamless journey across California with professional chauffeurs and premium vehicles.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -169,7 +169,7 @@
                         </div>
                         <div class="ve-area-intro mb-50">
                             <h2 class="mb-20">California Chauffeur & Limo Service | Luxury <span>Rides In California</span></h2>
-                            <p class="ve-lead">In a state as large and fast-moving as California, transportation is more than just getting from one place to another—it’s about timing, comfort, and reliability. Whether you're traveling for business, leisure, or a major event, having a trusted chauffeur service in California can completely transform your experience.</p>
+                            <p class="ve-lead">In a state as large and fast-moving as California, transportation is more than just getting from one place to another-it’s about timing, comfort, and reliability. Whether you're traveling for business, leisure, or a major event, having a trusted chauffeur service in California can completely transform your experience.</p>
                             
                             <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> is built for travelers who expect more. From smooth airport transfers to carefully planned long-distance journeys, every ride is designed to feel effortless, professional, and comfortable.</p>
                         </div>
@@ -180,8 +180,8 @@
                                 <div class="col-md-6 mb-30">
                                     <div class="ve-feature-text-item">
                                         <i class="fa fa-plane"></i>
-                                        <h5>LAX & Major Hubs</h5>
-                                        <p>Comprehensive airport services for Los Angeles International, Burbank, and other major California terminals.</p>
+                                        <h5><a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);">LAX &amp; Major Hubs</a></h5>
+                                        <p>Comprehensive <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX airport car service</b></a> plus Bay Area and statewide chauffeur coverage for California terminals.</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6 mb-30">
@@ -213,13 +213,13 @@
                             <p>Air travel can be unpredictable, but your ground transportation shouldn’t be. Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service in California</b></a> is tailored for travelers who want a dependable, on-time pickup without stress.</p>
                         </div>
 
-                        <h3>Airports We Serve Across California</h3>
+                        <h3>Chauffeur Service San Francisco, Bay Area &amp; LAX</h3>
                         <div class="ve-amenities-list">
                             <ul>
-                                <li><i class="fa fa-check"></i> Los Angeles International Airport </li>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Los Angeles International (LAX)</b></a></li>
-                                <li><i class="fa fa-check"></i> See also: <a href="{{ route('service-area.nevada') }}" style="color: var(--ve-gold);"><b>Nevada</b></a> · <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a> · <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airports</b></a></li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Los Angeles International (LAX)</b></a> airport car service</li>
+                                <li><i class="fa fa-check"></i> San Francisco / Bay Area chauffeur service and SFO-area transfers</li>
                                 <li><i class="fa fa-check"></i> San Diego International Airport</li>
+                                <li><i class="fa fa-check"></i> Also serve: <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>LAS</b></a> · <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>SEA</b></a> · <a href="{{ route('service-area.nevada') }}" style="color: var(--ve-gold);"><b>Nevada</b></a> · <a href="{{ route('service-area.washington') }}" style="color: var(--ve-gold);"><b>Washington</b></a> · <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airports</b></a></li>
                             </ul>
                         </div>
 
@@ -261,20 +261,20 @@
                         <p>This is ideal for those looking to <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>book a private car service in California</b></a> with full control over their travel experience.</p>
                         <h2>Traveling from California to New Jersey &amp; New York</h2>
 
-                        <p>Cross-country travelers often need reliable ground transportation after landing on the East Coast. Our coordinated chauffeur service connects California arrivals with New York and New Jersey hotels, airports, and event venues—including MetLife Stadium.</p>
+                        <p>Cross-country travelers often need reliable ground transportation after landing on the East Coast. Our coordinated chauffeur service connects California arrivals with <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> and <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a> hotels, airports, and event venues-including MetLife Stadium.</p>
 
                         <h2>Seamless East Coast Transfers</h2>
 
                         <div class="ve-amenities-list">
                             <ul>
-                                <li><i class="fa fa-check"></i> Pickup from arrival airports in New York or New Jersey</li>
-                                <li><i class="fa fa-check"></i> Direct ride to your hotel or stadium</li>
+                                <li><i class="fa fa-check"></i> Pickup from <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, or <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a></li>
+                                <li><i class="fa fa-check"></i> Direct ride to your hotel or <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium car service</b></a></li>
                                 <li><i class="fa fa-check"></i> Timely drop-off aligned with your schedule</li>
                                 <li><i class="fa fa-check"></i> Comfortable return service after events</li>
                             </ul>
                         </div>
 
-                        <p>Many travelers look for transport from the airport to MetLife Stadium or New York to New Jersey private transfer. Our service is designed to meet those exact needs with precision.</p>
+                        <p>Many travelers look for transport from the airport to MetLife Stadium or a New York to New Jersey private transfer. Start with our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service NJ</b></a> guides for confirmed-rate Tri-State pickups.</p>
 
                         <h2>Chauffeur Services Suited to Every Occasion</h2>
                         <p>Not every trip is the same, which is why our services are designed with flexibility in mind. Whether it's business or celebration, we provide the right experience.</p>
@@ -289,10 +289,10 @@
                         <p>Arrive in elegance with a <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>luxury wedding limo service</b></a>, designed to make important moments even more memorable.</p>
 
                         <h3>Hourly Chauffeur Service for Flexible Plans</h3>
-                        <p>Need multiple stops or last-minute changes? Our hourly service gives you full control of your travel schedule.</p>
+                        <p>Need multiple stops or last-minute changes? Our <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>hourly chauffeur service</b></a> and <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation</b></a> options give you control of Bay Area and LA itineraries.</p>
 
                         <h2>What Sets Our California Chauffeur Service Apart</h2>
-                        <p>In a competitive market, the difference lies in the details. Our service focuses on what travelers truly need—reliability, comfort, and simplicity.</p>
+                        <p>In a competitive market, the difference lies in the details. Our service focuses on what travelers truly need-reliability, comfort, and simplicity.</p>
 
                         <h3>A Service Built Around You</h3>
                         <div class="ve-amenities-list">

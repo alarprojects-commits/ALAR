@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service for JFK, LGA & EWR — Book Alar')
-@section('meta_description', 'Book airport car service for JFK, LaGuardia, and Newark with flight tracking and meet and greet. Confirmed-rate chauffeur transfers across NYC and NJ.')
+@section('meta_title', 'Airport Chauffeur Service NJ - Private Transfers | Alar')
+@section('meta_description', 'Book airport chauffeur service NJ with flight tracking and meet and greet. Private airport transfers New Jersey to JFK, LGA, and EWR-confirmed rates from Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,8 +127,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Premium Service</span>
-            <h1>Airport Car Service NYC & NJ | <span>JFK, LGA, EWR Limo</span></h1>
-            <p>ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)—with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
+            <h1>Airport Chauffeur Service in <span>New Jersey</span></h1>
+            <p>ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)-with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -159,7 +159,7 @@
                         <span class="ve-section-tag">Stress-Free Travel</span>
                         <h2>Airport Car Service NYC & <span>Tri-State Airport Limo</span></h2>
                         <p class="ve-lead">Welcome to <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur
-                                    Service</b></a>, your premier choice for airport car service NYC and New Jersey. We provide smooth, reliable transfers with professionalism and care—including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia Airport, and Newark Airport Limo Service EWR.</p>
+                                    Service</b></a>, your premier choice for airport car service NYC and New Jersey. We provide smooth, reliable transfers with professionalism and care-including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia Airport, and Newark Airport Limo Service EWR.</p>
 
                         <p>Travel in comfort and style with our diverse fleet, including elegant sedans, spacious SUVs,
                             versatile mid-size crossover SUVs, and roomy Sprinter vans. Whatever your preference, we
@@ -167,14 +167,15 @@
                             stress-free.
                         </p>
 
-                        <h3 class="mt-30">Airports We Serve Across the <span>Tri-State Area</span></h3>
-                        <p>Open a dedicated guide for pickup tips and booking details: <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>, <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>HPN</b></a>, <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>TEB</b></a>, <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>PHL</b></a>, <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>BDL</b></a>, plus <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>all airport guides</b></a>.</p>
+                        <h3 class="mt-30">Airport Chauffeur Service NJ &amp; <span>Tri-State Transfers</span></h3>
+                        <p>Book private airport transfers New Jersey and NYC with flight tracking limo service NJ. Open a dedicated guide: <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>, <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>HPN</b></a>, <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>TEB</b></a>, <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>PHL</b></a>, <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>BDL</b></a>, <a href="{{ route('airports.bos') }}" style="color: var(--ve-gold);"><b>BOS</b></a>, <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX</b></a>, <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>LAS</b></a>, <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>SEA</b></a>, plus <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>all airport guides</b></a>.</p>
                         <div class="ve-amenities-list mt-20 mb-30">
                             <ul>
-                                <li><i class="fa fa-check"></i> <strong>John F. Kennedy International Airport (JFK)</strong> — JFK Airport Limo Service NYC</li>
-                                <li><i class="fa fa-check"></i> <strong>LaGuardia Airport (LGA)</strong> — LGA Limo Service LaGuardia Airport</li>
-                                <li><i class="fa fa-check"></i> <strong>Newark Liberty International Airport (EWR)</strong> — Newark Airport Limo Service EWR</li>
-                                <li><i class="fa fa-check"></i> <strong>Westchester County Airport (HPN)</strong> — Westchester and White Plains car service</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>John F. Kennedy International (JFK)</b></a> - car service NJ to JFK and NYC limo</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia Airport (LGA)</b></a> - car service NJ to LGA</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Liberty (EWR)</b></a> - professional chauffeur EWR &amp; private airport transfer NJ</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester County (HPN)</b></a> - White Plains airport car service</li>
+                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Los Angeles (LAX)</b></a>, <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Las Vegas (LAS)</b></a>, <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Sea-Tac (SEA)</b></a></li>
                             </ul>
                         </div>
 
@@ -220,11 +221,10 @@
                             luxurious ride, our airport transport service is designed to meet every need.</p>
 
                         <p>We also specialize in a range of premium services, including <a
-                                href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>JFK Airport
-                                    Limo Service NYC</b></a>, <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>Newark Airport Limo Service EWR</b></a>, <a
-                                href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>Escalade Limo
-                                    Rental</b></a>, and Corporate Limo New Jersey. Experience comfort, style, and
-                            professionalism with every ride.</p>
+                                href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York airport limo</b></a>, <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a>, <a
+                                href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a>, <a
+                                href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a>, and our <a
+                                href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>sedan, SUV &amp; Sprinter fleet</b></a>. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book airport car service NJ</b></a> with a confirmed rate.</p>
 
                         <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
                             <div class="row">
@@ -299,6 +299,8 @@
                                         alt="Professional airport chauffeur meet and greet terminal assistance" class="img-fluid rounded-12 shadow-sm">
                                 </div>
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'airport'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>

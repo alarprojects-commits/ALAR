@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'MetLife Stadium Car Service — Game Day Chauffeur Ride')
-@section('meta_description', 'Book sporting event chauffeur service to MetLife Stadium, MSG, and Yankee Stadium. Skip parking stress with a reserved black car and confirmed game-day rate.')
+@section('meta_title', 'MetLife Stadium Car Service - Game Day Ride | Alar')
+@section('meta_description', 'Book sporting event car service to MetLife Stadium and NJ/NYC arenas. Event transportation NJ with a reserved chauffeur and confirmed game-day rate.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Game Day Ready</span>
-            <h1>Sporting Event Chauffeur Service in <span>New Jersey</span></h1>
+            <h1>Sporting Event Car Service in <span>New Jersey</span></h1>
             <p>Luxury transportation to MetLife Stadium, Madison Square Garden, Yankee Stadium, and major sporting venues across New Jersey and New York with professional chauffeurs.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -360,6 +360,8 @@
                             </div>
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
+                            @include('components.related-service-links', ['cluster' => 'event'])
+
                                 <span class="ve-section-tag">FAQs</span>
                                 <h2>Frequently Asked <span>Questions</span></h2>
                                 <div id="sportingFaqAccordion" class="accordion ve-faq-accordion mt-30">

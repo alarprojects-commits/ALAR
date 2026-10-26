@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Group Transportation in New Jersey — Sprinter Vans')
-@section('meta_description', 'Book group transportation in New Jersey with Sprinter vans and coaches for corporate shuttles, wedding guests, and airport groups—one confirmed rate.')
+@section('meta_title', 'Group Transportation NJ - Private & Luxury Travel | Alar')
+@section('meta_description', 'Book group transportation NJ for corporate shuttles, weddings, and airport groups. Private and luxury group travel with Sprinters-confirmed rates from Alar.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -127,7 +127,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Travel Together</span>
-            <h1>Professional Group Transportation Services in <span>New Jersey & New York</span></h1>
+            <h1>Group Transportation NJ for Travel &amp; <span>Events</span></h1>
             <p>Travel together with luxury group transportation in New Jersey. Perfect for corporate events, airport transfers, weddings, sporting events, and private group travel.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -261,26 +261,26 @@
                                 <h2>Group Airport Transportation for <span>Stress-Free Travel</span></h2>
                                 <p>Airport travel becomes much easier when your entire group arrives together. Coordinating multiple rides can lead to delays, confusion, and additional expenses.</p>
 
-                                <h3>Airport Transportation Services</h3>
-                                <p>Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation service</b></a> provides group travel to and from:</p>
+                                <h3>Group Airport Transportation NJ</h3>
+                                <p>Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service NJ</b></a> provides private group transportation NJ to and from:</p>
                                 <div class="ve-amenities-list mt-30">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> Newark Liberty International Airport</li>
-                                                <li><i class="fa fa-check"></i> John F. Kennedy International Airport</li>
-                                                <li><i class="fa fa-check"></i> LaGuardia Airport</li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Liberty (EWR)</b></a></li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>John F. Kennedy (JFK)</b></a></li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA)</b></a></li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> Private aviation terminals</li>
-                                                <li><i class="fa fa-check"></i> Regional airports</li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Teterboro (TEB)</b></a> private aviation</li>
+                                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>All airport guides</b></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mt-20">Whether you're traveling for business, family vacations, destination weddings, or special events, our airport transportation solutions help ensure a smooth journey from start to finish.</p>
+                                <p class="mt-20">Whether you're traveling for business, family vacations, destination weddings, or special events, our luxury group transportation NJ solutions keep everyone on one confirmed-rate itinerary.</p>
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
@@ -333,12 +333,12 @@
                                         <li><i class="fa fa-check"></i> Professional football games</li>
                                         <li><i class="fa fa-check"></i> Basketball games</li>
                                         <li><i class="fa fa-check"></i> Soccer matches</li>
-                                        <li><i class="fa fa-check"></i> Concerts and music festivals</li>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('services.concert-festival') }}" style="color: var(--ve-gold);"><b>Concerts and music festivals</b></a></li>
                                         <li><i class="fa fa-check"></i> Stadium events</li>
                                         <li><i class="fa fa-check"></i> Live entertainment venues</li>
                                     </ul>
                                 </div>
-                                <p class="mt-20">Our <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>sporting and event limo service</b></a> allows groups to travel together comfortably while avoiding transportation challenges associated with large events.</p>
+                                <p class="mt-20">Our <a href="{{ route('services.sporting-events') }}" style="color: var(--ve-gold);"><b>MetLife Stadium car service</b></a> and <a href="{{ route('services.concert-festival') }}" style="color: var(--ve-gold);"><b>event transportation NJ</b></a> options let groups travel together while avoiding parking stress. For nightlife crews, see <a href="{{ route('services.party-bus') }}" style="color: var(--ve-gold);"><b>party bus rental New Jersey</b></a>.</p>
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
@@ -430,8 +430,10 @@
                                         <li><i class="fa fa-check"></i> Modern amenities</li>
                                     </ul>
                                 </div>
-                                <p class="mt-20">Whether your group is traveling across New Jersey or between New Jersey and New York, our fleet is designed to provide a premium transportation experience.</p>
+                                <p class="mt-20">Whether your group is traveling across New Jersey or between New Jersey and New York, browse our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>Sprinter and coach fleet</b></a> or step up to a <a href="{{ route('services.party-bus') }}" style="color: var(--ve-gold);"><b>party bus rental in New Jersey</b></a> for larger celebrations.</p>
                             </div>
+
+                            @include('components.related-service-links', ['cluster' => 'group'])
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
                                 <h2>Easy Booking Process for <span>Group Transportation</span></h2>

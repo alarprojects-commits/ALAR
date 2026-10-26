@@ -9,7 +9,7 @@
 - Brand name: ALAR Chauffeur Service
 - Domain: https://alarchauffeurservice.com
 - Address: 10 Fairmount Ave, Edison, NJ 08820, US
-- Primary coverage: New Jersey, New York, Connecticut, Pennsylvania
+- Primary coverage: New Jersey, New York, Connecticut, Pennsylvania, Massachusetts
 - Secondary coverage: California, Nevada, Washington
 - Positioning: reserved professional chauffeur service with confirmed rates, not rideshare or street-hail taxi
 

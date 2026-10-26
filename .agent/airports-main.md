@@ -11,6 +11,7 @@
 - `teb` -> `airports.teb`
 - `phl` -> `airports.phl`
 - `bdl` -> `airports.bdl`
+- `bos` -> `airports.bos`
 - `lax` -> `airports.lax`
 - `las` -> `airports.las`
 - `sea` -> `airports.sea`

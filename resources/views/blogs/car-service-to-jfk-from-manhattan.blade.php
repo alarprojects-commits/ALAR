@@ -1,5 +1,5 @@
 @extends('main')
-@section('meta_title', 'Car Service to JFK from Manhattan — Fixed Rate Guide')
+@section('meta_title', 'Car Service to JFK from Manhattan - Fixed Rate Guide')
 @section('meta_description', 'How to book car service to JFK from Manhattan with a fixed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.')
 @section('og_image', asset('assets/img/blogs/car-service-to-jfk-from-manhattan.webp'))
 @section('og_type', 'article')
@@ -56,7 +56,7 @@
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
             <h1>Car Service to JFK from <span>Manhattan</span></h1>
-            <p>Fixed-rate JFK airport car service from Midtown, Downtown, and Uptown—with flight tracking and no surge pricing.</p>
+            <p>Fixed-rate JFK airport car service from Midtown, Downtown, and Uptown-with flight tracking and no surge pricing.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -74,10 +74,10 @@
                     <div class="ve-detail-text">
                         <h2>Why People Search “<span>Car Service to JFK from Manhattan</span>”</h2>
                         <p>Every day, travelers type queries like <strong>car service to JFK</strong>, <strong>JFK car service</strong>, and <strong>Manhattan to JFK transfer</strong> because airport day is not the time for surprise surge pricing or curb chaos. A pre-booked private car gives you a fixed plan from hotel or apartment door to John F. Kennedy International Airport (JFK).</p>
-                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides professional <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport car service</b></a> across Midtown, Downtown, Upper East Side, Upper West Side, Chelsea, and Financial District—with executive sedans and SUVs.</p>
+                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides professional <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport car service</b></a> across Midtown, Downtown, Upper East Side, Upper West Side, Chelsea, and Financial District-with executive sedans and SUVs.</p>
 
                         <h2>How Long Is the Ride from <span>Manhattan to JFK</span>?</h2>
-                        <p>Traffic makes every trip different. Midtown to JFK often runs about 45–75 minutes in normal conditions and longer during rush hour, storms, or holiday weekends. That is why so many people also search <strong>how early to leave Manhattan for JFK</strong>.</p>
+                        <p>Traffic makes every trip different. Midtown to JFK often runs about 45-75 minutes in normal conditions and longer during rush hour, storms, or holiday weekends. That is why so many people also search <strong>how early to leave Manhattan for JFK</strong>.</p>
                         <div class="ve-amenities-list">
                             <ul>
                                 <li><i class="fa fa-check"></i> Domestic flights: leave Midtown 3+ hours before departure when traffic is heavy</li>
@@ -93,7 +93,7 @@
                                 <li><i class="fa fa-check"></i> Door-to-door pickup from your Manhattan address</li>
                                 <li><i class="fa fa-check"></i> Luggage assistance and spacious trunks for international bags</li>
                                 <li><i class="fa fa-check"></i> Professional chauffeurs who know Van Wyck, Belt Parkway, and Midtown Tunnel patterns</li>
-                                <li><i class="fa fa-check"></i> Transparent booking—no app surge during rain or peak events</li>
+                                <li><i class="fa fa-check"></i> Transparent booking-no app surge during rain or peak events</li>
                             </ul>
                         </div>
 
@@ -114,10 +114,10 @@
                         <p>Need coverage beyond Manhattan? See our full <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> page for borough and Tri-State options.</p>
 
                         <h2>JFK Arrival: <span>Car Service From JFK to Manhattan</span></h2>
-                        <p>The reverse search is just as common: <strong>car service from JFK to Manhattan</strong>. On arrivals, we track your flight, adjust for early or delayed landings, and meet you for a private ride back to your hotel or home—ideal after long international flights when you do not want to negotiate taxi lines.</p>
+                        <p>The reverse search is just as common: <strong>car service from JFK to Manhattan</strong>. On arrivals, we track your flight, adjust for early or delayed landings, and meet you for a private ride back to your hotel or home-ideal after long international flights when you do not want to negotiate taxi lines.</p>
 
                         <h2>Book Your <span>JFK Car Service</span> Today</h2>
-                        <p>Ready for a calm airport morning? <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book car service to JFK from Manhattan online</b></a> or call Alar Chauffeur Service. Share your flight number, terminal if known, and passenger count—we handle the rest.</p>
+                        <p>Ready for a calm airport morning? <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book car service to JFK from Manhattan online</b></a> or call Alar Chauffeur Service. Share your flight number, terminal if known, and passenger count-we handle the rest.</p>
                     </div>
                 </div>
             </div>

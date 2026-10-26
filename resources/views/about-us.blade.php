@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'About Alar Chauffeur Service — Edison NJ Team Story')
-@section('meta_description', 'Learn about Alar Chauffeur Service in Edison, NJ—Tri-State airport car service, black car travel, professional chauffeurs, and a premium maintained fleet.')
+@section('meta_title', 'About Alar Chauffeur Service - Edison NJ Team Story')
+@section('meta_description', 'Learn about Alar Chauffeur Service in Edison, NJ-Tri-State airport car service, black car travel, professional chauffeurs, and a premium maintained fleet.')
 @section('og_image', asset('assets/img/about-us/excellence-in-luxury-1.webp'))
 @section('og_type', 'website')
 
@@ -92,8 +92,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Who We Are</span>
-            <h1>About <span>Us</span></h1>
-            <p>Premium chauffeur and limousine service based in New Jersey—serving the Tri-State and beyond with reserved luxury vehicles.</p>
+            <h1>About Alar Chauffeur Service in <span>Edison, NJ</span></h1>
+            <p>Premium chauffeur and limousine service based in New Jersey-serving the Tri-State and beyond with reserved luxury vehicles.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

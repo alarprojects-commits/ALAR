@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Party Bus Rental in New Jersey — Group Night Rides')
-@section('meta_description', 'Book party bus rental in New Jersey for birthdays, bachelor parties, and nightlife. Chauffeured group travel with space for your crew—reserve with Alar.')
+@section('meta_title', 'Party Bus Rental New Jersey - Group Night Out | Alar')
+@section('meta_description', 'Book party bus rental in New Jersey for birthdays, bachelor parties, and nightlife. Chauffeured group travel with space for your crew-reserve with Alar.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,7 +8,7 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Rolling Celebration</span>
-            <h1>Luxury Group Travel Made Easy Across <span>New Jersey & New York</span></h1>
+            <h1>Party Bus Rental in <span>New Jersey</span></h1>
             <p>Reserve a premium party bus in New Jersey and New York for weddings, proms, concerts, birthdays, and nightlife with professional chauffeurs, spacious vehicles, and stress-free group coordination.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
@@ -318,6 +318,8 @@
                             </div>
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
+                            @include('components.related-service-links', ['cluster' => 'group'])
+
                                 <span class="ve-section-tag">FAQs</span>
                                 <h2>Frequently Asked <span>Questions</span></h2>
                                 <div id="partyBusFaqAccordion" class="accordion ve-faq-accordion mt-30">

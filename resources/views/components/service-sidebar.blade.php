@@ -61,6 +61,42 @@
         </ul>
     </div>
 
+    <div class="ve-sidebar-widget">
+        <h4 class="ve-widget-title">Airports & Areas</h4>
+        <ul class="ve-service-list">
+            <li>
+                <a href="{{ route('airports.index') }}">
+                    <i class="fa fa-plane"></i> Airport Guides
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('airports.jfk') }}">
+                    <i class="fa fa-map-marker"></i> JFK Car Service
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('airports.ewr') }}">
+                    <i class="fa fa-map-marker"></i> Newark (EWR)
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('airports.lga') }}">
+                    <i class="fa fa-map-marker"></i> LaGuardia (LGA)
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('service-area.new-jersey') }}">
+                    <i class="fa fa-building"></i> New Jersey Coverage
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('our-fleet') }}">
+                    <i class="fa fa-car"></i> Our Fleet
+                </a>
+            </li>
+        </ul>
+    </div>
+
     <!-- Contact Widget -->
     <div class="ve-sidebar-widget ve-contact-widget text-center"
         style="background-image: url('{{ asset('assets/img/banner/cta-bg.webp') }}');">
