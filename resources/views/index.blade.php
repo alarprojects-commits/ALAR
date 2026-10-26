@@ -235,30 +235,30 @@
             <div class="ve-hero-cinematic-copy">
                 <div class="ve-hero-trust">
                     <span class="ve-hero-stars" aria-hidden="true">★★★★★</span>
-                    <span>Trusted Tri-State luxury airport transportation</span>
+                    <span>Trusted Tri-State airport chauffeur</span>
                 </div>
 
                 <h1>ALAR Chauffeur Service</h1>
-                <p class="ve-hero-lead">Luxury limousine and chauffeur service across New Jersey, New York, Connecticut, Pennsylvania, and Massachusetts - airport transfers, corporate travel, weddings, and private journeys from Edison, NJ.</p>
+                <p class="ve-hero-lead">Reserved airport transfers, corporate travel, and private journeys across NJ, NY, CT, PA, and MA - confirmed rates from Edison, NJ.</p>
 
                 <div class="ve-hero-btns ve-hero-cinematic-btns">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary" data-engage="start_booking"><i class="fa fa-calendar"></i> Book Reservation</a>
-                    <a href="{{ route('free-quote') }}" class="ve-btn-hero-light" data-engage="click_free_quote"><i class="fa fa-refresh"></i> Free Quote</a>
-                    <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost" data-engage="click_to_call"><i class="fa fa-phone"></i> Call Now</a>
+                    <div class="ve-hero-cinematic-btns-secondary">
+                        <a href="{{ route('free-quote') }}" class="ve-btn-hero-light" data-engage="click_free_quote"><i class="fa fa-refresh"></i> Free Quote</a>
+                        <a href="tel:{{ config('contact.phone_tel') }}" class="ve-btn-ghost" data-engage="click_to_call"><i class="fa fa-phone"></i> Call Now</a>
+                    </div>
                 </div>
 
-                <ul class="ve-hero-features">
-                    <li><i class="fa fa-user"></i> Pro Chauffeurs</li>
-                    <li><i class="fa fa-shield"></i> Commercially Insured</li>
-                    <li><i class="fa fa-plane"></i> Flight Tracking</li>
-                    <li><i class="fa fa-clock-o"></i> 24/7 Dispatch</li>
-                    <li><i class="fa fa-map-marker"></i> Tri-State &amp; Beyond</li>
+                <ul class="ve-hero-features ve-hero-proof" aria-label="Service strengths">
+                    <li><i class="fa fa-plane"></i> Flight tracking</li>
+                    <li><i class="fa fa-shield"></i> Commercially insured</li>
+                    <li><i class="fa fa-clock-o"></i> 24/7 dispatch</li>
                 </ul>
 
                 <div class="ve-hero-stat-grid">
                     <div class="ve-hero-stat-box">
                         <strong>JFK+</strong>
-                        <span>Major airports served nationwide</span>
+                        <span>Major airports served</span>
                     </div>
                     <div class="ve-hero-stat-box">
                         <strong>14+</strong>
@@ -266,11 +266,11 @@
                     </div>
                     <div class="ve-hero-stat-box">
                         <strong>24/7</strong>
-                        <span>Live reservation support</span>
+                        <span>Live reservation desk</span>
                     </div>
                     <div class="ve-hero-stat-box">
                         <strong>US</strong>
-                        <span>Northeast &amp; West Coast coverage</span>
+                        <span>Northeast &amp; West Coast</span>
                     </div>
                 </div>
             </div>

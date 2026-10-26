@@ -385,15 +385,15 @@ h6 {
     padding: 110px 0 80px;
     background-color: var(--ve-dark);
     background-size: cover;
-    background-position: center;
+    background-position: center 35%;
     background-repeat: no-repeat;
 }
 .ve-hero-cinematic-overlay {
     position: absolute;
     inset: 0;
     background:
-        linear-gradient(90deg, rgba(8, 14, 24, 0.88) 0%, rgba(8, 14, 24, 0.55) 48%, rgba(8, 14, 24, 0.42) 100%),
-        linear-gradient(180deg, rgba(8, 14, 24, 0.35) 0%, rgba(8, 14, 24, 0.15) 40%, rgba(8, 14, 24, 0.55) 100%);
+        linear-gradient(105deg, rgba(8, 14, 24, 0.92) 0%, rgba(8, 14, 24, 0.72) 42%, rgba(8, 14, 24, 0.38) 100%),
+        linear-gradient(180deg, rgba(8, 14, 24, 0.45) 0%, rgba(8, 14, 24, 0.12) 38%, rgba(8, 14, 24, 0.62) 100%);
     pointer-events: none;
 }
 .ve-hero-cinematic-inner {
@@ -412,6 +412,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     color: #fff;
+    max-width: 640px;
 }
 .ve-hero-trust {
     display: inline-flex;
@@ -419,46 +420,59 @@ h6 {
     gap: 10px;
     width: fit-content;
     max-width: 100%;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
     padding: 8px 14px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.14);
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.9);
 }
 .ve-hero-stars {
     color: var(--ve-gold);
     letter-spacing: 1px;
     font-size: 12px;
+    flex-shrink: 0;
 }
 .ve-hero-cinematic-copy h1 {
-    font-size: clamp(42px, 6vw, 72px);
-    line-height: 1.05;
+    font-size: clamp(40px, 5.6vw, 68px);
+    line-height: 1.02;
     color: #fff;
     font-weight: 800;
-    margin: 0 0 18px;
-    letter-spacing: -0.02em;
+    margin: 0 0 16px;
+    letter-spacing: -0.03em;
+    text-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
 }
 .ve-hero-lead {
-    max-width: 620px;
+    max-width: 540px;
     font-size: 17px;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.78);
-    margin: 0 0 28px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.82);
+    margin: 0 0 26px;
 }
 .ve-hero-cinematic-btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
     margin-bottom: 22px;
+}
+.ve-hero-cinematic-btns-secondary {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 .ve-hero-cinematic-btns .ve-btn-primary,
 .ve-hero-cinematic-btns .ve-btn-hero-light,
 .ve-hero-cinematic-btns .ve-btn-ghost {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 .ve-btn-hero-light {
-    display: inline-block;
+    display: inline-flex;
     background: #fff;
     color: var(--ve-dark);
     padding: 14px 28px;
@@ -487,7 +501,7 @@ h6 {
     gap: 8px;
     padding: 8px 12px;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.35);
     border: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 13px;
     color: rgba(255, 255, 255, 0.9);
@@ -503,12 +517,12 @@ h6 {
 .ve-hero-stat-box {
     padding: 16px 14px;
     border-radius: 10px;
-    border: 1px solid rgba(173, 139, 36, 0.45);
+    border: 1px solid rgba(173, 139, 36, 0.4);
     background: rgba(0, 0, 0, 0.28);
 }
 .ve-hero-stat-box strong {
     display: block;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 1.1;
     color: #fff;
     margin-bottom: 6px;
@@ -1779,14 +1793,30 @@ body:has(.ve-hero-float-dock) .ve-whatsapp-float {
 }
 @media (max-width: 991px) {
     .ve-hero-cinematic {
-        min-height: auto;
-        padding: 100px 0 48px;
+        align-items: flex-end;
+        min-height: 100svh;
+        padding: 108px 0 36px;
+        background-position: center 30%;
+    }
+    .ve-hero-cinematic-overlay {
+        background:
+            linear-gradient(180deg, rgba(8, 14, 24, 0.55) 0%, rgba(8, 14, 24, 0.35) 28%, rgba(8, 14, 24, 0.88) 72%, rgba(8, 14, 24, 0.96) 100%);
     }
     .ve-hero-cinematic-grid {
         grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .ve-hero-cinematic-copy {
+        max-width: none;
     }
     .ve-hero-plan {
         order: 2;
+        max-width: none;
+        margin-left: 0;
+        padding: 24px 18px;
+    }
+    .ve-hero-plan h2 {
+        font-size: 24px;
     }
     .ve-hero-float-dock {
         right: 12px;
@@ -1821,14 +1851,59 @@ body:has(.ve-hero-float-dock) .ve-whatsapp-float {
     }
 }
 @media (max-width: 767px) {
+    .ve-hero-cinematic {
+        min-height: 100svh;
+        padding: 96px 0 28px;
+    }
+    .ve-hero-trust {
+        margin-bottom: 14px;
+        padding: 7px 12px;
+        font-size: 12px;
+    }
     .ve-hero-cinematic-copy h1 {
-        font-size: 36px;
+        font-size: clamp(34px, 9vw, 42px);
+        margin-bottom: 12px;
     }
     .ve-hero-lead {
         font-size: 15px;
+        line-height: 1.55;
+        margin-bottom: 20px;
+        max-width: 34ch;
     }
-    .ve-hero-stat-grid {
+    .ve-hero-cinematic-btns {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+    .ve-hero-cinematic-btns .ve-btn-primary,
+    .ve-hero-cinematic-btns .ve-btn-hero-light,
+    .ve-hero-cinematic-btns .ve-btn-ghost {
+        width: 100%;
+        min-height: 48px;
+        padding: 13px 18px;
+        font-size: 15px;
+    }
+    .ve-hero-cinematic-btns-secondary {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+    }
+    .ve-hero-proof {
+        gap: 8px;
+        margin-bottom: 0;
+    }
+    .ve-hero-proof li {
+        padding: 7px 10px;
+        font-size: 12px;
+    }
+    /* Keep first viewport clean - stats live better on desktop */
+    .ve-hero-stat-grid {
+        display: none;
+    }
+    .ve-hero-plan-list a {
+        padding: 11px 8px;
     }
     .ve-hero-float-dock {
         right: 12px;
