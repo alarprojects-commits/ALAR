@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Newark Airport Car Service EWR - NJ Chauffeur | Alar')
-@section('meta_description', 'Book Newark Airport car service with a professional chauffeur at EWR. Private transfers to NJ and NYC, flight tracking, and confirmed rates from Alar.')
+@section('meta_title', 'Newark Airport Car Service: Terminal A, B & C Covered | Alar')
+@section('meta_description', 'Flying out of Newark? Your Edison-based chauffeur knows Terminals A, B & C. Flight tracking, meet & greet and a confirmed rate to NJ & NYC. Book now.')
 @section('og_image', asset('assets/img/airports/ewr.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>Newark Airport Car Service (EWR)</h1>
-                <p>EWR airport car service from our Edison desk with flight tracking, meet and greet, and Tri-State chauffeur coverage.</p>
+                <h1>Newark Airport Car Service (EWR) From Our Edison Desk</h1>
+            <p>Flight-tracked pickups at Terminals A, B and C, with meet and greet and chauffeur coverage across NJ and NYC.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

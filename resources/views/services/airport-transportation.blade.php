@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Chauffeur Service NJ - Private Transfers | Alar')
-@section('meta_description', 'Book airport chauffeur service NJ with flight tracking and meet and greet. Private airport transfers New Jersey to JFK, LGA, and EWR-confirmed rates from Alar.')
+@section('meta_title', 'NJ Airport Chauffeur: 60 Min Free Wait, No Surge | Alar')
+@section('meta_description', 'Landed early? Delayed? We track your flight and your chauffeur is waiting. Meet & greet, 60 minutes free wait, fixed rate to JFK, LGA & EWR. Reserve now.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,12 +81,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Premium Service</span>
-            <h1>Airport Chauffeur Service in <span>New Jersey</span></h1>
-            <p>ALAR Chauffeur Service provides Tri-State airport limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester County (HPN)-with luxury SUVs, sedans, and Sprinter vans across NJ, NY, and nearby states.</p>
+            <h1>Airport Chauffeur Service NJ With Flight Tracking Included</h1>
+            <p>Private transfers to JFK, LGA, EWR and Westchester in sedans, SUVs and Sprinters. Meet and greet, luggage help, and a confirmed rate.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

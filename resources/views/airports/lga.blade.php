@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Car Service NJ to LGA - LaGuardia Transfers | Alar')
-@section('meta_description', 'Book car service NJ to LGA with flight tracking and a confirmed rate. LaGuardia airport transfers for NJ and NYC travelers-reserve with Alar.')
+@section('meta_title', 'Car Service NJ to LGA: Skip the Terminal Chaos | Alar')
+@section('meta_description', 'Heading to LaGuardia from NJ or NYC? Get a confirmed-rate chauffeur who tracks your flight and waits at the right terminal. Reserve your LGA ride now.')
 @section('og_image', asset('assets/img/airports/lga.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>LaGuardia Airport Car Service from New Jersey</h1>
-                <p>LGA airport car service with terminal pickups, flight tracking, and chauffeur rides across New York, New Jersey, Connecticut, and Pennsylvania.</p>
+                <h1>LaGuardia Airport Car Service From New Jersey</h1>
+            <p>Terminal pickups, flight tracking and a confirmed rate for LGA rides across NY, NJ, CT and PA.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

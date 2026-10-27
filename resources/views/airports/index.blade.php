@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'NYC Airport Limo Guides: JFK, LGA & EWR | Book Alar')
-@section('meta_description', 'Browse Alar NYC airport limo guides for JFK, LaGuardia, and Newark. Flight-tracked chauffeurs with confirmed rates-open a guide and reserve.')
+@section('meta_title', 'Airport Limo NYC & NJ: Skip the Taxi Line | Alar')
+@section('meta_description', 'Skip the taxi line and the surge. Pick your airport guide for JFK, LaGuardia, Newark & more, then reserve a flight-tracked chauffeur at a confirmed rate.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airports</span>
-                <h1>New York Airport Limo &amp; Car Service Guides</h1>
-                <p>Helpful, query-based pages for Tri-State airports first-then PHL, BDL, Boston Logan (BOS), and our West Coast airports. Each guide covers pickup, flight tracking, and how to book.</p>
+                <h1>NYC &amp; NJ Airport Limo Guides for JFK, LGA, EWR &amp; More</h1>
+            <p>Pick your airport to see pickup tips, flight tracking, and how to reserve a chauffeur with a confirmed rate.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

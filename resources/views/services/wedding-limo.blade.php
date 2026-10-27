@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Wedding Limo Service New Jersey - Event Day | Alar')
-@section('meta_description', 'Book wedding limo service in New Jersey for bridal party rides, guest shuttles, and airport transfers. Elegant chauffeurs-reserve your wedding date with Alar.')
+@section('meta_title', 'Wedding Limo NJ: Arrive Like the Main Event | Alar')
+@section('meta_description', 'Your big day deserves a perfect arrival. Wedding limos & guest shuttles across NJ, with elegant chauffeurs. Book online and get 10% off. Dates fill fast!')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,12 +81,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Elegant Experience</span>
-            <h1>Wedding Limo Service in <span>New Jersey</span></h1>
-            <p>Arrive in style with professional wedding limo service in New Jersey offering luxury vehicles, experienced chauffeurs, and smooth transportation for weddings, receptions, and guest travel.</p>
+            <h1>Wedding Limo Service NJ for a Stress-Free Big Day</h1>
+            <p>Luxury vehicles and professional chauffeurs for the bridal party, guest shuttles, and airport pickups. Book online for 10% off.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

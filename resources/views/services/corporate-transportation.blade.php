@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Corporate Transportation New Jersey | Executive Alar')
-@section('meta_description', 'Book corporate transportation New Jersey for meetings, airports, and roadshows. Executive car service NJ with a confirmed business rate-reserve with Alar.')
+@section('meta_title', 'Corporate Car Service NJ: Arrive Ready to Close | Alar')
+@section('meta_description', 'Your next meeting starts in the back seat. Executive chauffeurs, priority dispatch & monthly invoicing for NJ business travelers. Request a corporate rate.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,12 +81,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Executive Service</span>
-            <h1>Corporate Transportation in <span>New Jersey</span></h1>
-            <p>Reliable executive transportation for meetings, airport travel, and business events across New Jersey and the Tri-State.</p>
+            <h1>Corporate Car Service NJ Built for Busy Executives</h1>
+            <p>Reliable rides for meetings, airport runs and client events across New Jersey. Priority dispatch and monthly invoicing for business accounts.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
@@ -142,7 +138,7 @@
 @include('components.commercial-trust-strip')
 @include('components.reviews-compact', [
     'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
-    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url')
 ])
 
 <!-- ===== SERVICE DETAIL SECTION ===== -->

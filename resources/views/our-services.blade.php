@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Chauffeur Service New Jersey & Airport Limo | Alar')
-@section('meta_description', 'Explore Alar chauffeur service in New Jersey: airport chauffeur, corporate transport, group travel, cruise ports, and hourly black car across NJ and NYC.')
+@section('meta_title', 'Chauffeur Service NJ: Airport, Weddings & Events | Alar')
+@section('meta_description', 'One chauffeur company for every occasion: airport rides, weddings, proms, party buses, cruise ports & corporate travel across NJ and NYC. Get a quote.')
 @section('og_image', asset('assets/img/banner/our-services.webp'))
 @section('og_type', 'website')
 
@@ -178,8 +178,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">What We Offer</span>
-            <h1>Chauffeur Service &amp; Airport Limo in <span>New Jersey</span></h1>
-            <p>Airport chauffeur service NJ, corporate transportation, group travel, cruise ports, and hourly black car-booked with professional chauffeurs across the Tri-State. Explore our <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>airport guides</b></a> and <a href="{{ route('service-areas.index') }}" style="color: var(--ve-gold);"><b>service areas</b></a>.</p>
+            <h1>Chauffeur Services for Every Trip, From Airport to Altar</h1>
+            <p>Airport transfers, corporate travel, weddings, proms, party buses, cruise ports and more. Booked with professional chauffeurs across the Tri-State.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -237,7 +237,7 @@
                             style="background-image:url({{ asset('assets/img/our-services/hourly-limo.webp') }});"></div>
                         <div class="ve-insight-body">
                             <h5>Hourly Limo</h5>
-                            <p>Flexible hourly chauffeur service in New Jersey City for airports, meetings, events, and private rides on your schedule.</p>
+                            <p>Flexible hourly chauffeur service in Jersey City for airports, meetings, events, and private rides on your schedule.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
                         </div>

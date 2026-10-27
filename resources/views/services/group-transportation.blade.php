@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Group Transportation NJ - Private & Luxury Travel | Alar')
-@section('meta_description', 'Book group transportation NJ for corporate shuttles, weddings, and airport groups. Private and luxury group travel with Sprinters-confirmed rates from Alar.')
+@section('meta_title', 'Group Transportation NJ: One Ride, Whole Crew | Alar')
+@section('meta_description', 'Stop herding five cars. Sprinters, SUVs & coaches keep your whole group together for weddings, airports, events & corporate trips. Get a group quote.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,12 +81,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Travel Together</span>
-            <h1>Group Transportation NJ for Travel &amp; <span>Events</span></h1>
-            <p>Travel together with luxury group transportation in New Jersey. Perfect for corporate events, airport transfers, weddings, sporting events, and private group travel.</p>
+            <h1>Group Transportation NJ: Everyone Arrives Together</h1>
+            <p>Sprinters, SUVs and coaches for weddings, corporate trips, airport groups and events. One coordinated plan instead of five cars.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

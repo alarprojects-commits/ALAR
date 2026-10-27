@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Hourly Chauffeur Service New Jersey - Flexible | Alar')
-@section('meta_description', 'Book hourly chauffeur service in New Jersey for meetings, hotel transfers, and multi-stop days. Keep the vehicle with you at a confirmed hourly rate.')
+@section('meta_title', 'Hourly Chauffeur NJ: One Car, All Day, Every Stop | Alar')
+@section('meta_description', 'Stop booking ride after ride. Keep one chauffeur with you all day for meetings, hotels & multi-stop trips at a confirmed hourly rate. 10% off online.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -73,12 +73,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -128,8 +124,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Flexible Travel</span>
-            <h1>Hourly Chauffeur Service in <span>New Jersey</span></h1>
-            <p>Travel on your schedule with professional hourly chauffeur service in New Jersey City for airports, meetings, events, and private rides.</p>
+            <h1>Hourly Chauffeur Service NJ: Your Car Stays With You</h1>
+            <p>Keep one chauffeur and vehicle for meetings, hotel stops and multi-stop days across Jersey City, Newark and nearby counties. Book online for 10% off.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -153,22 +149,22 @@
                 <div class="ve-service-detail-content">
                     <div class="ve-detail-main-img mb-40 wow fadeIn" data-wow-delay="100ms">
                         <img src="{{ asset('assets/img/our-services/hourly-limo/1.webp') }}"
-                            alt="Hourly Limo Service in New Jersey City" class="img-fluid rounded-12 shadow-sm">
+                            alt="Hourly Limo Service in Jersey City" class="img-fluid rounded-12 shadow-sm">
                     </div>
 
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
                         <span class="ve-section-tag">On Your Schedule</span>
-                        <h2>Hourly Limo Service in New Jersey City for <span>Flexible Luxury Transportation</span></h2>
+                        <h2>Hourly Limo Service in Jersey City for <span>Flexible Luxury Transportation</span></h2>
                         <p class="ve-lead">Travel plans do not always follow a fixed timeline. Some trips involve multiple stops, changing schedules, business meetings, airport waiting time, or full day transportation needs. In these situations, booking a standard ride often creates unnecessary stress and limitations.</p>
 
-                        <p>Our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>hourly limo service in New Jersey City</b></a> is designed for travelers who need flexibility, comfort, and reliable transportation throughout the day. Instead of arranging separate rides for every stop, you have a professional chauffeur and luxury vehicle available whenever you need them.</p>
+                        <p>Our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>hourly limo service in Jersey City</b></a> is designed for travelers who need flexibility, comfort, and reliable transportation throughout the day. Instead of arranging separate rides for every stop, you have a professional chauffeur and luxury vehicle available whenever you need them.</p>
 
-                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides premium hourly transportation across New Jersey City and surrounding counties, helping travelers move efficiently without worrying about timing, traffic, or ride availability.</p>
+                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> provides premium hourly transportation across Jersey City and surrounding counties, helping travelers move efficiently without worrying about timing, traffic, or ride availability.</p>
 
                         <p>Whether you need private transportation for corporate travel, airport pickups, events, or personal plans, our service delivers a smooth and professional experience from beginning to end.</p>
 
                         <h2>Travel Without Rushing Between <span>Stops or Schedules</span></h2>
-                        <p>One of the biggest advantages of booking hourly limo service in New Jersey City is having complete control over your journey.</p>
+                        <p>One of the biggest advantages of booking hourly limo service in Jersey City is having complete control over your journey.</p>
 
                         <p>Your chauffeur stays available for the duration of your booking, allowing you to travel between locations without repeatedly arranging transportation. This creates a more relaxed and organized travel experience, especially during busy schedules.</p>
 
@@ -217,7 +213,7 @@
                                 </div>
                                 <div class="col-md-6 mb-30 wow fadeInRight" data-wow-delay="200ms">
                                     <h2>Professional Hourly Transportation for <span>Every Occasion</span></h2>
-                                    <p>Different travel situations require different levels of flexibility. Our hourly limo service in New Jersey City is structured to support a wide range of transportation needs.</p>
+                                    <p>Different travel situations require different levels of flexibility. Our hourly limo service in Jersey City is structured to support a wide range of transportation needs.</p>
 
                                     <h3>Corporate and Executive Travel</h3>
                                     <p>Business professionals often need reliable transportation between offices, meetings, hotels, and conferences. Our hourly chauffeur service helps maintain a smooth schedule while providing a private and comfortable environment during travel.</p>
@@ -237,7 +233,7 @@
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
                                 <h2>Serving Major Counties and Airports <span>Across New Jersey</span></h2>
-                                <p>Our hourly limo service in New Jersey City covers important transportation hubs, business districts, residential areas, and nearby airports throughout the region.</p>
+                                <p>Our hourly limo service in Jersey City covers important transportation hubs, business districts, residential areas, and nearby airports throughout the region.</p>
 
                                 <div class="mt-30">
                                     <h3>Airports We Serve</h3>
@@ -344,7 +340,7 @@
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
                                 <h2>Simple Booking Process with <span>Flexible Scheduling</span></h2>
-                                <p>Booking your hourly limo service in New Jersey City should feel simple and straightforward.</p>
+                                <p>Booking your hourly limo service in Jersey City should feel simple and straightforward.</p>
 
                                 <h3>How to Reserve Your Ride</h3>
                                 <div class="ve-amenities-list mt-30">
@@ -363,14 +359,14 @@
                                 <h2>A Better Transportation Experience for <span>Flexible Travel Needs</span></h2>
                                 <p>Transportation should support your schedule instead of limiting it. With hourly booking, you have the freedom to travel comfortably between locations while keeping your chauffeur available throughout the journey.</p>
 
-                                <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> continues to provide dependable hourly limo service in New Jersey City for travelers who expect professionalism, flexibility, and luxury transportation across every trip.</p>
+                                <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> continues to provide dependable hourly limo service in Jersey City for travelers who expect professionalism, flexibility, and luxury transportation across every trip.</p>
                             </div>
 
                             @include('components.related-service-links', ['cluster' => 'corporate'])
 
                             <div class="mt-50 wow fadeInUp" data-wow-delay="150ms">
                                 <span class="ve-section-tag">FAQs</span>
-                                <h2>Common Questions About <span>Hourly Limo Service in New Jersey City</span></h2>
+                                <h2>Common Questions About <span>Hourly Limo Service in Jersey City</span></h2>
                                 <div id="hourlyFaqAccordion" class="accordion ve-faq-accordion mt-30">
                                     <div class="card ve-faq-card">
                                         <div class="card-header ve-faq-card-header" id="hourlyFaqHeadingOne">

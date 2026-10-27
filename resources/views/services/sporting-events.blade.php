@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'MetLife Stadium Car Service - Game Day Ride | Alar')
-@section('meta_description', 'Book sporting event car service to MetLife Stadium and NJ/NYC arenas. Event transportation NJ with a reserved chauffeur and confirmed game-day rate.')
+@section('meta_title', 'MetLife Stadium Car Service: Skip Parking & Traffic | Alar')
+@section('meta_description', 'No parking hunt, no post-game gridlock. Ride to MetLife, MSG, Yankee Stadium & more with a private chauffeur and a game-day rate you lock in early.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,12 +81,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Game Day Ready</span>
-            <h1>Sporting Event Car Service in <span>New Jersey</span></h1>
-            <p>Luxury transportation to MetLife Stadium, Madison Square Garden, Yankee Stadium, and major sporting venues across New Jersey and New York with professional chauffeurs.</p>
+            <h1>MetLife Stadium Car Service &amp; Game-Day Rides in NJ</h1>
+            <p>Private chauffeurs to MetLife, MSG, Prudential Center, Yankee Stadium, Citi Field and Barclays. Skip the parking and the post-game traffic.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

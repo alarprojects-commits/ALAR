@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Executive Chauffeur Service NJ - Hire Private Car | Alar')
-@section('meta_description', 'Hire executive chauffeur service NJ for airports, hotel transfers, and private travel. Premium black car with confirmed rates from Alar in Edison.')
+@section('meta_title', 'Executive Chauffeur NJ: Your Car, Your Rules | Alar')
+@section('meta_description', 'Private, quiet, and entirely yours. Book an executive chauffeur in NJ for airports, hotel transfers & NJ-to-NYC trips: confirmed rate, zero surge.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Premium Service</span>
-            <h1>Executive Chauffeur Service in <span>New Jersey</span></h1>
-            <p>Experience safe, private, and luxury transportation with Alar Chauffeur Service for city travel, airport transfers, and long-distance journeys.</p>
+            <h1>Executive Chauffeur Service NJ: Private, Quiet, Yours</h1>
+            <p>A dedicated driver and vehicle for city travel, airport transfers, and long-distance trips across the Tri-State.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>

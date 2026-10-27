@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Event Transportation NJ - Concert & Festival Limo | Alar')
-@section('meta_description', 'Book event transportation NJ for concert drop-offs and late-night returns. Hire a chauffeur for your event or group Sprinter-confirmed rates from Alar.')
+@section('meta_title', 'Concert & Festival Limo NJ: No Parking, No Stress | Alar')
+@section('meta_description', 'Enjoy the show, not the traffic. Door-to-door chauffeur rides to concerts & festivals in NJ and NYC, with safe late-night returns. Lock in your date today.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Arrive Like a Star</span>
-            <h1>Event Transportation NJ for Concerts &amp; <span>Festivals</span></h1>
-            <p>Enjoy stress-free transportation to concerts, music festivals, cultural events, and live performances with luxury chauffeur service across New Jersey and New York.</p>
+            <h1>Concert &amp; Festival Limo NJ: Enjoy the Show, Not the Drive</h1>
+            <p>Door-to-door rides to arenas, festivals and live events across NJ and NYC, with safe late-night returns.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

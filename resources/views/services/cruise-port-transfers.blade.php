@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Cruise Port Transportation NJ - Packages & Transfers | Alar')
-@section('meta_description', 'Book cruise port transportation and transfer packages for Cape Liberty, Manhattan, and Brooklyn. Luggage-ready chauffeur service NJ-confirmed rates from Alar.')
+@section('meta_title', 'Cruise Port Transfers NJ: Board Stress-Free | Alar')
+@section('meta_description', 'Don\'t let traffic cost you your cruise. Private rides to Cape Liberty, Manhattan & Brooklyn terminals, with luggage help and airport-to-port transfers.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Start Your Vacation Right</span>
-            <h1>Cruise Port Transfers &amp; Transportation in <span>New Jersey</span></h1>
-            <p>Luxury Cruise Port Transfers NJ & NY | Reliable Transfers to Manhattan & Cape Liberty Cruise Terminals with 24/7 Chauffeur Service</p>
+            <h1>Cruise Port Transfers NJ &amp; NYC Without the Rush</h1>
+            <p>Private rides to Cape Liberty, Manhattan and Brooklyn terminals, with luggage help and airport-to-port transfers.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

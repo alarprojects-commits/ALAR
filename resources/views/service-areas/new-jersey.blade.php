@@ -273,7 +273,7 @@
                             <p>Flexible <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>hourly chauffeur service</b></a> and hotel transfers NJ-see our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a>.</p>
 
                             <h2>Why Choose <span>Alar Chauffeur Service</span> in New Jersey</h2>
-                            <p>Choosing the right <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service in New Jersey City</b></a> makes all the difference. With Alar Chauffeur Service, you get</p>
+                            <p>Choosing the right <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service in Jersey City</b></a> makes all the difference. With Alar Chauffeur Service, you get</p>
                             <div class="ve-amenities-list">
                                 <ul>
                                     <li><i class="fa fa-check"></i> Experienced and professional chauffeurs</li>
@@ -285,8 +285,8 @@
                             </div>
                             <p>Whether you need a luxury car service in New Jersey, a private chauffeur near you, or a reliable limo service for airport transfer, we are committed to delivering excellence.</p>
 
-                            <h2>Book Chauffeur Service in <span>New Jersey City Today</span></h2>
-                            <p>Planning your next trip? It’s easy to book limo service in New Jersey City with <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>.</p>
+                            <h2>Book Chauffeur Service in <span>Jersey City Today</span></h2>
+                            <p>Planning your next trip? It’s easy to book limo service in Jersey City with <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>.</p>
                             <p>We specialize in:</p>
                             <div class="ve-amenities-list">
                                 <ul>

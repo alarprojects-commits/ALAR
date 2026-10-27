@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Westchester Airport Car Service HPN - White Plains Alar')
-@section('meta_description', 'Book Westchester airport car service (HPN) for White Plains and Tri-State transfers. Reserved chauffeur with confirmed rates-not curb taxis.')
+@section('meta_title', 'Westchester Airport Car Service (HPN): Skip the Taxi Line')
+@section('meta_description', 'Flying into White Plains? Pre-book a chauffeur at HPN with a confirmed rate. Serving Westchester, Fairfield County, Manhattan & North Jersey.')
 @section('og_image', asset('assets/img/airports/hpn.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>Westchester Airport Car Service (HPN)</h1>
-                <p>HPN airport car service for White Plains and Tri-State transfers with reserved chauffeurs-not taxi lines.</p>
+                <h1>Westchester Airport Car Service (HPN) for White Plains &amp; Beyond</h1>
+            <p>Reserved chauffeurs instead of taxi lines. Serving Westchester, Fairfield County, Manhattan and North Jersey.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

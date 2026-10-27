@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Contact Alar Chauffeur Service in Edison, NJ Today')
-@section('meta_description', 'Contact Alar Chauffeur Service in Edison, NJ for airport bookings, black car quotes, and chauffeur help across New Jersey and NYC. Call or send a request.')
+@section('meta_title', 'Contact Alar: Talk to a Real Dispatcher 24/7 | Edison NJ')
+@section('meta_description', 'Need a ride now or a quote for later? Call (201) 431-4275 or send a request. Our Edison, NJ desk confirms every booking before dispatch, day or night.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -75,12 +75,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -110,12 +106,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     }
 
   ]
@@ -130,8 +122,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Ready to Ride?</span>
-            <h1>Contact Alar Chauffeur Service in <span>Edison, NJ</span></h1>
-            <p>Reach Alar Chauffeur Service for quotes, reservations, and trip changes. We confirm every booking before dispatch.</p>
+            <h1>Talk to Alar&apos;s 24/7 Dispatch Desk</h1>
+            <p>Call, email, or send a request for quotes, reservations, and trip changes. We confirm every booking before dispatch.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

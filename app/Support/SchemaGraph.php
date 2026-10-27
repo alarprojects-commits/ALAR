@@ -34,6 +34,10 @@ class SchemaGraph
             'sameAs' => $sameAs,
         ];
 
+        if (! empty($biz['founded_year'])) {
+            $organization['foundingDate'] = (string) $biz['founded_year'];
+        }
+
         $publisher = [
             '@type' => 'Organization',
             '@id' => $base . '/#organization',
@@ -69,6 +73,10 @@ class SchemaGraph
             'sameAs' => $sameAs,
             'parentOrganization' => ['@id' => $base . '/#organization'],
         ];
+
+        if (! empty($biz['founded_year'])) {
+            $localBusiness['foundingDate'] = (string) $biz['founded_year'];
+        }
 
         if (! empty($biz['gbp_url'])) {
             $localBusiness['hasMap'] = $biz['gbp_url'];

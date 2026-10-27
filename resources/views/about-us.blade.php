@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'About Alar Chauffeur Service - Edison NJ Team Story')
-@section('meta_description', 'Learn about Alar Chauffeur Service in Edison, NJ-Tri-State airport car service, black car travel, professional chauffeurs, and a premium maintained fleet.')
+@section('meta_title', 'Meet Alar: Edison NJ\'s Chauffeur Team Behind Your Ride')
+@section('meta_description', 'Who\'s behind the black car? Meet the vetted, trained chauffeurs of Alar in Edison, NJ: fixed pricing, early arrivals, and a premium fleet you can trust.')
 @section('og_image', asset('assets/img/about-us/excellence-in-luxury-1.webp'))
 @section('og_type', 'website')
 
@@ -28,17 +28,14 @@
         "postalCode": "08820",
         "addressCountry": "US"
       },
-      "foundingDate": "2012",
+      "foundingDate": "{{ config('business.founded_year', 2023) }}",
       "slogan": "A Smarter Way to Travel in Luxury",
       "description": "ALAR Chauffeur Service is New Jersey's trusted luxury ground transportation company, providing executive airport transfers, black car service, wedding limousines, and corporate travel.",
 
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -92,8 +89,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Who We Are</span>
-            <h1>About Alar Chauffeur Service in <span>Edison, NJ</span></h1>
-            <p>Premium chauffeur and limousine service based in New Jersey-serving the Tri-State and beyond with reserved luxury vehicles.</p>
+            <h1>The Edison, NJ Chauffeur Team Behind Your Ride</h1>
+            <p>Vetted, trained chauffeurs, a premium maintained fleet, and fixed pricing. Based in Edison, serving the Tri-State and beyond.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>
@@ -112,8 +109,9 @@
                 <div class="ve-whyus-img-wrap wow fadeInLeft" data-wow-delay="100ms">
                     <div class="ve-whyus-img-main bg-img" role="img" aria-label="Professional Alar Chauffeur Service driver beside a luxury vehicle"
                         style="background-image:url(../assets/img/about-us/excellence-in-luxury-1.webp);"></div>
+                    @php $yearsExperience = max(1, (int) date('Y') - (int) config('business.founded_year', 2023)); @endphp
                     <div class="ve-whyus-badge">
-                        <strong>3+</strong>
+                        <strong>{{ $yearsExperience }}+</strong>
                         <span>Years of Excellence</span>
                     </div>
                 </div>

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'JFK Airport Car Service - NJ & NYC Transfers | Alar')
-@section('meta_description', 'Book JFK airport car service and limo to NJ-Hoboken, Jersey City, and beyond. Flight tracking, meet and greet, and confirmed rates from Alar.')
+@section('meta_title', 'JFK Car Service From NJ & NYC: Beat the Chaos | Alar')
+@section('meta_description', 'JFK is huge. Your chauffeur shouldn\'t be hard to find. Terminal-specific pickup, live flight tracking & a confirmed rate from NJ, NYC, CT & PA.')
 @section('og_image', asset('assets/img/airports/jfk.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Airport Guides</span>
-                <h1>JFK Airport Car Service to New Jersey &amp; NYC</h1>
-                <p>Reserved chauffeur transfers to and from JFK with flight tracking, terminal meet points, and Tri-State coverage from New Jersey, New York, Connecticut, and Pennsylvania.</p>
+                <h1>JFK Airport Car Service From NJ &amp; NYC</h1>
+            <p>Reserved chauffeur transfers with live flight tracking and terminal-specific pickups. Covers NJ, NY, CT and PA.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

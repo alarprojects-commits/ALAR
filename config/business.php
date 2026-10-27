@@ -14,11 +14,11 @@ return [
         'addressLocality' => 'Edison',
         'addressRegion' => 'NJ',
         'postalCode' => '08820',
-        'addressCountry' => 'US',
+        'addressCountry' => 'US'
     ],
     'geo' => [
         'latitude' => 40.5431,
-        'longitude' => -74.3784,
+        'longitude' => -74.3784
     ],
     'area_served' => [
         'New Jersey',
@@ -27,20 +27,17 @@ return [
         'Pennsylvania',
         'California',
         'Nevada',
-        'Washington',
+        'Washington'
     ],
+    'founded_year' => 2023,
     'gbp_url' => 'https://maps.app.goo.gl/fKaPB2j36gVbcbcq9',
     'place_id' => env('GOOGLE_PLACE_ID'),
     'same_as' => [
         'https://www.facebook.com/profile.php?id=61581788001748',
         'https://www.instagram.com/alar_chauffeur_service/',
-        'https://x.com/Alar_chauffeur',
-        'https://linkedin.com/in/alar-chauffeur-services-415862383',
-        'https://www.youtube.com/@AlarChauffeurService',
-        'https://www.scoop.it/u/alar-chauffeur-service',
-        'https://maps.app.goo.gl/fKaPB2j36gVbcbcq9',
+        'https://maps.app.goo.gl/fKaPB2j36gVbcbcq9'
     ],
     'opening_hours' => [
-        'Mo-Su 00:00-23:59',
-    ],
+        'Mo-Su 00:00-23:59'
+    ]
 ];

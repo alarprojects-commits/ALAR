@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Free Quote for Airport Chauffeur Hire in NJ | Alar')
-@section('meta_description', 'Request a free quote for airport chauffeur hire in NJ, corporate travel, or hourly limo. Share trip details and get a confirmed Tri-State rate from Alar.')
+@section('meta_title', 'Free Chauffeur Quote: Know Your Price Upfront | Alar')
+@section('meta_description', 'Wondering what your ride will cost? Send your trip details and get a confirmed, no-surge rate for airport, corporate, or hourly service. 100% free.')
 @section('og_type', 'website')
 
 @section('content')
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Free Quote</span>
-            <h1>Free Quote for Airport &amp; Black Car Service <span>NJ</span></h1>
-            <p>Tell us where you’re going and we’ll confirm a reserved chauffeur rate-no surge pricing, no curb queue.</p>
+            <h1>Get Your Free Chauffeur Quote</h1>
+            <p>Tell us where you&apos;re going and we&apos;ll confirm a reserved rate with no surge pricing. Airport, corporate, hourly or events.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

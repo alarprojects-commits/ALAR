@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Party Bus Rental New Jersey - Group Night Out | Alar')
-@section('meta_description', 'Book party bus rental in New Jersey for birthdays, bachelor parties, and nightlife. Chauffeured group travel with space for your crew-reserve with Alar.')
+@section('meta_title', 'Party Bus Rental NJ: Start the Party at Pickup | Alar')
+@section('meta_description', 'The party starts when you board. Chauffeured party buses for birthdays, bachelor parties, proms & nightlife across NJ and NYC. Check your date now.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Rolling Celebration</span>
-            <h1>Party Bus Rental in <span>New Jersey</span></h1>
-            <p>Reserve a premium party bus in New Jersey and New York for weddings, proms, concerts, birthdays, and nightlife with professional chauffeurs, spacious vehicles, and stress-free group coordination.</p>
+            <h1>Party Bus Rental NJ for Birthdays, Proms &amp; Nights Out</h1>
+            <p>Chauffeured party buses with spacious seating and flexible stops across New Jersey and New York.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

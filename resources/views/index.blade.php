@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service NJ - JFK, LGA & EWR | Book Alar')
-@section('meta_description', 'Book airport car service NJ with Alar chauffeurs for JFK, LGA, and Newark. Confirmed rates, flight tracking, and professional drivers from Edison, NJ.')
+@section('meta_title', 'Airport Car Service NJ to JFK, LGA & EWR | No Surge | Alar')
+@section('meta_description', 'Tired of surge pricing? Lock your flat rate before you ride. Flight-tracked chauffeurs to JFK, LGA & Newark from Edison, NJ. Book online in minutes.')
 @section('og_image', asset('assets/img/slider/slider-1.webp'))
 @section('og_type', 'website')
 
@@ -32,10 +32,6 @@
       "sameAs": [
         "https://www.facebook.com/profile.php?id=61581788001748",
         "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService",
-        "https://www.scoop.it/u/alar-chauffeur-service",
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9"
       ],
 
@@ -48,16 +44,15 @@
       },
 
       "keywords": [
-        "airport transfer",
         "luxury chauffeur service",
         "black car service",
         "corporate travel",
         "wedding transportation",
+        "hourly chauffeur",
         "party bus service"
       ],
 
       "knowsAbout": [
-        "Airport Transfer",
         "Luxury Chauffeur Service",
         "Corporate Travel",
         "Black Car Service",
@@ -71,14 +66,7 @@
         "Festival Transportation",
         "Sporting Event Transportation",
         "VIP Transportation",
-        "Stadium Transportation",
-        "JFK Airport Transportation",
-        "LaGuardia Airport Transportation",
-        "Newark Airport Transportation",
-        "Los Angeles Airport Transportation",
-        "San Francisco Airport Transportation",
-        "Las Vegas Airport Transportation",
-        "Seattle Airport Transportation"
+        "Stadium Transportation"
       ]
     },
 
@@ -127,22 +115,16 @@
       "areaServed": [
         { "@@type": "State", "name": "New Jersey" },
         { "@@type": "State", "name": "New York" },
+        { "@@type": "State", "name": "Connecticut" },
+        { "@@type": "State", "name": "Pennsylvania" },
+        { "@@type": "State", "name": "Massachusetts" },
         { "@@type": "State", "name": "California" },
         { "@@type": "State", "name": "Nevada" },
-
-        { "@@type": "City", "name": "Kansas City" },
-
-        { "@@type": "Airport", "name": "John F. Kennedy International Airport" },
-        { "@@type": "Airport", "name": "LaGuardia Airport" },
-        { "@@type": "Airport", "name": "Newark Liberty International Airport" },
-        { "@@type": "Airport", "name": "Los Angeles International Airport" },
-        { "@@type": "Airport", "name": "San Francisco International Airport" },
-        { "@@type": "Airport", "name": "Harry Reid International Airport" },
-        { "@@type": "Airport", "name": "Seattle-Tacoma International Airport" }
+        { "@@type": "State", "name": "Washington" }
       ],
 
       "serviceType": [
-        "Airport Transfer",
+        "Luxury Chauffeur Service",
         "Corporate Travel",
         "Wedding Transportation",
         "Hourly Chauffeur Service",
@@ -172,7 +154,7 @@
 
         "itemListElement": [
 
-          { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Airport Transfer" } },
+          { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Luxury Chauffeur Service" } },
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Corporate Travel" } },
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Wedding Transportation" } },
           { "@@type": "Offer", "itemOffered": { "@@type": "Service", "name": "Hourly Chauffeur Service" } },
@@ -208,7 +190,7 @@
       "@@type": "WebPage",
       "@@id": "https://alarchauffeurservice.com/#homepage",
       "url": "https://alarchauffeurservice.com",
-      "name": "Luxury Chauffeur Service | Airport Transfers | Corporate & Events",
+      "name": "Luxury Chauffeur Service | Corporate Travel & Private Events",
       "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
 
       "about": {
@@ -235,11 +217,11 @@
             <div class="ve-hero-cinematic-copy">
                 <div class="ve-hero-trust">
                     <span class="ve-hero-stars" aria-hidden="true">★★★★★</span>
-                    <span>Trusted Tri-State airport chauffeur</span>
+                    <span>Trusted Tri-State luxury chauffeur</span>
                 </div>
 
-                <h1>ALAR Chauffeur Service</h1>
-                <p class="ve-hero-lead">Reserved airport transfers, corporate travel, and private journeys across NJ, NY, CT, PA, and MA - confirmed rates from Edison, NJ.</p>
+                <h1>Airport Car Service NJ: JFK, LGA &amp; EWR at a Rate You Lock In</h1>
+                <p class="ve-hero-lead">Reserved airport transfers, corporate travel, and private journeys across NJ, NY, CT, PA &amp; MA. Flight-tracked chauffeurs from Edison, NJ, with no surge pricing.</p>
 
                 <div class="ve-hero-btns ve-hero-cinematic-btns">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary" data-engage="start_booking"><i class="fa fa-calendar"></i> Book Reservation</a>
@@ -250,15 +232,15 @@
                 </div>
 
                 <ul class="ve-hero-features ve-hero-proof" aria-label="Service strengths">
-                    <li><i class="fa fa-plane"></i> Flight tracking</li>
+                    <li><i class="fa fa-user"></i> Professional chauffeurs</li>
                     <li><i class="fa fa-shield"></i> Commercially insured</li>
                     <li><i class="fa fa-clock-o"></i> 24/7 dispatch</li>
                 </ul>
 
                 <div class="ve-hero-stat-grid">
                     <div class="ve-hero-stat-box">
-                        <strong>JFK+</strong>
-                        <span>Major airports served</span>
+                        <strong>8</strong>
+                        <span>States we chauffeur</span>
                     </div>
                     <div class="ve-hero-stat-box">
                         <strong>14+</strong>
@@ -275,17 +257,17 @@
                 </div>
             </div>
 
-            <aside class="ve-hero-plan" aria-label="Popular routes and services">
+            <aside class="ve-hero-plan" aria-label="Popular chauffeur services">
                 <span class="ve-hero-plan-eyebrow">Plan Your Trip</span>
-                <h2>Popular routes &amp; services</h2>
-                <p>Start with the trip type travelers book most, then reserve a confirmed-rate chauffeur.</p>
+                <h2>Popular chauffeur services</h2>
+                <p>Start with the trip type clients book most, then reserve a confirmed-rate chauffeur.</p>
                 <ul class="ve-hero-plan-list">
                     <li>
-                        <a href="{{ route('services.airport-transportation') }}">
-                            <span class="ve-hero-plan-icon"><i class="fa fa-plane"></i></span>
+                        <a href="{{ route('services.chauffeured-service') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-diamond"></i></span>
                             <span class="ve-hero-plan-text">
-                                <strong>Airport Transfers</strong>
-                                <small>Flight-aware pickups and curb timing</small>
+                                <strong>Executive Chauffeur</strong>
+                                <small>Private black car with a dedicated driver</small>
                             </span>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -364,7 +346,7 @@
 @include('components.booker-prep', ['mode' => 'link'])
 @include('components.reviews-compact', [
     'reviews' => $reviews ?? ['rating' => null, 'total' => 0, 'reviews' => []],
-    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url'),
+    'googleReviewsUrl' => $googleReviewsUrl ?? config('business.gbp_url')
 ])
 
 <section class="ve-section ve-whyus-section">
@@ -376,8 +358,9 @@
                     <div class="ve-whyus-img-main bg-img"
                         style="background-image:url(../assets/img/about-us/excellence-and-discretion-2.webp);">
                     </div>
+                    @php $yearsExperience = max(1, (int) date('Y') - (int) config('business.founded_year', 2023)); @endphp
                     <div class="ve-whyus-badge">
-                        <strong>3+</strong>
+                        <strong>{{ $yearsExperience }}+</strong>
                         <span>Years of Excellence</span>
                     </div>
                 </div>
@@ -386,7 +369,7 @@
             <div class="col-12 col-lg-7 order-md-1 order-1 mb-5 order-lg-0 wow fadeInRight" data-wow-delay="200ms">
                 <div class="ve-whyus-content">
                     <span class="ve-section-tag">About Us</span>
-                    <h2>Premium Limousine Services & Party Bus Rentals for Weddings, Proms, and Special Events <span>in
+                    <h2>Premium Chauffeur Service &amp; Party Bus Rentals for Weddings, Proms, and Special Events <span>in
                             New Jersey</span></h2>
                     <p>Alar Chauffeur Service delivers a smarter way to travel in luxury by combining premium vehicles
                         with highly trained professional chauffeurs for a smooth, stylish, and reliable experience.
@@ -394,7 +377,7 @@
                                 Jersey</b></a>, <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-dark);"><b>New York</b></a>,
                         <a href="{{ route('service-area.connecticut') }}" style="color: var(--ve-dark);"><b>Connecticut</b></a>,
                         <a href="{{ route('service-area.pennsylvania') }}" style="color: var(--ve-dark);"><b>Pennsylvania</b></a>,
-                        and our West Coast states, we provide airport transfers, corporate travel, <a
+                        and our West Coast states, we provide reserved chauffeur travel, corporate black car, <a
                             href="{{ route('services.wedding-limo') }}"
                             style="color: var(--ve-dark);"><b>weddings</b></a>, proms, and
                         event transportation designed with comfort, punctuality, and elegance in mind.</p>
@@ -453,14 +436,60 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
-                <a href="{{ route('airports.phl') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/phl.webp') }});"></a>
+                <a href="{{ route('airports.hpn') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/hpn.webp') }});"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.hpn') }}" style="color: inherit;">Westchester (HPN) Car Service</a></h3>
+                    <p>White Plains and Tri-State transfers with reserved chauffeurs for Westchester travelers.</p>
+                    <p><a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Open HPN guide</b></a></p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.teb') }}" style="color: inherit;">Teterboro (TEB) Car Service</a></h3>
+                    <p>FBO pickup coordination for private aviation across New Jersey and New York.</p>
+                    <p><a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Open TEB guide</b></a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
+                <a href="{{ route('airports.teb') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/teb.webp') }});"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
                     <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.phl') }}" style="color: inherit;">Philadelphia (PHL) Car Service</a></h3>
                     <p>PHL transfers for Pennsylvania travelers with Tri-State connections.</p>
                     <p><a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>Open PHL guide</b></a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
+                <a href="{{ route('airports.phl') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/phl.webp') }});"></a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
+                <a href="{{ route('airports.bdl') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/bdl.webp') }});"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.bdl') }}" style="color: inherit;">Bradley (BDL) Car Service</a></h3>
+                    <p>Hartford and Connecticut transfers with links to NYC airports and Greenwich.</p>
+                    <p><a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Open BDL guide</b></a></p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
+                <a href="{{ route('airports.bos') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/bos.webp') }});"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.bos') }}" style="color: inherit;">Boston Logan (BOS) Car Service</a></h3>
+                    <p>Greater Boston transfers with flight tracking and confirmed-rate chauffeurs.</p>
+                    <p><a href="{{ route('airports.bos') }}" style="color: var(--ve-gold);"><b>Open BOS guide</b></a></p>
                 </div>
             </div>
 
@@ -477,14 +506,26 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
-                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.sea') }}" style="color: inherit;">Seattle (SEA) Car Service</a></h3>
-                    <p>Sea-Tac transfers for Washington state-paired with our Washington service area page.</p>
-                    <p><a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Open SEA guide</b></a></p>
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.las') }}" style="color: inherit;">Las Vegas (LAS) Car Service</a></h3>
+                    <p>Strip hotels and convention transfers for Las Vegas travelers.</p>
+                    <p><a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Open LAS guide</b></a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
+                <a href="{{ route('airports.las') }}" class="ve-airport-card-img d-block"
+                    style="background-image:url({{ asset('assets/img/airports/las.webp') }});"></a>
+            </div>
+
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <a href="{{ route('airports.sea') }}" class="ve-airport-card-img d-block"
                     style="background-image:url({{ asset('assets/img/airports/sea.webp') }});"></a>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
+                <div class="ve-airport-card-text">
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.sea') }}" style="color: inherit;">Seattle (SEA) Car Service</a></h3>
+                    <p>Sea-Tac transfers for Washington state paired with our Washington service area page.</p>
+                    <p><a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Open SEA guide</b></a></p>
+                </div>
             </div>
         </div>
     </div>
@@ -500,9 +541,9 @@
         </div>
         <div class="ve-services-grid">
             <div class="ve-service-card wow fadeInUp" data-wow-delay="100ms">
-                <div class="ve-service-icon"><i class="fa fa-plane"></i></div>
-                <h4>Airport Transfers</h4>
-                <p>Reliable and punctual pickups from all major airports. Your chauffeur awaits you at the terminal.</p>
+                <div class="ve-service-icon"><i class="fa fa-diamond"></i></div>
+                <h4>Executive Chauffeur</h4>
+                <p>Reserved private car with a professional chauffeur, confirmed rate, and door-to-door discretion.</p>
             </div>
             <div class="ve-service-card wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-service-icon"><i class="fa fa-briefcase"></i></div>
@@ -594,7 +635,7 @@
             </div>
             <div class="ve-counter-item wow fadeInUp" data-wow-delay="400ms">
                 <i class="fa fa-star"></i>
-                <strong class="counter" data-count="3">0</strong><span>+</span>
+                <strong class="counter" data-count="{{ max(1, (int) date('Y') - (int) config('business.founded_year', 2023)) }}">0</strong><span>+</span>
                 <p>Years of Excellence</p>
             </div>
         </div>
@@ -647,12 +688,12 @@
             <div class="col-lg-4 col-md-6 mb-4 wow fadeInUp" data-wow-delay="100ms">
                 <div class="ve-insight-card">
                     <div class="ve-insight-img bg-img"
-                        style="background-image:url({{ asset('assets/img/our-services/aiport-transfer.webp') }});">
+                        style="background-image:url({{ asset('assets/img/fleet/mercedes-s550.webp') }});">
                     </div>
                     <div class="ve-insight-body">
-                        <h5>Airport Transportation</h5>
-                        <p>Reliable and luxurious transportation to and from all major airports with professional
-                            chauffeurs.</p>
+                        <h5>Executive Chauffeur</h5>
+                        <p>Private luxury transportation with professional chauffeurs for corporate days, events, and
+                            personal travel.</p>
                         @include('components.cta-buttons', ['variant' => 'compact'])
                     </div>
                 </div>
@@ -710,7 +751,7 @@
                     </div>
                     <div class="ve-insight-body">
                         <h5>Mercedes Benz S550</h5>
-                        <p>The pinnacle of luxury sedans, perfect for executive travel and airport transfers.</p>
+                        <p>The pinnacle of luxury sedans, perfect for executive travel and private chauffeur days.</p>
                         <div class="ve-insight-meta">
                             <span><i class="fa fa-user"></i> 3 Passengers</span>
                             <span><i class="fa fa-briefcase"></i> 3 Bags</span>
@@ -766,8 +807,56 @@
 @include('components.google-reviews', [
     'reviews' => $reviews,
     'googleReviewsUrl' => $googleReviewsUrl,
-    'googleWriteUrl' => $googleWriteUrl,
+    'googleWriteUrl' => $googleWriteUrl
 ])
+
+@php
+    $homeFaqs = config('seo.pages.home.faqs', []);
+@endphp
+@if (!empty($homeFaqs))
+<section class="ve-section" id="faq" aria-labelledby="home-faq-heading">
+    <div class="container">
+        <div class="ve-section-header text-center">
+            <span class="ve-section-tag">FAQs</span>
+            <h2 id="home-faq-heading">Chauffeur Service <span>Questions</span></h2>
+            <p>Straight answers about booking Alar reserved chauffeur service.</p>
+        </div>
+        <div id="homeFaqAccordion" class="accordion ve-faq-accordion">
+            @foreach ($homeFaqs as $index => $faq)
+                @php
+                    $faqId = 'homeFaq' . ($index + 1);
+                    $headingId = 'homeFaqHeading' . ($index + 1);
+                    $isFirst = $index === 0;
+                @endphp
+                <div class="card ve-faq-card">
+                    <div class="card-header ve-faq-card-header" id="{{ $headingId }}">
+                        <button
+                            class="btn ve-faq-toggle btn-block text-left px-4 py-3{{ $isFirst ? '' : ' collapsed' }}"
+                            type="button"
+                            data-toggle="collapse"
+                            data-target="#{{ $faqId }}"
+                            aria-expanded="{{ $isFirst ? 'true' : 'false' }}"
+                            aria-controls="{{ $faqId }}"
+                        >
+                            {{ $faq['q'] }}
+                        </button>
+                    </div>
+                    <div
+                        id="{{ $faqId }}"
+                        class="collapse{{ $isFirst ? ' show' : '' }}"
+                        aria-labelledby="{{ $headingId }}"
+                        data-parent="#homeFaqAccordion"
+                    >
+                        <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                            {{ $faq['a'] }}
+                        </div>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+@endif
 
 @include('components.cta')
 @endsection

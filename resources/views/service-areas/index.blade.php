@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New Jersey Car Service Areas - Tri-State & West | Alar')
-@section('meta_description', 'See Alar New Jersey car service coverage plus New York, Connecticut, Pennsylvania, California, Nevada, and Washington-airport chauffeurs in every market.')
+@section('meta_title', 'Car Service Areas: Is Your City Covered? | Alar')
+@section('meta_description', 'Is your pickup covered? Alar rides across New Jersey, New York, Connecticut, Pennsylvania, Massachusetts, California, Nevada & Washington. Find your city.')
 @section('og_image', asset('assets/img/service-areas/new-jersey.webp'))
 @section('og_type', 'website')
 
@@ -9,8 +9,8 @@
         <div class="container">
             <div class="ve-hero-simple-content">
                 <span class="ve-section-tag">Coverage</span>
-                <h1>New Jersey Car Service Areas Across Tri-State &amp; Beyond</h1>
-                <p>State guides for New Jersey, New York, Connecticut, Pennsylvania, and Massachusetts-plus California, Nevada, and Washington. Every page links to the airports travelers actually book.</p>
+                <h1>Car Service Across the Tri-State and Beyond</h1>
+            <p>Find your state for NJ, NY, CT, PA and MA, plus California, Nevada and Washington. Every guide lists the airports travelers actually book.</p>
                 <div class="ve-hero-ctas">
                     <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                     <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

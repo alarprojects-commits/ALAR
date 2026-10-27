@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Car Service Tips Blog - JFK, EWR & NYC | Alar')
-@section('meta_description', 'Read Alar airport car service tips on JFK, Newark EWR, and NYC transfers. Practical Tri-State chauffeur guides before you book your next reserved ride.')
+@section('meta_title', 'Airport Ride Hacks: JFK, EWR & NYC Tips | Alar Blog')
+@section('meta_description', 'Black car vs Uber? How to get to JFK from Manhattan? Newark pickup tips? Straight answers for NJ & NYC airport travelers. Read before you book.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -88,12 +88,8 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
-      ]
+        "https://www.instagram.com/alar_chauffeur_service/"
+]
     },
 
     {
@@ -118,8 +114,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Blog</span>
-            <h1>Airport Car Service Tips &amp; Tri-State <span>Guides</span></h1>
-            <p>Guides and tips on airport car service, Tri-State limo travel, and when a reserved chauffeur beats rideshare.</p>
+            <h1>Airport Car Service Tips &amp; Tri-State Travel Guides</h1>
+            <p>Practical answers on JFK and Newark transfers, black car vs rideshare, and long-distance trips. Read up before you book.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

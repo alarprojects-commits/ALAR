@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Prom Limo Service New Jersey - Stretch & Sprinter | Alar')
-@section('meta_description', 'Book prom limo service in New Jersey with stretch limos and Sprinter vans. Safe chauffeured prom packages-reserve early before popular dates fill.')
+@section('meta_title', 'Prom Limo NJ: Make a Night They\'ll Never Forget | Alar')
+@section('meta_description', 'Parents get peace of mind, students get the ride of the year. Safe, chauffeured prom limos for groups across NJ. Save 10% online—book before dates sell out.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -81,11 +81,7 @@
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",
-        "https://www.instagram.com/alar_chauffeur_service/",
-        "https://x.com/Alar_chauffeur",
-        "https://www.scoop.it/u/alar-chauffeur-service",
-        "https://linkedin.com/in/alar-chauffeur-services-415862383",
-        "https://www.youtube.com/@AlarChauffeurService"
+        "https://www.instagram.com/alar_chauffeur_service/"
       ]
     },
 
@@ -127,8 +123,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Unforgettable Night</span>
-            <h1>Prom Limo Service in <span>New Jersey</span></h1>
-            <p>Celebrate prom night with safe, stylish, and professional prom limo services in New Jersey offering luxury vehicles, student packages, and reliable chauffeur transportation.</p>
+            <h1>Prom Limo Service NJ: Safe, Stylish, Unforgettable</h1>
+            <p>Student group packages with professional chauffeurs for dinner, photos, the venue, and the ride home. Book online for 10% off.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}" class="ve-btn-primary">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline">Free Quote</a>

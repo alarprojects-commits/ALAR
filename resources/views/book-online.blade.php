@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Book Airport Car Service NJ Online - Instant Rate | Alar')
-@section('meta_description', 'Book airport car service NJ online for black car or hourly chauffeur. Confirmed rate before dispatch for JFK, LGA, EWR, and Tri-State trips with Alar.')
+@section('meta_title', 'Book Your NJ Airport Ride in Minutes | Flat Rate | Alar')
+@section('meta_description', 'See your price before you book. Black car or hourly chauffeur for JFK, LGA, EWR & all Tri-State trips. No surge, no surprises. Reserve now.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -149,8 +149,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Reserve Now</span>
-            <h1>Book Airport Car Service NJ <span>Online</span></h1>
-            <p>Book online with a confirmed rate-not surge pricing. Share pickup, drop-off, and flight details for a reserved vehicle.</p>
+            <h1>Book Your Airport Car Service in Minutes</h1>
+            <p>Share your pickup, drop-off, and flight details and see a confirmed rate before dispatch. No surge pricing, no curb queue.</p>
             <div class="ve-hero-ctas">
                 <a href="#booking-form" class="ve-btn-primary" data-engage="start_booking">Start Booking</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>

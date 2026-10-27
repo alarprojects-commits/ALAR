@@ -9,7 +9,7 @@
                         <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Alar Chauffeur Service Logo">
                     </a>
                     <p>Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe
-                        transportation since 2012.</p>
+                        transportation since {{ config('business.founded_year', 2023) }}.</p>
                     <div class="ve-social">
                         <a href="https://www.facebook.com/profile.php?id=61581788001748" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i
                                 class="fa fa-facebook"></i></a>

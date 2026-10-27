@@ -5164,10 +5164,13 @@ textarea.ve-form-input {
     transition: var(--ve-trans);
     box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
-.ve-airport-card-img:hover, 
-.ve-airport-card-text:hover {
+.ve-airport-card-img:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+.ve-airport-card-text:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 @media (max-width: 767px) {
