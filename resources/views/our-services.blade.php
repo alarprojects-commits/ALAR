@@ -221,11 +221,11 @@
                         <div class="ve-insight-img bg-img"
                             style="background-image:url({{ asset('assets/img/our-services/corporate-limo.webp') }});"></div>
                         <div class="ve-insight-body">
-                            <h5>Corporate Transportation</h5>
+                            <h5>Corporate Transportation New Jersey</h5>
                             <p>Sophisticated transportation solutions for executives and business events with premium
                                 comfort and punctuality.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
-                            <p class="mt-3 mb-0"><a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                            <p class="mt-3 mb-0"><a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>Corporate transportation NJ</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -298,11 +298,11 @@
                             style="background-image:url({{ asset('assets/img/our-services/group-transportation.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>Group Transportation</h5>
+                            <h5>Group Transportation NJ</h5>
                             <p>Efficient and comfortable travel for large groups, conventions, and family gatherings in our
                                 premium vans.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
-                            <p class="mt-3 mb-0"><a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                            <p class="mt-3 mb-0"><a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>Group transportation NJ</b></a></p>
                         </div>
                     </div>
                 </div>
@@ -359,11 +359,11 @@
                         <div class="ve-insight-img bg-img"
                             style="background-image:url({{ asset('assets/img/our-services/chauffeured-service.webp') }});"></div>
                         <div class="ve-insight-body">
-                            <h5>Chauffeured Service</h5>
+                            <h5>Chauffeur Service</h5>
                             <p>Experience safe, private, and luxury transportation with Alar Chauffeur Service for city
                                 travel, airport transfers, and long-distance journeys.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
-                            <p class="mt-3 mb-0"><a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                            <p class="mt-3 mb-0"><a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>Chauffeur service NJ</b></a></p>
                         </div>
                     </div>
                 </div>

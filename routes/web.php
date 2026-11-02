@@ -213,6 +213,18 @@ Route::get('/blog/black-car-service-nyc-vs-uber-taxi', function () {
     return view('blogs.black-car-service-nyc-vs-uber-taxi');
 })->name('blog.black-car-service-nyc-vs-uber-taxi');
 
+Route::get('/blog/group-transportation-nj-sprinters-companies-families', function () {
+    return view('blogs.group-transportation-nj-sprinters-companies-families');
+})->name('blog.group-transportation-nj-sprinters-companies-families');
+
+Route::get('/blog/car-service-nj-to-jfk-edison-jersey-city-hoboken', function () {
+    return view('blogs.car-service-nj-to-jfk-edison-jersey-city-hoboken');
+})->name('blog.car-service-nj-to-jfk-edison-jersey-city-hoboken');
+
+Route::get('/blog/hire-executive-chauffeur-nj-rates-vehicles-booking', function () {
+    return view('blogs.hire-executive-chauffeur-nj-rates-vehicles-booking');
+})->name('blog.hire-executive-chauffeur-nj-rates-vehicles-booking');
+
 Route::fallback(function () {
     $path = '/'.ltrim(request()->path(), '/');
 

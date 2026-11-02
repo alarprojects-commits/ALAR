@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Executive Chauffeur NJ: Your Car, Your Rules | Alar')
-@section('meta_description', 'Private, quiet, and entirely yours. Book an executive chauffeur in NJ for airports, hotel transfers & NJ-to-NYC trips: confirmed rate, zero surge.')
+@section('meta_title', 'Chauffeur Service NJ - Reserve Private Black Car | Alar')
+@section('meta_description', 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, and Tri-State coverage from Alar in Edison.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->
@@ -8,8 +8,8 @@
     <div class="container">
         <div class="ve-hero-simple-content">
             <span class="ve-section-tag">Premium Service</span>
-            <h1>Executive Chauffeur Service NJ: Private, Quiet, Yours</h1>
-            <p>A dedicated driver and vehicle for city travel, airport transfers, and long-distance trips across the Tri-State.</p>
+            <h1>Chauffeur Service in <span>New Jersey</span></h1>
+            <p>Reserve a professional chauffeur for Tri-State airports, hotel transfers, and executive travel-confirmed rates from our Edison, NJ desk.</p>
             <div class="ve-hero-ctas">
                 <a href="{{ route('book-online') }}#booking-form" class="ve-btn-primary" data-engage="start_booking">Book Online</a>
                 <a href="{{ route('free-quote') }}" class="ve-btn-outline" data-engage="click_free_quote">Free Quote</a>
@@ -258,24 +258,28 @@
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Airport Transfers (JFK & Newark Airport)</h2>
-                                <p>Airport travel is one of the most important services offered. With airport transfers JFK and Newark Airport, you get reliable and timely transportation.</p>
-
-                                <p>Our airport transportation includes:</p>
+                                <h2>Airport Transfers (JFK, Newark &amp; LaGuardia)</h2>
+                                <p>Hire an executive chauffeur NJ for flight-tracked airport pickups. Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport chauffeur service</b></a> covers the Tri-State hubs travelers book most:</p>
 
                                 <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
                                     <div class="row">
                                         <ul>
-                                            <li><i class="fa fa-check"></i> Airport to city and city to airports service</li>
-                                            <li><i class="fa fa-check"></i> Meet and greet at terminals</li>
-                                            <li><i class="fa fa-check"></i> Luggage assistance</li>
-                                            <li><i class="fa fa-check"></i> On-time pickups and drop-offs</li>
+                                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> to NJ and NYC</li>
+                                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Airport (EWR) car service</b></a></li>
+                                            <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA) car service</b></a></li>
+                                            <li><i class="fa fa-check"></i> Meet and greet, luggage help, and confirmed rates</li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <p>Avoid waiting in long taxi lines by booking our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transfer service</b></a> in advance.</p>
+                                <p>Need flight-aware timing for limo-style airport days? Share the flight number on the reservation so dispatch tracks arrivals before the chauffeur is staged.</p>
 
+                            </div>
+
+                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
+                                <h2>Premium &amp; Executive Chauffeur Service <span>NJ</span></h2>
+                                <p>Premium chauffeur services from Alar mean a reserved black car-not a street-hail taxi. Executive clients use this page for hotel transfers NJ, roadshow days, and discreet corporate itineraries across <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey</b></a> and into NYC.</p>
+                                <p>For account-style business travel, also see <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a>. Larger parties should book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a>.</p>
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
@@ -384,7 +388,23 @@
                                         <div id="airportFaqFour" class="collapse"
                                             aria-labelledby="airportFaqHeadingFour" data-parent="#airportFaqAccordion">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                Yes, we provide vehicles for both small and large groups.
+                                                Yes. Solo and executive rides use sedans or SUVs; larger parties should book <a href="{{ route('services.group-transportation') }}">group transportation NJ</a> with Sprinters or coaches.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card ve-faq-card">
+                                        <div class="card-header ve-faq-card-header" id="airportFaqHeadingFive">
+                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
+                                                type="button" data-toggle="collapse" data-target="#airportFaqFive"
+                                                aria-expanded="false" aria-controls="airportFaqFive">
+                                                How do I hire an executive chauffeur in NJ?
+                                            </button>
+                                        </div>
+                                        <div id="airportFaqFive" class="collapse"
+                                            aria-labelledby="airportFaqHeadingFive" data-parent="#airportFaqAccordion">
+                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                                                Use <a href="{{ route('book-online') }}">Book Online</a> or call our Edison desk with pickup time, addresses, and passenger count. We confirm the vehicle and rate before dispatch-ideal for executive chauffeur service NJ and hotel transfers.
                                             </div>
                                         </div>
                                     </div>

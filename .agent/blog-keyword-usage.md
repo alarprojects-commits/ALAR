@@ -58,3 +58,27 @@
 - Secondary keywords: chauffeur to Washington DC, New Jersey to Philadelphia car service, NYC to Pennsylvania limo, interstate black car service
 - Search intent: commercial and informational
 - Notes: Interstate chauffeur guide for PA, Virginia, and Washington DC itineraries from NYC and NJ.
+
+- Date: 2026-11-03
+- Blog slug: group-transportation-nj-sprinters-companies-families
+- Cluster: Group transportation NJ
+- Primary keyword: group transportation NJ
+- Secondary keywords: private group transportation NJ, group travel transportation NJ, luxury group transportation NJ, group transportation company nj
+- Search intent: commercial and informational
+- Notes: Sprinter booking guide for companies and families with airport and event scenarios.
+
+- Date: 2026-11-03
+- Blog slug: car-service-nj-to-jfk-edison-jersey-city-hoboken
+- Cluster: JFK transfers from New Jersey
+- Primary keyword: car service NJ to JFK
+- Secondary keywords: JFK airport car service, limo service to JFK, Jersey City airport limo, Hoboken to JFK car service
+- Search intent: commercial and informational
+- Notes: Door to door timing from Edison, Jersey City, and Hoboken; complements Manhattan to JFK blog.
+
+- Date: 2026-11-03
+- Blog slug: hire-executive-chauffeur-nj-rates-vehicles-booking
+- Cluster: Executive chauffeur NJ
+- Primary keyword: hire executive chauffeur NJ
+- Secondary keywords: executive chauffeur service NJ, premium chauffeur services, chauffeur service New Jersey, hotel transfers NJ
+- Search intent: commercial
+- Notes: Rates, vehicle sizing, and booking windows for reserved executive chauffeur service.

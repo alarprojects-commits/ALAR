@@ -269,7 +269,7 @@ return [
             'type' => 'Service',
             'name' => 'LAX Airport Car Service - Flat-Rate Los Angeles | Alar',
             'description' => 'Book LAX airport car service with a reserved chauffeur and confirmed flat rate. Los Angeles airport transfers for arrivals, departures, and corporate travel.',
-            'keywords' => 'LAX airport car service, Los Angeles airport car service, flat rate car service LAX, car service to LAX, Los Angeles airport transfers, private car service at LAX',
+            'keywords' => 'LAX airport car service, Los Angeles airport car service, flat rate car service LAX, car service to LAX, LAX car service, private car service at LAX, Los Angeles airport transfers, car service near LAX',
             'service_type' => 'Airport shuttle service',
             'area_served' => ['California'],
             'faqs' => $airportFaqs,
@@ -415,9 +415,9 @@ return [
         ],
         'services.chauffeured-service' => [
             'type' => 'Service',
-            'name' => 'Executive Chauffeur NJ: Your Car, Your Rules | Alar',
-            'description' => 'Private, quiet, and entirely yours. Book an executive chauffeur in NJ for airports, hotel transfers & NJ-to-NYC trips: confirmed rate, zero surge.',
-            'keywords' => 'executive chauffeur service NJ, hire executive chauffeur NJ, chauffeur service New Jersey, hotel transfers NJ, premium chauffeur services, chauffeur service',
+            'name' => 'Chauffeur Service NJ - Reserve Private Black Car | Alar',
+            'description' => 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, and Tri-State coverage from Alar in Edison.',
+            'keywords' => 'chauffeur service, chauffeur service New Jersey, executive chauffeur service NJ, hire executive chauffeur NJ, premium chauffeur services, hotel transfers NJ',
             'service_type' => 'Chauffeur service',
             'area_served' => $allAreas,
             'crumbs' => [
@@ -490,15 +490,15 @@ return [
         ],
         'blog' => [
             'type' => 'CollectionPage',
-            'name' => 'Airport Ride Hacks: JFK, EWR & NYC Tips | Alar Blog',
-            'description' => 'Black car vs Uber? How to get to JFK from Manhattan? Newark pickup tips? Straight answers for NJ & NYC airport travelers. Read before you book.',
+            'name' => 'Airport Car Service Blog for JFK, EWR & NYC',
+            'description' => 'Read Alar tips on JFK, Newark EWR, and NYC airport car service. Practical Tri-State chauffeur articles before you book your next reserved ride.',
             'keywords' => 'airport car service tips, Newark Airport car service guide, car service to JFK, black car vs Uber NYC, Tri-State chauffeur blog, New York airport limo',
             'crumbs' => [['label' => 'Blog']],
         ],
         'blog.new-york-car-service-jfk-lga-ewr-tri-state' => [
             'type' => 'Article',
-            'name' => 'New York Car Service for JFK, LGA, EWR & Tri-State',
-            'description' => 'Guide to New York car service across JFK, LaGuardia, Newark, and Westchester. How Tri-State travelers book confirmed-rate NYC airport limo with Alar.',
+            'name' => 'New York Car Service for JFK, LGA & EWR',
+            'description' => 'Book New York car service to JFK, LaGuardia, Newark, and Westchester. Confirmed-rate Tri-State airport transfers with Alar chauffeurs.',
             'keywords' => 'New York car service, NYC airport limo, New York airport limo, JFK LGA EWR NYC limo guide, Tri-State airport chauffeur',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],
@@ -507,8 +507,8 @@ return [
         ],
         'blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc' => [
             'type' => 'Article',
-            'name' => 'Long-Distance Chauffeur: NYC & NJ to PA, VA & DC Now',
-            'description' => 'Book long-distance chauffeur service from NYC and New Jersey to Pennsylvania, Virginia, and Washington DC. Private black car with a confirmed door-to-door rate.',
+            'name' => 'Long Distance Chauffeur from NYC & NJ to DC',
+            'description' => 'Book long distance chauffeur service from NYC and New Jersey to Pennsylvania, Virginia, and Washington DC. Private black car with a confirmed door to door rate.',
             'keywords' => 'long distance chauffeur service, chauffeur to Washington DC, NJ to Pennsylvania limo, interstate black car service',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],
@@ -517,8 +517,8 @@ return [
         ],
         'blog.car-service-to-jfk-from-manhattan' => [
             'type' => 'Article',
-            'name' => 'Car Service to JFK from Manhattan - Fixed Rate Guide',
-            'description' => 'How to book car service to JFK from Manhattan with a fixed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.',
+            'name' => 'Car Service to JFK from Manhattan',
+            'description' => 'Book car service to JFK from Manhattan with a confirmed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.',
             'keywords' => 'car service to JFK from Manhattan, limo service to JFK, Manhattan to JFK transfer, JFK airport car service',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],
@@ -527,8 +527,8 @@ return [
         ],
         'blog.newark-airport-car-service-ewr' => [
             'type' => 'Article',
-            'name' => 'Newark Airport Car Service EWR - Full Booking Guide',
-            'description' => 'What travelers book most for Newark Airport car service (EWR): flight tracking, meet and greet, and confirmed rates from New Jersey, Manhattan, and Brooklyn.',
+            'name' => 'Newark Airport Car Service (EWR) from NJ & NYC',
+            'description' => 'Book Newark Airport car service (EWR) with flight tracking, meet and greet, and confirmed rates from New Jersey, Manhattan, and Brooklyn.',
             'keywords' => 'Newark Airport car service, EWR car service, professional chauffeur EWR, private car service to EWR, airport transportation New Jersey',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],
@@ -537,12 +537,42 @@ return [
         ],
         'blog.black-car-service-nyc-vs-uber-taxi' => [
             'type' => 'Article',
-            'name' => 'Black Car Service NYC vs Uber - Airport Truth Guide',
-            'description' => 'Compare black car service NYC vs Uber and taxi for JFK, LGA, and Newark. When a fixed-rate chauffeur beats surge-and when rideshare still makes sense.',
+            'name' => 'Black Car Service NYC vs Uber for Airports',
+            'description' => 'Compare black car service NYC vs Uber and taxi for JFK, LGA, and Newark. When a confirmed-rate chauffeur beats surge pricing for airport travel.',
             'keywords' => 'black car service NYC, black car vs Uber NYC, airport car service vs Uber, reserved chauffeur vs rideshare',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],
                 ['label' => 'Black Car vs Uber'],
+            ],
+        ],
+        'blog.group-transportation-nj-sprinters-companies-families' => [
+            'type' => 'Article',
+            'name' => 'Group Transportation NJ for Companies & Families',
+            'description' => 'Book group transportation NJ with Sprinters for corporate shuttles, family airport trips, and events. Confirmed rates and private chauffeurs from Alar in Edison.',
+            'keywords' => 'group transportation NJ, private group transportation NJ, group travel transportation NJ, luxury group transportation NJ, group transportation company nj',
+            'crumbs' => [
+                ['label' => 'Blog', 'url' => '/blog'],
+                ['label' => 'Group Transportation NJ'],
+            ],
+        ],
+        'blog.car-service-nj-to-jfk-edison-jersey-city-hoboken' => [
+            'type' => 'Article',
+            'name' => 'Car Service NJ to JFK from Edison & Hoboken',
+            'description' => 'Plan car service NJ to JFK from Edison, Jersey City, or Hoboken. Leave-time buffers, reserved chauffeurs, and confirmed rates with Alar.',
+            'keywords' => 'car service NJ to JFK, JFK airport car service, limo service to JFK, Jersey City airport limo, Hoboken to JFK car service',
+            'crumbs' => [
+                ['label' => 'Blog', 'url' => '/blog'],
+                ['label' => 'Car Service NJ to JFK'],
+            ],
+        ],
+        'blog.hire-executive-chauffeur-nj-rates-vehicles-booking' => [
+            'type' => 'Article',
+            'name' => 'Hire Executive Chauffeur Service in New Jersey',
+            'description' => 'Hire an executive chauffeur in New Jersey for airports, hotels, and business days. Vehicle options, confirmed rates, and booking tips from Alar in Edison.',
+            'keywords' => 'hire executive chauffeur NJ, executive chauffeur service NJ, premium chauffeur services, chauffeur service New Jersey, hotel transfers NJ',
+            'crumbs' => [
+                ['label' => 'Blog', 'url' => '/blog'],
+                ['label' => 'Hire Executive Chauffeur NJ'],
             ],
         ],
     ],

@@ -15,8 +15,19 @@
       "@@id": "https://alarchauffeurservice.com/#organization",
       "name": "ALAR Chauffeur Service",
       "url": "https://alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
-      "logo": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
+      "image": [
+        "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "https://alarchauffeurservice.com/assets/img/logo/logo.png"
+      ],
+      "logo": {
+        "@@type": "ImageObject",
+        "@@id": "https://alarchauffeurservice.com/#logo",
+        "url": "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "contentUrl": "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "width": 200,
+        "height": 200,
+        "caption": "ALAR Chauffeur Service"
+      },
       "email": "limo@alarchauffeurservice.com",
       "telephone": {!! config('contact.phones_schema_json') !!},
 
@@ -75,7 +86,18 @@
       "@@id": "https://alarchauffeurservice.com/#localbusiness",
       "name": "ALAR Chauffeur Service",
       "url": "https://alarchauffeurservice.com",
-      "image": "https://alarchauffeurservice.com/assets/img/logo/logo.png",
+      "image": [
+        "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "https://alarchauffeurservice.com/assets/img/logo/logo.png"
+      ],
+      "logo": {
+        "@@type": "ImageObject",
+        "@@id": "https://alarchauffeurservice.com/#logo",
+        "url": "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "contentUrl": "https://alarchauffeurservice.com/assets/img/logo/fav-icon.png",
+        "width": 200,
+        "height": 200
+      },
       "telephone": {!! config('contact.phones_schema_json') !!},
       "email": "limo@alarchauffeurservice.com",
       "priceRange": "$250-$3000",
@@ -276,8 +298,18 @@
                         <a href="{{ route('services.corporate-transportation') }}">
                             <span class="ve-hero-plan-icon"><i class="fa fa-briefcase"></i></span>
                             <span class="ve-hero-plan-text">
-                                <strong>Corporate Travel</strong>
-                                <small>Executives, roadshows, client hosting</small>
+                                <strong>Corporate Transportation NJ</strong>
+                                <small>Executives, roadshows, Newark &amp; Tri-State</small>
+                            </span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ route('services.chauffeured-service') }}">
+                            <span class="ve-hero-plan-icon"><i class="fa fa-user"></i></span>
+                            <span class="ve-hero-plan-text">
+                                <strong>Chauffeur Service NJ</strong>
+                                <small>Reserved black car, confirmed rates</small>
                             </span>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -316,8 +348,8 @@
                         <a href="{{ route('services.group-transportation') }}">
                             <span class="ve-hero-plan-icon"><i class="fa fa-road"></i></span>
                             <span class="ve-hero-plan-text">
-                                <strong>Group &amp; Long Distance</strong>
-                                <small>City-to-city and group road travel</small>
+                                <strong>Group Transportation NJ</strong>
+                                <small>Sprinters, shuttles, airport groups</small>
                             </span>
                             <i class="fa fa-angle-right"></i>
                         </a>
@@ -430,9 +462,9 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
-                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.ewr') }}" style="color: inherit;">Newark (EWR) Car Service</a></h3>
+                    <h3 style="font-size: 1.15rem;"><a href="{{ route('airports.ewr') }}" style="color: inherit;">Newark Airport Car Service (EWR)</a></h3>
                     <p>Edison-based dispatch for Newark Liberty with meet points and flight tracking.</p>
-                    <p><a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Open EWR guide</b></a></p>
+                    <p><a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark airport car service guide</b></a></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">

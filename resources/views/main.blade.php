@@ -52,6 +52,23 @@
             content="rBD862xF-dflR6spqXLbrmc85oGgyhohOZB4l6oBgY8"
         />
 
+        @php
+            $defaultOgImage = \App\Support\PageSeo::absolute(config('business.image'));
+            $defaultOgWidth = (int) config('business.image_width', 160);
+            $defaultOgHeight = (int) config('business.image_height', 113);
+            $yieldedOgImage = trim($__env->yieldContent('og_image'));
+            $ogImageUrl = $yieldedOgImage !== ''
+                ? \App\Support\PageSeo::absolute(parse_url($yieldedOgImage, PHP_URL_PATH) ?: $yieldedOgImage)
+                : $defaultOgImage;
+            $faviconUrl = \App\Support\PageSeo::absolute(config('business.favicon', config('business.logo')));
+            $ogImageExt = strtolower(pathinfo(parse_url($ogImageUrl, PHP_URL_PATH) ?: '', PATHINFO_EXTENSION));
+            $ogImageType = match ($ogImageExt) {
+                'jpg', 'jpeg' => 'image/jpeg',
+                'webp' => 'image/webp',
+                'gif' => 'image/gif',
+                default => 'image/png',
+            };
+        @endphp
         <!-- Open Graph Meta Tags -->
         <meta
             property="og:title"
@@ -61,10 +78,14 @@
             property="og:description"
             content="@yield('meta_description', 'Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe transportation.')"
         />
-        <meta
-            property="og:image"
-            content="@yield('og_image', asset('assets/img/logo/logo.png'))"
-        />
+        <meta property="og:image" content="{{ $ogImageUrl }}" />
+        <meta property="og:image:secure_url" content="{{ $ogImageUrl }}" />
+        <meta property="og:image:type" content="{{ $ogImageType }}" />
+        @if($yieldedOgImage === '')
+        <meta property="og:image:width" content="{{ $defaultOgWidth }}" />
+        <meta property="og:image:height" content="{{ $defaultOgHeight }}" />
+        @endif
+        <meta property="og:image:alt" content="{{ config('business.name', 'ALAR Chauffeur Service') }}" />
         <meta property="og:url" content="{{ url()->current() }}" />
         <meta property="og:type" content="@yield('og_type', 'website')" />
         <meta property="og:site_name" content="Alar Chauffeur Service" />
@@ -73,15 +94,17 @@
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="@yield('meta_title', 'Alar Chauffeur Service | Luxury Transportation')" />
         <meta name="twitter:description" content="@yield('meta_description', 'Premium limousine and luxury chauffeur services. Providing elegant, reliable, and safe transportation.')" />
-        <meta name="twitter:image" content="@yield('og_image', asset('assets/img/logo/logo.png'))" />
+        <meta name="twitter:image" content="{{ $ogImageUrl }}" />
 
         <title>@yield('meta_title', 'Alar Chauffeur Service | Luxury Transportation')</title>
-        <!-- Favicon -->
-        <link
-            rel="icon"
-            type="image/png"
-            href="{{ asset('assets/img/logo/fav-icon.png') }}"
-        />
+        <!-- Favicon / brand icon (Google SERP uses these link tags) -->
+        <link rel="icon" href="{{ $faviconUrl }}" type="image/png" sizes="48x48" />
+        <link rel="icon" href="{{ $faviconUrl }}" type="image/png" sizes="192x192" />
+        <link rel="shortcut icon" href="{{ $faviconUrl }}" type="image/png" />
+        <link rel="apple-touch-icon" href="{{ $faviconUrl }}" sizes="180x180" />
+        <link rel="mask-icon" href="{{ $faviconUrl }}" color="#ad8b24" />
+        <meta name="msapplication-TileImage" content="{{ $faviconUrl }}" />
+        <meta name="msapplication-TileColor" content="#0d1b2a" />
         <link
             rel="stylesheet"
             href="{{ asset('assets/css/bootstrap.min.css') }}"

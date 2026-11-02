@@ -992,6 +992,15 @@ body:has(.ve-hero-float-dock) .ve-whatsapp-float {
     max-width: 580px;
     margin: 0 auto;
 }
+.ve-section-header p a {
+    color: var(--ve-gold);
+    font-weight: 700;
+    text-decoration: none;
+}
+.ve-section-header p a:hover {
+    color: var(--ve-gold);
+    text-decoration: underline;
+}
 
 /* ============================================================
    SERVICES GRID
@@ -5733,6 +5742,18 @@ textarea.ve-form-input {
     margin: 10px 0 0;
     font-size: 14px;
     color: rgba(0,0,0,0.7);
+}
+.ve-booking-faq details p a {
+    color: var(--ve-gold);
+    font-weight: 700;
+    text-decoration: none;
+}
+.ve-booking-faq details p a:hover {
+    color: var(--ve-gold);
+    text-decoration: underline;
+}
+.ve-booking-related a:hover {
+    color: var(--ve-gold);
 }
 
 @media (max-width: 991px) {

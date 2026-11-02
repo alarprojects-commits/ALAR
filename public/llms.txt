@@ -1,26 +1,79 @@
-# llms.txt for alarchauffeurservice.com
-# Public marketing pages may be accessed and summarized with attribution.
+# ALAR Chauffeur Service
 
-Site: https://alarchauffeurservice.com/
-Contact: limo@alarchauffeurservice.com
-Sitemap: https://alarchauffeurservice.com/sitemap.xml
-Sitemap: https://alarchauffeurservice.com/sitemap-main-pages.xml
-Sitemap: https://alarchauffeurservice.com/sitemap-services.xml
-Sitemap: https://alarchauffeurservice.com/sitemap-service-areas.xml
-Sitemap: https://alarchauffeurservice.com/sitemap-airports.xml
-Sitemap: https://alarchauffeurservice.com/sitemap-blogs.xml
-Robots: https://alarchauffeurservice.com/robots.txt
+> ALAR Chauffeur Service is a reserved chauffeur, airport car service, black car, limo, Sprinter, and group transportation company based in Edison, New Jersey. Primary coverage is the Tri-State area (New Jersey, New York, Connecticut, Pennsylvania) and Massachusetts, with additional service in California, Nevada, and Washington. Rates are confirmed before the ride. Flight tracking and meet-and-greet are available on airport transfers.
 
-User-agent: *
-Allow: /
+Public marketing pages may be summarized with attribution to ALAR Chauffeur Service and a link to the source URL. Summarize pages instead of reproducing them in full. Use logos and brand assets only with permission. Honor page-level noindex directives. Fetch large media on demand. Contact: limo@alarchauffeurservice.com. Desk: 10 Fairmount Ave, Edison, NJ 08820.
 
-# Usage guidance
-# Attribute summaries to ALAR Chauffeur Service with a link to the source URL.
-# Do not reproduce full pages verbatim.
-# Do not use logos or brand assets for training or redistribution without permission.
-# Respect page-level noindex directives when present.
+## Main pages
 
-Attribution-Format: "Source: ALAR Chauffeur Service (https://alarchauffeurservice.com/), accessed YYYY-MM-DD."
+- [Home](https://alarchauffeurservice.com/): Airport car service from Edison, NJ for JFK, LGA, and Newark with confirmed rates and flight tracking.
+- [About us](https://alarchauffeurservice.com/about-us): Company story and Edison, NJ team.
+- [Services](https://alarchauffeurservice.com/our-services): Overview of reserved chauffeur and limo services.
+- [Fleet](https://alarchauffeurservice.com/our-fleet): Sedan, SUV, and Sprinter vehicles.
+- [Service areas](https://alarchauffeurservice.com/service-areas): State coverage across the Tri-State area, Massachusetts, California, Nevada, and Washington.
+- [Airports](https://alarchauffeurservice.com/airports): Airport car service guides, led by JFK, LGA, and EWR.
+- [Blog](https://alarchauffeurservice.com/blog): Airport and chauffeur booking guides.
+- [Free quote](https://alarchauffeurservice.com/free-quote): Request a confirmed rate.
+- [Book online](https://alarchauffeurservice.com/book-online): Reserve a ride online.
+- [Contact](https://alarchauffeurservice.com/contact-us): Reach the Edison desk.
+- [Privacy policy](https://alarchauffeurservice.com/privacy-policy): Booking privacy terms.
 
-# Asset guidance
-# Fetch large media on demand instead of bulk-downloading.
+## Services
+
+- [Airport transportation](https://alarchauffeurservice.com/services/airport-transportation): Private New Jersey airport transfers with flight tracking and meet-and-greet.
+- [Corporate transportation](https://alarchauffeurservice.com/services/corporate-transportation): Executive car service for meetings, airports, and roadshows.
+- [Wedding limo](https://alarchauffeurservice.com/services/wedding-limo): Wedding-day limo service in New Jersey.
+- [Prom limo](https://alarchauffeurservice.com/services/prom-limo): Prom limo, stretch, and Sprinter service in New Jersey.
+- [Sporting events](https://alarchauffeurservice.com/services/sporting-events): Game-day car service, including MetLife Stadium.
+- [Group transportation](https://alarchauffeurservice.com/services/group-transportation): Private group travel in New Jersey.
+- [Concert and festival](https://alarchauffeurservice.com/services/concert-festival): Event transportation for concerts and festivals.
+- [Party bus](https://alarchauffeurservice.com/services/party-bus): Party bus rental in New Jersey.
+- [Cruise port transfers](https://alarchauffeurservice.com/services/cruise-port-transfers): Cruise terminal transfers and packages.
+- [Chauffeured service](https://alarchauffeurservice.com/services/chauffeured-service): Reserved private black car in New Jersey.
+- [Hourly limo](https://alarchauffeurservice.com/services/hourly-limo): Hourly chauffeur service with a flexible schedule.
+
+## Service areas
+
+- [New Jersey](https://alarchauffeurservice.com/service-areas/new-jersey): Edison, Jersey City, Short Hills, and Central Jersey, including JFK, LGA, and EWR.
+- [New York](https://alarchauffeurservice.com/service-areas/new-york): Manhattan and borough black car to JFK, LaGuardia, and Newark.
+- [Connecticut](https://alarchauffeurservice.com/service-areas/connecticut): Greenwich to Hartford, including Bradley (BDL) and NYC airports.
+- [Pennsylvania](https://alarchauffeurservice.com/service-areas/pennsylvania): Philadelphia and PHL, with links to Newark, JFK, and LGA.
+- [Massachusetts](https://alarchauffeurservice.com/service-areas/massachusetts): Greater Boston and Boston Logan (BOS).
+- [California](https://alarchauffeurservice.com/service-areas/california): San Francisco Bay Area and Los Angeles, including LAX.
+- [Nevada](https://alarchauffeurservice.com/service-areas/nevada): Las Vegas Strip and Harry Reid (LAS).
+- [Washington](https://alarchauffeurservice.com/service-areas/washington): Seattle, Bellevue, and Sea-Tac (SEA).
+
+## Airports
+
+- [JFK](https://alarchauffeurservice.com/airports/jfk): John F. Kennedy airport car service for New Jersey and New York.
+- [LGA](https://alarchauffeurservice.com/airports/lga): LaGuardia airport transfers.
+- [EWR](https://alarchauffeurservice.com/airports/ewr): Newark Liberty airport car service.
+- [HPN](https://alarchauffeurservice.com/airports/hpn): Westchester County Airport, White Plains.
+- [TEB](https://alarchauffeurservice.com/airports/teb): Teterboro private-aviation FBO pickup.
+- [PHL](https://alarchauffeurservice.com/airports/phl): Philadelphia International Airport.
+- [BDL](https://alarchauffeurservice.com/airports/bdl): Bradley International Airport, Hartford.
+- [BOS](https://alarchauffeurservice.com/airports/bos): Boston Logan International Airport.
+- [LAX](https://alarchauffeurservice.com/airports/lax): Los Angeles International Airport.
+- [LAS](https://alarchauffeurservice.com/airports/las): Harry Reid International Airport, Las Vegas.
+- [SEA](https://alarchauffeurservice.com/airports/sea): Seattle-Tacoma International Airport.
+
+## Guides
+
+- [New York car service for JFK, LGA, and EWR](https://alarchauffeurservice.com/blog/new-york-car-service-jfk-lga-ewr-tri-state): Tri-State airport car service overview.
+- [Long-distance chauffeur to PA, VA, and DC](https://alarchauffeurservice.com/blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc): NYC and NJ long-distance chauffeur trips.
+- [Car service to JFK from Manhattan](https://alarchauffeurservice.com/blog/car-service-to-jfk-from-manhattan): Manhattan to JFK booking guide.
+- [Newark Airport car service](https://alarchauffeurservice.com/blog/newark-airport-car-service-ewr): EWR booking guide.
+- [Black car service NYC](https://alarchauffeurservice.com/blog/black-car-service-nyc-vs-uber-taxi): How reserved black car service works for NYC airports.
+- [Group transportation and Sprinters](https://alarchauffeurservice.com/blog/group-transportation-nj-sprinters-companies-families): Sprinter vans for companies and families in New Jersey.
+- [Car service from NJ to JFK](https://alarchauffeurservice.com/blog/car-service-nj-to-jfk-edison-jersey-city-hoboken): Timing from Edison, Jersey City, and Hoboken.
+- [Hire an executive chauffeur in NJ](https://alarchauffeurservice.com/blog/hire-executive-chauffeur-nj-rates-vehicles-booking): Rates, vehicles, and how to book.
+
+## Optional
+
+- [XML sitemap](https://alarchauffeurservice.com/sitemap.xml): Index of all public sitemaps.
+- [Main pages sitemap](https://alarchauffeurservice.com/sitemap-main-pages.xml): Core marketing pages.
+- [Services sitemap](https://alarchauffeurservice.com/sitemap-services.xml): Service pages.
+- [Service areas sitemap](https://alarchauffeurservice.com/sitemap-service-areas.xml): State coverage pages.
+- [Airports sitemap](https://alarchauffeurservice.com/sitemap-airports.xml): Airport pages.
+- [Blog sitemap](https://alarchauffeurservice.com/sitemap-blogs.xml): Guide articles.
+- [Robots.txt](https://alarchauffeurservice.com/robots.txt): Crawler rules for the public site.

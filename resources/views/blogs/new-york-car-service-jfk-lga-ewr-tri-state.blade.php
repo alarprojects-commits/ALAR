@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'New York Car Service for JFK, LGA, EWR & Tri-State')
-@section('meta_description', 'Guide to New York car service across JFK, LaGuardia, Newark, and Westchester. How Tri-State travelers book confirmed-rate NYC airport limo with Alar.')
+@section('meta_title', 'New York Car Service for JFK, LGA & EWR')
+@section('meta_description', 'Book New York car service to JFK, LaGuardia, Newark, and Westchester. Confirmed-rate Tri-State airport transfers with Alar chauffeurs.')
 @section('og_image', asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp'))
 @section('og_type', 'article')
 

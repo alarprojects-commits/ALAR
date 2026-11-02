@@ -73,6 +73,10 @@
                             <h3>Sprinters and group vehicles</h3>
                             <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
+                            <h2>Limo service to JFK from <span>New Jersey</span></h2>
+                            <p>Car service NJ to JFK and limo service from JFK back to Hoboken, Jersey City, Edison, and Central Jersey are among our most booked Tri-State corridors. Share the terminal and flight number so meet-and-greet timing stays accurate after international arrivals.</p>
+                            <p>Manhattan guests can also read <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" style="color: var(--ve-gold);"><b>car service to JFK from Manhattan</b></a>; NJ county coverage sits on our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey</b></a> and <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York</b></a> service-area pages.</p>
+
                             <h2>How to book your <span>JFK</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
                             <div class="ve-amenities-list">
@@ -123,6 +127,18 @@
                                         <div id="jfkFaq3" class="collapse" data-parent="#jfkFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
                                                 <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ve-faq-card">
+                                        <div class="card-header ve-faq-card-header">
+                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3" type="button" data-toggle="collapse" data-target="#jfkFaq4">
+                                                <h3 class="m-0" style="font-size: 1.2rem; color: inherit; font-weight: 700;">Do you offer limo service from JFK to New Jersey?</h3>
+                                            </button>
+                                        </div>
+                                        <div id="jfkFaq4" class="collapse" data-parent="#jfkFaq">
+                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                                                <p>Yes. Limo service from JFK and car service JFK to NJ are core routes. Confirm the drop-off city or hotel so we price tunnels, tolls, and vehicle size correctly.</p>
                                             </div>
                                         </div>
                                     </div>

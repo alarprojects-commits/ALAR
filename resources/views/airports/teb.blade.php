@@ -71,6 +71,10 @@
                             <h3>Sprinters and group vehicles</h3>
                             <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
+                            <h2>Teterboro FBO pickup &amp; <span>executive transfers</span></h2>
+                            <p>Car service Teterboro Airport (TEB) is built around FBO coordination-share the FBO name, tail number when available, and passenger count so the chauffeur stages at the correct ramp entrance. Executive travelers often combine TEB with <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation</b></a> into Manhattan or Bergen County hotels.</p>
+                            <p>For commercial airline days, compare <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark EWR</b></a> just minutes away.</p>
+
                             <h2>How to book your <span>TEB</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
                             <div class="ve-amenities-list">

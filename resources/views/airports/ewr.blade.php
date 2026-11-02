@@ -73,6 +73,10 @@
                             <h3>Sprinters and group vehicles</h3>
                             <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
+                            <h2>Professional chauffeur for <span>EWR</span> and Newark NJ</h2>
+                            <p>Travelers searching for a professional chauffeur EWR or chauffeur services Newark NJ get a reserved black car from our Edison desk-not a curb queue. Corporate itineraries often pair this guide with <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a>; private solo trips fit <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service NJ</b></a>.</p>
+                            <p>Flight tracking limo-style service for EWR means the flight number stays on the reservation so dispatch adjusts for delays before the chauffeur stages at Terminal A, B, or C.</p>
+
                             <h2>How to book your <span>EWR</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
                             <div class="ve-amenities-list">
@@ -83,6 +87,9 @@
                                     <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
                                 </ul>
                             </div>
+
+                            <h3>Related Newark Airport reading</h3>
+                            <p>For a longer booking walkthrough, read our blog on <a href="{{ route('blog.newark-airport-car-service-ewr') }}" style="color: var(--ve-gold);"><b>Newark Airport car service EWR</b></a>. County coverage lives on the <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey service area</b></a> page.</p>
 
                             @include('components.related-airport-guides', ['current' => 'ewr'])
 
@@ -123,6 +130,18 @@
                                         <div id="ewrFaq3" class="collapse" data-parent="#ewrFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
                                                 <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ve-faq-card">
+                                        <div class="card-header ve-faq-card-header">
+                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3" type="button" data-toggle="collapse" data-target="#ewrFaq4">
+                                                <h3 class="m-0" style="font-size: 1.2rem; color: inherit; font-weight: 700;">Do you offer Newark Airport car service for groups?</h3>
+                                            </button>
+                                        </div>
+                                        <div id="ewrFaq4" class="collapse" data-parent="#ewrFaq">
+                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                                                <p>Yes. Families and teams can book <a href="{{ route('services.group-transportation') }}">group transportation NJ</a> with Sprinters or larger vehicles for EWR arrivals and departures.</p>
                                             </div>
                                         </div>
                                     </div>

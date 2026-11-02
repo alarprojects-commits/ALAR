@@ -25,6 +25,7 @@
 - [Blog Main Page Rules](./.agent/blogs-main.md)
 - [Blog Keyword Bank Rules](./.agent/blog-keywords.md)
 - [Blog Keyword Usage Ledger](./.agent/blog-keyword-usage.md)
+- [GSC Cluster Tracking](./.agent/gsc-cluster-tracking.md)
 
 ## Required Load Order
 1. `/.agent/agents.md`
@@ -37,6 +38,7 @@
 8. `/.agent/blogs-main.md`
 9. `/.agent/blog-keywords.md`
 10. `/.agent/blog-keyword-usage.md`
+11. `/.agent/gsc-cluster-tracking.md`
 
 ## Fallback Policy
 - If a modular file is missing, keep processing with remaining files

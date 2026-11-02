@@ -73,6 +73,10 @@
                             <h3>Sprinters and group vehicles</h3>
                             <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
+                            <h2>Car service NJ to <span>LaGuardia</span></h2>
+                            <p>Car service NJ to LGA is a frequent booking from Hudson, Bergen, Essex, and Middlesex Counties into Queens. We time the pickup for bridge and tunnel traffic so you are not guessing curb waits at a rebuilt LaGuardia campus.</p>
+                            <p>Compare nearby hubs on our <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a> and <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a> guides, or start from the full <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a> service page.</p>
+
                             <h2>How to book your <span>LGA</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
                             <div class="ve-amenities-list">

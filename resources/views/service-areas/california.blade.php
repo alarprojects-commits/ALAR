@@ -223,6 +223,10 @@
                             </ul>
                         </div>
 
+                        <h2>Bay Area &amp; San Francisco <span>chauffeur coverage</span></h2>
+                        <p>This California page is the primary URL for chauffeur service San Francisco, Bay Area chauffeur service, and hourly chauffeur service San Francisco. We cover hotel transfers, corporate days, and SFO-area airport connections with a reserved black car and confirmed rates-not rideshare curb pricing.</p>
+                        <p>Los Angeles guests should book through the dedicated <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX airport car service</b></a> guide for flat-rate terminal pickups, then return here for statewide Bay Area and city-to-city planning.</p>
+
                         <h2>What Makes Our Airport Service Different</h2>
                         <div class="ve-amenities-list">
                             <ul>

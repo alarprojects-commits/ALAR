@@ -184,26 +184,29 @@
                             </div>
                         </div>
 
-                        <p class="mt-20">Many travelers searching online are looking for:</p>
+                        <h2>Private Group Transportation NJ from <span>Edison</span></h2>
+                        <p>Alar Chauffeur Service dispatches private group transportation NJ from our Edison desk across the Tri-State. One reserved Sprinter or coach keeps your party on a single confirmed-rate itinerary-no split rideshares, no curb lottery.</p>
+                        <p>Organizers who need group travel transportation NJ for corporate shuttles, weddings, or airport parties get a dedicated chauffeur, luggage help, and a clear pickup plan before departure day.</p>
+
+                        <h3>What private group travel includes</h3>
                         <div class="ve-amenities-list mt-30">
                             <div class="row">
                                 <div class="col-md-6">
                                     <ul>
-                                        <li><i class="fa fa-check"></i> group transportation near me</li>
-                                        <li><i class="fa fa-check"></i> private group travel service</li>
-                                        <li><i class="fa fa-check"></i> luxury group transportation</li>
+                                        <li><i class="fa fa-check"></i> Confirmed rate before the chauffeur is dispatched</li>
+                                        <li><i class="fa fa-check"></i> Sprinter and larger group vehicles from <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a></li>
+                                        <li><i class="fa fa-check"></i> Door-to-door pickups across Central and North Jersey</li>
                                     </ul>
                                 </div>
                                 <div class="col-md-6">
                                     <ul>
-                                        <li><i class="fa fa-check"></i> executive group transportation</li>
-                                        <li><i class="fa fa-check"></i> group chauffeur service</li>
-                                        <li><i class="fa fa-check"></i> corporate transportation solutions</li>
+                                        <li><i class="fa fa-check"></i> Airport group meet points at EWR, JFK, and LGA</li>
+                                        <li><i class="fa fa-check"></i> Corporate shuttle and event load-in timing</li>
+                                        <li><i class="fa fa-check"></i> Easy online booking via <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <p class="mt-20">Our services are designed to meet these transportation needs professionally and efficiently.</p>
 
                         <div class="ve-detail-extra-content mt-50">
                             <div class="row align-items-center">
@@ -395,25 +398,26 @@
                                 <p>Comfort is essential when transporting multiple passengers.</p>
 
                                 <h3>Our Premium Transportation Fleet</h3>
-                                <p>Our <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a> includes:</p>
+                                <p>As a New Jersey group transportation company, we match cabin size to headcount and luggage. Browse <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a> for:</p>
                                 <div class="ve-amenities-list mt-30">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> Luxury sedans</li>
-                                                <li><i class="fa fa-check"></i> Executive SUVs</li>
-                                                <li><i class="fa fa-check"></i> Premium black cars</li>
+                                                <li><i class="fa fa-check"></i> Luxury sedans for small executive parties</li>
+                                                <li><i class="fa fa-check"></i> Executive SUVs for luggage-heavy trips</li>
+                                                <li><i class="fa fa-check"></i> Mercedes Sprinters for mid-size groups</li>
                                             </ul>
                                         </div>
                                         <div class="col-md-6">
                                             <ul>
-                                                <li><i class="fa fa-check"></i> Business transportation vehicles</li>
-                                                <li><i class="fa fa-check"></i> Airport transfer vehicles</li>
+                                                <li><i class="fa fa-check"></i> Larger coaches for events and stadium days</li>
+                                                <li><i class="fa fa-check"></i> Airport-ready vehicles with room for bags</li>
+                                                <li><i class="fa fa-check"></i> Professional presentation for corporate guests</li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                                <p class="mt-20">Every vehicle is professionally maintained to ensure safety, reliability, cleanliness, and comfort throughout your journey.</p>
+                                <p class="mt-20">Every vehicle is professionally maintained so group travel transportation NJ stays safe, clean, and on schedule.</p>
 
                                 <h3>What Clients Appreciate About Our Fleet</h3>
                                 <div class="ve-amenities-list mt-30">
@@ -519,7 +523,23 @@
                                         <div id="groupFaqFour" class="collapse"
                                             aria-labelledby="groupFaqHeadingFour" data-parent="#groupFaqAccordion">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
-                                                We serve major locations throughout New Jersey and New York, including Jersey City, Newark, Bergen County, Manhattan, Brooklyn, Queens, and surrounding areas.
+                                                We serve major locations throughout New Jersey and New York, including Jersey City, Newark, Bergen County, Manhattan, Brooklyn, Queens, and surrounding areas. See our <a href="{{ route('service-area.new-jersey') }}">New Jersey service area</a> guide for county coverage.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card ve-faq-card">
+                                        <div class="card-header ve-faq-card-header" id="groupFaqHeadingFive">
+                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3"
+                                                type="button" data-toggle="collapse" data-target="#groupFaqFive"
+                                                aria-expanded="false" aria-controls="groupFaqFive">
+                                                Do you offer private group transportation for airport pickups?
+                                            </button>
+                                        </div>
+                                        <div id="groupFaqFive" class="collapse"
+                                            aria-labelledby="groupFaqHeadingFive" data-parent="#groupFaqAccordion">
+                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                                                Yes. Private group transportation NJ to and from <a href="{{ route('airports.ewr') }}">EWR</a>, <a href="{{ route('airports.jfk') }}">JFK</a>, and <a href="{{ route('airports.lga') }}">LGA</a> is a core booking. Share passenger count, flight details, and luggage so we assign the right Sprinter or coach.
                                             </div>
                                         </div>
                                     </div>

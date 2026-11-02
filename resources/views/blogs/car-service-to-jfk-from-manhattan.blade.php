@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Car Service to JFK from Manhattan - Fixed Rate Guide')
-@section('meta_description', 'How to book car service to JFK from Manhattan with a fixed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.')
+@section('meta_title', 'Car Service to JFK from Manhattan')
+@section('meta_description', 'Book car service to JFK from Manhattan with a confirmed rate, flight tracking, and meet and greet from Midtown, Downtown, and the Upper East Side.')
 @section('og_image', asset('assets/img/blogs/car-service-to-jfk-from-manhattan.webp'))
 @section('og_type', 'article')
 
@@ -33,7 +33,7 @@
       "description": "Guide to booking car service to JFK from Manhattan, Midtown, and Downtown with fixed rates and flight tracking.",
       "image": "https://alarchauffeurservice.com/assets/img/blogs/car-service-to-jfk-from-manhattan.webp",
       "datePublished": "2026-09-26T00:00:00-04:00",
-      "dateModified": "2026-09-26T00:00:00-04:00",
+      "dateModified": "2026-11-03T00:00:00-04:00",
       "author": { "@@type": "Organization", "name": "ALAR Chauffeur Service", "url": "https://alarchauffeurservice.com/" },
       "publisher": { "@@type": "Organization", "name": "ALAR Chauffeur Service", "url": "https://alarchauffeurservice.com/" },
       "keywords": [
@@ -111,13 +111,13 @@
                                 <li><i class="fa fa-check"></i> Brooklyn and Queens connections when guests stay outside Manhattan</li>
                             </ul>
                         </div>
-                        <p>Need coverage beyond Manhattan? See our full <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> page for borough and Tri-State options.</p>
+                        <p>Need coverage beyond Manhattan? See our full <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York car service</b></a> page, or start from the primary <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> guide for NJ and NYC corridors.</p>
 
                         <h2>JFK Arrival: <span>Car Service From JFK to Manhattan</span></h2>
-                        <p>The reverse search is just as common: <strong>car service from JFK to Manhattan</strong>. On arrivals, we track your flight, adjust for early or delayed landings, and meet you for a private ride back to your hotel or home-ideal after long international flights when you do not want to negotiate taxi lines.</p>
+                        <p>The reverse search is just as common: <strong>car service from JFK to Manhattan</strong> and limo service from JFK. On arrivals, we track your flight, adjust for early or delayed landings, and meet you for a private ride back to your hotel or home-ideal after long international flights when you do not want to negotiate taxi lines.</p>
 
                         <h2>Book Your <span>JFK Car Service</span> Today</h2>
-                        <p>Ready for a calm airport morning? <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book car service to JFK from Manhattan online</b></a> or call Alar Chauffeur Service. Share your flight number, terminal if known, and passenger count-we handle the rest.</p>
+                        <p>Ready for a calm airport morning? <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book car service to JFK from Manhattan online</b></a> or call Alar Chauffeur Service. Share your flight number, terminal if known, and passenger count-we handle the rest. NJ guests should read <a href="{{ route('blog.car-service-nj-to-jfk-edison-jersey-city-hoboken') }}" style="color: var(--ve-gold);"><b>car service NJ to JFK timing</b></a> or the <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK transfer page</b></a>.</p>
                     </div>
                 </div>
             </div>

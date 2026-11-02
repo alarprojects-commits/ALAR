@@ -181,13 +181,13 @@
                             <p>Traveling to or from the airport? Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport limo service in New Jersey</b></a> ensures timely pickups, comfortable rides, and professional Tri-State service every time.</p>
 
                             <h3>Newark Airport Limo Service EWR</h3>
-                            <p>Whether you are a corporate executive or traveling with family, we provide limo service to Newark Liberty International Airport (EWR) from Jersey City, Bergen County, Edison, Princeton, and into Westchester, Nassau, and Suffolk. Experienced chauffeurs know the roads and routes for on-time arrivals.</p>
+                            <p>Whether you are a corporate executive or traveling with family, we provide limo service to Newark Liberty International Airport (EWR) from Jersey City, Bergen County, Edison, Princeton, and into Westchester, Nassau, and Suffolk. Read the full <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Airport car service</b></a> guide for terminals, flight tracking, and booking steps.</p>
 
                             <h3>JFK Airport Limo Service from New Jersey</h3>
-                            <p>Need JFK Airport Limo Service NYC from New Jersey? We offer door-to-door transfers from NJ counties to John F. Kennedy International Airport (JFK) with meet-and-greet and luggage assistance.</p>
+                            <p>Need car service NJ to JFK? We offer door-to-door transfers from NJ counties to John F. Kennedy International Airport with meet-and-greet and luggage assistance. See the dedicated <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK airport car service</b></a> page for corridors and FAQs.</p>
 
                             <h3>LGA Limo Service LaGuardia Airport</h3>
-                            <p>Our LGA Limo Service and limousine service LaGuardia Airport connect New Jersey travelers to LaGuardia Airport (LGA) for business and leisure flights without taxi-line stress.</p>
+                            <p>Our LaGuardia transfers connect New Jersey travelers to LGA for business and leisure flights without taxi-line stress. Open the <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia car service</b></a> guide for meet points and timing tips.</p>
 
                             <h3>Westchester County Airport (HPN)</h3>
                             <p>Private car service between New Jersey and Westchester County Airport (HPN) for convenient regional and private aviation connections.</p>

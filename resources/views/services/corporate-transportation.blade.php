@@ -303,39 +303,27 @@
                                 </div>
                             </div>
 
-                            <p class="mt-20">
-                                This service is ideal for professionals
-                                searching for:
+                            <h2 class="mt-40">Corporate Chauffeur Services in <span>Newark NJ</span></h2>
+                            <p>
+                                Companies booking corporate chauffeur services Newark NJ use Alar for airport days at
+                                <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold)"><b>Newark Liberty (EWR)</b></a>,
+                                downtown meetings, and hotel transfers across Essex, Hudson, and Middlesex Counties.
+                                Professional executive transport NJ stays on a confirmed business rate-ideal for roadshows and client hosting from our Edison desk.
                             </p>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-check"></i> luxury
-                                            corporate transportation
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-check"></i> private
-                                            business travel service
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-check"></i>
-                                            <a href="{{
-                                                    route(
-                                                        'service-area.new-jersey'
-                                                    )
-                                                }}" style="color: var(--ve-gold)"><b>executive car service in
-                                                    New Jersey</b></a>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-check"></i> business
-                                            chauffeur service near me
-                                        </li>
-                                    </ul>
+                            <div class="ve-amenities-list mt-30">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><i class="fa fa-check"></i> Corporate transportation NJ for meetings and airports</li>
+                                            <li><i class="fa fa-check"></i> Links to <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold)"><b>New Jersey coverage</b></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><i class="fa fa-check"></i> Pair with <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold)"><b>executive chauffeur service NJ</b></a></li>
+                                            <li><i class="fa fa-check"></i> Groups: <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold)"><b>group transportation NJ</b></a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

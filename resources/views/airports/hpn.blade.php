@@ -73,6 +73,10 @@
                             <h3>Sprinters and group vehicles</h3>
                             <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
 
+                            <h2>Westchester &amp; White Plains <span>airport car service</span></h2>
+                            <p>HPN car service covers Westchester County Airport for White Plains, Scarsdale, Greenwich connections, and New Jersey guests who prefer HPN over JFK or LGA. We also run car service Westchester to JFK when your itinerary needs the larger international hub.</p>
+                            <p>See <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York service areas</b></a> for borough and Westchester coverage, or book through <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport transportation</b></a>.</p>
+
                             <h2>How to book your <span>HPN</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
                             <div class="ve-amenities-list">

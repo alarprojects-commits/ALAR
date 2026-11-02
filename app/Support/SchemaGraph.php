@@ -10,7 +10,20 @@ class SchemaGraph
         $base = rtrim($biz['url'], '/');
         $pageUrl = $pageUrl ?: url()->current();
         $logo = PageSeo::absolute($biz['logo']);
-        $image = $pageImage ? PageSeo::absolute(parse_url($pageImage, PHP_URL_PATH) ?: $pageImage) : PageSeo::absolute($biz['image']);
+        $logoWidth = (int) ($biz['logo_width'] ?? 200);
+        $logoHeight = (int) ($biz['logo_height'] ?? 200);
+        $brandImage = PageSeo::absolute($biz['image']);
+        $image = $pageImage ? PageSeo::absolute(parse_url($pageImage, PHP_URL_PATH) ?: $pageImage) : $brandImage;
+
+        $logoObject = [
+            '@type' => 'ImageObject',
+            '@id' => $base . '/#logo',
+            'url' => $logo,
+            'contentUrl' => $logo,
+            'width' => $logoWidth,
+            'height' => $logoHeight,
+            'caption' => $biz['name'],
+        ];
 
         $sameAs = array_values(array_unique(array_filter(array_merge(
             $biz['same_as'] ?? [],
@@ -22,12 +35,8 @@ class SchemaGraph
             '@id' => $base . '/#organization',
             'name' => $biz['name'],
             'url' => $base,
-            'logo' => [
-                '@type' => 'ImageObject',
-                'url' => $logo,
-                'contentUrl' => $logo,
-            ],
-            'image' => $logo,
+            'logo' => $logoObject,
+            'image' => [$logo, $brandImage],
             'email' => $biz['email'],
             'telephone' => $biz['telephone'],
             'address' => array_merge(['@type' => 'PostalAddress'], $biz['address']),
@@ -43,13 +52,7 @@ class SchemaGraph
             '@id' => $base . '/#organization',
             'name' => $biz['name'],
             'url' => $base,
-            'logo' => [
-                '@type' => 'ImageObject',
-                'url' => $logo,
-                'contentUrl' => $logo,
-                'width' => 600,
-                'height' => 60,
-            ],
+            'logo' => $logoObject,
         ];
 
         $localBusiness = [
@@ -57,8 +60,8 @@ class SchemaGraph
             '@id' => $base . '/#localbusiness',
             'name' => $biz['name'],
             'url' => $base,
-            'image' => $logo,
-            'logo' => $logo,
+            'image' => [$logo, $brandImage],
+            'logo' => $logoObject,
             'email' => $biz['email'],
             'telephone' => $biz['telephone'],
             'priceRange' => $biz['price_range'],

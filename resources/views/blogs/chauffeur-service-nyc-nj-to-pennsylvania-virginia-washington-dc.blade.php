@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Long-Distance Chauffeur: NYC & NJ to PA, VA & DC Now')
-@section('meta_description', 'Book long-distance chauffeur service from NYC and New Jersey to Pennsylvania, Virginia, and Washington DC. Private black car with a confirmed door-to-door rate.')
+@section('meta_title', 'Long Distance Chauffeur from NYC & NJ to DC')
+@section('meta_description', 'Book long distance chauffeur service from NYC and New Jersey to Pennsylvania, Virginia, and Washington DC. Private black car with a confirmed door to door rate.')
 @section('og_image', asset('assets/img/blogs/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc.webp'))
 @section('og_type', 'article')
 

@@ -1,6 +1,6 @@
 @extends('main')
-@section('meta_title', 'Airport Ride Hacks: JFK, EWR & NYC Tips | Alar Blog')
-@section('meta_description', 'Black car vs Uber? How to get to JFK from Manhattan? Newark pickup tips? Straight answers for NJ & NYC airport travelers. Read before you book.')
+@section('meta_title', 'Airport Car Service Blog for JFK, EWR & NYC')
+@section('meta_description', 'Read Alar tips on JFK, Newark EWR, and NYC airport car service. Practical Tri-State chauffeur articles before you book your next reserved ride.')
 
 @push('schema')
 <script type="application/ld+json">
@@ -134,8 +134,53 @@
             </div>
 
             <div class="row">
-                <!-- Car Service to JFK from Manhattan -->
+                <!-- Group Transportation NJ Sprinters -->
                 <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="50ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/group-transportation-nj-sprinters-companies-families.jpg') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Group Transportation NJ: Booking Sprinters</h5>
+                            <p>How companies and families book private group transportation NJ with Sprinters and confirmed rates.</p>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.group-transportation-nj-sprinters-companies-families') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Service NJ to JFK -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="75ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/car-service-nj-to-jfk-edison-jersey-city-hoboken.jpg') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Car Service NJ to JFK from Edison &amp; Hoboken</h5>
+                            <p>Door to door buffers from Edison, Jersey City, and Hoboken for reserved JFK transfers.</p>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.car-service-nj-to-jfk-edison-jersey-city-hoboken') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hire Executive Chauffeur NJ -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="100ms">
+                    <div class="ve-insight-card">
+                        <div class="ve-insight-img bg-img"
+                            style="background-image:url({{ asset('assets/img/blogs/hire-executive-chauffeur-nj-rates-vehicles-booking.jpg') }});">
+                        </div>
+                        <div class="ve-insight-body">
+                            <h5>Hire an Executive Chauffeur in NJ</h5>
+                            <p>Rates, vehicles, and when to book premium chauffeur service from Edison, NJ.</p>
+                            @include('components.cta-buttons', ['variant' => 'compact'])
+                            <p class="mt-3 mb-0"><a href="{{ route('blog.hire-executive-chauffeur-nj-rates-vehicles-booking') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car Service to JFK from Manhattan -->
+                <div class="col-12 col-md-6 col-lg-4 mb-4 wow fadeInUp" data-wow-delay="125ms">
                     <div class="ve-insight-card">
                         <div class="ve-insight-img bg-img"
                             style="background-image:url({{ asset('assets/img/blogs/car-service-to-jfk-from-manhattan.webp') }});">
@@ -171,7 +216,7 @@
                             style="background-image:url({{ asset('assets/img/blogs/black-car-service-nyc-vs-uber-taxi.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>Black Car Service NYC vs Uber & Taxi</h5>
+                            <h5>Black Car Service NYC vs Uber for Airports</h5>
                             <p>When a reserved chauffeur beats surge pricing-airport and business travel comparison.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.black-car-service-nyc-vs-uber-taxi') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
@@ -186,7 +231,7 @@
                             style="background-image:url({{ asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>New York Car Service for JFK, LGA, EWR & the Tri-State</h5>
+                            <h5>New York Car Service for JFK, LGA &amp; EWR</h5>
                             <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester (HPN).</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>
@@ -201,7 +246,7 @@
                             style="background-image:url({{ asset('assets/img/blogs/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>Chauffeur Service to PA, Virginia & Washington DC</h5>
+                            <h5>Long Distance Chauffeur from NYC &amp; NJ to DC</h5>
                             <p>Long-distance private chauffeur travel from New York and New Jersey to Pennsylvania, Virginia, and Washington, D.C.</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>

@@ -22,7 +22,7 @@ class SitemapController extends Controller
                 'services.concert-festival',
                 'services.party-bus',
                 'services.cruise-port-transfers',
-                'services.chauffeur-service',
+                'services.chauffeur-service', // view path; live route name is services.chauffeured-service
                 'services.hourly-limo',
             ])],
             ['loc' => route('sitemap.service-areas'), 'lastmod' => $this->latestLastmod([
@@ -56,6 +56,9 @@ class SitemapController extends Controller
                 'blogs.car-service-to-jfk-from-manhattan',
                 'blogs.newark-airport-car-service-ewr',
                 'blogs.black-car-service-nyc-vs-uber-taxi',
+                'blogs.group-transportation-nj-sprinters-companies-families',
+                'blogs.car-service-nj-to-jfk-edison-jersey-city-hoboken',
+                'blogs.hire-executive-chauffeur-nj-rates-vehicles-booking',
             ])],
         ];
 
@@ -147,6 +150,9 @@ class SitemapController extends Controller
             $this->page('blog.car-service-to-jfk-from-manhattan', 'blogs.car-service-to-jfk-from-manhattan', 'monthly', '0.7'),
             $this->page('blog.newark-airport-car-service-ewr', 'blogs.newark-airport-car-service-ewr', 'monthly', '0.7'),
             $this->page('blog.black-car-service-nyc-vs-uber-taxi', 'blogs.black-car-service-nyc-vs-uber-taxi', 'monthly', '0.7'),
+            $this->page('blog.group-transportation-nj-sprinters-companies-families', 'blogs.group-transportation-nj-sprinters-companies-families', 'monthly', '0.7'),
+            $this->page('blog.car-service-nj-to-jfk-edison-jersey-city-hoboken', 'blogs.car-service-nj-to-jfk-edison-jersey-city-hoboken', 'monthly', '0.7'),
+            $this->page('blog.hire-executive-chauffeur-nj-rates-vehicles-booking', 'blogs.hire-executive-chauffeur-nj-rates-vehicles-booking', 'monthly', '0.7'),
         ]);
     }
 

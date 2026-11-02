@@ -38,27 +38,29 @@
                         <div class="ve-area-description">
                             <h2>Airport pickup and meet points at <span>LAX</span></h2>
                             <h3>Terminal details</h3>
-                            <p>LAX is spread out-airline and terminal prevent a wrong-side meet.</p>
+                            <p>LAX is spread out-airline and terminal prevent a wrong-side meet. Share whether you need a terminal curb handoff or the active private-hire / LAX-it style meet point for your booking date.</p>
                             <h3>Flight tracking</h3>
-                            <p>We follow live arrivals for international and domestic flights when the number is on the reservation.</p>
-                            <h3>California doors</h3>
-                            <p>Common for Westside, Downtown, and South Bay addresses-confirm the exact door for pricing.</p>
+                            <p>We follow live arrivals for international and domestic flights when the number is on the reservation so the chauffeur is not sitting through an unnecessary wait.</p>
+                            <h3>Flat-rate Los Angeles airport car service</h3>
+                            <p>Car service to LAX and private car service at LAX are quoted as a confirmed flat rate before dispatch-no curb surge. Tell us hotel or door address, passenger count, and bags so the rate matches the real corridor.</p>
 
                             <h2>Where we drive from <span>LAX</span></h2>
-                            <p>We regularly run transfers between LAX and the states below. Open a state guide for counties and related airports.</p>
+                            <p>We regularly run Los Angeles airport car service between LAX and California destinations. Open the statewide guide for Bay Area coverage as well:</p>
                             <div class="ve-amenities-list">
                                 <ul>
-                            <li><i class="fa fa-check"></i> <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California car service</b></a></li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California / Bay Area chauffeur service</b></a></li>
+                            <li><i class="fa fa-check"></i> <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport transportation overview</b></a></li>
                                 </ul>
                             </div>
 
                             <h3>Common destinations and corridors</h3>
                             <div class="ve-amenities-list">
                                 <ul>
-                                    <li><i class="fa fa-check"></i> Los Angeles Westside and Downtown</li>
-                                    <li><i class="fa fa-check"></i> South Bay and nearby cities</li>
-                                    <li><i class="fa fa-check"></i> Corporate and studio itineraries</li>
-                                    <li><i class="fa fa-check"></i> Hotel and event venues</li>
+                                    <li><i class="fa fa-check"></i> Westside hotels (Santa Monica, Beverly Hills, West Hollywood)</li>
+                                    <li><i class="fa fa-check"></i> Downtown LA and LA Live</li>
+                                    <li><i class="fa fa-check"></i> South Bay (El Segundo, Manhattan Beach, Long Beach)</li>
+                                    <li><i class="fa fa-check"></i> Corporate offices, studios, and conference venues</li>
+                                    <li><i class="fa fa-check"></i> Hotel drop-offs and multi-stop hourly days</li>
                                 </ul>
                             </div>
 
@@ -66,9 +68,9 @@
                             <p>Choose the cabin that matches headcount and luggage. See <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a> for sedans, SUVs, Sprinters, and larger group vehicles. Corporate travelers often book <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation</b></a>; flexible days fit <a href="{{ route('services.hourly-limo') }}" style="color: var(--ve-gold);"><b>hourly limo</b></a> service.</p>
 
                             <h3>Sedans and executive SUVs</h3>
-                            <p>Best for one to three passengers with standard luggage on most LAX runs.</p>
+                            <p>Best for one to three passengers with standard luggage on most LAX runs-including flat rate car service LAX for hotel transfers.</p>
                             <h3>Sprinters and group vehicles</h3>
-                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals.</p>
+                            <p>Need room for a larger party? Book <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation</b></a> or see Sprinter options on <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a>-especially for international arrivals with heavy bags.</p>
 
                             <h2>How to book your <span>LAX</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>
@@ -77,7 +79,7 @@
                                     <li><i class="fa fa-check"></i> Flight tracking when the flight number is on the reservation</li>
                                     <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
                                     <li><i class="fa fa-check"></i> Professional chauffeurs-not street-hail taxi service</li>
-                                    <li><i class="fa fa-check"></i> 24/7 dispatch desk in Edison, New Jersey</li>
+                                    <li><i class="fa fa-check"></i> Confirmed flat rate before the chauffeur rolls</li>
                                 </ul>
                             </div>
 
@@ -120,6 +122,18 @@
                                         <div id="laxFaq3" class="collapse" data-parent="#laxFaq">
                                             <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
                                                 <p>No. Alar provides prearranged chauffeur and airport shuttle-style transfers with a confirmed rate-aligned with chauffeur service and airport shuttle service, not metered taxi or self-drive van rental.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card ve-faq-card">
+                                        <div class="card-header ve-faq-card-header">
+                                            <button class="btn ve-faq-toggle btn-block text-left collapsed px-4 py-3" type="button" data-toggle="collapse" data-target="#laxFaq4">
+                                                <h3 class="m-0" style="font-size: 1.2rem; color: inherit; font-weight: 700;">Do you offer flat-rate car service to LAX?</h3>
+                                            </button>
+                                        </div>
+                                        <div id="laxFaq4" class="collapse" data-parent="#laxFaq">
+                                            <div class="card-body ve-faq-card-body pt-0 px-4 pb-4">
+                                                <p>Yes. Flat rate car service LAX is quoted from your door or hotel address before the chauffeur is dispatched. Share passenger and luggage counts for an accurate private car quote.</p>
                                             </div>
                                         </div>
                                     </div>

@@ -4,6 +4,21 @@
     <div class="ve-sidebar-widget">
         <h4 class="ve-widget-title">Recent Blogs</h4>
         <ul class="ve-service-list">
+            <li class="{{ Request::is('blog/group-transportation-nj-sprinters-companies-families') ? 'active' : '' }}">
+                <a href="{{ route('blog.group-transportation-nj-sprinters-companies-families') }}">
+                    Group Transportation NJ Sprinters
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/car-service-nj-to-jfk-edison-jersey-city-hoboken') ? 'active' : '' }}">
+                <a href="{{ route('blog.car-service-nj-to-jfk-edison-jersey-city-hoboken') }}">
+                    Car Service NJ to JFK
+                </a>
+            </li>
+            <li class="{{ Request::is('blog/hire-executive-chauffeur-nj-rates-vehicles-booking') ? 'active' : '' }}">
+                <a href="{{ route('blog.hire-executive-chauffeur-nj-rates-vehicles-booking') }}">
+                    Hire Executive Chauffeur NJ
+                </a>
+            </li>
             <li class="{{ Request::is('blog/car-service-to-jfk-from-manhattan') ? 'active' : '' }}">
                 <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}">
                     Car Service to JFK Manhattan

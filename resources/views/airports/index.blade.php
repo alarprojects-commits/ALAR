@@ -35,8 +35,9 @@
                         <a href="{{ route($route) }}" class="d-block">
                             <img src="{{ asset($img) }}" alt="{{ $code }} airport car service" class="img-fluid rounded-12 shadow-sm w-100 mb-3" style="height: 180px; object-fit: cover;">
                         </a>
-                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} - {{ $name }}</a></h3>
-                        <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>Open {{ $code }} guide</b></a></p>
+                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} Airport Car Service</a></h3>
+                        <p>{{ $name }} transfers with flight tracking and confirmed rates.</p>
+                        <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>{{ $code }} airport car service guide</b></a></p>
                     </div>
                 @endforeach
             </div>
@@ -70,9 +71,9 @@
                         <a href="{{ route($route) }}" class="d-block">
                             <img src="{{ asset($img) }}" alt="{{ $code }} airport car service" class="img-fluid rounded-12 shadow-sm w-100 mb-3" style="height: 180px; object-fit: cover;">
                         </a>
-                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} - {{ $name }}</a></h3>
+                        <h3 style="font-size: 1.2rem;"><a href="{{ route($route) }}" style="color: inherit;">{{ $code }} Airport Car Service</a></h3>
                         <p>Pairs with our <a href="{{ route($stateRoute) }}" style="color: var(--ve-gold);"><b>{{ $state }}</b></a> state page.</p>
-                        <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>Open {{ $code }} guide</b></a></p>
+                        <p><a href="{{ route($route) }}" style="color: var(--ve-gold);"><b>{{ $code }} airport car service guide</b></a></p>
                     </div>
                 @endforeach
             </div>
