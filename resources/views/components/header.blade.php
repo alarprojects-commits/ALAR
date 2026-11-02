@@ -70,7 +70,7 @@
                 <a href="{{ route('free-quote') }}" class="ve-cta-btn"><i class="fa fa-quote-right"></i> Free Quote</a>
             </div>
             <!-- Mobile Toggle -->
-            <button class="ve-toggler" id="ve-toggle">
+            <button class="ve-toggler" id="ve-toggle" type="button" aria-label="Open menu" aria-controls="ve-mobile-menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -79,7 +79,7 @@
                 <a href="{{ route('home') }}" class="ve-mobile-logo">
                     <img src="{{ asset('assets/img/logo/logo.png') }}" alt="Alar Chauffeur Service">
                 </a>
-                <button class="ve-mobile-close" id="ve-mobile-close">&times;</button>
+                <button class="ve-mobile-close" id="ve-mobile-close" type="button" aria-label="Close menu">&times;</button>
             </div>
             <ul>
                 <li class="{{ request()->routeIs('home') ? 'active' : '' }}"><a href="{{ route('home') }}">Home</a></li>

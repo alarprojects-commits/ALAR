@@ -442,7 +442,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <a href="{{ route('airports.jfk') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/jfk.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/jfk.webp') }});"
+                    aria-label="JFK Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
@@ -453,12 +454,14 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <a href="{{ route('airports.lga') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/lga.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/lga.webp') }});"
+                    aria-label="LaGuardia Airport car service guide"></a>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <a href="{{ route('airports.ewr') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/ewr.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/ewr.webp') }});"
+                    aria-label="Newark Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
@@ -469,7 +472,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <a href="{{ route('airports.hpn') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/hpn.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/hpn.webp') }});"
+                    aria-label="Westchester Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <div class="ve-airport-card-text">
@@ -488,7 +492,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <a href="{{ route('airports.teb') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/teb.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/teb.webp') }});"
+                    aria-label="Teterboro Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
@@ -499,12 +504,14 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <a href="{{ route('airports.phl') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/phl.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/phl.webp') }});"
+                    aria-label="Philadelphia Airport car service guide"></a>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <a href="{{ route('airports.bdl') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/bdl.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/bdl.webp') }});"
+                    aria-label="Bradley Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
@@ -515,7 +522,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <a href="{{ route('airports.bos') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/bos.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/bos.webp') }});"
+                    aria-label="Boston Logan Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <div class="ve-airport-card-text">
@@ -534,7 +542,8 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <a href="{{ route('airports.lax') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/lax.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/lax.webp') }});"
+                    aria-label="LAX Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms">
                 <div class="ve-airport-card-text">
@@ -545,12 +554,14 @@
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms">
                 <a href="{{ route('airports.las') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/las.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/las.webp') }});"
+                    aria-label="Las Vegas Airport car service guide"></a>
             </div>
 
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="100ms">
                 <a href="{{ route('airports.sea') }}" class="ve-airport-card-img d-block"
-                    style="background-image:url({{ asset('assets/img/airports/sea.webp') }});"></a>
+                    style="background-image:url({{ asset('assets/img/airports/sea.webp') }});"
+                    aria-label="Seattle Airport car service guide"></a>
             </div>
             <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="200ms">
                 <div class="ve-airport-card-text">
