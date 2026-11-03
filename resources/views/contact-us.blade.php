@@ -71,7 +71,6 @@
         "postalCode": "08820",
         "addressCountry": "US"
       },
-      "priceRange": "$150 - $3000",
       "sameAs": [
         "https://maps.app.goo.gl/fKaPB2j36gVbcbcq9",
         "https://www.facebook.com/profile.php?id=61581788001748",

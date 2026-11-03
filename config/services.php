@@ -46,4 +46,9 @@ return [
         'cache_h'  => env('GOOGLE_REVIEWS_CACHE_HOURS', 12),
     ],
 
+    // Public IndexNow key. The matching file must stay at /{key}.txt.
+    'indexnow' => [
+        'key' => '3cc940d3dc25ace5497715f3d5125eb9',
+    ],
+
 ];

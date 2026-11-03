@@ -103,10 +103,10 @@
         "Kansas City"
       ],
       "offers": {
-        "@@type": "Offer",
-        "price": "150",
-        "priceCurrency": "USD",
+        "@@type": "AggregateOffer",
+        "lowPrice": "150",
         "highPrice": "3000",
+        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       }
     }

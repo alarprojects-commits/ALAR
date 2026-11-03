@@ -1,6 +1,6 @@
 @extends('main')
 @section('meta_title', 'Boston Airport Car Service BOS - Logan Transfers | Alar')
-@section('meta_description', 'Book Boston Logan (BOS) airport car service with flight tracking and a confirmed rate. Massachusetts chauffeur transfers across Greater Boston-reserve with Alar.')
+@section('meta_description', 'Book Boston Logan (BOS) airport car service with flight tracking and a confirmed rate. Massachusetts chauffeur transfers across Greater Boston with Alar.')
 @section('og_image', asset('assets/img/airports/bos.webp'))
 @section('og_type', 'website')
 

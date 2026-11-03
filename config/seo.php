@@ -255,7 +255,7 @@ return [
         'airports.bos' => [
             'type' => 'Service',
             'name' => 'Boston Airport Car Service BOS - Logan Transfers | Alar',
-            'description' => 'Book Boston Logan (BOS) airport car service with flight tracking and a confirmed rate. Massachusetts chauffeur transfers across Greater Boston-reserve with Alar.',
+            'description' => 'Book Boston Logan (BOS) airport car service with flight tracking and a confirmed rate. Massachusetts chauffeur transfers across Greater Boston with Alar.',
             'keywords' => 'Boston airport car service, BOS airport car service, Logan Airport limo, Boston Logan car service, Massachusetts airport transfer, Boston chauffeur',
             'service_type' => 'Airport shuttle service',
             'area_served' => ['Massachusetts', 'Connecticut', 'New York', 'New Jersey'],
@@ -416,7 +416,7 @@ return [
         'services.chauffeured-service' => [
             'type' => 'Service',
             'name' => 'Chauffeur Service NJ - Reserve Private Black Car | Alar',
-            'description' => 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, and Tri-State coverage from Alar in Edison.',
+            'description' => 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, Tri-State coverage from Alar in Edison.',
             'keywords' => 'chauffeur service, chauffeur service New Jersey, executive chauffeur service NJ, hire executive chauffeur NJ, premium chauffeur services, hotel transfers NJ',
             'service_type' => 'Chauffeur service',
             'area_served' => $allAreas,
@@ -548,7 +548,7 @@ return [
         'blog.group-transportation-nj-sprinters-companies-families' => [
             'type' => 'Article',
             'name' => 'Group Transportation NJ for Companies & Families',
-            'description' => 'Book group transportation NJ with Sprinters for corporate shuttles, family airport trips, and events. Confirmed rates and private chauffeurs from Alar in Edison.',
+            'description' => 'Book group transportation NJ with Sprinters for corporate shuttles, family airport trips, and events. Confirmed rates and private chauffeurs from Alar, Edison.',
             'keywords' => 'group transportation NJ, private group transportation NJ, group travel transportation NJ, luxury group transportation NJ, group transportation company nj',
             'crumbs' => [
                 ['label' => 'Blog', 'url' => '/blog'],

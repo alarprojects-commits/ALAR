@@ -82,7 +82,7 @@
     },
 
     {
-      "@@type": "LimousineService",
+      "@@type": "LocalBusiness",
       "@@id": "https://alarchauffeurservice.com/#localbusiness",
       "name": "ALAR Chauffeur Service",
       "url": "https://alarchauffeurservice.com",
@@ -143,22 +143,6 @@
         { "@@type": "State", "name": "California" },
         { "@@type": "State", "name": "Nevada" },
         { "@@type": "State", "name": "Washington" }
-      ],
-
-      "serviceType": [
-        "Luxury Chauffeur Service",
-        "Corporate Travel",
-        "Wedding Transportation",
-        "Hourly Chauffeur Service",
-        "Black Car Service",
-        "Party Bus Service",
-        "Concert Transportation",
-        "Festival Transportation",
-        "Sporting Event Transportation",
-        "Prom Night Service",
-        "Group Transportation",
-        "VIP Transportation",
-        "Stadium Transportation"
       ]
     },
 

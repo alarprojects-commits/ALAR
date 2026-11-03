@@ -1,6 +1,6 @@
 @extends('main')
 @section('meta_title', 'Chauffeur Service NJ - Reserve Private Black Car | Alar')
-@section('meta_description', 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, and Tri-State coverage from Alar in Edison.')
+@section('meta_description', 'Book chauffeur service in New Jersey for airports, hotels, and executive travel. Reserved black car, confirmed rates, Tri-State coverage from Alar in Edison.')
 @section('content')
 
 <!-- ===== PAGE HERO ===== -->

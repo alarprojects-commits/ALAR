@@ -1,6 +1,6 @@
 @extends('main')
 @section('meta_title', 'Group Transportation NJ for Companies & Families')
-@section('meta_description', 'Book group transportation NJ with Sprinters for corporate shuttles, family airport trips, and events. Confirmed rates and private chauffeurs from Alar in Edison.')
+@section('meta_description', 'Book group transportation NJ with Sprinters for corporate shuttles, family airport trips, and events. Confirmed rates and private chauffeurs from Alar, Edison.')
 @section('og_image', asset('assets/img/blogs/group-transportation-nj-sprinters-companies-families.jpg'))
 @section('og_type', 'article')
 

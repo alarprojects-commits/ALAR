@@ -56,7 +56,7 @@ class SchemaGraph
         ];
 
         $localBusiness = [
-            '@type' => ['LocalBusiness', 'LimousineService'],
+            '@type' => 'LocalBusiness',
             '@id' => $base . '/#localbusiness',
             'name' => $biz['name'],
             'url' => $base,
