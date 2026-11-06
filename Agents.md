@@ -26,6 +26,7 @@
 - [Blog Keyword Bank Rules](./.agent/blog-keywords.md)
 - [Blog Keyword Usage Ledger](./.agent/blog-keyword-usage.md)
 - [GSC Cluster Tracking](./.agent/gsc-cluster-tracking.md)
+- [Tri-State Competitors](./.agent/competitors.md)
 
 ## Required Load Order
 1. `/.agent/agents.md`
@@ -39,6 +40,7 @@
 9. `/.agent/blog-keywords.md`
 10. `/.agent/blog-keyword-usage.md`
 11. `/.agent/gsc-cluster-tracking.md`
+12. `/.agent/competitors.md`
 
 ## Fallback Policy
 - If a modular file is missing, keep processing with remaining files

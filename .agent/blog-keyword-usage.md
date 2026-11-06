@@ -48,8 +48,8 @@
 - Cluster: New York / Tri-State car service
 - Primary keyword: New York car service
 - Secondary keywords: Tri-State limo, JFK airport car service, LGA airport car service, EWR car service
-- Search intent: commercial
-- Notes: Hub-style Tri-State airport coverage article linking NY, NJ, CT, and major airports.
+- Search intent: informational support (was commercial hub)
+- Notes: Softened Nov 2026 to JFK vs LGA vs EWR choose-airport guide; money URLs are /airports/jfk|/lga|/ewr and /services/airport-transportation.
 
 - Date: 2026-09-26
 - Blog slug: chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc

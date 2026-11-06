@@ -171,90 +171,23 @@
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Travel from New York & New Jersey to Other States</h2>
-                                <p>For longer routes, such as New York to <a href="{{ route('service-area.california') }}" style="color: var(--ve-gold);"><b>California luxury chauffeur service</b></a> or other interstate destinations, Alar Chauffeur Service offers reliable Chauffeur Service in New Jersey.</p>
-
-                                <p>This service is ideal for:</p>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> State-to-state chauffeur service</li>
-                                            <li><i class="fa fa-check"></i> Business road trips</li>
-                                            <li><i class="fa fa-check"></i> Family travel across cities</li>
-                                            <li><i class="fa fa-check"></i> Flexible travel without flight delays</li>
-                                        </ul>
-                                    </div>
+                                <h2>Interstate &amp; long-distance <span>chauffeur</span></h2>
+                                <p>Need New Jersey or New York to PA, CT, DC, or longer Tri-State runs? We confirm the vehicle and rate before dispatch. See <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a> for sedans, SUVs, and Sprinters-solo executive days or <a href="{{ route('services.group-transportation') }}" style="color: var(--ve-gold);"><b>group transportation NJ</b></a> for larger parties.</p>
+                                <div class="ve-amenities-list mt-30">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i> Confirmed rate-no surge pricing</li>
+                                        <li><i class="fa fa-check"></i> Door-to-door pickup across Edison and Tri-State corridors</li>
+                                        <li><i class="fa fa-check"></i> Quiet cabin for calls, bags handled, professional chauffeur</li>
+                                    </ul>
                                 </div>
-
-                                <p>With professional planning and luxury vehicles, long-distance travel becomes smooth and enjoyable.</p>
-
                                 <div class="ve-quote-box mt-30">
                                     <i class="fa fa-quote-left"></i>
-                                    <p>Alar Chauffeur Service has been my go-to for years. Their airport service is
-                                        unbeatable for its reliability and the sheer quality of the vehicles. I never
-                                        have to worry about being late for a flight.</p>
+                                    <p>Alar Chauffeur Service has been my go-to for years. Their airport service is unbeatable for its reliability and the sheer quality of the vehicles. I never have to worry about being late for a flight.</p>
                                     <div class="ve-quote-author">
                                         <strong>Robert Sterling</strong>
                                         <span>Frequent Business Traveler</span>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row align-items-center mt-50 mb-30">
-                                <div class="col-md-6 order-2 order-md-1 wow fadeInLeft" data-wow-delay="100ms">
-                                    <h2>Why Choose Chauffeur Service for Long-Distance Travel</h2>
-                                    <p>Long journeys require comfort, safety, and reliability. A Chauffeur Service in New Jersey provides all three.</p>
-                                    <p>Key advantages:</p>
-
-                                    <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                        <div class="row">
-                                            <ul>
-                                                <li><i class="fa fa-check"></i> Spacious and comfortable vehicles</li>
-                                                <li><i class="fa fa-check"></i> Professional and trained drivers</li>
-                                                <li><i class="fa fa-check"></i> Flexible scheduling for same-day travel plans</li>
-                                                <li><i class="fa fa-check"></i> No stress of driving long hours</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <p>Instead of dealing with flights or rentals, you can enjoy a relaxed journey with executive car service.</p>
-                                </div>
-                                <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
-                                    <img src="{{ asset('assets/img/our-services/chauffeured-service/why-choose-chauffeur-service-for-long-distance-travel.webp') }}"
-                                        alt="Private chauffeur long distance interstate travel" class="img-fluid rounded-12 shadow-sm">
-                                </div>
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Group vs Solo Travel Options</h2>
-                                <p>Alar Chauffeur Service offers flexible options for both individuals and groups.</p>
-
-                                <h3>Group Travel Limo</h3>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Ideal for families, corporate teams, and events</li>
-                                            <li><i class="fa fa-check"></i> Cost-effective for shared travel</li>
-                                            <li><i class="fa fa-check"></i> Spacious SUVs and luxury vans</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <h3>Solo & Executive Travel</h3>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Private chauffeur for business professionals</li>
-                                            <li><i class="fa fa-check"></i> Premium sedans for comfort and privacy</li>
-                                            <li><i class="fa fa-check"></i> Personalized travel experience</li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>No matter your travel type, there is a vehicle option available in <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a></p>
-
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
@@ -283,44 +216,16 @@
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Chauffeur Service for Every Event</h2>
-                                <p>A chauffeur service is not limited to one purpose-it is universal for every event. Whether it’s:</p>
-
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Corporate meetings</li>
-                                            <li><i class="fa fa-check"></i> <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>Weddings and parties</b></a></li>
-                                            <li><i class="fa fa-check"></i> Airport transfers</li>
-                                            <li><i class="fa fa-check"></i> Sports events and stadium transfers</li>
-                                            <li><i class="fa fa-check"></i> Same-day travel plans</li>
-                                        </ul>
-                                    </div>
+                                <h2>How to book chauffeur service in <span>New Jersey</span></h2>
+                                <p>Send date, addresses, passenger count, and flight details when an airport is involved. We confirm the vehicle and rate before the chauffeur is dispatched.</p>
+                                <div class="ve-amenities-list mt-30">
+                                    <ul>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> for reserved chauffeur service</li>
+                                        <li><i class="fa fa-check"></i> <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a> for multi-stop or interstate days</li>
+                                        <li><i class="fa fa-check"></i> Choose sedan, SUV, or Sprinter from <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>our fleet</b></a></li>
+                                        <li><i class="fa fa-check"></i> Pair with <a href="{{ route('services.wedding-limo') }}" style="color: var(--ve-gold);"><b>wedding limo</b></a>, corporate, or airport runs as needed</li>
+                                    </ul>
                                 </div>
-
-                                <p>A private chauffeur ensures your journey is smooth, professional, and stress-free.</p>
-
-                            </div>
-
-                            <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">
-                                <h2>Booking Process for Alar Chauffeur Service</h2>
-                                <p>Booking your ride is simple and quick. With schedule booking with Alar Chauffeur Service, you can plan your trip in advance.</p>
-
-                                <h3>How to Book:</h3>
-                                <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="row">
-                                        <ul>
-                                            <li><i class="fa fa-check"></i> Visit our <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>home page</b></a></li>
-                                            <li><i class="fa fa-check"></i> Choose your vehicle from the <a href="{{ route('our-fleet') }}" style="color: var(--ve-gold);"><b>fleet</b></a></li>
-                                            <li><i class="fa fa-check"></i> Enter pickup and drop-off details</li>
-                                            <li><i class="fa fa-check"></i> Select date and time</li>
-                                            <li><i class="fa fa-check"></i> <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Confirm your booking</b></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <p>Providing accurate details ensures a smooth and well-planned journey.</p>
-
                             </div>
 
                             @include('components.related-service-links', ['cluster' => 'corporate'])

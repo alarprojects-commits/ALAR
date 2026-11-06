@@ -36,6 +36,23 @@
                         </div>
 
                         <div class="ve-area-description">
+                            <h2>Included in your <span>confirmed rate</span></h2>
+                            <p>We confirm what tolls and gratuity cover on your quote. Every EWR booking includes the items below when the flight number is on the reservation.</p>
+                            <div class="ve-amenities-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i> Live flight tracking with dispatch adjustments for delays</li>
+                                    <li><i class="fa fa-check"></i> 60 minutes complimentary wait after landing</li>
+                                    <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
+                                    <li><i class="fa fa-check"></i> Luggage assistance from terminal to vehicle</li>
+                                    <li><i class="fa fa-check"></i> No surge-rate locked when you confirm the trip</li>
+                                </ul>
+                            </div>
+                            <p class="mt-20"><a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or get a <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a> for your EWR transfer.</p>
+
+                            <h2>Edison &amp; Central NJ to <span>EWR</span></h2>
+                            <p>Edison, Metuchen, Woodbridge, New Brunswick, and nearby Middlesex addresses are among our most booked corridors to Newark Liberty. Share pickup ZIP, airline, flight number, and terminal so we price the real drive and stage at Terminal A, B, or C-not a generic curb pin.</p>
+                            <p>Statewide coverage sits on our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey car service</b></a> page. Corporate itineraries often pair EWR with <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a>.</p>
+
                             <h2>Airport pickup and meet points at <span>EWR</span></h2>
                             <h3>Terminals A, B, and C</h3>
                             <p>Name the terminal on the booking. Construction and roadway changes make “Newark curb” too vague for a reliable meet.</p>

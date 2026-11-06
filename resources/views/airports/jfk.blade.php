@@ -36,6 +36,19 @@
                         </div>
 
                         <div class="ve-area-description">
+                            <h2>Included in your <span>confirmed rate</span></h2>
+                            <p>We confirm what tunnels, tolls, and gratuity cover on your quote. Every JFK booking includes the items below when the flight number is on the reservation.</p>
+                            <div class="ve-amenities-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i> Live flight tracking with dispatch adjustments for delays</li>
+                                    <li><i class="fa fa-check"></i> 60 minutes complimentary wait after landing</li>
+                                    <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
+                                    <li><i class="fa fa-check"></i> Luggage assistance from terminal to vehicle</li>
+                                    <li><i class="fa fa-check"></i> No surge-rate locked when you confirm the trip</li>
+                                </ul>
+                            </div>
+                            <p class="mt-20"><a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or get a <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a> for your JFK transfer.</p>
+
                             <h2>Airport pickup and meet points at <span>JFK</span></h2>
                             <h3>Terminals and arrivals</h3>
                             <p>International halls need more time for immigration and baggage. Domestic arrivals move faster, but morning banks still stack at the curb. Share a mobile number that reaches the passenger in the terminal.</p>
@@ -76,6 +89,9 @@
                             <h2>Limo service to JFK from <span>New Jersey</span></h2>
                             <p>Car service NJ to JFK and limo service from JFK back to Hoboken, Jersey City, Edison, and Central Jersey are among our most booked Tri-State corridors. Share the terminal and flight number so meet-and-greet timing stays accurate after international arrivals.</p>
                             <p>Manhattan guests can also read <a href="{{ route('blog.car-service-to-jfk-from-manhattan') }}" style="color: var(--ve-gold);"><b>car service to JFK from Manhattan</b></a>; NJ county coverage sits on our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey</b></a> and <a href="{{ route('service-area.new-york') }}" style="color: var(--ve-gold);"><b>New York</b></a> service-area pages.</p>
+
+                            <h2>Connecticut to <span>JFK</span> and Bradley</h2>
+                            <p>Fairfield County travelers from Greenwich, Stamford, Norwalk, Westport, and nearby towns regularly book reserved transfers to JFK for international banks. For Hartford-area commercial flights, open <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL) car service</b></a>. Statewide CT coverage and booking steps sit on our <a href="{{ route('service-area.connecticut') }}" style="color: var(--ve-gold);"><b>Connecticut car service</b></a> page-send door address, passenger count, and flight details for a confirmed rate.</p>
 
                             <h2>How to book your <span>JFK</span> transfer</h2>
                             <p>Send date, pickup or drop-off address, passenger count, airline, flight number, and terminal through <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('contact-us') }}" style="color: var(--ve-gold);"><b>Contact Us</b></a>. We confirm the rate and vehicle before the chauffeur is dispatched.</p>

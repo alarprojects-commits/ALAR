@@ -180,6 +180,17 @@
                             <h2>Airport Chauffeur & Limo Service in <span>New Jersey (EWR, JFK, LGA, HPN)</span></h2>
                             <p>Traveling to or from the airport? Our <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>airport limo service in New Jersey</b></a> ensures timely pickups, comfortable rides, and professional Tri-State service every time.</p>
 
+                            <h3>Edison &amp; Central NJ airport corridors</h3>
+                            <p>From our Edison desk we run reserved transfers for Middlesex and Central Jersey addresses-Edison, Metuchen, Woodbridge, New Brunswick, Piscataway, and nearby towns-to EWR, JFK, and LGA. Share pickup address, flight number, and terminal; we confirm the rate before dispatch.</p>
+                            <div class="ve-amenities-list">
+                                <ul>
+                                    <li><i class="fa fa-check"></i> Edison / Central NJ → <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR)</b></a> - core corridor</li>
+                                    <li><i class="fa fa-check"></i> NJ → <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a> and <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA)</b></a></li>
+                                    <li><i class="fa fa-check"></i> Flight tracking, 60 minutes complimentary wait, meet-and-greet when arranged</li>
+                                    <li><i class="fa fa-check"></i> <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a>-no fabricated street rates; confirmed quote before the chauffeur rolls</li>
+                                </ul>
+                            </div>
+
                             <h3>Newark Airport Limo Service EWR</h3>
                             <p>Whether you are a corporate executive or traveling with family, we provide limo service to Newark Liberty International Airport (EWR) from Jersey City, Bergen County, Edison, Princeton, and into Westchester, Nassau, and Suffolk. Read the full <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Airport car service</b></a> guide for terminals, flight tracking, and booking steps.</p>
 

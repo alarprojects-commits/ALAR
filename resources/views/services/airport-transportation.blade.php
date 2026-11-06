@@ -97,10 +97,12 @@
       "areaServed": [
         "New Jersey",
         "New York",
+        "Connecticut",
+        "Pennsylvania",
+        "Massachusetts",
         "California",
         "Nevada",
-        "Washington",
-        "Kansas City"
+        "Washington"
       ],
       "offers": {
         "@@type": "AggregateOffer",
@@ -153,25 +155,31 @@
 
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
                         <span class="ve-section-tag">Stress-Free Travel</span>
-                        <h2>Airport Car Service NYC & <span>Tri-State Airport Limo</span></h2>
-                        <p class="ve-lead">Welcome to <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur
-                                    Service</b></a>, your premier choice for airport car service NYC and New Jersey. We provide smooth, reliable transfers with professionalism and care-including JFK Airport Limo Service NYC, LGA Limo Service LaGuardia Airport, and Newark Airport Limo Service EWR.</p>
+                        <h2>Airport Car Service NYC &amp; <span>Tri-State Airport Limo</span></h2>
+                        <p class="ve-lead">Reserve <a href="/" style="color: var(--ve-gold);"><b>ALAR Chauffeur Service</b></a> airport transfers from our Edison, NJ desk. Confirmed rate before dispatch, live flight tracking, and a professional chauffeur for JFK, LGA, EWR, and Tri-State corridors-not a curb rideshare queue.</p>
 
-                        <p>Travel in comfort and style with our diverse fleet, including elegant sedans, spacious SUVs,
-                            versatile mid-size crossover SUVs, and roomy Sprinter vans. Whatever your preference, we
-                            have the perfect vehicle to suit your needs and make every journey enjoyable and
-                            stress-free.
-                        </p>
+                        <p>Choose a sedan, SUV, or Sprinter that matches passengers and bags. We confirm the vehicle and rate before the chauffeur rolls so you are not renegotiating at arrivals.</p>
 
-                        <h3 class="mt-30">Airport Chauffeur Service NJ &amp; <span>Tri-State Transfers</span></h3>
-                        <p>Book private airport transfers New Jersey and NYC with flight tracking limo service NJ. Open a dedicated guide: <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a>, <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a>, <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>HPN</b></a>, <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>TEB</b></a>, <a href="{{ route('airports.phl') }}" style="color: var(--ve-gold);"><b>PHL</b></a>, <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>BDL</b></a>, <a href="{{ route('airports.bos') }}" style="color: var(--ve-gold);"><b>BOS</b></a>, <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>LAX</b></a>, <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>LAS</b></a>, <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>SEA</b></a>, plus <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>all airport guides</b></a>.</p>
+                        <h3 class="mt-30">Included in your <span>confirmed rate</span></h3>
+                        <p>Ask on the quote what tolls and gratuity cover for your corridor. Every airport booking includes the essentials below when the flight number is on the reservation.</p>
                         <div class="ve-amenities-list mt-20 mb-30">
                             <ul>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>John F. Kennedy International (JFK)</b></a> - car service NJ to JFK and NYC limo</li>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia Airport (LGA)</b></a> - car service NJ to LGA</li>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark Liberty (EWR)</b></a> - professional chauffeur EWR &amp; private airport transfer NJ</li>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester County (HPN)</b></a> - White Plains airport car service</li>
-                                <li><i class="fa fa-check"></i> <a href="{{ route('airports.lax') }}" style="color: var(--ve-gold);"><b>Los Angeles (LAX)</b></a>, <a href="{{ route('airports.las') }}" style="color: var(--ve-gold);"><b>Las Vegas (LAS)</b></a>, <a href="{{ route('airports.sea') }}" style="color: var(--ve-gold);"><b>Sea-Tac (SEA)</b></a></li>
+                                <li><i class="fa fa-check"></i> Live flight tracking and dispatch adjustments for delays</li>
+                                <li><i class="fa fa-check"></i> 60 minutes complimentary wait after landing</li>
+                                <li><i class="fa fa-check"></i> Meet-and-greet or curbside pickup as arranged</li>
+                                <li><i class="fa fa-check"></i> Luggage assistance and a late-model sanitized vehicle</li>
+                                <li><i class="fa fa-check"></i> No surge pricing-rate locked when you confirm the trip</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="mt-30">Book by corridor: Edison &amp; <span>Tri-State airports</span></h3>
+                        <p>Open the airport page for terminal tips, then <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or request a <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a>.</p>
+                        <div class="ve-amenities-list mt-20 mb-30">
+                            <ul>
+                                <li><i class="fa fa-check"></i> Edison / Central NJ → <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR)</b></a> - shortest core corridor from our desk</li>
+                                <li><i class="fa fa-check"></i> NJ / NYC → <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a> and <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LaGuardia (LGA)</b></a></li>
+                                <li><i class="fa fa-check"></i> CT / Westchester → <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a>, <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL)</b></a>, <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>HPN</b></a></li>
+                                <li><i class="fa fa-check"></i> Private aviation: <a href="{{ route('airports.teb') }}" style="color: var(--ve-gold);"><b>Teterboro (TEB)</b></a> · More: <a href="{{ route('airports.index') }}" style="color: var(--ve-gold);"><b>all airport guides</b></a></li>
                             </ul>
                         </div>
 

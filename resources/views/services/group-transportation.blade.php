@@ -154,35 +154,9 @@
                     <div class="ve-detail-text wow fadeInUp" data-wow-delay="200ms">
                         <span class="ve-section-tag">Logistics Perfected</span>
                         <h2>Reliable Group Transportation in New Jersey for <span>Every Occasion</span></h2>
-                        <p class="ve-lead">Coordinating transportation for multiple people can quickly become complicated. Managing separate vehicles, different arrival times, parking issues, and traffic delays often creates unnecessary stress for organizers and travelers alike.</p>
+                        <p class="ve-lead">Stop herding five cars. Book <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>group transportation in New Jersey</b></a> with one Sprinter or coach, one chauffeur, and a confirmed rate from our Edison desk-weddings, corporate shuttles, airport parties, and events.</p>
 
-                        <p>Our <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>group transportation in New Jersey</b></a> is designed to simplify travel by keeping everyone together in comfortable, professionally managed vehicles. Whether you are organizing a corporate event, wedding celebration, airport transfer, sports outing, family gathering, or business meeting, our transportation solutions help your group travel efficiently and comfortably.</p>
-
-                        <p>At <a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a>, we understand that successful group travel requires punctuality, organization, and flexibility. Our professional chauffeurs handle the logistics while your group focuses on enjoying the journey.</p>
-
-                        <h2>Why Choose Professional <span>Group Transportation Services</span></h2>
-                        <p>Traveling as a group should be convenient, comfortable, and organized. Our group transportation in New Jersey provides a dependable solution for groups of various sizes while maintaining luxury standards throughout the experience.</p>
-
-                        <h3>Benefits of Group Transportation</h3>
-                        <div class="ve-amenities-list mt-30 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Everyone travels together</li>
-                                        <li><i class="fa fa-check"></i> Professional and experienced chauffeurs</li>
-                                        <li><i class="fa fa-check"></i> Reduced parking and traffic concerns</li>
-                                        <li><i class="fa fa-check"></i> Convenient pickup and drop-off locations</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Comfortable seating and spacious vehicles</li>
-                                        <li><i class="fa fa-check"></i> Reliable scheduling and punctual arrivals</li>
-                                        <li><i class="fa fa-check"></i> Cost-effective transportation for larger groups</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        <p><a href="{{ route('home') }}" style="color: var(--ve-gold);"><b>Alar Chauffeur Service</b></a> keeps your party together with punctual pickup plans. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or get a <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>group quote</b></a> with passenger count, luggage, and stops.</p>
 
                         <h2>Private Group Transportation NJ from <span>Edison</span></h2>
                         <p>Alar Chauffeur Service dispatches private group transportation NJ from our Edison desk across the Tri-State. One reserved Sprinter or coach keeps your party on a single confirmed-rate itinerary-no split rideshares, no curb lottery.</p>
@@ -222,19 +196,7 @@
 
                             <div class="mt-30 wow fadeInUp" data-wow-delay="100ms">
                                 <h3>Corporate Transportation Solutions</h3>
-                                <p>Our <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation services</b></a> include:</p>
-                                <div class="ve-amenities-list mt-30">
-                                    <ul>
-                                        <li><i class="fa fa-check"></i> Business meetings</li>
-                                        <li><i class="fa fa-check"></i> Corporate conferences</li>
-                                        <li><i class="fa fa-check"></i> Trade shows</li>
-                                        <li><i class="fa fa-check"></i> Executive travel</li>
-                                        <li><i class="fa fa-check"></i> Company events</li>
-                                        <li><i class="fa fa-check"></i> Team-building activities</li>
-                                        <li><i class="fa fa-check"></i> Client transportation</li>
-                                    </ul>
-                                </div>
-                                <p class="mt-20">Our <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service</b></a> helps businesses maintain a professional image while ensuring smooth transportation between offices, hotels, airports, and event venues.</p>
+                                <p>Pair group vehicles with <a href="{{ route('services.corporate-transportation') }}" style="color: var(--ve-gold);"><b>corporate transportation New Jersey</b></a> for conferences, trade shows, client shuttles, and team events. Solo executives can book <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>chauffeur service NJ</b></a>; larger crews stay in one Sprinter with a confirmed rate.</p>
                             </div>
 
                             <div class="mt-40 wow fadeInUp" data-wow-delay="100ms">

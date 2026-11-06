@@ -36,7 +36,7 @@
             </li>
             <li class="{{ Request::is('blog/new-york-car-service-jfk-lga-ewr-tri-state') ? 'active' : '' }}">
                 <a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}">
-                    NY Car Service JFK LGA EWR
+                    JFK vs LGA vs EWR Guide
                 </a>
             </li>
             <li class="{{ Request::is('blog/chauffeur-service-nyc-nj-to-pennsylvania-virginia-washington-dc') ? 'active' : '' }}">

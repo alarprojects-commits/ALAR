@@ -45,6 +45,15 @@
                             <li><i class="fa fa-check"></i> <a href="{{ route('airports.hpn') }}" style="color: var(--ve-gold);"><b>Westchester (HPN) car service</b></a> - White Plains regional flights</li>
                             </ul></div>
 
+                            <h2>Fairfield County corridors: <span>JFK, BDL &amp; EWR</span></h2>
+                            <p>Greenwich, Stamford, Darien, Norwalk, Westport, Fairfield, and nearby shoreline towns book reserved chauffeurs for early JFK internationals and Bradley departures. Send door address, passenger count, bags, airline, and flight number-we confirm the rate before dispatch (no published street-rate table; quote matches your real corridor).</p>
+                            <div class="ve-amenities-list"><ul>
+                                <li><i class="fa fa-check"></i> Stamford / Greenwich → <a href="{{ route('airports.jfk') }}" style="color: var(--ve-gold);"><b>JFK</b></a> for long-haul banks</li>
+                                <li><i class="fa fa-check"></i> Hartford / New Haven area → <a href="{{ route('airports.bdl') }}" style="color: var(--ve-gold);"><b>Bradley (BDL)</b></a></li>
+                                <li><i class="fa fa-check"></i> CT → <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>EWR</b></a> or <a href="{{ route('airports.lga') }}" style="color: var(--ve-gold);"><b>LGA</b></a> when the itinerary fits</li>
+                                <li><i class="fa fa-check"></i> Flight tracking, complimentary wait, meet-and-greet when arranged · <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> / <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Free Quote</b></a></li>
+                            </ul></div>
+
                             <h2>Why Connecticut travelers book a reserved chauffeur</h2>
                             <p>Train schedules and rideshare surges do not always match early departures or late international arrivals. A reserved chauffeur keeps the itinerary predictable from door to terminal.</p>
                             <h3>Corporate and shoreline itineraries</h3>

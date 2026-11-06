@@ -231,7 +231,7 @@
                             style="background-image:url({{ asset('assets/img/blogs/new-york-car-service-jfk-lga-ewr-tri-state.webp') }});">
                         </div>
                         <div class="ve-insight-body">
-                            <h5>New York Car Service for JFK, LGA &amp; EWR</h5>
+                            <h5>Which NYC Airport: JFK vs LGA vs EWR</h5>
                             <p>Airport car service NYC and Tri-State limo to John F. Kennedy (JFK), LaGuardia (LGA), Newark Liberty (EWR), and Westchester (HPN).</p>
                             @include('components.cta-buttons', ['variant' => 'compact'])
                             <p class="mt-3 mb-0"><a href="{{ route('blog.new-york-car-service-jfk-lga-ewr-tri-state') }}" style="color: var(--ve-gold);"><b>Read More</b></a></p>

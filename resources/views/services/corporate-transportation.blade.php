@@ -97,10 +97,12 @@
       "areaServed": [
         "New Jersey",
         "New York",
+        "Connecticut",
+        "Pennsylvania",
+        "Massachusetts",
         "California",
         "Nevada",
-        "Washington",
-        "Kansas City"
+        "Washington"
       ],
       "offers": {
         "@@type": "AggregateOffer",
@@ -469,56 +471,24 @@
                                         <ul>
                                             <li>
                                                 <i class="fa fa-check"></i>
-                                                <a href="{{
-                                                        route(
-                                                            'service-area.new-jersey'
-                                                        )
-                                                    }}" style="
-                                                        color: var(--ve-gold);
-                                                    "><b>airport limo service to
-                                                        Newark
-                                                    </b></a>
+                                                <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) corporate airport transfers</b></a>
                                             </li>
                                             <li>
                                                 <i class="fa fa-check"></i>
-                                                <a href="{{
-                                                        route(
-                                                            'service-area.new-york'
-                                                        )
-                                                    }}" style="
-                                                        color: var(--ve-gold);
-                                                    "><b>hourly chauffeur
-                                                        service in New York</b></a>
+                                                <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Airport chauffeur service NJ &amp; Tri-State</b></a>
                                             </li>
                                             <li>
                                                 <i class="fa fa-check"></i>
-                                                <a href="{{
-                                                        route(
-                                                            'service-area.california'
-                                                        )
-                                                    }}" style="
-                                                        color: var(--ve-gold);
-                                                    "><b>private executive
-                                                        transportation in
-                                                        California</b></a>
+                                                <a href="{{ route('services.chauffeured-service') }}" style="color: var(--ve-gold);"><b>Executive chauffeur service New Jersey</b></a>
                                             </li>
                                             <li>
                                                 <i class="fa fa-check"></i>
-                                                <a href="{{
-                                                        route(
-                                                            'service-area.washington'
-                                                        )
-                                                    }}" style="
-                                                        color: var(--ve-gold);
-                                                    "><b>luxury airport transfer
-                                                        solutions in Seattle</b></a>
+                                                <a href="{{ route('service-area.new-jersey') }}" style="color: var(--ve-gold);"><b>New Jersey corporate coverage</b></a>
                                             </li>
                                         </ul>
                                     </div>
                                     <p>
-                                        These internal service connections help
-                                        businesses manage transportation more
-                                        efficiently
+                                        Request a corporate rate for recurring airport runs, roadshows, and executive days from our Edison desk.
                                     </p>
                                 </div>
                                 <div class="col-md-6 order-1 order-md-2 mb-30 wow fadeInRight" data-wow-delay="200ms">
@@ -592,68 +562,26 @@
                                                 <ul>
                                                     <li>
                                                         <i class="fa fa-check"></i>
-                                                        <a href="{{
-                                                                route(
-                                                                    'about-us'
-                                                                )
-                                                            }}" style="
-                                                                color: var(
-                                                                    --ve-gold
-                                                                );
-                                                            "><b>luxury business
-                                                                transportation
-                                                            </b></a>
+                                                        <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book corporate transportation online</b></a>
                                                     </li>
                                                     <li>
                                                         <i class="fa fa-check"></i>
-                                                        <a href="{{
-                                                                route(
-                                                                    'contact-us'
-                                                                )
-                                                            }}" style="
-                                                                color: var(
-                                                                    --ve-gold
-                                                                );
-                                                            "><b>executive limo
-                                                                service near
-                                                                me</b></a>
+                                                        <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>Request a corporate rate</b></a>
                                                     </li>
                                                     <li>
                                                         <i class="fa fa-check"></i>
-                                                        <a href="{{
-                                                                route(
-                                                                    'service-area.california'
-                                                                )
-                                                            }}" style="
-                                                                color: var(
-                                                                    --ve-gold
-                                                                );
-                                                            "><b>corporate
-                                                                airport car
-                                                                service</b></a>
+                                                        <a href="{{ route('services.airport-transportation') }}" style="color: var(--ve-gold);"><b>Corporate airport car service</b></a>
                                                     </li>
                                                     <li>
                                                         <i class="fa fa-check"></i>
-                                                        <a href="{{
-                                                                route(
-                                                                    'services.airport-transportation'
-                                                                )
-                                                            }}" style="
-                                                                color: var(
-                                                                    --ve-gold
-                                                                );
-                                                            "><b>luxury airport
-                                                                transfer
-                                                                solutions in
-                                                                Seattle</b></a>
+                                                        <a href="{{ route('airports.ewr') }}" style="color: var(--ve-gold);"><b>Newark (EWR) executive transfers</b></a>
                                                     </li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <p>
-                                        can expect a professional experience
-                                        from pickup to destination
+                                        Business travelers get a confirmed rate, priority dispatch, and a professional chauffeur from pickup to destination.
                                     </p>
                                 </div>
                             </div>
@@ -674,11 +602,7 @@
                                     </p>
                                     <p>
                                         With
-                                        <a href="{{ route('home') }}" style="color: var(--ve-gold)"><b>Alar Chauffeur
-                                                Service</b></a>, every corporate limo service in New
-                                        Jersey City booking is handled with
-                                        professionalism, punctuality, and
-                                        attention to detail.
+                                        <a href="{{ route('home') }}" style="color: var(--ve-gold)"><b>Alar Chauffeur Service</b></a>, every corporate limo booking in New Jersey-Edison, Jersey City, Newark, and Tri-State corridors-is handled with a confirmed rate, punctual dispatch, and attention to detail. <a href="{{ route('book-online') }}" style="color: var(--ve-gold);"><b>Book Online</b></a> or <a href="{{ route('free-quote') }}" style="color: var(--ve-gold);"><b>request a corporate quote</b></a>.
                                     </p>
                                 </div>
                             </div>
