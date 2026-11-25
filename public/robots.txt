@@ -1,4 +1,21 @@
 User-agent: *
+# Legacy CMS / spam probes — never real ALAR pages (server also returns 410 via fallback).
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /wp-content/
+Disallow: /wp-includes/
+Disallow: /wp-json/
+Disallow: /wordpress/
+Disallow: /shop/
+Disallow: /cgi-bin/
+Disallow: /xmlrpc.php
+Disallow: /*.aspx$
+Disallow: /*.jsp$
+Disallow: /tag/
+Disallow: /category/
+Disallow: /author/
+Disallow: /search/
+
 Allow: /
 
 Sitemap: https://alarchauffeurservice.com/sitemap.xml
