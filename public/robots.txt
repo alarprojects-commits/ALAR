@@ -1,22 +1,4 @@
 User-agent: *
-Disallow: /wp-admin/
-Disallow: /wp-login.php
-Disallow: /wp-content/
-Disallow: /wp-includes/
-Disallow: /wp-json/
-Disallow: /wordpress/
-Disallow: /shop/
-Disallow: /cgi-bin/
-Disallow: /xmlrpc.php
-Disallow: /*.aspx$
-Disallow: /*.jsp$
-Disallow: /*?*
-Disallow: /*.php$
-Disallow: /tag/
-Disallow: /category/
-Disallow: /author/
-Disallow: /search/
-
 Allow: /
 
 Sitemap: https://alarchauffeurservice.com/sitemap.xml
